@@ -244,7 +244,7 @@ const CustomerSupport = () => {
                 <div className="text-details pt-35 md-pb-50">
                   <img src="images/icon/27.svg" alt="icon" className="icon" />
                   <h3 className="title font-gilroy-bold">
-                  chatbot- Smart Assistance, Right Now.
+                  Smart Assistance, Right Now.
                   </h3>
                   <p className="text-meta">
                   Hello, your instant support assistant! Our chatbot is here to help you find what you are looking for, answer your questions quickly, and guide you through our crucial services.
@@ -317,10 +317,10 @@ const CustomerSupport = () => {
                 <div className="text-details pt-35 md-pb-50">
                   <img src="images/icon/29.svg" alt="" className="icon" />
                   <h3 className="title font-gilroy-bold">
-                  Client says- Witnessing Trust in Action: Client Stories
+                  Witnessing Trust in Action: Client Stories
                   </h3>
                   <p className="text-meta">
-                  Hello, your instant support assistant! Our chatbot is here to help you find what you are looking for, answer your questions quickly, and guide you through our crucial services.
+                  Beyond traditional therapy, COGNI+ is helping ASD understand and accept society, providing holistic support for a more fulfilling life.
                   </p>
                   <div className="quote-wrapper">
                     <div
@@ -334,7 +334,7 @@ const CustomerSupport = () => {
                       <img src={Chat} alt="icon" />
                     </div>
                     <blockquote>
-                      “Our team finds this platform to be extremely valuable due to its consistently high quality. ”
+                      “We rely on RaidenSimX and RaidenCogni+ for dependable simulation and cognitive intelligence solutions.”
                     </blockquote>
                     <div className="name">
                       <strong>- A Happy User.</strong>
