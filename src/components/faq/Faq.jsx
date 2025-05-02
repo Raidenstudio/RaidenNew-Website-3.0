@@ -9,21 +9,18 @@ import {
 
 const FaqContent = [
   {
-    title: " Register and create your first seller portal.",
-    desc: ` It only takes 5 minutes. Set-up is smooth & simple, with fully
-    customisable page design to reflect your brand lorem dummy.`,
+    title: "Bridging Realities",
+    desc: ` XR, AI, and blockchain are revolutionizing the transition between digital and tangible realms for leading game development companies.`,
     expand: "a",
   },
   {
-    title: "Manage your client easily",
-    desc: ` It only takes 5 minutes. Set-up is smooth & simple, with fully
-    customisable page design to reflect your brand lorem dummy.`,
+    title: "Cognitive Engagement",
+    desc: ` Our AI technology, combined with blockchain for enhanced security, enables intelligent interactions with zero latency.`,
     expand: "b",
   },
   {
-    title: "Start selling ticket",
-    desc: ` It only takes 5 minutes. Set-up is smooth & simple, with fully
-    customisable page design to reflect your brand lorem dummy.`,
+    title: "Transformative Vision",
+    desc: ` We transform brands with our powerful software development services, spanning from engaging mobile games to blockchain NFT ecosystems.`,
     expand: "c",
   },
 ];

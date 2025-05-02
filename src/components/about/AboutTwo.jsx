@@ -1,20 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Steve from "../../assets/images/assets/Frame 12.png";
 
 const AboutTwo = () => {
   return (
     <div className="row">
       <div
-        className="col-lg-5 col-md-6 col-sm-10 m-auto"
+        className="col-lg-5 col-md-6 col-sm-10"
         data-aos="fade-right"
         data-aos-duration="1200"
       >
         <div className="img-holder">
-          <img src="images/media/img_19.png" alt="media" />
           <img
-            src="images/shape/34.svg"
+            src={Steve}
             alt="shape"
             className="shapes shape-six"
+            style={{height: "450px"}}
           />
         </div>
         {/* img-holder */}
@@ -29,16 +30,15 @@ const AboutTwo = () => {
         <div className="quote-wrapper pt-60">
           <img src="images/icon/26.svg" alt="icon" className="icon" />
           <blockquote className="font-rubik">
-            Deski combines excellent live chat, ticketing and automation that
-            allow us to provide quality.
+          Great things in business are never done by one person they are done by a team of people.
           </blockquote>
-          <h6>
-            Bostami Hasan <span>CEO & Founder deksi</span>
-          </h6>
-          <Link to="/about-cs" className="theme-btn-two mt-45 md-mt-30">
+          <h5>
+           - STEVE JOBS
+          </h5>
+          {/* <Link to="/about-cs" className="theme-btn-two mt-45 md-mt-30">
             {" "}
             Learn More
-          </Link>
+          </Link> */}
         </div>
         {/* /.quote-wrapper */}
       </div>

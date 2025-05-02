@@ -11,6 +11,9 @@ import Testimonial from "../../components/testimonial/Testimonial";
 import CallToActionThree from "../../components/call-to-action/CallToActionThree";
 import FooterTwo from "../../components/footer/FooterTwo";
 import CopyRightTwo from "../../components/footer/CopyRightTwo";
+import Choose from "../../assets/images/assets/Home page (1).png";
+import Chatbot from "../../assets/images/assets/Group 6.png";
+import Chat from "../../assets/images/assets/Group 7.png";
 
 const CustomerSupport = () => {
   return (
@@ -50,16 +53,18 @@ const CustomerSupport = () => {
           <div className="container">
             <div className="title-style-two text-center mb-100 md-mb-50">
               <div className="row">
-                <div className="col-xl-8 col-lg-9 col-md-10 m-auto">
-                  <p>What we do</p>
-                  <h2>
-                    Use deski to drive growth at
-                    <span>
-                      your business.{" "}
-                      <img src="images/shape/line-shape-2.svg" alt="shape" />
-                    </span>
-                  </h2>
-                </div>
+              <div className="col-xl-8 col-lg-9 col-md-10 m-auto">
+  <h2>
+    <span style={{ display: "block", whiteSpace: "nowrap" }}>
+      We unlock a meaningful
+    </span>
+    <span style={{ display: "block" }}>
+      experience.{" "}
+      <img src="images/shape/line-shape-2.svg" alt="shape" />
+    </span>
+  </h2>
+</div>
+
                 {/* End .col */}
               </div>
             </div>
@@ -97,13 +102,12 @@ const CustomerSupport = () => {
               data-aos-duration="1200"
             >
               <div className="title-style-three mb-35">
-                <p>GET STARTED IN MINUTES</p>
                 <h2>
                   <span>
-                    3 Main Reaosn to{" "}
+                    3 Main Reason to{" "}
                     <img src="images/shape/line-shape-3.svg" alt="shape" />
                   </span>
-                  Choose us.
+                  Choose Raiden.
                 </h2>
               </div>
               {/* End title */}
@@ -121,7 +125,7 @@ const CustomerSupport = () => {
           data-aos-duration="1200"
           data-aos-delay="100"
         >
-          <img src="images/assets/feature-img-08.png" alt="feature" />
+          <img src={Choose} alt="feature" />
           <img
             src="images/shape/22.svg"
             alt="shape"
@@ -161,11 +165,11 @@ const CustomerSupport = () => {
       </div>
       {/* /.fancy-text-block-six  */}
 
-      <div className="counter-with-icon-one pt-200 md-pt-80">
+      {/* <div className="counter-with-icon-one pt-200 md-pt-80">
         <div className="container">
           <CounterThree />
         </div>
-      </div>
+      </div> */}
       {/* /.counter-with-icon-one */}
 
       {/* 
@@ -240,11 +244,10 @@ const CustomerSupport = () => {
                 <div className="text-details pt-35 md-pb-50">
                   <img src="images/icon/27.svg" alt="icon" className="icon" />
                   <h3 className="title font-gilroy-bold">
-                    Make communication Fast & efficient.
+                  chatbot- Smart Assistance, Right Now.
                   </h3>
                   <p className="text-meta">
-                    Our chatbots and live chat capture more ipsum of your best
-                    leads and convert them while they’re hot dummy text.
+                  Hello, your instant support assistant! Our chatbot is here to help you find what you are looking for, answer your questions quickly, and guide you through our crucial services.
                   </p>
                   <div className="quote-wrapper">
                     <div
@@ -258,12 +261,10 @@ const CustomerSupport = () => {
                       <img src="images/icon/28.svg" alt="icon" />
                     </div>
                     <blockquote>
-                      “Our team really feels great to use deski apps specially
-                      their quality”
+                      “Our team finds this platform to be extremely valuable due to its consistently high quality.”
                     </blockquote>
                     <div className="name">
-                      <strong>Micle Duke,</strong> Product Manager <br />
-                      Uber Inc.
+                      <strong>- A Happy User.</strong> 
                     </div>
                   </div>
                   {/* /.quote-wrapper */}
@@ -279,7 +280,7 @@ const CustomerSupport = () => {
               >
                 <div className="illustration-holder illustration-one">
                   <img
-                    src="images/assets/feature-img-09.png"
+                    src={Chatbot}
                     alt=""
                     className="ms-auto"
                   />
@@ -316,11 +317,10 @@ const CustomerSupport = () => {
                 <div className="text-details pt-35 md-pb-50">
                   <img src="images/icon/29.svg" alt="" className="icon" />
                   <h3 className="title font-gilroy-bold">
-                    Friendly user interface & easy to use.
+                  Client says- Witnessing Trust in Action: Client Stories
                   </h3>
                   <p className="text-meta">
-                    Deski stand with friendly interface with lots of features
-                    that help our team and csutomer to collbarate easily.
+                  Hello, your instant support assistant! Our chatbot is here to help you find what you are looking for, answer your questions quickly, and guide you through our crucial services.
                   </p>
                   <div className="quote-wrapper">
                     <div
@@ -331,15 +331,13 @@ const CustomerSupport = () => {
                         justify-content-center
                       "
                     >
-                      <img src="images/icon/28.svg" alt="icon" />
+                      <img src={Chat} alt="icon" />
                     </div>
                     <blockquote>
-                      “Our team really feels great to use deski apps specially
-                      their quality”
+                      “Our team finds this platform to be extremely valuable due to its consistently high quality. ”
                     </blockquote>
                     <div className="name">
-                      <strong>Micle Duke,</strong> Product Manager <br />
-                      Uber Inc.
+                      <strong>- A Happy User.</strong>
                     </div>
                   </div>
                   {/* /.quote-wrapper */}
@@ -355,7 +353,7 @@ const CustomerSupport = () => {
               >
                 <div className="illustration-holder illustration-two">
                   <img
-                    src="images/assets/feature-img-10.png"
+                    src={Chat}
                     alt=""
                     className="me-auto"
                   />

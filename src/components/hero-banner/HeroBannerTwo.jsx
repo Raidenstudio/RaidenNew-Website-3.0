@@ -1,94 +1,115 @@
 import React from "react";
-import Brand from "../brand/Brand";
+import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
-const HeroBannerTwo = () => {
+const socialContent = [
+  {
+    icon: "fa-facebook",
+    link: "https://www.facebook.com/",
+  },
+  {
+    icon: "fa-instagram",
+    link: "https://www.instagram.com/",
+  },
+  {
+    icon: "fa-pinterest-p",
+    link: "https://www.pinterest.com/",
+  },
+
+  {
+    icon: "fa-linkedin",
+    link: "https://www.linkedin.com/",
+  },
+];
+
+const ComingSoon = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
   };
   return (
-    <div className="hero-banner-two">
-      <div className="container">
-        <div className="row align-items-start justify-content-between">
-          <div className="col-lg-6 order-lg-last">
-            <div className="illustration-holder">
-              <img
-                src="images/assets/ils-01.png"
-                alt="shape"
-                className="illustration_01"
-              />
-              <img
-                src="images/assets/ils-01.1.png"
-                alt="shape"
-                className="shapes shape-one"
-              />
-              <img
-                src="images/assets/ils-01.2.png"
-                alt="shape"
-                className="shapes shape-two"
-              />
-              <img
-                src="images/assets/ils-01.3.png"
-                alt="shape"
-                className="shapes shape-three"
-              />
-            </div>
-          </div>
-
-          <div className="col-xl-5 col-lg-6 order-lg-first">
-            <div className="hero-text-wrapper md-mt-50">
-              <h1>
-                <span>
-                  Great ticketing
-                  <img
-                    src="images/shape/line-shape-1.svg"
-                    alt="shape"
-                    className="cs-screen"
-                  />
-                </span>
-                system for your customer.
-              </h1>
-              <p className="sub-text">
-                For hassale free event, we are here to help you by creating
-                online ticket.
-              </p>
-              <form onClick={handleSubmit}>
-                <input type="email" placeholder="Enter your email" />
-                <button>Get Started</button>
-              </form>
-              <ul className="list-item d-flex mt-20">
-                <li>Live chat</li>
-                <li>Ticketing</li>
-                <li>14 days free trial</li>
-              </ul>
-            </div>
-            {/* /.hero-text-wrapper */}
-          </div>
-        </div>
-        {/* /.row */}
-      </div>
-      {/* /.container */}
-
-      <div className="mt-65 md-mt-50 trusted-companies">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-12">
+    <>
+      <Helmet>
+        <title>
+          Appointment Scheduling || Deski-Saas & Software React Template
+        </title>
+      </Helmet>
+      {/* End Page SEO Content */}
+      <div className="full-height-layout d-flex align-items-center">
+        <div className="coming-soon-content font-gordita">
+          <h1 data-aos="fade-up">Ingenuity Unbound: Reimagined Digital World.</h1>
+          <div className="row">
+            <div className="col-lg-9 m-auto">
               <p>
-                Over <span>13,000+ Client</span> all over the world.
+              One pixel, one line of code at a time—where creativity ignites innovation.
               </p>
             </div>
-            <div className="col-12">
-              <div className="companies-logo-slider">
-                <Brand />
-              </div>
-            </div>
           </div>
-          {/* End .row */}
+{/* 
+          <ul className="social-icon d-flex justify-content-center">
+            {socialContent.map((val, i) => (
+              <li key={i}>
+                <a href={val.link} target="_blank" rel="noreferrer">
+                  <i className={`fa ${val.icon}`}></i>
+                </a>
+              </li>
+            ))}
+          </ul> */}
+
+          <img
+            src="images/shape/179.svg"
+            alt="shape"
+            className="shapes shape-one"
+          />
+          <img
+            src="images/shape/180.svg"
+            alt="shape"
+            className="shapes shape-two"
+          />
+          <img
+            src="images/shape/181.svg"
+            alt="shape"
+            className="shapes shape-three"
+          />
+          <img
+            src="images/shape/182.svg"
+            alt="shape"
+            className="shapes shape-four"
+          />
+          <img
+            src="images/shape/183.svg"
+            alt="shape"
+            className="shapes shape-five"
+          />
+          <img
+            src="images/shape/184.svg"
+            alt="shape"
+            className="shapes shape-six"
+          />
+          <img
+            src="images/shape/185.svg"
+            alt="shape"
+            className="shapes shape-seven"
+          />
+          <img
+            src="images/shape/186.svg"
+            alt="shape"
+            className="shapes shape-eight"
+          />
+          <img
+            src="images/shape/187.svg"
+            alt="shape"
+            className="shapes shape-nine"
+          />
+          <img
+            src="images/shape/188.svg"
+            alt="shape"
+            className="shapes shape-ten"
+          />
         </div>
+        {/* /.coming-soon-content */}
       </div>
-      {/*  /.trusted-companies */}
-    </div>
-    // End .hero-banner-two
+    </>
   );
 };
 
-export default HeroBannerTwo;
+export default ComingSoon;

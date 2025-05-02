@@ -27,7 +27,7 @@ const CounterThree = () => {
   const [focus, setFocus] = React.useState(false);
   return (
     <div className="row justify-content-center">
-      {counterUpContent.map((val, i) => (
+      {/* {counterUpContent.map((val, i) => (
         <div
           className="col-lg-4 col-6"
           data-aos="fade-up"
@@ -65,7 +65,7 @@ const CounterThree = () => {
             <p className="font-rubik">{val.meta}</p>
           </div>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };

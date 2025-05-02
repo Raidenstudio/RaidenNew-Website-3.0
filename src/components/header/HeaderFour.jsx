@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import MegaMenu from "./mega-menu/MegaMenu";
 import MegaMenuMobile from "./mega-menu/MegaMenuMobile";
+import LogoImage from "../../assets/images/assets/LogoImage.png";
 
 const HeaderFour = () => {
   const [navbar, setNavbar] = useState(false);
@@ -28,7 +29,7 @@ const HeaderFour = () => {
         <div className="d-flex align-items-center justify-content-between">
           <div className="logo">
             <Link to="/">
-              <img src="images/logo/deski_05.svg" alt="brand logo" />
+              <img src={LogoImage} alt="brand logo" />
             </Link>
           </div>
           {/* End Logo */}
