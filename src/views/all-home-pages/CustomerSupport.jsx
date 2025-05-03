@@ -14,6 +14,12 @@ import CopyRightTwo from "../../components/footer/CopyRightTwo";
 import Choose from "../../assets/images/assets/Home page (1).png";
 import Chatbot from "../../assets/images/assets/Group 6.png";
 import Chat from "../../assets/images/assets/Group 7.png";
+import Profile1 from "../../assets/images/assets/Profile 1.png";
+import Profile2 from "../../assets/images/assets/Profile 2.png";
+import Profile3 from "../../assets/images/assets/Profile 3.png";
+import Profile4 from "../../assets/images/assets/Profile 4.png";
+import Profile5 from "../../assets/images/assets/Profile 5.png";
+import Header from "../../components/e-commerce/Header";
 
 const CustomerSupport = () => {
   return (
@@ -26,7 +32,7 @@ const CustomerSupport = () => {
       {/* =============================================
 		   Start Header
 		   ============================================== */}
-      <HeaderTwo />
+      <Header />
       {/* End HeaderTwo Variation Three */}
 
       {/* =============================================
@@ -53,17 +59,17 @@ const CustomerSupport = () => {
           <div className="container">
             <div className="title-style-two text-center mb-100 md-mb-50">
               <div className="row">
-              <div className="col-xl-8 col-lg-9 col-md-10 m-auto">
-  <h2>
-    <span style={{ display: "block", whiteSpace: "nowrap" }}>
-      We unlock a meaningful
-    </span>
-    <span style={{ display: "block" }}>
-      experience.{" "}
-      <img src="images/shape/line-shape-2.svg" alt="shape" />
-    </span>
-  </h2>
-</div>
+                <div className="col-xl-8 col-lg-9 col-md-10 m-auto">
+                  <h2>
+                    <span style={{ display: "block", whiteSpace: "nowrap" }}>
+                      We unlock a meaningful
+                    </span>
+                    <span style={{ display: "block" }}>
+                      experience.{" "}
+                      <img src="images/shape/line-shape-2.svg" alt="shape" />
+                    </span>
+                  </h2>
+                </div>
 
                 {/* End .col */}
               </div>
@@ -94,7 +100,7 @@ const CustomerSupport = () => {
 				Fancy Text Block Six
 		============================================== */}
       <div className="fancy-text-block-six mt-250 md-mt-130">
-        <div className="container">
+        <div className="container position-relative">
           <div className="row">
             <div
               className="col-lg-6"
@@ -120,7 +126,7 @@ const CustomerSupport = () => {
         {/* End .container */}
 
         <div
-          className="img-meta-container"
+          className="img-meta-container position-absolute -top-2"
           data-aos="fade-left"
           data-aos-duration="1200"
           data-aos-delay="100"
@@ -222,9 +228,10 @@ const CustomerSupport = () => {
               <div className="col-xl-8 col-lg-9 col-md-10 m-auto">
                 <p>Features</p>
                 <h2>
-                  Use deski to drive growth at
+                  Discover the Impact
                   <span>
-                    your business.
+                    <br />
+                    We've Made
                     <img src="images/shape/line-shape-2.svg" alt="shape" />
                   </span>
                 </h2>
@@ -244,10 +251,10 @@ const CustomerSupport = () => {
                 <div className="text-details pt-35 md-pb-50">
                   <img src="images/icon/27.svg" alt="icon" className="icon" />
                   <h3 className="title font-gilroy-bold">
-                  Smart Assistance, Right Now.
+                    Smart Assistance, Right Now.
                   </h3>
                   <p className="text-meta">
-                  Hello, your instant support assistant! Our chatbot is here to help you find what you are looking for, answer your questions quickly, and guide you through our crucial services.
+                    Hello, your instant support assistant! Our chatbot is here to help you find what you are looking for, answer your questions quickly, and guide you through our crucial services.
                   </p>
                   <div className="quote-wrapper">
                     <div
@@ -264,7 +271,7 @@ const CustomerSupport = () => {
                       “Our team finds this platform to be extremely valuable due to its consistently high quality.”
                     </blockquote>
                     <div className="name">
-                      <strong>- A Happy User.</strong> 
+                      <strong>- A Happy User.</strong>
                     </div>
                   </div>
                   {/* /.quote-wrapper */}
@@ -317,10 +324,10 @@ const CustomerSupport = () => {
                 <div className="text-details pt-35 md-pb-50">
                   <img src="images/icon/29.svg" alt="" className="icon" />
                   <h3 className="title font-gilroy-bold">
-                  Witnessing Trust in Action: Client Stories
+                    Witnessing Trust in Action: Client Stories
                   </h3>
                   <p className="text-meta">
-                  Beyond traditional therapy, COGNI+ is helping ASD understand and accept society, providing holistic support for a more fulfilling life.
+                    Beyond traditional therapy, COGNI+ is helping ASD understand and accept society, providing holistic support for a more fulfilling life.
                   </p>
                   <div className="quote-wrapper">
                     <div
@@ -384,39 +391,7 @@ const CustomerSupport = () => {
       {/*=====================================================
 				Useable Tools
 			===================================================== */}
-      <div className="useable-tools-section-two bg-shape mb-200 md-mb-90">
-        <div className="bg-wrapper">
-          <div className="shapes shape-one"></div>
-          <div className="shapes shape-two"></div>
-          <div className="shapes shape-three"></div>
-          <div className="shapes shape-four"></div>
-          <div className="container">
-            <div className="title-style-two text-center mb-70 md-mb-10">
-              <div className="row">
-                <div className="col-lg-10 col-md-11 m-auto">
-                  <p>Integrates with your tools</p>
-                  <h2>
-                    Connect deski with the software you
-                    <span>
-                      use every
-                      <img src="images/shape/line-shape-2.svg" alt="" />
-                    </span>
-                    day.
-                  </h2>
-                </div>
-              </div>
-            </div>
-            {/*  /.title-style-two */}
 
-            <div className="icon-wrapper">
-              <Social />
-            </div>
-            {/* /.icon-wrapper */}
-          </div>
-          {/* /.container */}
-        </div>
-        {/* /.bg-wrapper */}
-      </div>
       {/* /.useable-tools-section-two */}
 
       {/* 	=====================================================
@@ -426,35 +401,35 @@ const CustomerSupport = () => {
         <div className="shapes-holder">
           <img src="images/shape/39.svg" alt="shape" />
           <img
-            src="images/shape/42.svg"
+            src={Profile1}
             alt="shape"
             className="shapes shape-one"
           />
           <img
-            src="images/media/img_21.png"
+            src={Profile2}
             alt="shape"
             className="cp-img-one"
           />
           <img
-            src="images/media/img_22.png"
+            src={Profile3}
             alt="shape"
             className="cp-img-two"
           />
           <img
-            src="images/media/img_23.png"
+            src={Profile4}
             alt="shape"
             className="cp-img-three"
           />
           <img
-            src="images/media/img_24.png"
+            src={Profile5}
             alt="shape"
             className="cp-img-four"
           />
           <div className="title-style-two">
             <h2>
-              What’s <br />
-              Our Client Say <br />
-              About Us.
+              Hear <br />
+              From Our  <br />
+              Clients.
             </h2>
           </div>
         </div>

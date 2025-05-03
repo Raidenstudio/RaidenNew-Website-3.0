@@ -2,6 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Profile2 from "../../assets/images/assets/Profile 2.png";
+import Profile3 from "../../assets/images/assets/Profile 3.png";
 
 export default function Testimonial() {
   const settings = {
@@ -17,16 +19,16 @@ export default function Testimonial() {
 
   const TestimonilContent = [
     {
-      desc: ` Having a home based business is a wonderful asset to your life. The problem still stands it comes time advertise your business for a cheap cost. I know you have looked answer everywhere.`,
-      reviewerImg: "img_20",
-      reviewerName: "Jannatul Ekra",
-      designation: "Designer",
+      desc: `We cherish the solid bond we have established with Raiden. Their team's commitment and understanding of our requirements have made them a reliable collaborator.`,
+      reviewerImg: Profile2,
+      reviewerName: "Haritha Baskar",
+      designation: "Client",
     },
     {
-      desc: `Having a home based business is a wonderful asset to your life. The problem still stands it comes time advertise your business for a cheap cost. I know you have looked answer everywhere.`,
-      reviewerImg: "img_20",
-      reviewerName: "Bostami Hasan",
-      designation: "Front-end Engineer",
+      desc: `Raiden's cost-effectiveness, combined with the results we have achieved, makes them an excellent choice.`,
+      reviewerImg: Profile3,
+      reviewerName: "Julian Alric",
+      designation: "Client",
     },
   ];
 
@@ -42,7 +44,7 @@ export default function Testimonial() {
           <p className="font-rubik">{val.desc}</p>
           <div className="d-lg-flex align-items-center">
             <img
-              src={`images/media/${val.reviewerImg}.png`}
+              src={val.reviewerImg}
               alt=""
               className="c_img"
             />
