@@ -16,9 +16,9 @@ const featuresContent = [
     delayAnimation: "100",
   },
   {
-    icon: null, // fallback for no image
-    title: "Fast Support",
-    desc: `Elit esse cillum dolore eu fugiat nulla pariatur lorem elit`,
+    icon: GameLogic,
+    title: "Blockchain secured",
+    desc: `Making gaming adventure accessible and secure with blockchain technology.`,
     delayAnimation: "200",
   },
 ];

@@ -17,7 +17,7 @@ const FeatureContent = [
   {
     icon: Tokenization,
     meta: "Asset tokenization",
-    subTitle: `Secures your ownership of gaming assets and NFT tokens.`,
+    subTitle: `Certifies your ownership of gaming assets and NFTs or fungible tokens.`,
     dataDelay: "100",
   },
   {
@@ -40,7 +40,7 @@ const FeatureContent = [
   },
   {
     icon: Implementation,
-    meta: "Interoperability implementation",
+    meta: "Interoperability setup",
     subTitle: `Enabling various blockchain networks to work together by allowing assets and data to flow across platforms.`,
     dataDelay: "100",
   },
