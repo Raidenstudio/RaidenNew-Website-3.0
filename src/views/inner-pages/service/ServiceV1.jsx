@@ -124,7 +124,7 @@ const ServiceV1 = () => {
       {/* =====================================================
             Counter With Icon One
         ===================================================== */}
-      <div className="counter-with-icon-one pt-120 md-pt-70">
+      <div className="counter-with-icon-one md-pt-70">
         <div className="container">
           <CounterThree />
         </div>
