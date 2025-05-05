@@ -1,21 +1,22 @@
 import React from "react";
+import GameLogic from "../../assets/images/assets/Smart Contract Game Logic.svg";
+import Framework from "../../assets/images/assets/Cross-Platform Asset.svg";
 
 const featuresContent = [
   {
-    icon: "171",
-    title: "Daily Updates",
-    desc: `Elit esse cillum dolore eu fugiat nulla pariatur lorem elit`,
+    icon: Framework,
+    title: "Smart Contract Game Logic",
+    desc: `On-chain gameplay via smart contracts for transparent, tamper-proof gaming.`,
     delayAnimation: "",
   },
   {
-    icon: "172",
-    title: "Easu Cutomization",
-    desc: ` Nulla vitae elit libero, a pharetra augue. Donec id elit non mi
-      porta.`,
+    icon: GameLogic,
+    title: "Cross-Platform Framework",
+    desc: `Our setup boosts asset mobility and player value in blockchain games.`,
     delayAnimation: "100",
   },
   {
-    icon: "173",
+    icon: null, // fallback for no image
     title: "Fast Support",
     desc: `Elit esse cillum dolore eu fugiat nulla pariatur lorem elit`,
     delayAnimation: "200",
@@ -33,9 +34,11 @@ const FancyFeatureThirtyThree = () => {
           key={i}
         >
           <div className="block-style-thirtyThree pe-lg-5 mt-40">
-            <div className="icon">
-              <img src={`images/icon/${val.icon}.svg`} alt="icon" />
-            </div>
+            {val.icon && (
+              <div className="icon">
+                <img src={val.icon} alt="icon" />
+              </div>
+            )}
             <h3 className="title">
               <span>{val.title}</span>
             </h3>

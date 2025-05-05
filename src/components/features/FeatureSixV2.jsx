@@ -1,41 +1,47 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Design from "../../assets/images/assets/Blockchain architecture.svg";
+import Tokenization from "../../assets/images/assets/Asset tokenization.svg";
+import Offchain from "../../assets/images/assets/Off-chain solution.svg";
+import Protocol from "../../assets/images/assets/Protocol implementation.svg";
+import Gameplay from "../../assets/images/assets/decentralized (1).svg";
+import Implementation from "../../assets/images/assets/interoperability.svg";
 
 const FeatureContent = [
   {
-    icon: "20",
-    meta: "Smart popups",
-    subTitle: `Create customized popups and show the message at the lorem`,
+    icon: Design,
+    meta: "Blockchain architecture design",
+    subTitle: `Secure, immutable smart contracts enable automated, transparent, decentralized applications.`,
     dataDelay: "0",
   },
   {
-    icon: "21",
-    meta: "Embeded Forms",
-    subTitle: `Collect website leads with embedded forms and integrate easily.`,
+    icon: Tokenization,
+    meta: "Asset tokenization",
+    subTitle: `Secures your ownership of gaming assets and NFT tokens.`,
     dataDelay: "100",
   },
   {
-    icon: "22",
-    meta: "Autoresponder",
-    subTitle: `Send welcome email to your new subscribers with a code.`,
+    icon: Protocol,
+    meta: "Protocol implementation",
+    subTitle: `Supplying unique protocols to integrate blockchain technology and facilitate game interaction.`,
     dataDelay: "0",
   },
   {
-    icon: "21",
-    meta: "Embeded Forms",
-    subTitle: `Collect website leads with embedded forms and integrate easily.`,
+    icon: Gameplay,
+    meta: "Decentralized gameplay logic",
+    subTitle: `Utilizes blockchain for accurate execution of game rules and assets, promoting player control and security.`,
     dataDelay: "100",
   },
   {
-    icon: "22",
-    meta: "Autoresponder",
-    subTitle: `Send welcome email to your new subscribers with a code.`,
+    icon: Offchain,
+    meta: "Off-chain solution integration",
+    subTitle: `Adds a database to improve stability and growth while preserving safe network communication.`,
     dataDelay: "0",
   },
   {
-    icon: "20",
-    meta: "Smart popups",
-    subTitle: `Create customized popups and show the message at the lorem`,
+    icon: Implementation,
+    meta: "Interoperability implementation",
+    subTitle: `Enabling various blockchain networks to work together by allowing assets and data to flow across platforms.`,
     dataDelay: "100",
   },
 ];
@@ -53,7 +59,7 @@ const FeatureSixV2 = () => {
         >
           <Link to="/service-details" className="block-style-five">
             <div className="icon">
-              <img src={`images/icon/${val.icon}.svg`} alt="icon" />
+              <img src={val.icon} alt="icon" />
             </div>
             <h6 className="title">
               <span>{val.meta}</span>

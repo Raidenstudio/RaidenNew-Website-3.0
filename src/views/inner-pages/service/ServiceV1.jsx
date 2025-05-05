@@ -8,6 +8,7 @@ import CopyRightTwo from "../../../components/footer/CopyRightTwo";
 import FeatureSixV2 from "../../../components/features/FeatureSixV2";
 import CallToActionThree from "../../../components/call-to-action/CallToActionThree";
 import FancyFeatureThirtyThree from "../../../components/features/FancyFeatureThirtyThree";
+import FancyFeatureThirtyFour from "../../../components/features/FancyFeatureThirtyFour";
 
 const ServiceV1 = () => {
   return (
@@ -34,10 +35,16 @@ const ServiceV1 = () => {
           <div className="container">
             <div className="row">
               <div className="col-xl-9 col-lg-10 m-auto">
-                <h1 className="heading">Our Services</h1>
+              <h1 className="heading">
+  <span style={{ fontSize: "0.8em" }}>
+    Forging the Playable Realities on the Bedrock of
+  </span>{" "}
+  <span style={{ fontSize: "1.2em", color: "#000", fontWeight: "bold" }}>
+    Blockchain
+  </span>
+</h1>
                 <p className="sub-heading">
-                  deski helps teams of all sizes get better at delivering
-                  effortless customer
+                Strap in - your adventurous game journey begins, where code extends life and blockchain locks it in.
                 </p>
               </div>
             </div>
@@ -82,13 +89,11 @@ const ServiceV1 = () => {
             <div className="title-style-two text-center mb-85 md-mb-40">
               <h2>
                 <span>
-                  Explore Services
-                  <img src="images/shape/line-shape-2.svg" alt="shape" />
+                The Game Creation Approach
                 </span>
               </h2>
               <div className="sub-text mt-15">
-                Get to know all deski features, that are part of the complex
-                multi-channel
+              Our five years of experience developing blockchain solutions and continuously refining our process to keep up with this evolving technology.
               </div>
             </div>
             {/* End .title */}
@@ -101,62 +106,17 @@ const ServiceV1 = () => {
       {/* =====================================================
             Fancy Text block Twelve
         ===================================================== */}
-      <div className="fancy-text-block-twelve mt-170 md-mt-100">
+      <div className="fancy-feature-thirtyOne pt-120  md-pt-80 md-pb-100">
         <div className="container">
           <div className="row">
-            <div
-              className="col-lg-6"
-              data-aos="fade-right"
-              data-aos-duration="1200"
-            >
-              <div className="text-wrapper">
-                <div className="title-style-three">
-                  <h6>Why us?</h6>
-                  <h2>
-                    <span>
-                      Why your should
-                      <img src="images/shape/line-shape-6.svg" alt="" />
-                    </span>
-                    choose deski.
-                  </h2>
-                </div>
-                <p className="sub-text pb-35">
-                  A ticketing system is a tool, primarily for customer service.
-                  It helps customer representativ inquiries from one interface
-                  without any struggles.
-                </p>
-                <ul className="list-item-one">
-                  <li>Amazing communication.</li>
-                  <li>Best trendinf designing experience.</li>
-                  <li>Email & Live chat.</li>
-                </ul>
+            <div className="col-lg-8 m-auto">
+              <div className="title-style-four text-center pb-50 md-pb-20">
+                <h2>Blockchain game development services</h2>
               </div>
-              {/* <!-- /.text-wrapper --> */}
             </div>
-            {/* End .col-6 */}
-
-            <div
-              className="col-lg-5 ms-auto"
-              data-aos="fade-left"
-              data-aos-duration="1200"
-            >
-              <div className="img-gallery">
-                <img src="images/media/img_37.png" alt="" />
-                <img
-                  src="images/shape/53.svg"
-                  alt="shape"
-                  className="shapes shape-one"
-                />
-                <img
-                  src="images/shape/52.svg"
-                  alt="shape"
-                  className="shapes shape-two"
-                />
-              </div>
-              {/* <!-- /.img-gallery --> */}
-            </div>
-            {/* End col-lg-5 */}
           </div>
+          {/* End .row */}
+          <FancyFeatureThirtyFour />
         </div>
       </div>
       {/* <!-- /.fancy-text-block-twelve --> */}
