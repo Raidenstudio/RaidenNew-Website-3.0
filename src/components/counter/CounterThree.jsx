@@ -2,7 +2,7 @@ import React from "react";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 
-const counterUpContent = [
+const counterUpContent = [  
   {
     icon: "23",
     startCount: "0",
