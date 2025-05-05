@@ -165,22 +165,22 @@ const Services = [
     name: "Service Version 01",
     routerPath: "service-v1",
   },
-  {
-    name: "Service Version 02",
-    routerPath: "service-v2",
-  },
-  {
-    name: "Service Version 03",
-    routerPath: "service-v3",
-  },
-  {
-    name: "Service Version 04",
-    routerPath: "service-v4",
-  },
-  {
-    name: "Service Details",
-    routerPath: "service-details",
-  },
+  // {
+  //   name: "Service Version 02",
+  //   routerPath: "service-v2",
+  // },
+  // {
+  //   name: "Service Version 03",
+  //   routerPath: "service-v3",
+  // },
+  // {
+  //   name: "Service Version 04",
+  //   routerPath: "service-v4",
+  // },
+  // {
+  //   name: "Service Details",
+  //   routerPath: "service-details",
+  // },
 ];
 const Miscellaneous = [
   {
@@ -285,16 +285,19 @@ const Sidebar = () => {
       <ProSidebar>
         <SidebarContent>
           <Menu>
-            <SubMenu title="Home">
-              {HomeMobileMenu.map((val, i) => (
+            {/* <SubMenu title="Home"> */}
+            {/* {HomeMobileMenu.map((val, i) => (
                 <MenuItem key={i}>
                   <Link to={val.routerPath}>{val.name}</Link>
                 </MenuItem>
-              ))}
-            </SubMenu>
+              ))} */}
+            {/* </SubMenu> */}
+            <MenuItem>
+              <Link to="/">Home</Link>
+            </MenuItem>
             {/* End Home SubMenu */}
 
-            <SubMenu title="Pages">
+            {/* <SubMenu title="Pages">
               <SubMenu title="Pricing" className="plus alt">
                 {Pricing.map((val, i) => (
                   <MenuItem key={i}>
@@ -309,27 +312,27 @@ const Sidebar = () => {
                     <Link to={val.routerPath}>{val.name}</Link>
                   </MenuItem>
                 ))}
-              </SubMenu>
-              {/* End About SubMenu */}
+              </SubMenu> */}
+            {/* End About SubMenu */}
 
-              <SubMenu title="Contact Us" className="plus alt">
+            {/* <SubMenu title="Contact Us" className="plus alt">
                 {ContactUs.map((val, i) => (
                   <MenuItem key={i}>
                     <Link to={val.routerPath}>{val.name}</Link>
                   </MenuItem>
                 ))}
-              </SubMenu>
-              {/* End Contact Us SubMenu */}
+              </SubMenu> */}
+            {/* End Contact Us SubMenu */}
 
-              <SubMenu title="Team" className="plus alt">
+            {/* <SubMenu title="Team" className="plus alt">
                 {Team.map((val, i) => (
                   <MenuItem key={i}>
                     <Link to={val.routerPath}>{val.name}</Link>
                   </MenuItem>
                 ))}
-              </SubMenu>
-              {/* End Team SubMenu */}
-              <MenuItem>
+              </SubMenu> */}
+            {/* End Team SubMenu */}
+            {/* <MenuItem>
                 {" "}
                 <Link to="/faq"> FAQ</Link>
               </MenuItem>
@@ -337,7 +340,7 @@ const Sidebar = () => {
                 {" "}
                 <Link to="/faq-details"> Faq Details</Link>
               </MenuItem>
-            </SubMenu>
+            </SubMenu> */}
             {/* End Pages SubMenu */}
 
             <SubMenu title="Features">
@@ -349,15 +352,15 @@ const Sidebar = () => {
                 ))}
               </SubMenu>
               {/* End Services SubMenu */}
-              <SubMenu title="Miscellaneous" className="plus alt">
+              {/* <SubMenu title="Miscellaneous" className="plus alt">
                 {Miscellaneous.map((val, i) => (
                   <MenuItem key={i}>
                     <Link to={val.routerPath}>{val.name}</Link>
                   </MenuItem>
                 ))}
-              </SubMenu>
+              </SubMenu> */}
               {/* End Miscellaneous SubMenu */}
-              <MenuItem>
+              {/* <MenuItem>
                 {" "}
                 <Link to="/solution-management" className="dropdown-item">
                   Our Solution
@@ -374,39 +377,39 @@ const Sidebar = () => {
                 <Link to="/features-customer-support" className="dropdown-item">
                   Our Features
                 </Link>
-              </MenuItem>
+              </MenuItem> */}
             </SubMenu>
             {/* End Feautres SubMenu */}
-
+            {/* 
             <SubMenu title="Portfolio">
               {Portfolio.map((val, i) => (
                 <MenuItem key={i}>
                   <Link to={val.routerPath}>{val.name}</Link>
                 </MenuItem>
               ))}
-            </SubMenu>
+            </SubMenu> */}
             {/* End Portfolio SubMenu */}
 
-            <SubMenu title="Blogs">
+            {/* <SubMenu title="Blogs">
               {Blogs.map((val, i) => (
                 <MenuItem key={i}>
                   <Link to={val.routerPath}>{val.name}</Link>
                 </MenuItem>
               ))}
-            </SubMenu>
+            </SubMenu> */}
             {/* End Blogs SubMenu */}
 
-            <SubMenu title="Docs">
+            {/* <SubMenu title="Docs">
               {Docs.map((val, i) => (
                 <MenuItem key={i}>
                   <Link to={val.routerPath}>{val.name}</Link>
                 </MenuItem>
               ))}
-            </SubMenu>
+            </SubMenu> */}
             {/* End Docs SubMenu */}
-            <MenuItem>
+            {/* <MenuItem>
               <Link to="/login">Login</Link>
-            </MenuItem>
+            </MenuItem> */}
           </Menu>
         </SidebarContent>
       </ProSidebar>

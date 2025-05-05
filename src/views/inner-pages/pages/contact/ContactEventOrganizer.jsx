@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import HeaderTwo from "../../../../components/header/HeaderFour";
+import HeaderTwo from "../../../../components/header/Header";
 import ContactAddress from "../../../../components/contact/address/ContactAddress";
 import ContactForm from "../../../../components/contact/form/ContactForm";
 import FooterFour from "../../../../components/footer/FooterFour";

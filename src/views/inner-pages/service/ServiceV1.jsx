@@ -1,6 +1,5 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import HeaderTwo from "../../../components/header/HeaderTwo";
 import FancyVideoFive from "../../../components/video/FancyVideoFive";
 import CounterThree from "../../../components/counter/CounterThree";
 import FooterTwo from "../../../components/footer/FooterTwo";
@@ -9,6 +8,7 @@ import FeatureSixV2 from "../../../components/features/FeatureSixV2";
 import CallToActionThree from "../../../components/call-to-action/CallToActionThree";
 import FancyFeatureThirtyThree from "../../../components/features/FancyFeatureThirtyThree";
 import FancyFeatureThirtyFour from "../../../components/features/FancyFeatureThirtyFour";
+import Header from "../../../components/e-commerce/Header";
 
 const ServiceV1 = () => {
   return (
@@ -18,7 +18,7 @@ const ServiceV1 = () => {
       </Helmet>
       {/* End Page SEO Content */}
 
-      <HeaderTwo />
+      <Header />
       {/* End Header */}
 
       {/* 	=============================================
@@ -35,16 +35,16 @@ const ServiceV1 = () => {
           <div className="container">
             <div className="row">
               <div className="col-xl-9 col-lg-10 m-auto">
-              <h1 className="heading">
-  <span style={{ fontSize: "0.8em" }}>
-    Forging the Playable Realities on the Bedrock of
-  </span>{" "}
-  <span style={{ fontSize: "1.2em", color: "#000", fontWeight: "bold" }}>
-    Blockchain
-  </span>
-</h1>
+                <h1 className="heading">
+                  <span style={{ fontSize: "0.8em" }}>
+                    Forging the Playable Realities on the Bedrock of
+                  </span>{" "}
+                  <span style={{ fontSize: "1.2em", color: "#000", fontWeight: "bold" }}>
+                    Blockchain
+                  </span>
+                </h1>
                 <p className="sub-heading">
-                Strap in - your adventurous game journey begins, where code extends life and blockchain locks it in.
+                  Strap in - your adventurous game journey begins, where code extends life and blockchain locks it in.
                 </p>
               </div>
             </div>
@@ -89,11 +89,11 @@ const ServiceV1 = () => {
             <div className="title-style-two text-center mb-85 md-mb-40">
               <h2>
                 <span>
-                The Game Creation Approach
+                  The Game Creation Approach
                 </span>
               </h2>
               <div className="sub-text mt-15">
-              Our five years of experience developing blockchain solutions and continuously refining our process to keep up with this evolving technology.
+                Our five years of experience developing blockchain solutions and continuously refining our process to keep up with this evolving technology.
               </div>
             </div>
             {/* End .title */}

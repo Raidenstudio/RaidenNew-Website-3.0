@@ -36,15 +36,15 @@ const Header = () => {
         </div>
 
         <div className="right-widget d-flex align-items-center">
-          <Link
+          {/* <Link
             to="/login"
             className="signIn-action d-none d-sm-flex align-items-center"
           >
             <img src="images/icon/199.svg" alt="icon" className="me-2" />
             <span>login</span>
-          </Link>
+          </Link> */}
 
-          <div className="cart-group-wrapper position-relative">
+          {/* <div className="cart-group-wrapper position-relative">
             <button
               className="btn dropdown-toggle"
               type="button"
@@ -58,7 +58,7 @@ const Header = () => {
             >
               <CartDropdown />
             </div>
-          </div>
+          </div> */}
           {/* End .cart-group-wrapper */}
 
           <button className="sidebar-nav-button" onClick={handleClick2}>
@@ -71,7 +71,7 @@ const Header = () => {
           >
             <div className="offcanvas-header d-flex justify-content-between align-items-center">
               <div className="logo">
-                <Link to="/e-commerce" className="d-block">
+                <Link to="/" className="d-block">
                   <img src="images/logo/deski_10.svg" alt="brand" />
                 </Link>
               </div>

@@ -104,11 +104,11 @@ const AllRoutes = () => {
     <>
       <ScrollTopBehaviour />
       <Routes>
-        <Route path="/" element={<EventOrganizer />} />
+        <Route path="/eventOrganizer" element={<EventOrganizer />} />
         <Route path="/doc-landing" element={<DocLanding />} />
         <Route path="/doc-signature" element={<DocSignatureLanding />} />
         <Route path="/project-management" element={<ProjectManagement />} />
-        <Route path="/customer-support" element={<CustomerSupport />} />
+        <Route path="/" element={<CustomerSupport />} />
         <Route path="/product-landing" element={<ProductLanding />} />
         <Route path="/product-landing-dark" element={<ProductLandingDark />} />
         <Route path="/note-taking-landing" element={<NoteTakingLanding />} />
