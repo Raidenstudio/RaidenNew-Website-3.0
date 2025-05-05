@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "photoswipe/dist/photoswipe.css";
 import "bootstrap/dist/js/bootstrap";
+import { ProSidebarProvider } from "react-pro-sidebar"; // Import the provider
 
 const App = () => {
   useEffect(() => {
@@ -44,7 +45,9 @@ const App = () => {
       <ScrollToTop />
       {/* End Scroll top */}
 
-      <AllRoutes />
+      <ProSidebarProvider>
+        <AllRoutes />
+      </ProSidebarProvider>
     </>
   );
 };

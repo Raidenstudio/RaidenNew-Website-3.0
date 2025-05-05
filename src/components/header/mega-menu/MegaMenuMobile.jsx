@@ -1,446 +1,207 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "react-pro-sidebar/dist/css/styles.css";
 import {
-  ProSidebar,
-  SidebarHeader,
+  Sidebar,
   Menu,
   MenuItem,
   SubMenu,
-  SidebarContent,
+  useProSidebar
 } from "react-pro-sidebar";
 
-const HomeMobileMenu = [
-  {
-    name: "Event Organiser",
-    routerPath: "/",
+const menuData = {
+  home: [
+    { name: "Event Organiser", path: "/" },
+    { name: "Project Management", path: "/project-management" },
+    { name: "Customer Support", path: "/customer-support" },
+    { name: "Doc landing", path: "/doc-landing" },
+    { name: "Product landing", path: "/product-landing" },
+    { name: "Product landing Dark", path: "/product-landing-dark" },
+    { name: "Note Taking App landing", path: "/note-taking-landing" },
+    { name: "Video Editor Landing", path: "/video-editor-landing" },
+    { name: "Appointment Scheduling", path: "/appointment-scheduling" },
+    { name: "Mobile App", path: "/mobile-app-landing" },
+    { name: "Doc Signature", path: "/doc-signature" },
+    { name: "Website Builder", path: "/website-builder" },
+    { name: "Form Survey", path: "/form-survey-landing" },
+    { name: "VR Landing", path: "/vr-landing" },
+    { name: "E-Commerce", path: "/e-commerce" },
+    { name: "Coming Soon", path: "/coming-soon" },
+  ],
+  pages: {
+    pricing: [
+      { name: "Customer Support", path: "/pricing-cs" },
+      { name: "Event Organiser", path: "/pricing-eo" },
+      { name: "Project Management", path: "/pricing-pm" },
+    ],
+    about: [
+      { name: "Customer Support", path: "/about-cs" },
+      { name: "Event Organiser", path: "/about-eo" },
+      { name: "Project Management", path: "/about-pm" },
+      { name: "Documentation", path: "/about-doc" },
+    ],
+    contact: [
+      { name: "Custom Support", path: "/contact-cs" },
+      { name: "Event Organizer", path: "/contact-eo" },
+      { name: "Project Management", path: "/contact-pm" },
+      { name: "Documentation", path: "/contact-doc" },
+    ],
+    team: [
+      { name: "Team Version 01", path: "/team-1" },
+      { name: "Team Version 02", path: "/team-2" },
+      { name: "Team Version 03", path: "/team-3" },
+      { name: "Team Version 04", path: "/team-4" },
+      { name: "Team Version 05", path: "/team-5" },
+      { name: "Team Version 06", path: "/team-6" },
+      { name: "Team Details", path: "/team-details-v1" },
+      { name: "Team Details Slider", path: "/team-details-v2" },
+    ],
+    faq: [
+      { name: "FAQ", path: "/faq" },
+      { name: "FAQ Details", path: "/faq-details" },
+    ],
   },
-  {
-    name: "Project Management",
-    routerPath: "/project-management",
+  features: {
+    services: [
+      { name: "Service Version 01", path: "/service-v1" },
+      { name: "Service Version 02", path: "/service-v2" },
+      { name: "Service Version 03", path: "/service-v3" },
+      { name: "Service Version 04", path: "/service-v4" },
+      { name: "Service Details", path: "/service-details" },
+    ],
+    miscellaneous: [
+      { name: "Terms & Condition", path: "/terms-conditions" },
+      { name: "Login", path: "/login" },
+      { name: "Signup", path: "/signup" },
+      { name: "404", path: "/404" },
+    ],
+    solutions: [
+      { name: "Our Solution", path: "/solution-management" },
+      { name: "Product Feature", path: "/product-customer-support" },
+      { name: "Our Features", path: "/features-customer-support" },
+    ],
   },
-  {
-    name: "Customer Support",
-    routerPath: "/customer-support",
-  },
-  {
-    name: "Doc landing",
-    routerPath: "/doc-landing",
-  },
-  {
-    name: "Product landing",
-    routerPath: "/product-landing",
-  },
-  {
-    name: "Product landing Dark",
-    routerPath: "/product-landing-dark",
-  },
-  {
-    name: "Note Taking App landing",
-    routerPath: "/note-taking-landing",
-  },
-  {
-    name: "Video Editor Landing",
-    routerPath: "/video-editor-landing",
-  },
-  {
-    name: "Appointment Scheduling",
-    routerPath: "/appointment-scheduling",
-  },
-  {
-    name: "Mobile App",
-    routerPath: "/mobile-app-landing",
-  },
-  {
-    name: "Doc Signature",
-    routerPath: "/doc-signature",
-  },
-  {
-    name: "Website Builder",
-    routerPath: "/website-builder",
-  },
-  {
-    name: "Form Survey",
-    routerPath: "/form-survey-landing",
-  },
-  {
-    name: "VR Landing",
-    routerPath: "/vr-landing",
-  },
-  {
-    name: "E-Commerce",
-    routerPath: "/e-commerce",
-  },
-  {
-    name: "Coming Soon",
-    routerPath: "/coming-soon",
-  },
-];
-
-const Pricing = [
-  {
-    name: "Customer Support",
-    routerPath: "/pricing-cs",
-  },
-  {
-    name: "Event Organiser",
-    routerPath: "/pricing-eo",
-  },
-  {
-    name: "Project Management",
-    routerPath: "/pricing-pm",
-  },
-];
-const AboutUs = [
-  {
-    name: "Customer Support",
-    routerPath: "/about-cs",
-  },
-  {
-    name: "Event Organiser",
-    routerPath: "/about-eo",
-  },
-  {
-    name: "Project Management",
-    routerPath: "/about-pm",
-  },
-  {
-    name: "Documentation",
-    routerPath: "/about-doc",
-  },
-];
-const ContactUs = [
-  {
-    name: "Custom Support",
-    routerPath: "/contact-cs",
-  },
-  {
-    name: "Event Organizer",
-    routerPath: "/contact-eo",
-  },
-  {
-    name: "Project Management",
-    routerPath: "/contact-pm",
-  },
-  {
-    name: "Documentation",
-    routerPath: "/contact-doc",
-  },
-];
-const Team = [
-  {
-    name: "Team Version 01",
-    routerPath: "/team-1",
-  },
-  {
-    name: "Team Version 02",
-    routerPath: "/team-2",
-  },
-  {
-    name: "Team Version 03",
-    routerPath: "/team-3",
-  },
-  {
-    name: "Team Version 04",
-    routerPath: "/team-4",
-  },
-  {
-    name: "Team Version 05",
-    routerPath: "/team-5",
-  },
-  {
-    name: "Team Version 06",
-    routerPath: "/team-6",
-  },
-  {
-    name: "Team Details",
-    routerPath: "/team-details-v1",
-  },
-  {
-    name: "Team Details Slider",
-    routerPath: "/team-details-v2",
-  },
-];
-const Services = [
-  {
-    name: "Service Version 01",
-    routerPath: "service-v1",
-  },
-  {
-    name: "Service Version 02",
-    routerPath: "service-v2",
-  },
-  {
-    name: "Service Version 03",
-    routerPath: "service-v3",
-  },
-  {
-    name: "Service Version 04",
-    routerPath: "service-v4",
-  },
-  {
-    name: "Service Details",
-    routerPath: "service-details",
-  },
-];
-const Miscellaneous = [
-  {
-    name: "Terms & Condition)",
-    routerPath: "terms-conditions",
-  },
-  {
-    name: "Login",
-    routerPath: "/login",
-  },
-  {
-    name: "Signup",
-    routerPath: "/signup",
-  },
-  {
-    name: "404",
-    routerPath: "/404",
-  },
-];
-const Portfolio = [
-  {
-    name: "Classic Style",
-    routerPath: "/classic-style",
-  },
-  {
-    name: "Grid 2 Columns",
-    routerPath: "grid-two-col",
-  },
-  {
-    name: "Grid 3 Columns",
-    routerPath: "grid-three-col",
-  },
-  {
-    name: "Gallery Slider",
-    routerPath: "gallery-slider",
-  },
-  {
-    name: "Grid Single",
-    routerPath: "grid-single",
-  },
-  {
-    name: "Classic Details",
-    routerPath: "portfolio-details-v1",
-  },
-];
-const Blogs = [
-  {
-    name: "Blog Version 01",
-    routerPath: "/blog-v1",
-  },
-  {
-    name: "Blog Version 02",
-    routerPath: "blog-v2",
-  },
-  {
-    name: "Blog Version 03",
-    routerPath: "blog-v3",
-  },
-  {
-    name: "Blog Version 04",
-    routerPath: "blog-v4",
-  },
-  {
-    name: "Blog Version 05",
-    routerPath: "blog-v5",
-  },
-  {
-    name: "Blog Version 06",
-    routerPath: "blog-v6",
-  },
-  {
-    name: "Blog Details",
-    routerPath: "blog-details",
-  },
-];
-const Docs = [
-  {
-    name: "Full Width",
-    routerPath: "/doc-full-width",
-  },
-  {
-    name: "Full Width Banner",
-    routerPath: "/doc-full-width-banner",
-  },
-  {
-    name: "Doc Box",
-    routerPath: "doc-box",
-  },
-  {
-    name: "Doc Box With Banner",
-    routerPath: "/doc-box-with-banner",
-  },
-  {
-    name: "Changelog",
-    routerPath: "/changelog",
-  },
-];
+  portfolio: [
+    { name: "Classic Style", path: "/classic-style" },
+    { name: "Grid 2 Columns", path: "/grid-two-col" },
+    { name: "Grid 3 Columns", path: "/grid-three-col" },
+    { name: "Gallery Slider", path: "/gallery-slider" },
+    { name: "Grid Single", path: "/grid-single" },
+    { name: "Classic Details", path: "/portfolio-details-v1" },
+  ],
+  blogs: [
+    { name: "Blog Version 01", path: "/blog-v1" },
+    { name: "Blog Version 02", path: "/blog-v2" },
+    { name: "Blog Version 03", path: "/blog-v3" },
+    { name: "Blog Version 04", path: "/blog-v4" },
+    { name: "Blog Version 05", path: "/blog-v5" },
+    { name: "Blog Version 06", path: "/blog-v6" },
+    { name: "Blog Details", path: "/blog-details" },
+  ],
+  docs: [
+    { name: "Full Width", path: "/doc-full-width" },
+    { name: "Full Width Banner", path: "/doc-full-width-banner" },
+    { name: "Doc Box", path: "/doc-box" },
+    { name: "Doc Box With Banner", path: "/doc-box-with-banner" },
+    { name: "Changelog", path: "/changelog" },
+  ],
+};
 
 const MegaMenuMobile = () => {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+  const [isOpen, setIsOpen] = useState(false);
+  const { collapseSidebar } = useProSidebar();
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+    collapseSidebar();
+  };
+
+  const renderMenuItems = (items) => {
+    return items.map((item, index) => (
+      <MenuItem key={index} component={<Link to={item.path} />}>
+        {item.name}
+      </MenuItem>
+    ));
+  };
 
   return (
     <div className="mega-menu-wrapper">
       <div className="mega-swicher"></div>
       <div className="mob-header multi-mob-header">
-        <button className="toggler-menu" onClick={handleClick}>
-          <div className={click ? "active" : ""}>
+        <button className="toggler-menu" onClick={toggleMenu}>
+          <div className={isOpen ? "active" : ""}>
             <span></span>
             <span></span>
             <span></span>
           </div>
         </button>
       </div>
-      {/* End Header */}
 
-      <ProSidebar
-        className={click ? "mega-mobile-menu menu-open" : "mega-mobile-menu"}
+      <Sidebar
+        className={isOpen ? "mega-mobile-menu menu-open" : "mega-mobile-menu"}
+        collapsed={!isOpen}
+        onToggle={toggleMenu}
       >
-        <SidebarHeader>
-          <div className="logo position-static">
-            <a href="index.html">
-              <img src="/images/logo/deski_07.svg" alt="home-demo" />
-            </a>
-          </div>
-          <div className="fix-icon text-dark" onClick={handleClick}>
-            <img src="images/icon/close-w.svg" alt="icon" />
-          </div>
-          {/* Mobile Menu close icon */}
+        <div className="logo position-static">
+          <Link to="/">
+            <img src="/images/logo/deski_07.svg" alt="home-demo" />
+          </Link>
+        </div>
+        <div className="fix-icon text-dark" onClick={toggleMenu}>
+          <img src="/images/icon/close-w.svg" alt="close menu" />
+        </div>
 
-          {/* End logo */}
-        </SidebarHeader>
-        <SidebarContent>
-          <Menu>
-            <SubMenu title="Home">
-              {HomeMobileMenu.map((val, i) => (
-                <MenuItem key={i}>
-                  <Link to={val.routerPath}>{val.name}</Link>
-                </MenuItem>
-              ))}
+        <Menu>
+          <SubMenu label="Home">
+            {renderMenuItems(menuData.home)}
+          </SubMenu>
+
+          <SubMenu label="Pages">
+            <SubMenu label="Pricing" className="plus alt">
+              {renderMenuItems(menuData.pages.pricing)}
             </SubMenu>
-            {/* End Home SubMenu */}
 
-            <SubMenu title="Pages">
-              <SubMenu title="Pricing" className="plus alt">
-                {Pricing.map((val, i) => (
-                  <MenuItem key={i}>
-                    <Link to={val.routerPath}>{val.name}</Link>
-                  </MenuItem>
-                ))}
-              </SubMenu>
-
-              <SubMenu title="About Us" className="plus alt">
-                {AboutUs.map((val, i) => (
-                  <MenuItem key={i}>
-                    <Link to={val.routerPath}>{val.name}</Link>
-                  </MenuItem>
-                ))}
-              </SubMenu>
-              {/* End About SubMenu */}
-
-              <SubMenu title="Contact Us" className="plus alt">
-                {ContactUs.map((val, i) => (
-                  <MenuItem key={i}>
-                    <Link to={val.routerPath}>{val.name}</Link>
-                  </MenuItem>
-                ))}
-              </SubMenu>
-              {/* End Contact Us SubMenu */}
-
-              <SubMenu title="Team" className="plus alt">
-                {Team.map((val, i) => (
-                  <MenuItem key={i}>
-                    <Link to={val.routerPath}>{val.name}</Link>
-                  </MenuItem>
-                ))}
-              </SubMenu>
-              {/* End Team SubMenu */}
-              <MenuItem>
-                {" "}
-                <Link to="/faq"> FAQ</Link>
-              </MenuItem>
-              <MenuItem>
-                {" "}
-                <Link to="/faq-details"> Faq Details</Link>
-              </MenuItem>
+            <SubMenu label="About Us" className="plus alt">
+              {renderMenuItems(menuData.pages.about)}
             </SubMenu>
-            {/* End Pages SubMenu */}
 
-            <SubMenu title="Features">
-              <SubMenu title="Services" className="plus alt">
-                {Services.map((val, i) => (
-                  <MenuItem key={i}>
-                    <Link to={val.routerPath}>{val.name}</Link>
-                  </MenuItem>
-                ))}
-              </SubMenu>
-              {/* End Services SubMenu */}
-              <SubMenu title="Miscellaneous" className="plus alt">
-                {Miscellaneous.map((val, i) => (
-                  <MenuItem key={i}>
-                    <Link to={val.routerPath}>{val.name}</Link>
-                  </MenuItem>
-                ))}
-              </SubMenu>
-              {/* End Miscellaneous SubMenu */}
-              <MenuItem>
-                {" "}
-                <Link to="/solution-management" className="dropdown-item">
-                  Our Solution
-                </Link>
-              </MenuItem>
-              <MenuItem>
-                {" "}
-                <Link to="/product-customer-support" className="dropdown-item">
-                  Product Feature
-                </Link>
-              </MenuItem>
-              <MenuItem>
-                {" "}
-                <Link to="/features-customer-support" className="dropdown-item">
-                  Our Features
-                </Link>
-              </MenuItem>
+            <SubMenu label="Contact Us" className="plus alt">
+              {renderMenuItems(menuData.pages.contact)}
             </SubMenu>
-            {/* End Feautres SubMenu */}
 
-            <SubMenu title="Portfolio">
-              {Portfolio.map((val, i) => (
-                <MenuItem key={i}>
-                  <Link to={val.routerPath}>{val.name}</Link>
-                </MenuItem>
-              ))}
+            <SubMenu label="Team" className="plus alt">
+              {renderMenuItems(menuData.pages.team)}
             </SubMenu>
-            {/* End Portfolio SubMenu */}
 
-            <SubMenu title="Blogs">
-              {Blogs.map((val, i) => (
-                <MenuItem key={i}>
-                  <Link to={val.routerPath}>{val.name}</Link>
-                </MenuItem>
-              ))}
-            </SubMenu>
-            {/* End Blogs SubMenu */}
+            {renderMenuItems(menuData.pages.faq)}
+          </SubMenu>
 
-            <SubMenu title="Docs">
-              {Docs.map((val, i) => (
-                <MenuItem key={i}>
-                  <Link to={val.routerPath}>{val.name}</Link>
-                </MenuItem>
-              ))}
+          <SubMenu label="Features">
+            <SubMenu label="Services" className="plus alt">
+              {renderMenuItems(menuData.features.services)}
             </SubMenu>
-            {/* End Docs SubMenu */}
-            <MenuItem>
-              <Link to="/login">Login</Link>
-            </MenuItem>
-          </Menu>
-        </SidebarContent>
-      </ProSidebar>
+
+            <SubMenu label="Miscellaneous" className="plus alt">
+              {renderMenuItems(menuData.features.miscellaneous)}
+            </SubMenu>
+
+            {renderMenuItems(menuData.features.solutions)}
+          </SubMenu>
+
+          <SubMenu label="Portfolio">
+            {renderMenuItems(menuData.portfolio)}
+          </SubMenu>
+
+          <SubMenu label="Blogs">
+            {renderMenuItems(menuData.blogs)}
+          </SubMenu>
+
+          <SubMenu label="Docs">
+            {renderMenuItems(menuData.docs)}
+          </SubMenu>
+
+          <MenuItem component={<Link to="/login" />}>Login</MenuItem>
+        </Menu>
+      </Sidebar>
     </div>
   );
 };

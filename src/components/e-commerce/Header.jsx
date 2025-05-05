@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import CartDropdown from "./CartDropdown";
-import Sidebar from "./Sidebar";
+import SidebarIndex from "./Sidebar";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -87,7 +87,7 @@ const Header = () => {
             </div>
             {/* offcanvas-header */}
 
-            <Sidebar />
+            <SidebarIndex />
           </div>
           {/* main-sidebar-nav */}
         </div>
