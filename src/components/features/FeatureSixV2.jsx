@@ -17,7 +17,7 @@ const FeatureContent = [
   {
     icon: Tokenization,
     meta: "Asset tokenization",
-    subTitle: `Certifies your ownership of gaming assets and NFTs or fungible tokens.`,
+    subTitle: `Validates your ownership and transfer abilities for gaming assets, NFTs, and fungible tokens.`,
     dataDelay: "100",
   },
   {
