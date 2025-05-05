@@ -1,6 +1,7 @@
 import React from "react";
 import GameLogic from "../../assets/images/assets/Smart Contract Game Logic.svg";
 import Framework from "../../assets/images/assets/Cross-Platform Asset.svg";
+import Tech from "../../assets/images/assets/hugeicons_blockchain-02.svg";
 
 const featuresContent = [
   {
@@ -16,7 +17,7 @@ const featuresContent = [
     delayAnimation: "100",
   },
   {
-    icon: GameLogic,
+    icon: Tech,
     title: "Blockchain secured",
     desc: `Making gaming adventure accessible and secure with blockchain technology.`,
     delayAnimation: "200",
