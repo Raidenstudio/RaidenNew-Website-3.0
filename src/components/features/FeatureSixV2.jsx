@@ -57,7 +57,7 @@ const FeatureSixV2 = () => {
           data-aos-duration="1200"
           data-aos-delay={val.dataDelay}
         >
-          <Link to="/service-details" className="block-style-five">
+          <Link  className="block-style-five">
             <div className="icon">
               <img src={val.icon} alt="icon" />
             </div>
