@@ -121,7 +121,7 @@ const VideoEditorLanding = () => {
             data-aos="fade-up"
             data-aos-duration="1200"
           >
-            <h2>Ready Stunning Templates</h2>
+            <h2>Industries We Empower</h2>
             <p>Quick and easy to customize. No experience required.</p>
           </div>
         </div>

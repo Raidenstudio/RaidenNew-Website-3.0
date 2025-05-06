@@ -164,11 +164,11 @@ const Team = [
 const Services = [
   {
     name: "Service Version 01",
-    routerPath: "service-v1",
+    routerPath: "blockchain-game-development-company",
   },
   {
     name: "Service Version 02",
-    routerPath: "service-v2",
+    routerPath: "augmented-reality-ar-development-company",
   },
   {
     name: "Service Version 03",

@@ -1,4 +1,12 @@
 import React from "react";
+import service1 from "../../assets/images/assets/Frameworks/Frame 221.png"
+import service2 from "../../assets/images/assets/Frameworks/Frame 23.png"
+import service3 from "../../assets/images/assets/Frameworks/Frame 24.png"
+import service4 from "../../assets/images/assets/Frameworks/Frame 25.png"
+import service5 from "../../assets/images/assets/Frameworks/Frame 26.png"
+import service6 from "../../assets/images/assets/Frameworks/Frame 27.png"
+import service7 from "../../assets/images/assets/Frameworks/Frame 28.png"
+import service8 from "../../assets/images/assets/Frameworks/Frame 29.png"
 
 const FancyFeatureTewentyFour = () => {
   return (
@@ -14,13 +22,13 @@ const FancyFeatureTewentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#3FE193" }}
             >
-              <img src="images/icon/124.svg" alt="icon" />
+              <img style={{ width: "65%" }} src={service1} alt="icon" />
             </div>
             <div className="text">
-              <h4>Sports & Fitness</h4>
+              <h4>Unique Marketing Opportunities
+              </h4>
               <p>
-                Personal trainers, Gyms Fitness classes, Yoga classes Golf
-                classes, Sport items renting
+                Achieve unparalleled outreach through innovative and effective campaigns.
               </p>
             </div>
           </div>
@@ -41,13 +49,13 @@ const FancyFeatureTewentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#FF4F86" }}
             >
-              <img src="images/icon/125.svg" alt="icon" />
+              <img style={{ width: "65%" }} src={service2} alt="icon" />
             </div>
             <div className="text">
-              <h4>Beauty and Wellness</h4>
+              <h4>Upgraded Brand Awareness</h4>
               <p>
-                Eyelash extensions , Hair salons, Spa salons Beauty salons, Nail
-                salons
+                Boost your brand's visibility in target markets with our strong and enduring presence.
+
               </p>
             </div>
           </div>
@@ -67,13 +75,13 @@ const FancyFeatureTewentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#FFCF39" }}
             >
-              <img src="images/icon/126.svg" alt="icon" />
+              <img style={{ width: "65%" }} src={service3} alt="icon" />
             </div>
             <div className="text">
-              <h4>Events & entertainment</h4>
+              <h4>Customized Marketing
+              </h4>
               <p>
-                Art classes, Escape rooms Photographers, Equipment Rental &
-                more.
+                Using relevant customer experiences and customized messaging to offer a distinctive and pertinent solution.
               </p>
             </div>
           </div>
@@ -94,13 +102,13 @@ const FancyFeatureTewentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#6D64FF" }}
             >
-              <img src="images/icon/127.svg" alt="icon" />
+              <img style={{ width: "65%" }} src={service4} alt="icon" />
             </div>
             <div className="text">
-              <h4>Officials & Financial</h4>
+              <h4>Increased sales
+              </h4>
               <p>
-                Embassies and consulates, City councils, Call centers Financial
-                services, Interview scheduling.
+                Interactive shopping experiences and captivating product visualizations in the user's space increase conversions
               </p>
             </div>
           </div>
@@ -120,13 +128,13 @@ const FancyFeatureTewentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#E752FF" }}
             >
-              <img src="images/icon/128.svg" alt="icon" />
+              <img style={{ width: "65%" }} src={service5} alt="icon" />
             </div>
             <div className="text">
-              <h4>Personal meetings</h4>
+              <h4>Competitive Advantage
+              </h4>
               <p>
-                Counselling ,Coaching, Business, Advisory, Spiritual services &
-                more.
+                Make your products stand out from the competition with innovative AR that appeals to your target market and offers distinctive value.
               </p>
             </div>
           </div>
@@ -147,11 +155,13 @@ const FancyFeatureTewentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#29EEFB" }}
             >
-              <img src="images/icon/129.svg" alt="icon" />
+              <img style={{ width: "65%" }} src={service6} alt="icon" />
             </div>
             <div className="text">
-              <h4>Driving Lessons</h4>
-              <p>Driving Schools, Driving Instructors.</p>
+              <h4>Enhanced customer service
+              </h4>
+              <p>Enhance customer loyalty with exceptional support and personalized engagement.
+              </p>
             </div>
           </div>
         </div>{" "}
@@ -170,13 +180,13 @@ const FancyFeatureTewentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#32B5FF" }}
             >
-              <img src="images/icon/130.svg" alt="icon" />
+              <img style={{ width: "65%" }} src={service7} alt="icon" />
             </div>
             <div className="text">
-              <h4>Education System</h4>
+              <h4>Cross-platform compatibility
+              </h4>
               <p>
-                Universities, Colleges, Schools, Libraries, Parent meetings,
-                Tutoring lessons.
+                Ensure seamless user experiences with universal accessibility, guaranteeing consistent functionality and optimal performance on devices and operating systems.
               </p>
             </div>
           </div>
@@ -197,13 +207,13 @@ const FancyFeatureTewentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#FFA361" }}
             >
-              <img src="images/icon/131.svg" alt="icon" />
+              <img style={{ width: "65%" }} src={service8} alt="icon" />
             </div>
             <div className="text">
-              <h4>Medical services</h4>
+              <h4>Communication and Collaboration
+              </h4>
               <p>
-                Massage & Body Treatments, Dental Clinics, Medical Clinics &
-                more.
+                Our integrated platforms and tools facilitate transparent information flow, streamline teamwork, and enhance engagement for unified objectives.
               </p>
             </div>
           </div>

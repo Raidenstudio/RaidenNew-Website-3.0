@@ -162,13 +162,13 @@ const Team = [
 ];
 const Services = [
   {
-    name: "Service Version 01",
-    routerPath: "service-v1",
+    name: "Blockchain Game",
+    routerPath: "blockchain-game-development-company",
   },
-  // {
-  //   name: "Service Version 02",
-  //   routerPath: "service-v2",
-  // },
+  {
+    name: "AR Development",
+    routerPath: "augmented-reality-ar-development-company",
+  },
   // {
   //   name: "Service Version 03",
   //   routerPath: "service-v3",

@@ -1,53 +1,59 @@
 import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
+import img1 from "../../assets/images/assets/ARservice/Chemicals, Oil & Gas.png"
+import img2 from "../../assets/images/assets/ARservice/Games.png"
+import img3 from "../../assets/images/assets/ARservice/Defense & Aviation.png"
+import img4 from "../../assets/images/assets/ARservice/[onlinejsonformatter.com]-engineer-controls-robotic-arms-by-augmented-reality-industry-technology_31965-9203-large 1.png"
+import img5 from "../../assets/images/assets/ARservice/Healthcare.png"
+import img6 from "../../assets/images/assets/ARservice/Real Estate.png"
 
 const VideoGalleryContent = [
   {
-    img: "img_84",
-    text1: "Promoty",
-    text2: "your Event",
+    img: img1,
+    text1: "Chemicals, Oil &",
+    text2: "Gas",
     animationDelay: "",
   },
   {
-    img: "img_85",
-    text1: "Social Media",
-    text2: "Promotion",
+    img: img2,
+    text1: "Games",
+    text2: "",
     animationDelay: "50",
   },
   {
-    img: "img_86",
-    text1: "Youtube Creator",
-    text2: "Intro",
+    img: img3,
+    text1: "Defense &",
+    text2: "Aviation",
     animationDelay: "100",
   },
   {
-    img: "img_87",
-    text1: "Dancing",
-    text2: "eople adv",
+    img: img4,
+    text1: "Manufacturing",
+    text2: "",
     animationDelay: "150",
   },
   {
-    img: "img_88",
-    text1: "Cartoon for",
-    text2: "children",
+    img: img5,
+    text1: "Healthcare",
+    text2: "",
     animationDelay: "50",
   },
   {
-    img: "img_89",
-    text1: "Music",
-    text2: "Learning",
+    img: img6,
+    text1: "Real Estate",
+    text2: "",
     animationDelay: "100",
   },
   {
-    img: "img_90",
-    text1: "Greeting",
-    text2: "intro",
+    img: img3,
+    text1: "Marketing",
+    text2: "",
     animationDelay: "150",
   },
   {
-    img: "img_91",
-    text1: "Work",
-    text2: "From Home",
+    img: img1,
+    text1: "Entertainment",
+    text2: "",
     animationDelay: "200",
   },
 ];
@@ -72,17 +78,17 @@ const VideoGallery = () => {
           key={i}
         >
           <div className="block-style-twentyOne">
-            <img src={`images/media/${val.img}.png`} alt="" className="w-100" />
+            <img src={val.img} alt="" className="w-100" />
             <div className="d-flex align-items-center justify-content-center flex-column video-button">
               <span>
                 {val.text1} <br /> {val.text2}
               </span>
-              <span
+              {/* <span
                 className="icon d-flex align-items-center justify-content-center"
                 onClick={() => setOpen(true)}
               >
                 <img src="images/icon/118.svg" alt="" />
-              </span>
+              </span> */}
             </div>
           </div>
           {/* /.block-style-twentyOne */}

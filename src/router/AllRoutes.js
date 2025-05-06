@@ -98,6 +98,7 @@ import VrLanding from "../views/all-home-pages/VrLanding";
 import Cart from "../views/inner-pages/e-commerce/Cart";
 import Checkout from "../views/inner-pages/e-commerce/Checkout";
 import ProductDetails from "../views/inner-pages/e-commerce/ProductDetails";
+import ARServices from "../views/inner-pages/service/ARServices";
 
 const AllRoutes = () => {
   return (
@@ -169,8 +170,9 @@ const AllRoutes = () => {
         />
 
         {/* Service inner pages */}
-        <Route path="/service-v1" element={<ServiceV1 />} />
-        <Route path="/service-v2" element={<ServiceV2 />} />
+        <Route path="/blockchain-game-development-company" element={<ServiceV1 />} />
+        <Route path="/augmented-reality-ar-development-company" element={<ARServices />} />
+        <Route path="/augmented-reality-ar-development" element={<ServiceV2 />} />
         <Route path="/service-v3" element={<ServiceV3 />} />
         <Route path="/service-v4" element={<ServiceV4 />} />
         <Route path="/service-details" element={<ServiceDetails />} />
