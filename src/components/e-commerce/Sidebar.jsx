@@ -163,20 +163,20 @@ const Team = [
 const Services = [
   {
     name: "Blockchain Game",
-    routerPath: "blockchain-game-development-company",
+    routerPath: "/blockchain-game-development-company",
   },
   {
     name: "AR Development",
-    routerPath: "augmented-reality-ar-development-company",
+    routerPath: "/augmented-reality-ar-development-company",
   },
-  // {
-  //   name: "Service Version 03",
-  //   routerPath: "service-v3",
-  // },
-  // {
-  //   name: "Service Version 04",
-  //   routerPath: "service-v4",
-  // },
+  {
+     name: "VR Development",
+    routerPath: "/augmented-reality-vr-development-company",
+   },
+   {
+     name: "Metaverse Development",
+     routerPath: "/metaverse-development",
+   },
   // {
   //   name: "Service Details",
   //   routerPath: "service-details",

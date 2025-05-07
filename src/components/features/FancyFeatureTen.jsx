@@ -5,22 +5,45 @@ const FeaturesContent = [
   {
     bgColor: "#FFEBDB",
     icon: "68",
-    title: "Secure & Trusted",
-    desc: `Elit esse cillum dolore eu fugiat nulla pariatur`,
+    title: "Metaverse Application Development",
+    desc: `With AR, VR, blockchain, creating, user engagement, security, and API integration. 
+`,
     dataDealy: "0",
   },
   {
     bgColor: "#E0F8F8",
     icon: "67",
-    title: "Easy Customizable",
-    desc: `quis nostrud exerct ullamo ea nisi ut aliqui com dolor`,
+    title: "Metaverse 3D Space Development",
+    desc: `Dynamic 3D design and deploy AI avatars for personalized identity experiences.`,
     dataDealy: "100",
   },
   {
     bgColor: "#F7EDFF",
     icon: "70",
-    title: "Fast Support",
-    desc: `Duis aute irure dolor  reprehen derit in volu velit.`,
+    title: "Metaverse Game Development",
+    desc: `Conquering the whole world of innovation and thrilling lively experiences.`,
+    dataDealy: "200",
+  },
+  {
+    bgColor: "#FFEBDB",
+    icon: "68",
+    title: "Metaverse Application Development",
+    desc: `With AR, VR, blockchain, creating, user engagement, security, and API integration. 
+`,
+    dataDealy: "0",
+  },
+  {
+    bgColor: "#E0F8F8",
+    icon: "67",
+    title: "Metaverse Real Estate Development",
+    desc: `Build your digital space with blockchain before building your physical space.`,
+    dataDealy: "100",
+  },
+  {
+    bgColor: "#F7EDFF",
+    icon: "70",
+    title: "Metaverse social media app development",
+    desc: `Creating decentralised social existence with intensifying XR and AI. `,
     dataDealy: "200",
   },
 ];
@@ -45,10 +68,6 @@ const FancyFeatureTen = () => {
             </div>
             <h3>{val.title}</h3>
             <p>{val.desc}</p>
-            <Link to="/solution-management" className="mt-30">
-              {" "}
-              <img src="images/icon/69.svg" alt="icon" />
-            </Link>
           </div>
           {/* /.block-style-ten */}
         </div>

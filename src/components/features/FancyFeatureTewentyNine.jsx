@@ -21,27 +21,14 @@ const FancyFeatureTewentNine = () => {
             style={{ background: "#623A75" }}
           >
             <div className="logo">
-              <img src="images/logo/logo-53.png" alt="brand" />
-            </div>
-            <div
-              className="fancybox video-icon tran3s"
-              onClick={() => setOpen(true)}
-            >
-              <img src="images/icon/152.svg" alt="icon" />
+           <h3 style={{color: "grey"}}>Genesis Phase</h3> 
             </div>
             <h3>
-              <Link to="/blog-details">
-                Seattle Opera Simplifies Performance Planning with deski
-                eSignature.
-              </Link>
+              <p style={{lineHeight: "50px"}}> 
+              Initially recording the clients needs, researching the industry and ideal project parameter specification.
+
+              </p>
             </h3>
-            <Link
-              className="read-more-btn d-flex justify-content-between align-items-center w-100"
-              to="/blog-details"
-            >
-              <span>Continue Reading</span>
-              <img src="images/icon/153.svg" alt="icon" />
-            </Link>
           </div>
           {/* /.block-style-twentyNine */}
         </div>
@@ -53,26 +40,13 @@ const FancyFeatureTewentNine = () => {
             style={{ background: "#314B7D" }}
           >
             <div className="logo">
-              <img src="images/logo/logo-54.png" alt="brand" />
-            </div>
-            <div
-              className="fancybox video-icon tran3s"
-              onClick={() => setOpen(true)}
-            >
-              <img src="images/icon/152.svg" alt="icon" />
+           <h3 style={{color: "grey"}}> Design of UI/UX</h3>
             </div>
             <h3>
-              <Link to="/blog-details">
-                How DocuSign CLM Helps Celonis Scale Its Global Business
-              </Link>
+              <p style={{lineHeight: "50px"}}>
+              Modelizing the surface and inner workings of the project with UI/UX's perfect pitch. 
+              </p>
             </h3>
-            <Link
-              className="read-more-btn d-flex justify-content-between align-items-center w-100"
-              to="/blog-details"
-            >
-              <span>Continue Reading</span>
-              <img src="images/icon/153.svg" alt="icon" />
-            </Link>
           </div>
           {/* /.block-style-twentyNine */}
         </div>
@@ -84,27 +58,12 @@ const FancyFeatureTewentNine = () => {
             style={{ background: "#2B4E56" }}
           >
             <div className="logo">
-              <img src="images/logo/logo-55.png" alt="brand" />
-            </div>
-            <div
-              className="fancybox video-icon tran3s"
-              onClick={() => setOpen(true)}
-            >
-              <img src="images/icon/152.svg" alt="icon" />
-            </div>
+          <h3 style={{color: "grey"}}>  Prototype  </h3>          </div>
             <h3>
-              <Link to="/blog-details">
-                Sunrun makes solar contracts convenient with deski and
-                Salesforce
-              </Link>
+              <p style={{lineHeight: "50px"}}>
+              Enhancing the pre-original version with the unique touch and consulting feedback to guarantee a flawless featured project.
+              </p>
             </h3>
-            <Link
-              className="read-more-btn d-flex justify-content-between align-items-center w-100"
-              to="/blog-details"
-            >
-              <span>Continue Reading</span>
-              <img src="images/icon/153.svg" alt="icon" />
-            </Link>
           </div>
           {/* /.block-style-twentyNine */}
         </div>
@@ -116,27 +75,44 @@ const FancyFeatureTewentNine = () => {
             style={{ background: "#7A4040" }}
           >
             <div className="logo">
-              <img src="images/logo/logo-56.png" alt="brand" />
-            </div>
-            <div
-              className="fancybox video-icon tran3s"
-              onClick={() => setOpen(true)}
-            >
-              <img src="images/icon/152.svg" alt="icon" />
+           <h3  style={{color: "grey"}} >Develop Ecosystem</h3>
             </div>
             <h3>
-              <Link to="/blog-details">
-                McCloskey Motors builds a touchless car sale process with
-                Design.
-              </Link>
+              <p style={{lineHeight: "50px"}}>
+              Creating complete developed trading with integrating NFTs, token systems, engaging 3D to facilitate effective user trading. 
+              </p>
             </h3>
-            <Link
-              className="read-more-btn d-flex justify-content-between align-items-center w-100"
-              to="/blog-details"
-            >
-              <span>Continue Reading</span>
-              <img src="images/icon/153.svg" alt="icon" />
-            </Link>
+          </div>
+          {/* /.block-style-twentyNine */}
+        </div>
+        <div className="col-lg-6 mt-40" data-aos="fade-up" data-aos-delay="100">
+          <div
+            className="block-style-twentyNine"
+            style={{ background: "#623A75" }}
+          >
+            <div className="logo">
+           <h3 style={{color: "grey"}}> Development</h3>
+            </div>
+            <h3>
+              <p style={{lineHeight: "50px"}}>
+              Bringing the metaverse to life with code and programming, directly accomplishing your objectives.
+              </p>
+            </h3>
+          </div>
+          {/* /.block-style-twentyNine */}
+        </div>
+        <div className="col-lg-6 mt-40" data-aos="fade-up" data-aos-delay="100">
+          <div
+            className="block-style-twentyNine"
+            style={{ background: "#314B7D" }}
+          >
+            <div className="logo">
+          <h3 style={{color: "grey"}}>  Testing and Deployment</h3>
+            </div>
+            <h3>
+              <p style={{lineHeight: "50px"}}>
+              We test the safety, performance, and functionality of the metaverse project on your chosen platforms.              </p>
+            </h3>
           </div>
           {/* /.block-style-twentyNine */}
         </div>

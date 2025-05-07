@@ -34,13 +34,11 @@ const FancyTextBlock21 = () => {
             </a>
 
             <div className="client-info">
-              Over <span>150,000+ client</span>
+            WHY CHOOSE RAIDEN?
             </div>
             <p>
-              We created over <span>27,000+</span> stunning and quality products
-              over last 5 years with satisfaction.
+            Raiden, a proactive development company that bridges the virtual and real worlds, can help you unlock the metaverse's potential by creating engaging digital spaces with limitless opportunities for significant interaction.
             </p>
-            <div className="name">Carl Henderson</div>
           </div>
           {/* /.text-wrapper */}
         </div>

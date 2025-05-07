@@ -7697,7 +7697,7 @@ body .shop-btn-two:hover {
 }
 /*------------------ Fancy Text block Nineteen ----------------*/
 .fancy-text-block-nineteen .text-wrapper .client-info {
-  font-size: 24px;
+  font-size: 24px !important;
   padding-bottom: 20px;
 }
 .fancy-text-block-nineteen .text-wrapper .client-info span {
@@ -8786,9 +8786,9 @@ body .shop-btn-two:hover {
   text-decoration: underline;
 }
 .fancy-text-block-twentyOne .text-wrapper p {
-  font-size: 48px;
+  font-size: 30px;
   color: #000000;
-  line-height: 1.59em;
+  line-height: 0.99em;
   padding-bottom: 40px;
 }
 .fancy-text-block-twentyOne .text-wrapper p span {
@@ -11135,7 +11135,6 @@ body .shop-btn-two:hover {
 .block-style-nineteen .text h4 {
   font-size: 24px;
   font-weight: 700;
-  padding-bottom: 17px;
 }
 .block-style-nineteen .text p {
   font-size: 16px;
@@ -16621,4 +16620,29 @@ body .shop-btn-two:hover {
   font-size: 1.5em;
   font-weight: bold;
   color: #000; /* or your brand highlight color */
+}
+
+@keyframes spreadFadeIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes floatMotion {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animated-box {
+  animation: spreadFadeIn 0.6s ease-out forwards, floatMotion 3s ease-in-out infinite;
+  opacity: 0; /* Start hidden until animation */
 }

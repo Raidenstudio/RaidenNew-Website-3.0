@@ -172,11 +172,11 @@ const Services = [
   },
   {
     name: "Service Version 03",
-    routerPath: "service-v3",
+    routerPath: "augmented-reality-vr-development-company",
   },
   {
     name: "Service Version 04",
-    routerPath: "service-v4",
+    routerPath: "metaverse-development",
   },
   {
     name: "Service Details",

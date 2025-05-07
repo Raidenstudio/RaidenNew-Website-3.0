@@ -170,11 +170,11 @@ const AllRoutes = () => {
         />
 
         {/* Service inner pages */}
-        <Route path="/blockchain-game-development-company" element={<ServiceV1 />} />
-        <Route path="/augmented-reality-ar-development-company" element={<ARServices />} />
+        <Route path="blockchain-game-development-company" element={<ServiceV1 />} />
+        <Route path="augmented-reality-ar-development-company" element={<ARServices />} />
         <Route path="/augmented-reality-ar-development" element={<ServiceV2 />} />
-        <Route path="/service-v3" element={<ServiceV3 />} />
-        <Route path="/service-v4" element={<ServiceV4 />} />
+        <Route path="augmented-reality-vr-development-company" element={<ServiceV3 />} />
+        <Route path="metaverse-development" element={<ServiceV4 />} />
         <Route path="/service-details" element={<ServiceDetails />} />
 
         {/* inner pages Docs   */}

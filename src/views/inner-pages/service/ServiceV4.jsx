@@ -1,150 +1,223 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "react-modal";
 import { Link } from "react-router-dom";
-import HeaderFive from "../../../components/header/HeaderFive";
-import { Helmet } from "react-helmet";
-import FooterEight from "../../../components/footer/FooterEight";
-import CopyRightFour from "../../../components/footer/CopyRightFour";
-import CounterOne from "../../../components/counter/CounterOne";
-import FancyFeatureTwentyEightV2 from "../../../components/features/FancyFeatureTwentyEightV2";
-import Service from "../../../components/service/Service";
+
+import Header from "../../../components/e-commerce/Header";
+import FancyFeatureTewentyFour from "../../../components/features/FancyFeatureTewentyFour";
+import FancyFeatureTewentyTwo from "../../../components/features/FancyFeatureTewentyTwo";
+import HeaderLandingAppointment from "../../../components/header/landing/HeaderLandingAppointment";
+import HeroBannerNine from "../../../components/hero-banner/HeroBannerNine";
+import TestimonialSeven from "../../../components/testimonial/TestimonialSeven";
+import SocialTwo from "../../../components/social/SocialTwo";
+import FancyFeatureTen from "../../../components/features/FancyFeatureTen";
+import FancyFeatureTewentyNine from "../../../components/features/FancyFeatureTewentyNine";
+import CallToActionThree from "../../../components/call-to-action/CallToActionThree";
+import FancyFeatureNinteen from "../../../components/features/FancyFeatureNinteen";
+import FooterTwo from "../../../components/footer/FooterTwo";
+import CopyRightTwo from "../../../components/footer/CopyRightTwo";
+import Image from "../../../assets/images/assets/Profile 5.png";
+import FancyFeatureTewentySix from "../../../components/features/FancyFeatureTewentySix";
+
+Modal.setAppElement("#root");
 
 const ServiceV4 = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleModalOne = () => setIsOpen(!isOpen);
+
   return (
-    <div className="main-page-wrapper p0">
-      <Helmet>
-        <title>Service Version 4 || Deski-Saas & Software React Template</title>
-      </Helmet>
-      {/* End Page SEO Content */}
+    <div className="main-page-wrapper">
+      <Header />
 
-      <HeaderFive />
-      {/* End Header */}
-
-      {/*  =====================================================
-           	Fancy Hero Seven
-        ===================================================== */}
-      <div
-        className="fancy-hero-seven"
-        style={{
-          backgroundImage: `url(${
-            process.env.PUBLIC_URL + "images/media/img_109.png"
-          })`,
-        }}
-      >
+      <div className="hero-banner-five">
         <div className="container">
           <div className="row">
-            <div className="col-xl-8 col-lg-10 m-auto">
-              <h2 className="font-gordita">Our Services</h2>
-              <p className="font-gordita">
-                We are a creative company that focuses on establishing long-term
-                relationships with customers.
+            <div className="col-xl-10 col-lg-11 col-md-10 m-auto">
+              <h1
+                className="font-recoleta hero-heading"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+              >
+                Cultivate Enduring Engagement through{" "}
+                <span style={{ textDecoration: "none" }}>Metaverse</span>
+              </h1>
+              <p
+                className="hero-sub-heading"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-delay="100"
+              >
+                Captivating avatars for your riveting 3D adventures that support
+                your enduring metaverse.
               </p>
             </div>
           </div>
         </div>
-      </div>
-      {/* <!-- /.fancy-hero-seven --> */}
 
-      {/* 	=============================================
-				Fancy Text block Seven
-			==============================================  */}
-      <div className="fancy-text-block-seven seven mt-130 md-mt-80">
-        <div className="bg-wrapper no-bg">
+        <div className="partner-section-one mt-170 md-mt-90 pb-120 md-pb-80">
           <div className="container">
-            <div className="row align-items-center">
+            <div className="title-style-nine text-center mb-100">
+              <h6>Our Service</h6>
+              <h2>
+                Industries{" "}
+                <span>
+                  We Serve <img src="images/shape/201.svg" alt="shape" />
+                </span>
+              </h2>
+            </div>
+            <SocialTwo />
+          </div>
+        </div>
+
+        <img src="images/shape/133.svg" alt="shape" className="shapes shape-one" />
+        <img src="images/shape/134.svg" alt="shape" className="shapes shape-two" />
+        <img src="images/shape/135.svg" alt="shape" className="shapes shape-three" />
+        <img src="images/shape/136.svg" alt="shape" className="shapes shape-four" />
+
+        <div className="partner-slider-two mt-110 md-mt-80">
+          <div className="container">
+            <div className="partnerSliderTwo">
+              {/* Placeholder for slider (e.g. BrandTwo) */}
+            </div>
+          </div>
+        </div>
+
+        <div className="fancy-feature-ten md-pt-70" id="features">
+          <div className="bg-wrapper">
+            <div className="container">
+              <div className="row justify-content-between align-items-center">
+                <div
+                  className="col-md-6"
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                >
+                  <div className="title-style-six">
+                    <h2>
+                      Crafting an Immersive{" "}
+                      <span style={{ textDecoration: "none" }}> Metaverse </span>
+                      Experience.
+                    </h2>
+                  </div>
+                </div>
+                <div
+                  className="col-lg-5 col-md-6"
+                  data-aos="fade-left"
+                  data-aos-duration="1200"
+                >
+                  <p className="sub-text pt-30 pb-30">
+                    Commonly used in the graphic, print & publishing industries
+                    for previewing visual mockups.
+                  </p>
+                </div>
+              </div>
+              <FancyFeatureTen />
+            </div>
+            <img
+              src="images/shape/137.svg"
+              alt="shape"
+              className="shapes shape-one"
+            />
+          </div>
+        </div>
+<div className="fancy-text-block-twentyOne pt-170 md-pt-100">
+        <div className="container">
+          <div className="row align-items-center">
+            <div
+              className="col-lg-6 col-md-7 m-auto aos-init aos-animate"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+            >
+              <div className="img-meta">
+                <img
+                  src={Image}
+                  alt="media"
+                  className="m-auto"
+                />
+                <img
+                  src="images/shape/138.svg"
+                  alt="shape"
+                  className="shapes shape-one"
+                />
+              </div>
+            </div>
+            <div
+              className="col-xl-5 col-lg-6 ms-auto aos-init aos-animate"
+              data-aos="fade-left"
+              data-aos-duration="1200"
+              data-aos-delay="100"
+            >
+              <div className="text-wrapper md-pt-50">
+                <div className="client-info font-rubik">
+                WHY CHOOSE RAIDEN?
+                </div>
+                <p>
+                Raiden, a proactive development company that bridges the virtual and real worlds, can help you unlock the metaverse's potential by creating engaging digital spaces with limitless opportunities for significant interaction.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div></div>
+
+        <div class="fancy-feature-twentySix lg-container pt-160 md-pt-100">
+<div className="container">
+<div className="row">
+<div className="col-xl-11 m-auto" data-aos="fade-up">
+              <div className="title-style-twelve text-center pb-80 md-pb-30">
+                <div className="upper-title">Development Stories</div>
+                <h2>
+                  Architecting the Metaverse: <br />
+                  <span>
+                    Our Development Process.
+                    <img
+                      src="images/shape/line-shape-13.svg"
+                      alt="shape"
+                    />
+                  </span>
+                </h2>
+              </div>
+            </div>
+          </div>
+
+        <FancyFeatureTewentySix/></div></div>
+
+        <div className="fancy-feature-nineteen pt-180 md-pt-100" id="effect">
+          <div className="container">
+            <div className="row">
               <div
-                className="col-lg-5 col-md-6 col-sm-10 m-auto"
-                data-aos="fade-right"
+                className="col-xl-9 col-lg-11 m-auto"
+                data-aos="fade-up"
                 data-aos-duration="1200"
               >
-                <CounterOne />
-              </div>
-              {/* End .col */}
-
-              <div
-                className="col-xl-6 col-lg-7 ms-auto"
-                data-aos="fade-left"
-                data-aos-duration="1200"
-              >
-                <div className="quote-wrapper pt-60">
-                  <img src="images/icon/185.png" alt="icon" className="icon" />
-                  <blockquote className="font-rubik">
-                    Deski combines excellent live chat, ticketing and automation
-                    that allow us to provide quality.
-                  </blockquote>
-                  <h6 className="mt-20">
-                    Mike Lucas. <span>CEO & Founder deksi</span>
-                  </h6>
-                </div>
-                {/* <!-- /.quote-wrapper --> */}
-              </div>
-              {/* End .col */}
-            </div>
-            {/* End .row */}
-
-            <div className="mt-90 pb-80 bottom-border">
-              <div className="row">
-                <div className="col-xl-11 m-auto">
-                  <FancyFeatureTwentyEightV2 />
+                <div className="title-style-eight text-center mb-80 md-mb-40">
+                  <h2>Metaverse Development</h2>
+                  <p>Blockchain Front-end and Back-end</p>
                 </div>
               </div>
             </div>
-          </div>
-          {/* End .container */}
-        </div>
-        {/* <!-- /.bg-wrapper --> */}
-      </div>
-      {/* <!-- /.fancy-text-block-seven --> */}
-
-      {/* 	=============================================
-				Fancy Feature Thirty Three
-			==============================================  */}
-      <div className="fancy-feature-thirtyThree mt-60 md-mt-20">
-        <div className="container">
-          <div className="title-style-eleven text-center pb-50 md-pb-30">
-            <h2>Explore Service.</h2>
-            <p className="pt-20">
-              Get to know all deski features, that are part of the complex
-              multi-channel
-            </p>
-          </div>
-          <Service />
-          <div className="bottom-border">
-            <div className="text-center mt-130 md-mt-80 pb-150 md-pb-80">
-              <div className="row">
-                <div className="col-xl-8 col-lg-10 m-auto">
-                  <h2 className="contact-title font-gordita">
-                    Convinced to work on a new project?
-                  </h2>
-                  <Link className="theme-btn-one mt-40" to="/contact-cs">
-                    {" "}
-                    Contact Now
-                  </Link>
-                </div>
-              </div>
-            </div>
+            <FancyFeatureNinteen />
           </div>
         </div>
-      </div>
-      {/* <!-- /.fancy-feature-thirtyThree --> */}
 
-      {/*  =====================================================
-            Footer Style Eight
-        ===================================================== */}
-      <footer className="theme-footer-eight mt-100">
-        <div className="top-footer">
+        <div className="fancy-short-banner-three mt-200 md-mt-150">
           <div className="container">
-            <FooterEight />
+            <div className="bg-wrapper">
+              <CallToActionThree />
+            </div>
           </div>
-          {/* /.container */}
         </div>
 
-        <div className="container">
-          <div className="bottom-footer mt-50 md-mt-30">
-            <CopyRightFour />
+        <footer className="theme-footer-two pt-150 md-pt-80">
+          <div className="top-footer">
+            <div className="container">
+              <FooterTwo />
+            </div>
           </div>
-        </div>
-      </footer>
-      {/* /.theme-footer-eight  */}
+          <div className="container">
+            <div className="bottom-footer-content">
+              <CopyRightTwo />
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
   );
 };
