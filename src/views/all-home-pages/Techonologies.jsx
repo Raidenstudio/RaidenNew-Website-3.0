@@ -70,7 +70,7 @@ const Technologies = () => {
               className="block-style-nineteen"
               style={{
                 borderLeftColor: borderColor,
-                borderLeftWidth: "4px",
+                borderLeftWidth: "6px",
                 borderLeftStyle: "solid",
                 padding: "1rem",
                 borderRadius: "8px",
