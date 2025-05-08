@@ -1,12 +1,18 @@
 import React from "react";
-import service1 from "../../assets/images/assets/Frameworks/Frame 221.png"
-import service2 from "../../assets/images/assets/Frameworks/Frame 23.png"
-import service3 from "../../assets/images/assets/Frameworks/Frame 24.png"
-import service4 from "../../assets/images/assets/Frameworks/Frame 25.png"
-import service5 from "../../assets/images/assets/Frameworks/Frame 26.png"
-import service6 from "../../assets/images/assets/Frameworks/Frame 27.png"
-import service7 from "../../assets/images/assets/Frameworks/Frame 28.png"
-import service8 from "../../assets/images/assets/Frameworks/Frame 29.png"
+import ThreeD from "../../assets/images/assets/3D Environment.png";
+import Real from "../../assets/images/assets/Real-life Customer.png";
+import Recruit from "../../assets/images/assets/Enhanced Recruitment.png";
+import Interactivity from "../../assets/images/assets/Interactivity.png";
+import Adaptation from "../../assets/images/assets/Fast Adaptation.png";
+import  Audio from "../../assets/images/assets/Spatial Audio.png";
+import Rear from "../../assets/images/assets/Incredible Training Platform.png";
+import Workplace from "../../assets/images/assets/Revolutionized Workplace.png";
+import Market from "../../assets/images/assets/Advantage Marketing.png";
+import Multiuser from "../../assets/images/assets/Multi-User Experiences.png";
+import Scale from "../../assets/images/assets/Scalability.png";
+import Analytics from "../../assets/images/assets/Analytics Integration.png";
+
+
 
 const FancyFeatureTwentyFour = () => {
   return (
@@ -22,7 +28,7 @@ const FancyFeatureTwentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#3FE193" }}
             >
-              <img style={{ width: "65%" }} src={service1} alt="icon" />
+              <img style={{ width: "65%" }} src={ThreeD} alt="icon" />
             </div>
             <div className="text">
               <h4>3D Environment Creation
@@ -48,7 +54,7 @@ const FancyFeatureTwentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#FF4F86" }}
             >
-              <img style={{ width: "65%" }} src={service2} alt="icon" />
+              <img style={{ width: "65%" }} src={Real} alt="icon" />
             </div>
             <div className="text">
               <h4>Real-life Customer Experience
@@ -75,7 +81,7 @@ const FancyFeatureTwentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#FFCF39" }}
             >
-              <img style={{ width: "65%" }} src={service3} alt="icon" />
+              <img style={{ width: "65%" }} src={Recruit} alt="icon" />
             </div>
             <div className="text">
               <h4>Enhanced Recruitment
@@ -103,7 +109,7 @@ const FancyFeatureTwentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#6D64FF" }}
             >
-              <img style={{ width: "65%" }} src={service4} alt="icon" />
+              <img style={{ width: "65%" }} src={Interactivity} alt="icon" />
             </div>
             <div className="text">
               <h4>Interactivity
@@ -129,7 +135,7 @@ const FancyFeatureTwentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#E752FF" }}
             >
-              <img style={{ width: "65%" }} src={service5} alt="icon" />
+              <img style={{ width: "65%" }} src={Adaptation} alt="icon" />
             </div>
             <div className="text">
               <h4>Fast Adaptation
@@ -156,7 +162,7 @@ const FancyFeatureTwentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#29EEFB" }}
             >
-              <img style={{ width: "65%" }} src={service6} alt="icon" />
+              <img style={{ width: "65%" }} src={Audio} alt="icon" />
             </div>
             <div className="text">
               <h4>Spatial Audio
@@ -181,7 +187,7 @@ const FancyFeatureTwentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#32B5FF" }}
             >
-              <img style={{ width: "65%" }} src={service7} alt="icon" />
+              <img style={{ width: "65%" }} src={Rear} alt="icon" />
             </div>
             <div className="text">
               <h4>Incredible Training Platform
@@ -208,7 +214,7 @@ const FancyFeatureTwentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#FFA361" }}
             >
-              <img style={{ width: "65%" }} src={service8} alt="icon" />
+              <img style={{ width: "65%" }} src={Workplace} alt="icon" />
             </div>
             <div className="text">
               <h4>Revolutionized Workplace
@@ -231,9 +237,9 @@ const FancyFeatureTwentyFour = () => {
           <div className="d-flex align-items-start">
             <div
               className="icon d-flex align-items-center justify-content-center"
-              style={{ background: "#FFA361" }}
+              style={{ background: "#6D64FF" }}
             >
-              <img style={{ width: "65%" }} src={service8} alt="icon" />
+              <img style={{ width: "65%" }} src={Market} alt="icon" />
             </div>
             <div className="text">
               <h4>Advantage Marketing
@@ -256,9 +262,9 @@ const FancyFeatureTwentyFour = () => {
           <div className="d-flex align-items-start">
             <div
               className="icon d-flex align-items-center justify-content-center"
-              style={{ background: "#FFA361" }}
+              style={{ background: "#FFCF39" }}
             >
-              <img style={{ width: "65%" }} src={service8} alt="icon" />
+              <img style={{ width: "65%" }} src={Multiuser} alt="icon" />
             </div>
             <div className="text">
               <h4>Multi-User Experiences
@@ -280,9 +286,9 @@ const FancyFeatureTwentyFour = () => {
           <div className="d-flex align-items-start">
             <div
               className="icon d-flex align-items-center justify-content-center"
-              style={{ background: "#FFA361" }}
+              style={{ background: "#FF4F86" }}
             >
-              <img style={{ width: "65%" }} src={service8} alt="icon" />
+              <img style={{ width: "65%" }} src={Scale} alt="icon" />
             </div>
             <div className="text">
               <h4>Scalability
@@ -304,9 +310,9 @@ const FancyFeatureTwentyFour = () => {
           <div className="d-flex align-items-start">
             <div
               className="icon d-flex align-items-center justify-content-center"
-              style={{ background: "#FFA361" }}
+              style={{ background: "#3FE193" }}
             >
-              <img style={{ width: "65%" }} src={service8} alt="icon" />
+              <img style={{ width: "65%" }} src={Analytics} alt="icon" />
             </div>
             <div className="text">
               <h4>Analytics Integration

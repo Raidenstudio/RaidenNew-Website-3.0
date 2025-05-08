@@ -14,7 +14,7 @@ const featureGroups = [
     items: [
       { title: "Solidity", icon: "116" },
       { title: "Vyper", icon: "117" },
-      { title: "More Coming Soon", icon: "118" },
+      { title: "Fe", icon: "118" },
     ],
   },
   {
@@ -51,7 +51,7 @@ const featureGroups = [
   },
 ];
 
-const borderColors = ["#8F6BF6", "#00C2CB"]; // outer and middle groups
+const borderColors = ["#8F6BF6", "#00C2CB"]; 
 
 const Technologies = () => {
   return (

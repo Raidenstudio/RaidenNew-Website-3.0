@@ -1,10 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import RealEstate from "../../assets/images/assets/Metaverse real estate.png";
+import Space from "../../assets/images/assets/Metaverse 3D Space.png";
+import Game from "../../assets/images/assets/Metaverse game.png";
+import App from "../../assets/images/assets/Metaverse App.png";
+import Social from "../../assets/images/assets/Metaverse Social media.png";
+
 
 const FeaturesContent = [
   {
     bgColor: "#FFEBDB",
-    icon: "68",
+    icon: App,
     title: "Metaverse Application Development",
     desc: `With AR, VR, blockchain, creating, user engagement, security, and API integration. 
 `,
@@ -12,14 +17,14 @@ const FeaturesContent = [
   },
   {
     bgColor: "#E0F8F8",
-    icon: "67",
+    icon: Space,
     title: "Metaverse 3D Space Development",
     desc: `Dynamic 3D design and deploy AI avatars for personalized identity experiences.`,
     dataDealy: "100",
   },
   {
     bgColor: "#F7EDFF",
-    icon: "70",
+    icon: Game,
     title: "Metaverse Game Development",
     desc: `Conquering the whole world of innovation and thrilling lively experiences.`,
     dataDealy: "200",
@@ -27,21 +32,21 @@ const FeaturesContent = [
   {
     bgColor: "#FFEBDB",
     icon: "68",
-    title: "Metaverse Application Development",
-    desc: `With AR, VR, blockchain, creating, user engagement, security, and API integration. 
+    title: "Metaverse NFT Marketplace Development",
+    desc: `Shifting to a decentralised smart contract marketplace for asset trading. 
 `,
     dataDealy: "0",
   },
   {
     bgColor: "#E0F8F8",
-    icon: "67",
+    icon: RealEstate,
     title: "Metaverse Real Estate Development",
     desc: `Build your digital space with blockchain before building your physical space.`,
     dataDealy: "100",
   },
   {
     bgColor: "#F7EDFF",
-    icon: "70",
+    icon: Social,
     title: "Metaverse social media app development",
     desc: `Creating decentralised social existence with intensifying XR and AI. `,
     dataDealy: "200",
@@ -64,8 +69,7 @@ const FancyFeatureTen = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: val.bgColor }}
             >
-              <img src={`images/icon/${val.icon}.svg`} alt="icon" />
-            </div>
+<img src={val.icon} alt="icon" /></div>
             <h3>{val.title}</h3>
             <p>{val.desc}</p>
           </div>
