@@ -120,7 +120,7 @@ const AllRoutes = () => {
         />
         <Route path="/mobile-app-landing" element={<MobileAppLanding />} />
         <Route path="/website-builder" element={<WebsiteBuilderLanding />} />
-        <Route path="/form-survey-landing" element={<FormSurveyLanding />} />
+        <Route path="/form-survey-landing" element={< ServiceDetails/>} />
         <Route path="/vr-landing" element={<VrLanding />} />
         <Route path="/e-commerce" element={<Ecommerce />} />
         <Route path="/cart" element={<Cart />} />
@@ -175,7 +175,7 @@ const AllRoutes = () => {
         <Route path="/augmented-reality-ar-development" element={<ServiceV2 />} />
         <Route path="augmented-reality-vr-development-company" element={<ServiceV3 />} />
         <Route path="metaverse-development" element={<ServiceV4 />} />
-        <Route path="/service-details" element={<ServiceDetails />} />
+        <Route path="web3-development" element={<FormSurveyLanding />} />
 
         {/* inner pages Docs   */}
         <Route path="/doc-full-width" element={<DocFullWidth />} />

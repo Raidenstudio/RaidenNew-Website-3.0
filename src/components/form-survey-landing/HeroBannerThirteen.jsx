@@ -11,23 +11,18 @@ const HeroBannerThirteen = () => {
     <div className="hero-banner-thirteen lg-container" id="home">
       <div className="container">
         <div className="row">
-          <div className="col-lg-6">
-            <Link to="/pricing-pm" className="slogan tran3s">
-              <strong>Offer</strong> is going on till friday, $1.99/mo.{" "}
-              <i className="fa fa-chevron-right" aria-hidden="true"></i>
-            </Link>
-            <h1 className="hero-heading">Ask your customer in a better way.</h1>
-            <p className="hero-sub-heading">
-              Deski delivered blazing fast performance, striking word soludtion
+          <div className="col-lg-12 text-center">
+            <h1 className="hero-heading text-center m-0">Transforming Ideas into Decentralized Reality</h1>
+            <p className="hero-sub-heading mt-40">
+            We revolutionize with a decentralized blockchain, turning your visionary investments into functional, scalable, and secure applications. We build the gap between blockchain innovation and practical implementation for better convenience.
             </p>
             <a href="#" className="theme-btn-fourteen">
-              Get Started - It’s Free
+             Contact Us
             </a>
-            <div className="info">No credit card required</div>
           </div>
         </div>
 
-        <div className="screen-holder">
+        {/* <div className="screen-holder">
           <img
             src="images/assets/ils_22.svg"
             alt="illustration"
@@ -43,7 +38,7 @@ const HeroBannerThirteen = () => {
             alt="illustration"
             className="shapes shape-two"
           />
-        </div>
+        </div> */}
         {/* <!-- /.screen-holder --> */}
       </div>
     </div>

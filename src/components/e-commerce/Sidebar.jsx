@@ -177,10 +177,10 @@ const Services = [
      name: "Metaverse Development",
      routerPath: "/metaverse-development",
    },
-  // {
-  //   name: "Service Details",
-  //   routerPath: "service-details",
-  // },
+  {
+    name: "Web3 Development",
+    routerPath: "/web3-development",
+  },
 ];
 const Miscellaneous = [
   {

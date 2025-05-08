@@ -6,19 +6,19 @@ const Features = () => {
       <div className="col-xl-6 col-lg-7 order-lg-last" data-aos="fade-left">
         <div className="ps-lg-5">
           <div className="title-style-fourteen">
-            <div className="upper-title">Made for human</div>
-            <h2>Quality, actionable data process.</h2>
+            <h2>Our Approach to Web3 Development
+            </h2>
           </div>
           <div className="tag-line">
-            Creating an online survey has never been easier. With many advanced
-            features of deski.
+          We build successful Web3 projects by joining hands with technical excellence and practical business value.
           </div>
           <ul className="list-item">
-            <li>Easy-to-use survey maker interface</li>
-            <li>Drag and Drop to change the order of questions</li>
-            <li>Quota management</li>
-            <li>Step view layout for interactive survey filling experiences</li>
-            <li>Customizable URL</li>
+            <li>Understanding your vision and objectives for better consultation</li>
+            <li>Aligns blockchain function into your core business goals
+            </li>
+            <li>Carried out with frequent demos and feedback for improvements</li>
+            <li>Across multiple networks and ensuring safety and network compatibility</li>
+            <li>No source of technical mysteries throughout the entire journey</li>
           </ul>
         </div>
       </div>

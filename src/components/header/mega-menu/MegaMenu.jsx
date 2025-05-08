@@ -237,7 +237,7 @@ const Services = [
   },
   {
     name: "Service Details",
-    routerPath: "/service-details",
+    routerPath: "/web3-development",
   },
 ];
 const Miscellaneous = [

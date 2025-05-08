@@ -9,35 +9,28 @@ const HowWorks = () => {
     {
       _id: 1,
       icon: icon1,
-      title: "Choose",
-      descriptions: `Simplify the process to create proposals.`,
+      title: "Innovation",
+      descriptions: `Solving technical problems using blockchain technology`,
       bgColor: "#F0F0FF",
       delayAnimation: "0",
     },
     {
       _id: 2,
       icon: icon2,
-      title: "Create",
-      descriptions: `Create interactive, error-free quotes.`,
+      title: "Accessible",
+      descriptions: `Providing a seamless Web3 experience for every user`,
       bgColor: "#FCF2DA",
       delayAnimation: "100",
     },
     {
       _id: 3,
       icon: icon3,
-      title: "Check",
-      descriptions: `Create interactive, error-free quotes.`,
+      title: "Long-term scalability",
+      descriptions: ` Ensuring optimized and secure contracts`,
       bgColor: "#EBFBED",
       delayAnimation: "200",
     },
-    {
-      _id: 4,
-      icon: icon4,
-      title: "Final",
-      descriptions: `Create interactive, error-free quotes.`,
-      bgColor: "#FFEEEE",
-      delayAnimation: "300",
-    },
+   
   ];
   return (
     <>

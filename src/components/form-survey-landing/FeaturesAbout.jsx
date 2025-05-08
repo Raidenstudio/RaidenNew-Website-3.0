@@ -8,16 +8,12 @@ const FeaturesAbout = () => {
         data-aos="fade-left"
       >
         <div className="title-style-fourteen">
-          <div className="upper-title">GREAT INTERFACE</div>
-          <h2>First-class & smooth user experience.</h2>
+          <div className="upper-title">Ready to Start Your Web3 Development Journey?          </div>
+          <h2>Together, let us create something incredible!
+          </h2>
         </div>
         <div className="tag-line pb-10">
-          Deski responds to previous answers to show only the most relevant
-          questions. A better experience for respondents better data for you.
-        </div>
-        <a href="#" className="theme-btn-fourteen">
-          Create survay now{" "}
-        </a>
+        Get in touch today for a free consultation and discover how our web3 development expertise can transform your business.        </div>
       </div>
       <div
         className="col-lg-6 order-lg-first text-center text-lg-left"
