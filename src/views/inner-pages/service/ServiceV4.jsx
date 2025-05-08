@@ -17,6 +17,7 @@ import FooterTwo from "../../../components/footer/FooterTwo";
 import CopyRightTwo from "../../../components/footer/CopyRightTwo";
 import Image from "../../../assets/images/assets/Profile 5.png";
 import FancyFeatureTewentySix from "../../../components/features/FancyFeatureTewentySix";
+import FancyTextBlock21 from './../../../components/fancy-text-block/FancyTextBlock21';
 
 Modal.setAppElement("#root");
 
@@ -92,9 +93,8 @@ const ServiceV4 = () => {
                 >
                   <div className="title-style-six">
                     <h2>
-                      Crafting an Immersive{" "}
+                      Dream. Create. Explore with {" "}
                       <span style={{ textDecoration: "none" }}> Metaverse </span>
-                      Experience.
                     </h2>
                   </div>
                 </div>
@@ -103,9 +103,8 @@ const ServiceV4 = () => {
                   data-aos="fade-left"
                   data-aos-duration="1200"
                 >
-                  <p className="sub-text pt-30 pb-30">
-                    Commonly used in the graphic, print & publishing industries
-                    for previewing visual mockups.
+                  <p className="sub-text pt-30 pb-30 text-start">
+                  Explore endless possibilities, let your imagination run wild, and build your world. Your adventure begins now.
                   </p>
                 </div>
               </div>
@@ -118,44 +117,11 @@ const ServiceV4 = () => {
             />
           </div>
         </div>
-<div className="fancy-text-block-twentyOne pt-170 md-pt-100">
+        <div className="fancy-text-block-twentyOne pt-170 md-pt-100 font-gordita" id="about">
         <div className="container">
-          <div className="row align-items-center">
-            <div
-              className="col-lg-6 col-md-7 m-auto aos-init aos-animate"
-              data-aos="fade-right"
-              data-aos-duration="1200"
-            >
-              <div className="img-meta">
-                <img
-                  src={Image}
-                  alt="media"
-                  className="m-auto"
-                />
-                <img
-                  src="images/shape/138.svg"
-                  alt="shape"
-                  className="shapes shape-one"
-                />
-              </div>
-            </div>
-            <div
-              className="col-xl-5 col-lg-6 ms-auto aos-init aos-animate"
-              data-aos="fade-left"
-              data-aos-duration="1200"
-              data-aos-delay="100"
-            >
-              <div className="text-wrapper md-pt-50">
-                <div className="client-info font-rubik">
-                WHY CHOOSE RAIDEN?
-                </div>
-                <p>
-                Raiden, a proactive development company that bridges the virtual and real worlds, can help you unlock the metaverse's potential by creating engaging digital spaces with limitless opportunities for significant interaction.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div></div>
+          <FancyTextBlock21/>
+        </div>
+      </div>
 
         <div class="fancy-feature-twentySix lg-container pt-160 md-pt-100">
 <div className="container">

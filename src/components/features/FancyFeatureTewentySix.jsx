@@ -11,7 +11,7 @@ const featuresContent = [
   {
     colorBasedClass: "color-variatin-two",
     title: "Design of UI/UX",
-    subTitle: `Modelizing the surface and inner workings of the project with UI/UX's perfect pitch UI/UX's perfect pitch. `,
+    subTitle: `Utilizing the perfect pitch of UI/UX to model the project's external and internal operations.`,
     shapeOne: "224",
     shapeTwo: "225",
   },
