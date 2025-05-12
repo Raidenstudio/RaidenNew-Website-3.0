@@ -182,6 +182,10 @@ const Services = [
     name: "Service Details",
     routerPath: "web3-development",
   },
+  {
+    name: "NFT Development",
+    routerPath: "/nft-development-company",
+  }
 ];
 const Miscellaneous = [
   {

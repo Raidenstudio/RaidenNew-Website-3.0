@@ -5,28 +5,37 @@ import VisibilitySensor from "react-visibility-sensor";
 const counterUpContent = [
   {
     startCount: "0",
-    endCount: "1500",
+    endCount: "50",
     endPointText: "+",
-    countMeta: "Positive Review",
-    meta: "A place to think and track ideas",
+    countMeta: "App Developed",
+    meta: "App Developed",
     animationDelay: "0",
   },
   {
     startCount: "0",
-    endCount: "200",
+    endCount: "30",
     endPointText: "+",
-    countMeta: "Branches",
-    meta: "A home for your iqu team, best",
+    countMeta: "Team Members",
+    meta: "Team Members",
+    animationDelay: "50",
+  },
+  {
+    startCount: "0",
+    endCount: "100",
+    endPointText: "%",
+    countMeta: "Satisfaction Rate",
+    meta: "Satisfaction Rate",
     animationDelay: "100",
   },
   {
     startCount: "0",
-    endCount: "2",
-    endPointText: "k+",
-    countMeta: "Work Done",
-    meta: "Beautiful docs for your APIs, Products",
-    animationDelay: "200",
+    endCount: "10",
+    endPointText: "%",
+    countMeta: "Years of Experience",
+    meta: "Years of Experience",
+    animationDelay: "150",
   },
+
 ];
 
 const CounterFive = () => {
@@ -35,7 +44,7 @@ const CounterFive = () => {
     <div className="row justify-content-center">
       {counterUpContent.map((val, i) => (
         <div
-          className="col-lg-4 col-sm-6"
+          className="col-lg-3 col-sm-6"
           data-aos="fade-up"
           data-aos-duration="1200"
           data-aos-delay={val.animationDelay}
@@ -66,7 +75,7 @@ const CounterFive = () => {
               </span>
               {val.endPointText}
             </h2>
-            <em>{val.countMeta}</em>
+            {/* <em>{val.countMeta}</em> */}
             <p className="font-rubik">{val.meta}</p>
           </div>
         </div>

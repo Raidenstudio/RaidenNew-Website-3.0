@@ -99,6 +99,7 @@ import Cart from "../views/inner-pages/e-commerce/Cart";
 import Checkout from "../views/inner-pages/e-commerce/Checkout";
 import ProductDetails from "../views/inner-pages/e-commerce/ProductDetails";
 import ARServices from "../views/inner-pages/service/ARServices";
+import NftService from "../views/inner-pages/service/NftService";
 
 const AllRoutes = () => {
   return (
@@ -120,7 +121,7 @@ const AllRoutes = () => {
         />
         <Route path="/mobile-app-landing" element={<MobileAppLanding />} />
         <Route path="/website-builder" element={<WebsiteBuilderLanding />} />
-        <Route path="/form-survey-landing" element={< ServiceDetails/>} />
+        <Route path="/form-survey-landing" element={< ServiceDetails />} />
         <Route path="/vr-landing" element={<VrLanding />} />
         <Route path="/e-commerce" element={<Ecommerce />} />
         <Route path="/cart" element={<Cart />} />
@@ -176,6 +177,7 @@ const AllRoutes = () => {
         <Route path="augmented-reality-vr-development-company" element={<ServiceV3 />} />
         <Route path="metaverse-development" element={<ServiceV4 />} />
         <Route path="web3-development" element={<FormSurveyLanding />} />
+        <Route path="/nft-development-company" element={<NftService />} />
 
         {/* inner pages Docs   */}
         <Route path="/doc-full-width" element={<DocFullWidth />} />

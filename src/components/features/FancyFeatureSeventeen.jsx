@@ -3,41 +3,51 @@ import React from "react";
 const FeaturesContent = [
   {
     img: "94",
-    title: "Web Clipper",
-    desc: ` Deski Web offers a complete lineup of features from any
-      major browser.`,
+    title: "Non-Fungible Token",
+    desc: `Have a reliable token conversion process for your physical and digital assets, and trade them on the NFT Marketplace to increase your trading opportunities.`,
   },
   {
     img: "95",
-    title: "All Platform",
-    desc: ` Lorem ipsum began as scrambl nonsensical Latin derived from
-      Cicero's quis`,
+    title: "NFT Marketplace",
+    desc: `Establishing your marketplace's user interface and back-end system to enable NFT trading with smooth end-to-end encryption.`,
   },
   {
     img: "96",
-    title: "Character Finding",
-    desc: ` Creation timelines for the standard lorem ipsum passage
-      vary, with qius some citing.`,
+    title: "Web3 Wallet Integration",
+    desc: `Future-proofed through innovative crypto wallet integration. Seamlessly connect across diverse blockchains, applying the latest features.`,
   },
   {
     img: "97",
-    title: "App Integrations",
-    desc: ` Lorem ipsum began as scrambl nonsensical Latin derived from
-      Cicero's quis`,
+    title: "Smart Contract Development",
+    desc: `Customize and configure your own marketplace, adopting Raiden's NFT features and experience to ensure efficient trading.`,
   },
   {
     img: "98",
-    title: "Web Application",
-    desc: ` Lorem ipsum was purposefully designed to have no meaning,
-      but appear like text`,
+    title: "Cross-Chain NFT Platform Development",
+    desc: `NFTs are created using multi-token wallet systems, cross-chain transactions, and blockchain network interoperability.`,
   },
   {
     img: "99",
-    title: "Notes & Docs",
-    desc: `  Letraset's dry-transfer sheets later entered the digital
-      world via Aldus PageMaker.`,
+    title: "NFT Game Development",
+    desc: `Raiden handles the development of full-cycle NFT games, creating a game platform with tradable and collectible non-fungible tokens.`,
+  },
+  {
+    img: "95",
+    title: "NFT Art Gallery",
+    desc: `Utilize Raiden's design expertise to create an influential NFT art gallery that will guarantee your tokenized art captures attention.`,
+  },
+  {
+    img: "96",
+    title: "NFT Streaming Platform",
+    desc: `Empower creators with Raiden's NFT multimedia platform. Tokenize and generate your audio podcast, music, video, and even live concerts.`,
+  },
+  {
+    img: "97",
+    title: "NFT Aggregator Development",
+    desc: `With the blockchain expertise and standard NFT, we cut through the difficulties and make sure you receive it in time.`,
   },
 ];
+
 const FancyFeatureSeventeen = () => {
   return (
     <>

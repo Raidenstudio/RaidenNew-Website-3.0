@@ -170,17 +170,21 @@ const Services = [
     routerPath: "/augmented-reality-ar-development-company",
   },
   {
-     name: "VR Development",
+    name: "VR Development",
     routerPath: "/augmented-reality-vr-development-company",
-   },
-   {
-     name: "Metaverse Development",
-     routerPath: "/metaverse-development",
-   },
+  },
+  {
+    name: "Metaverse Development",
+    routerPath: "/metaverse-development",
+  },
   {
     name: "Web3 Development",
     routerPath: "/web3-development",
   },
+  {
+    name: "NFT Development",
+    routerPath: "/nft-development-company",
+  }
 ];
 const Miscellaneous = [
   {
