@@ -1,30 +1,18 @@
-import React, { useState } from "react";
+import {React} from "react";
 import Modal from "react-modal";
-import { Link } from "react-router-dom";
-
 import Header from "../../../components/e-commerce/Header";
-import FancyFeatureTewentyFour from "../../../components/features/FancyFeatureTewentyFour";
-import FancyFeatureTewentyTwo from "../../../components/features/FancyFeatureTewentyTwo";
-import HeaderLandingAppointment from "../../../components/header/landing/HeaderLandingAppointment";
-import HeroBannerNine from "../../../components/hero-banner/HeroBannerNine";
-import TestimonialSeven from "../../../components/testimonial/TestimonialSeven";
-import SocialTwo from "../../../components/social/SocialTwo";
 import FancyFeatureTen from "../../../components/features/FancyFeatureTen";
-import FancyFeatureTewentyNine from "../../../components/features/FancyFeatureTewentyNine";
 import CallToActionThree from "../../../components/call-to-action/CallToActionThree";
 import FancyFeatureNinteen from "../../../components/features/FancyFeatureNinteen";
 import FooterTwo from "../../../components/footer/FooterTwo";
 import CopyRightTwo from "../../../components/footer/CopyRightTwo";
-import Image from "../../../assets/images/assets/Profile 5.png";
 import FancyFeatureTewentySix from "../../../components/features/FancyFeatureTewentySix";
 import FancyTextBlock21 from './../../../components/fancy-text-block/FancyTextBlock21';
+import SocialThree from "../../../components/social/SocialThree";
 
 Modal.setAppElement("#root");
 
 const ServiceV4 = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleModalOne = () => setIsOpen(!isOpen);
-
   return (
     <div className="main-page-wrapper">
       <Header />
@@ -65,7 +53,7 @@ const ServiceV4 = () => {
                 </span>
               </h2>
             </div>
-            <SocialTwo />
+            <SocialThree />
           </div>
         </div>
 

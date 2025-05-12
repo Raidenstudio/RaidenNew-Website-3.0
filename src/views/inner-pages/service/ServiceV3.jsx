@@ -1,16 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
-import FancyVideoFive from "../../../components/video/FancyVideoFive";
-import CounterThree from "../../../components/counter/CounterThree";
 import FooterTwo from "../../../components/footer/FooterTwo";
 import CopyRightTwo from "../../../components/footer/CopyRightTwo";
-import FeatureSixV2 from "../../../components/features/FeatureSixV2";
 import CallToActionThree from "../../../components/call-to-action/CallToActionThree";
-import FancyFeatureThirtyThree from "../../../components/features/FancyFeatureThirtyThree";
-import FancyFeatureThirtyFour from "../../../components/features/FancyFeatureThirtyFour";
 import Header from "../../../components/e-commerce/Header";
 import FancyFeatureTwentyFour from "../../../components/features/FancyFeatureTwentyFour";
-import VideoGallery from "../../../components/video/VideoGallery";
 import SocialTwo from "../../../components/social/SocialTwo";
 import service4 from "../../../assets/images/assets/ARservice/3D Design and Development.png"
 import service2 from "../../../assets/images/assets/ARservice/AR Game development.png"
@@ -18,6 +12,12 @@ import service1 from "../../../assets/images/assets/ARservice/Custom AR developm
 import service3 from "../../../assets/images/assets/ARservice/Web AR development.png"
 
 const ServiceV3 = () => {
+    const [showAllServices, setShowAllServices] = useState(false);
+
+  const toggleShowAllServices = () => {
+    setShowAllServices(!showAllServices);
+  };
+
   return (
     <div className="main-page-wrapper p0">
         <Helmet>
@@ -64,283 +64,266 @@ const ServiceV3 = () => {
         {/* =============================================
         Fancy Feature Twenty Three
     ==============================================  */}
-        <div className="fancy-feature-twentyThree pt-170 md-pt-100" id="feature">
-            <div className="container">
-                <div
-                    className="title-style-nine text-center pb-180 md-pb-100"
-                    data-aos="fade-up"
-                    data-aos-duration="1200"
-                >
-                    {/* <h6>Our Features</h6> */}
-                    <h2>
-                    Fostering your 3D vision with
-                        <br /> our advanced {" "}
-                        <span>
-                        VR Development Services <img src="images/shape/192.svg" alt="shape" />
-                        </span>
-                    </h2>
-                    {/* <p>
-                        Our online booking software allows you to schedule your client’s
-                        appointments easily & efficiently.
-                    </p> */}
-                </div>
-                {/* End title */}
+         <div className="fancy-feature-twentyThree pt-170 md-pt-100" id="feature">
+        <div className="container">
+          <div
+            className="title-style-nine text-center pb-180 md-pb-100"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            <h2>
+              Fostering your 3D vision with
+              <br /> our advanced{" "}
+              <span>
+                VR Development Services <img src="images/shape/192.svg" alt="shape" />
+              </span>
+            </h2>
+          </div>
 
-                <div className="block-style-twentyThree">
-                    <div className="row d-flex align-items-center">
-                        <div
-                            className="col-lg-6 order-lg-last ms-auto"
-                            data-aos="fade-left"
-                            data-aos-duration="1200"
-                        >
-                            <div className="screen-container ms-auto">
-                                <div
-                                    className="oval-shape"
-                                    style={{ background: "#69FF9C" }}
-                                ></div>
-                                <div
-                                    className="oval-shape"
-                                    style={{ background: "#FFF170" }}
-                                ></div>
-                                <img
-                                    src={service1}
-                                    alt=""
-                                    className="shapes shape-one"
-                                />
-                            </div>
-                            {/* /.screen-container */}
-                        </div>
-                        <div
-                            className="col-lg-5 order-lg-first"
-                            data-aos="fade-right"
-                            data-aos-duration="1200"
-                        >
-                            <div className="text-wrapper">
-                                {/* <h6>Custom AR App Development
-                                </h6> */}
-                                <h3 className="title">Customized VR Solutions
-                                </h3>
-                                <p>
-                                Our cloud-integrated virtual reality services offer 3D modeling and system integration to develop interactive experiences tailored to your digital needs.                                </p>
-                            </div>
-                            {/*  /.text-wrapper */}
-                        </div>
-                    </div>
+          {/* First three services - always visible */}
+          <div className="block-style-twentyThree">
+            <div className="row d-flex align-items-center">
+              <div
+                className="col-lg-6 order-lg-last ms-auto"
+                data-aos="fade-left"
+                data-aos-duration="1200"
+              >
+                <div className="screen-container ms-auto">
+                  <div
+                    className="oval-shape"
+                    style={{ background: "#69FF9C" }}
+                  ></div>
+                  <div
+                    className="oval-shape"
+                    style={{ background: "#FFF170" }}
+                  ></div>
+                  <img
+                    src={service1}
+                    alt=""
+                    className="shapes shape-one"
+                  />
                 </div>
-                {/* /.block-style-twentyThree */}
-
-                <div className="block-style-twentyThree">
-                    <div className="row d-flex align-items-center">
-                        <div className="col-lg-6">
-                            <div
-                                className="screen-container me-auto"
-                                data-aos="fade-right"
-                                data-aos-duration="1200"
-                            >
-                                <div
-                                    className="oval-shape"
-                                    style={{ background: "#FFDE69" }}
-                                ></div>
-                                <div
-                                    className="oval-shape"
-                                    style={{ background: "#FF77D9" }}
-                                ></div>
-                                <img
-                                    src={service2}
-                                    alt="screen"
-                                    className="shapes shape-two"
-                                />
-                            </div>
-                            {/* /.screen-container */}
-                        </div>
-                        <div
-                            className="col-lg-5 ms-auto"
-                            data-aos="fade-left"
-                            data-aos-duration="1200"
-                        >
-                            <div className="text-wrapper">
-                                {/* <h6>WORKFLOW MANAGEMENT</h6> */}
-                                <h3 className="title">VR App Development</h3>
-                                <p>
-                                Creation of advanced virtual reality applications for immersive displays on iOS and Android, fully optimizing your digital environment's capabilities.                                </p>
-                            </div>
-                            {/* /.text-wrapper */}
-                        </div>
-                    </div>
+              </div>
+              <div
+                className="col-lg-5 order-lg-first"
+                data-aos="fade-right"
+                data-aos-duration="1200"
+              >
+                <div className="text-wrapper">
+                  <h3 className="title">Customized VR Solutions</h3>
+                  <p>
+                    Our cloud-integrated virtual reality services offer 3D modeling and system integration to develop interactive experiences tailored to your digital needs.
+                  </p>
                 </div>
-                {/* /.block-style-twentyThree */}
-
-                <div className="block-style-twentyThree">
-                    <div className="row d-flex align-items-center">
-                        <div
-                            className="col-lg-6 order-lg-last ms-auto"
-                            data-aos="fade-right"
-                            data-aos-duration="1200"
-                        >
-                            <div className="screen-container ms-auto">
-                                <div
-                                    className="oval-shape"
-                                    style={{ background: "#00F0FF" }}
-                                ></div>
-                                <div
-                                    className="oval-shape"
-                                    style={{ background: "#FC6BFF" }}
-                                ></div>
-                                <img
-                                    src={service3}
-                                    alt="screen"
-                                    className="shapes shape-three"
-                                />
-                            </div>
-                            {/* /.screen-container */}
-                        </div>
-                        <div
-                            className="col-lg-5 order-lg-first"
-                            data-aos="fade-left"
-                            data-aos-duration="1200"
-                        >
-                            <div className="text-wrapper">
-                                {/* <h6>ON-DEMAND SCHEDULING</h6> */}
-                                <h3 className="title">
-                                VR Game Development
-                                </h3>
-                                <p>
-                                Fluid Interaction, one of the top VR companies, and high-fidelity graphics provide users with captivating gaming experiences.
-                                </p>
-                            </div>
-                            {/* /.text-wrapper */}
-                        </div>
-                    </div>
-                </div>
-                {/* /.block-style-twentyThree */}
-
-                <div className="block-style-twentyThree">
-                    <div className="row d-flex align-items-center">
-                        <div className="col-lg-6">
-                            <div
-                                className="screen-container me-auto"
-                                data-aos="fade-right"
-                                data-aos-duration="1200"
-                            >
-                                <div
-                                    className="oval-shape"
-                                    style={{ background: "#FFDE69" }}
-                                ></div>
-                                <div
-                                    className="oval-shape"
-                                    style={{ background: "#FF77D9" }}
-                                ></div>
-                                <img
-                                    src={service4}
-                                    alt="screen"
-                                    className="shapes shape-two"
-                                />
-                            </div>
-                            {/* /.screen-container */}
-                        </div>
-                        <div
-                            className="col-lg-5 ms-auto"
-                            data-aos="fade-left"
-                            data-aos-duration="1200"
-                        >
-                            <div className="text-wrapper">
-                                {/* <h6>WORKFLOW MANAGEMENT</h6> */}
-                                <h3 className="title">3D Architecture
-                                </h3>
-                                <p>
-                                Our XR solutions guarantee long-term ROI by providing scalable applications with superior performance.
-                                </p>
-                            </div>
-                            {/* /.text-wrapper */}
-                        </div>
-                    </div>
-                </div>
-
-                <div className="block-style-twentyThree">
-                    <div className="row d-flex align-items-center">
-                        <div
-                            className="col-lg-6 order-lg-last ms-auto"
-                            data-aos="fade-right"
-                            data-aos-duration="1200"
-                        >
-                            <div className="screen-container ms-auto">
-                                <div
-                                    className="oval-shape"
-                                    style={{ background: "#00F0FF" }}
-                                ></div>
-                                <div
-                                    className="oval-shape"
-                                    style={{ background: "#FC6BFF" }}
-                                ></div>
-                                <img
-                                    src={service3}
-                                    alt="screen"
-                                    className="shapes shape-three"
-                                />
-                            </div>
-                            {/* /.screen-container */}
-                        </div>
-                        <div
-                            className="col-lg-5 order-lg-first"
-                            data-aos="fade-left"
-                            data-aos-duration="1200"
-                        >
-                            <div className="text-wrapper">
-                                {/* <h6>ON-DEMAND SCHEDULING</h6> */}
-                                <h3 className="title">
-                                Integrated Solutions
-                                </h3>
-                                <p>
-                                For smooth operation, integrate your VR solution with essential data streams, design tools, APIs, and security frameworks.                                </p>
-                            </div>
-                            {/* /.text-wrapper */}
-                        </div>
-                    </div>
-                </div>
-
-                <div className="block-style-twentyThree">
-                    <div className="row d-flex align-items-center">
-                        <div className="col-lg-6">
-                            <div
-                                className="screen-container me-auto"
-                                data-aos="fade-right"
-                                data-aos-duration="1200"
-                            >
-                                <div
-                                    className="oval-shape"
-                                    style={{ background: "#FFDE69" }}
-                                ></div>
-                                <div
-                                    className="oval-shape"
-                                    style={{ background: "#FF77D9" }}
-                                ></div>
-                                <img
-                                    src={service4}
-                                    alt="screen"
-                                    className="shapes shape-two"
-                                />
-                            </div>
-                            {/* /.screen-container */}
-                        </div>
-                        <div
-                            className="col-lg-5 ms-auto"
-                            data-aos="fade-left"
-                            data-aos-duration="1200"
-                        >
-                            <div className="text-wrapper">
-                                {/* <h6>WORKFLOW MANAGEMENT</h6> */}
-                                <h3 className="title">VR App Consultation
-                                </h3>
-                                <p>
-                                Planning, creating, and launching your VR app with our skilled developers requires expert advice.                                </p>
-                            </div>
-                            {/* /.text-wrapper */}
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </div>
+          </div>
 
+          <div className="block-style-twentyThree">
+            <div className="row d-flex align-items-center">
+              <div className="col-lg-6">
+                <div
+                  className="screen-container me-auto"
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                >
+                  <div
+                    className="oval-shape"
+                    style={{ background: "#FFDE69" }}
+                  ></div>
+                  <div
+                    className="oval-shape"
+                    style={{ background: "#FF77D9" }}
+                  ></div>
+                  <img
+                    src={service2}
+                    alt="screen"
+                    className="shapes shape-two"
+                  />
+                </div>
+              </div>
+              <div
+                className="col-lg-5 ms-auto"
+                data-aos="fade-left"
+                data-aos-duration="1200"
+              >
+                <div className="text-wrapper">
+                  <h3 className="title">VR App Development</h3>
+                  <p>
+                    Creation of advanced virtual reality applications for immersive displays on iOS and Android, fully optimizing your digital environment's capabilities.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="block-style-twentyThree">
+            <div className="row d-flex align-items-center">
+              <div
+                className="col-lg-6 order-lg-last ms-auto"
+                data-aos="fade-right"
+                data-aos-duration="1200"
+              >
+                <div className="screen-container ms-auto">
+                  <div
+                    className="oval-shape"
+                    style={{ background: "#00F0FF" }}
+                  ></div>
+                  <div
+                    className="oval-shape"
+                    style={{ background: "#FC6BFF" }}
+                  ></div>
+                  <img
+                    src={service3}
+                    alt="screen"
+                    className="shapes shape-three"
+                  />
+                </div>
+              </div>
+              <div
+                className="col-lg-5 order-lg-first"
+                data-aos="fade-left"
+                data-aos-duration="1200"
+              >
+                <div className="text-wrapper">
+                  <h3 className="title">VR Game Development</h3>
+                  <p>
+                    Fluid Interaction, one of the top VR companies, and high-fidelity graphics provide users with captivating gaming experiences.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-50 mb-50 d-flex justify-content-center">
+            <button 
+              onClick={toggleShowAllServices}
+              className="theme-btn-nine"
+            >
+              {showAllServices ? 'Show Less' : 'Load More Services'}
+            </button>
+          </div>
+
+          {showAllServices && (
+            <>
+              <div className="block-style-twentyThree">
+                <div className="row d-flex align-items-center">
+                  <div className="col-lg-6">
+                    <div
+                      className="screen-container me-auto"
+                      data-aos="fade-right"
+                      data-aos-duration="1200"
+                    >
+                      <div
+                        className="oval-shape"
+                        style={{ background: "#FFDE69" }}
+                      ></div>
+                      <div
+                        className="oval-shape"
+                        style={{ background: "#FF77D9" }}
+                      ></div>
+                      <img
+                        src={service4}
+                        alt="screen"
+                        className="shapes shape-two"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="col-lg-5 ms-auto"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                  >
+                    <div className="text-wrapper">
+                      <h3 className="title">3D Architecture</h3>
+                      <p>
+                        Our XR solutions guarantee long-term ROI by providing scalable applications with superior performance.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="block-style-twentyThree">
+                <div className="row d-flex align-items-center">
+                  <div
+                    className="col-lg-6 order-lg-last ms-auto"
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                  >
+                    <div className="screen-container ms-auto">
+                      <div
+                        className="oval-shape"
+                        style={{ background: "#00F0FF" }}
+                      ></div>
+                      <div
+                        className="oval-shape"
+                        style={{ background: "#FC6BFF" }}
+                      ></div>
+                      <img
+                        src={service3}
+                        alt="screen"
+                        className="shapes shape-three"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="col-lg-5 order-lg-first"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                  >
+                    <div className="text-wrapper">
+                      <h3 className="title">Integrated Solutions</h3>
+                      <p>
+                        For smooth operation, integrate your VR solution with essential data streams, design tools, APIs, and security frameworks.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="block-style-twentyThree">
+                <div className="row d-flex align-items-center">
+                  <div className="col-lg-6">
+                    <div
+                      className="screen-container me-auto"
+                      data-aos="fade-right"
+                      data-aos-duration="1200"
+                    >
+                      <div
+                        className="oval-shape"
+                        style={{ background: "#FFDE69" }}
+                      ></div>
+                      <div
+                        className="oval-shape"
+                        style={{ background: "#FF77D9" }}
+                      ></div>
+                      <img
+                        src={service4}
+                        alt="screen"
+                        className="shapes shape-two"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="col-lg-5 ms-auto"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                  >
+                    <div className="text-wrapper">
+                      <h3 className="title">VR App Consultation</h3>
+                      <p>
+                        Planning, creating, and launching your VR app with our skilled developers requires expert advice.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+
+        </div>
+      </div>
 
         <div className="fancy-feature-twentyFour pt-140 md-pt-60" id="service">
             <div className="container">
