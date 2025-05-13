@@ -185,6 +185,10 @@ const Services = [
   {
     name: "NFT Development",
     routerPath: "/nft-development-company",
+  },
+  {
+    name: "De-Fi Development",
+    routerPath: "/de-fi-development"
   }
 ];
 const Miscellaneous = [

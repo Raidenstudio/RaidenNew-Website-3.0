@@ -1,20 +1,16 @@
-import React, { useState } from "react";
+import {React} from "react";
 import { Helmet } from "react-helmet";
 import DocEditorTabs from "../../components/block-slider/DocEditorTabs";
-import FancyFeatureNinteen from "../../components/features/FancyFeatureNinteen";
-import HeaderLandingEditor from "../../components/header/landing/HeaderLandingEditor";
-import HeroBannerEight from "../../components/hero-banner/HeroBannerEight";
-import TestimonialSeven from "../../components/testimonial/TestimonialSeven";
-import FooterSeven from "../../components/footer/FooterSeven";
-import CopyRightThree from "../../components/footer/CopyRightThree";
 import FacnyVideoTwo from "../../components/video/FacnyVideoTwo";
 import FacnyVideoThree from "../../components/video/FacnyVideoThree";
-import VideoGallery from "../../components/video/VideoGallery";
+import Header from "../../components/e-commerce/Header";
+import FancyDEFIServices from "../../components/features/FancyDEFIServices";
+import CallToActionThree from "../../components/call-to-action/CallToActionThree";
+import FooterTwo from "../../components/footer/FooterTwo";
+import CopyRightTwo from "../../components/footer/CopyRightTwo";
 
 const VideoEditorLanding = () => {
   // For header select menu
-  const [click1, setClick1] = useState(false);
-  const handleClick1 = () => setClick1(!click1);
   return (
     <div className="main-page-wrapper font-gordita">
       <Helmet>
@@ -24,14 +20,64 @@ const VideoEditorLanding = () => {
       </Helmet>
       {/* End Page SEO Content */}
 
-      <HeaderLandingEditor />
+      <Header />
       {/* End Header Landing Editor */}
 
       {/* 	=============================================
 				Theme Hero Banner
 			==============================================  */}
-      <div id="home">
-        <HeroBannerEight />
+       <div className="hero-banner-ten">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-9 col-lg-11 col-md-8 m-auto">
+              <h1
+                className="hero-heading"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+              >
+               Global Connoisseurs of DeFi Technology
+              </h1>
+              <p
+                className="hero-sub-heading"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-delay="100"
+              >
+                Advances within the DeFi realm to provide an uninterrupted experience.
+              </p>
+            </div>
+          </div>
+          {/* End .row */}
+<div>
+
+</div>
+        </div>
+        {/* End .container */}
+
+        <div className="icon-box-one">
+          <img src="images/logo/logo-39.png" alt="icon" />
+        </div>
+        <div className="icon-box-two">
+          <img src="images/logo/logo-40.png" alt="icon" />
+        </div>
+        <div className="icon-box-three">
+          <img src="images/logo/logo-41.png" alt="icon" />
+        </div>
+        <div className="icon-box-four">
+          <img src="images/logo/logo-42.png" alt="icon" />
+        </div>
+        <div className="icon-box-five">
+          <img src="images/logo/logo-43.png" alt="icon" />
+        </div>
+        <div className="icon-box-six">
+          <img src="images/logo/logo-44.png" alt="icon" />
+        </div>
+        <div className="icon-box-seven">
+          <img src="images/logo/logo-45.png" alt="icon" />
+        </div>
+        <div className="icon-box-eight">
+          <img src="images/logo/logo-46.png" alt="icon" />
+        </div>
       </div>
 
       {/* 		=============================================
@@ -47,12 +93,12 @@ const VideoEditorLanding = () => {
                 data-aos-duration="1200"
               >
                 <h2>
-                  Build with <br /> 800+ Stunning Effects
+                Strategic DeFi Implementation Solutions
                 </h2>
-                <p>
+                {/* <p>
                   Rotate, merge, trim, split, crop and flip videos with a modern
                   & simple ui
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -70,6 +116,16 @@ const VideoEditorLanding = () => {
       {/* 	=============================================
 				Fancy Feature Nineteen
 			==============================================  */}
+
+<div className="fancy-feature-twenty mt-225 md-mt-150">
+        <div className="container">
+          <div className="block-style-twenty">
+            <FacnyVideoTwo />
+          </div>
+          {/* /.block-style-twenty */}
+          {/* /.block-style-twenty */}
+        </div>
+      </div>
       <div className="fancy-feature-nineteen pt-180 md-pt-100" id="effect">
         <div className="container">
           <div className="row">
@@ -79,7 +135,7 @@ const VideoEditorLanding = () => {
               data-aos-duration="1200"
             >
               <div className="title-style-eight text-center mb-80 md-mb-40">
-                <h2>Unleash Creativity with Pro Effects</h2>
+                <h2>Cardinal Merits of our DeFi Development Company                </h2>
                 <p>
                   Explore advanced video editing features that only
                   professionals have access to!
@@ -88,7 +144,7 @@ const VideoEditorLanding = () => {
             </div>
           </div>
           {/* End .row */}
-          <FancyFeatureNinteen />
+          <FancyDEFIServices />
         </div>
       </div>
       {/* /.fancy-feature-nineteen */}
@@ -98,9 +154,6 @@ const VideoEditorLanding = () => {
 			==============================================  */}
       <div className="fancy-feature-twenty mt-225 md-mt-150">
         <div className="container">
-          <div className="block-style-twenty">
-            <FacnyVideoTwo />
-          </div>
           {/* /.block-style-twenty */}
 
           <div className="block-style-twenty mt-170 md-mt-120">
@@ -114,7 +167,7 @@ const VideoEditorLanding = () => {
       {/* 	=====================================================
 				Fancy Feature Twenty One
 			===================================================== */}
-      <div className="fancy-feature-twentyOne mt-200 md-mt-100" id="template">
+      {/* <div className="fancy-feature-twentyOne mt-200 md-mt-100" id="template">
         <div className="container">
           <div
             className="title-style-eight text-center mb-80 md-mb-30"
@@ -141,14 +194,13 @@ const VideoEditorLanding = () => {
             </div>
           </div>
         </div>
-        {/* /.lg-container */}
-      </div>
+      </div> */}
       {/* /.fancy-feature-twentyOne */}
 
       {/* =====================================================
 				Client Feedback Slider Six
 			===================================================== */}
-      <div
+      {/* <div
         className="client-feedback-slider-six pt-170 md-pt-120"
         id="feedback"
       >
@@ -166,21 +218,17 @@ const VideoEditorLanding = () => {
                 </div>
               </div>
             </div>
-            {/* End .row */}
           </div>
-          {/* End .container */}
           <div className="clientSliderSix">
             <TestimonialSeven />
           </div>
         </div>
-        {/* /.inner-container */}
-      </div>
-      {/* /.client-feedback-slider-six */}
+      </div> */}
 
       {/* 	=====================================================
 				Fancy Short Banner Nine
 			===================================================== */}
-      <div className="fancy-short-banner-nine mt-170 md-mt-80">
+      {/* <div className="fancy-short-banner-nine mt-170 md-mt-80">
         <div className="container">
           <div className="row">
             <div
@@ -192,10 +240,8 @@ const VideoEditorLanding = () => {
                 <h2>200k+ Customers have our deski.Try it now!</h2>
                 <p>Try it risk free — we don’t charge cancellation fees.</p>
               </div>
-              {/*  /.title-style-six */}
             </div>
           </div>
-          {/* End .row */}
           <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">
             <div
               className={
@@ -230,7 +276,6 @@ const VideoEditorLanding = () => {
             </div>
           </div>
         </div>
-        {/*  /.container */}
         <img
           src="images/shape/177.svg"
           alt="shape"
@@ -241,26 +286,31 @@ const VideoEditorLanding = () => {
           alt="shape"
           className="shapes shape-two"
         />
-      </div>
-      {/*  /.fancy-short-banner-nen */}
+      </div> */}
 
       {/* =====================================================
 				Footer Style Seven
 			===================================================== */}
-      <footer className="theme-footer-seven mt-120 md-mt-100">
-        <div className="lg-container">
+       <div className="fancy-short-banner-three mt-200 md-mt-150">
           <div className="container">
-            <FooterSeven />
-          </div>
-
-          <div className="container">
-            <div className="bottom-footer">
-              <CopyRightThree />
+            <div className="bg-wrapper">
+              <CallToActionThree />
             </div>
           </div>
         </div>
-        {/* /.lg-container */}
-      </footer>
+
+        <footer className="theme-footer-two pt-150 md-pt-80">
+          <div className="top-footer">
+            <div className="container">
+              <FooterTwo />
+            </div>
+          </div>
+          <div className="container">
+            <div className="bottom-footer-content">
+              <CopyRightTwo />
+            </div>
+          </div>
+        </footer>
       {/* /.theme-footer-seven */}
     </div>
   );

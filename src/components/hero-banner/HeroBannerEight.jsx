@@ -24,28 +24,28 @@ const HeroBannerEight = () => {
             >
               {heroContent.description}
             </p>
-            <a
+            {/* <a
               href="#"
               className="theme-btn-nine"
               data-aos="fade-up"
               data-aos-delay="200"
             >
               {heroContent.buttonText}
-            </a>
+            </a> */}
           </div>
         </div>
 
-        <div className="video-wrapper">
+        {/* <div className="video-wrapper">
           <Video />
-        </div>
+        </div> */}
         {/* /.video-wrapper */}
       </div>
 
       <div className="partner-slider-two mt-130 md-mt-80">
         <div className="container">
-          <div className="partnerSliderTwo">
+          {/* <div className="partnerSliderTwo">
             <BrandFive />
-          </div>
+          </div> */}
         </div>
       </div>
       {/* /.partner-slider-two */}

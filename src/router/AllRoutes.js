@@ -178,6 +178,7 @@ const AllRoutes = () => {
         <Route path="metaverse-development" element={<ServiceV4 />} />
         <Route path="web3-development" element={<FormSurveyLanding />} />
         <Route path="/nft-development-company" element={<NftService />} />
+        <Route path="/de-fi-development" element={<VideoEditorLanding />} />
 
         {/* inner pages Docs   */}
         <Route path="/doc-full-width" element={<DocFullWidth />} />

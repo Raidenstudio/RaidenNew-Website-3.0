@@ -20,19 +20,12 @@ const FacnyVideoTwo = () => {
           data-aos-duration="1200"
         >
           <div className="text-wrapper ps-5">
-            <h6>SUPPORTED</h6>
-            <h3 className="title">Import & Export all format.</h3>
+            <h6>SERVICES</h6>
+            <h3 className="title">Backup your financial future with DeFi
+            </h3>
             <p>
-              Go paperless. Back up important documents to all your devices, and
-              keep the information not the clutter.
+            Explore the changing financial terrain and discover new opportunities. Our specialized DeFi development services promote innovation, increase financial accessibility, and boost your business. Together, let us shape the future of finance.
             </p>
-            <div
-              className="d-flex align-items-center video-button  order-sm-last"
-              onClick={() => setOpen(true)}
-            >
-              <i className="fa fa-caret-right" aria-hidden="true"></i>
-              <span>WATCH VIDEO</span>
-            </div>
           </div>
           {/* /.text-wrapper */}
         </div>
