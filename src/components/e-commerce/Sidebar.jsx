@@ -300,7 +300,7 @@ const Sidebar = () => {
                 </MenuItem>
               ))} */}
             {/* </SubMenu> */}
-            <MenuItem>
+            <MenuItem className="pt-3">
               <Link to="/">Home</Link>
             </MenuItem>
             {/* End Home SubMenu */}
