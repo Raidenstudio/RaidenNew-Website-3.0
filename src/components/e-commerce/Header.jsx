@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import CartDropdown from "./CartDropdown";
 import Sidebar from "./Sidebar";
@@ -9,6 +9,23 @@ const Header = () => {
   const handleClick = () => setClick(!click);
   const [click2, setClick2] = useState(false);
   const handleClick2 = () => setClick2(!click2);
+
+  const menuRef = useRef(null);
+
+  useEffect(()=>{
+    function handleClickOutSide(event) {
+      if(menuRef.current && !menuRef.current.contains(event.target))
+      {
+        setClick2(false)
+      }
+      
+    }
+    document.addEventListener('mousedown',handleClickOutSide);
+
+    return ()=>{
+      document.removeEventListener('mousedown',handleClickOutSide);
+    }
+  },[]);
 
   const changeBackground = () => {
     if (window.scrollY >= 90) {
@@ -21,7 +38,7 @@ const Header = () => {
   window.addEventListener("scroll", changeBackground);
 
   return (
-    <div
+    <div 
       className={
         navbar
           ? "theme-main-menu sticky-menu bg-none theme-menu-eight fixed"
@@ -67,6 +84,7 @@ const Header = () => {
           {/* sidebar nav  toggle button */}
 
           <div
+            ref={menuRef}
             className={click2 ? "main-sidebar-nav show" : "main-sidebar-nav"}
           >
             <div className="offcanvas-header d-flex justify-content-between align-items-center">
