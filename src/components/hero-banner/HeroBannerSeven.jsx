@@ -13,7 +13,7 @@ const HeroBannerSeven = () => {
 
         <div className="row">
           <div className="col-lg-6">
-            <h1 className="hero-heading">
+            <h1 className="">
               <span>Capture</span> Idea & find it later.
             </h1>
             <p className="hero-sub-heading">

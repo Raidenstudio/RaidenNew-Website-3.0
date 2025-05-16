@@ -2,36 +2,17 @@ import React from "react";
 import FancyFeatureTewentyEight from "../features/FancyFeatureTewentyEight";
 import FancyFeatureThirtyOne from "../features/FancyFeatureThirtyOne";
 
-const featureList = [
-  {
-    icon: "157",
-    title: "Drag Image & SVG",
-    description: ` Create beautiful sites at breakneck speed without
-    compromising on your creativit`,
-  },
-  {
-    icon: "158",
-    title: "Create Custom Field",
-    description: `Keep your brand front & center with your customer`,
-  },
-  {
-    icon: "159",
-    title: "Custom Attribute",
-    description: ` Increase your client retention rate by showing your results
-    and value.`,
-  },
-];
 
-const FancyTextBlock29 = () => {
+
+const FancyTextBlock29 = ({featureList}) => {
   return (
     <div className="container">
       <div className="block-style-thirty bottom-border pb-80 mb-170 md-pb-40 md-mb-90">
         <div className="row">
           <div className="col-xl-5 col-lg-6">
             <div className="text-block md-pb-60">
-              <div className="feature">DRAG & DROP</div>
               <div className="title-style-nine mb-60 md-mb-40">
-                <h2>Control all elements super easy.</h2>
+                <h2>Broad Growth in Security and Collaboration</h2>
               </div>
 
               <ul className="feature-list-one">
@@ -49,9 +30,7 @@ const FancyTextBlock29 = () => {
               </ul>
               {/* End .feature-list-one */}
 
-              <a href="#" className="theme-btn-thirteen mt-20">
-                Learn More
-              </a>
+             
             </div>
             {/* <!-- /.text-block --> */}
           </div>
@@ -66,27 +45,23 @@ const FancyTextBlock29 = () => {
         <div className="row">
           <div className="col-xl-5 col-lg-6 order-lg-last">
             <div className="text-block md-pb-60">
-              <div className="feature">EMAIL & SMS BROADCAST</div>
+              
               <div className="title-style-nine mb-45 md-mb-30">
-                <h2>We have email, sms Broadcast for you.</h2>
+                <h2>Why Raiden’s Development Services</h2>
               </div>
               <p>
-                Broadcast and email is best use for something announcing
-                significant changes .
+               Raiden provides secure, tailored blockchain solutions that support your company's objectives.
               </p>
               <ul className="feature-list-two">
                 <li>
-                  Makes them <span>purchase</span> your product, service and
-                  quis interact website due.
+                  We provide dApps, smart contracts, and private blockchain networks.
                 </li>
                 <li>
-                  Holds and catches their <span>attention</span> lorem.
+                  We value speed, accuracy, and purposeful development.
                 </li>
-                <li>Diverts them to your brand.</li>
+                <li>End-to-end solutions grounded in transparency, innovation, and trust.</li>
               </ul>
-              <a href="#" className="theme-btn-thirteen mt-30">
-                Learn More
-              </a>
+              
             </div>
             {/* <!-- /.text-block --> */}
           </div>
@@ -101,13 +76,13 @@ const FancyTextBlock29 = () => {
         <FancyFeatureTewentyEight />
       </div>
 
-      <div className="block-style-thirty mt-150 md-mt-90">
+      {/* <div className="block-style-thirty mt-150 md-mt-90">
         <div className="row">
           <div className="col-xl-5 col-lg-6">
             <div className="text-block md-pb-60">
-              <div className="feature">PRE-made template</div>
+              
               <div className="title-style-nine mb-45">
-                <h2>Pre-Made Stunning Templates.</h2>
+                <h2>Development Process</h2>
               </div>
               <p className="pb-30">
                 Feel free to choose from our huge selection of templates,
@@ -118,18 +93,18 @@ const FancyTextBlock29 = () => {
                 See all Template
               </a>
             </div>
-            {/* <!-- /.text-block --> */}
+            {/* <!-- /.text-block --> 
           </div>
           <div className="col-xl-7 col-lg-6">
             <img src="images/assets/screen_37.png" alt="screen" />
           </div>
         </div>
-      </div>
+       </div> */}
       {/* <!-- /.block-style-thirty --> */}
 
-      <div className="mt-30">
+      {/* <div className="mt-30">
         <FancyFeatureThirtyOne />
-      </div>
+      </div> */}
     </div>
   );
 };

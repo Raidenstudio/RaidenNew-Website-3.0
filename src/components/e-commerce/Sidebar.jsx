@@ -188,6 +188,10 @@ const Services = [
   {
     name: "De-Fi Development",
     routerPath: "/de-fi-development"
+  },
+  {
+    name: "Blockchain Development",
+    routerPath: "/blockchain-development"
   }
 ];
 const Miscellaneous = [

@@ -4,39 +4,58 @@ const featuresContent = [
   {
     bgColor: "#F7EDFF",
     icon: "166",
-    title: "Chat & Messaging",
+    title: "Opportunities & Consulting",
     descriptions:
-      "Chat section is as significant as other sections on your website and it works best for your customers.",
+      "Blockchain consulting unlocks business potential; we validate projects, conduct extensive research, and analyze relevant blockchain platforms.",
     link: "#",
     dealyAnimation: "",
   },
   {
     bgColor: "#D8FFF1",
     icon: "167",
-    title: "eCommerce",
+    title: "Prototype & Use Case",
     descriptions:
-      "Build an online store that rank higher & sell more and integrates easily ooCommerce, to enhance the quality",
+      "We develop intuitive user experiences based on real-world blockchain use cases, including user flows, technical specifications, and system architecture.",
     link: "#",
     dealyAnimation: "100",
   },
   {
     bgColor: "#E6FBFF",
     icon: "168",
-    title: "Payment Gatway",
+    title: "Blockchain Development",
     descriptions:
-      "It saves the client cards on file securely for an effortless checkout experience using our advanced, secure payments system.",
+      "From concept to deployment, we create scalable, enterprise-grade decentralized applications that shorten time to market and increase ROI.",
     link: "#",
     dealyAnimation: "",
   },
   {
     bgColor: "#FFEBDB",
     icon: "169",
-    title: "Appointments",
+    title: "Deployment",
     descriptions:
-      "Our Scheduling Platform is Simple yet Powerful that you need to grow and manage your business in single user interface.",
+      "Along with pre-launch testing of smart contracts and dApps, we manage full-stack deployment, with front/backend configuration, node validation, and blockchain network setup.",
     link: "#",
     dealyAnimation: "100",
   },
+  {
+    bgColor: "#FFEBDB",
+    icon: "169",
+    title: "Maintenance",
+    descriptions:
+      "Ongoing support covering system upgrades, releases, and issue resolution to ensure smooth, uninterrupted operations.",
+    link: "#",
+    dealyAnimation: "100",
+  },
+  {
+    bgColor: "#FFEBDB",
+    icon: "169",
+    title: "Migration & Smart Contract Updates",
+    descriptions:
+      " We provide seamless protocol migration and smart contract updates to ensure system continuity and zero downtime.",
+    link: "#",
+    dealyAnimation: "100",
+  },
+  
 ];
 
 const FancyFeatureThirtyTwo = () => {
@@ -49,7 +68,7 @@ const FancyFeatureThirtyTwo = () => {
           data-aos-delay={item.dealyAnimation}
           key={i}
         >
-          <div className="block-style-thirtyTwo d-flex">
+          <div className="block-style-thirtyTwo d-flex bg-white " style={{maxHeight:"230px"}}>
             <div
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: item.bgColor }}
@@ -59,10 +78,6 @@ const FancyFeatureThirtyTwo = () => {
             <div className="text">
               <h4>{item.title}</h4>
               <p>{item.descriptions}</p>
-              <a href={item.link} className="theme-btn-ten">
-                Learn more
-                <i className="fa fa-chevron-right" aria-hidden="true"></i>
-              </a>
             </div>
           </div>
         </div>
