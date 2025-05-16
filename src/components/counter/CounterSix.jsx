@@ -5,25 +5,33 @@ import VisibilitySensor from "react-visibility-sensor";
 const counterUpContent = [
   {
     startCount: "0",
-    endCount: "13",
-    endPointText: "k",
-    meta: "Job done successfully",
+    endCount: "5",
+    endPointText: "+",
+    meta: "Years of Experience",
     animationDelay: "0",
     bgColor: "#25E5DA",
   },
   {
     startCount: "0",
-    endCount: "20",
-    endPointText: "million",
-    meta: "3,280 avg rating",
+    endCount: "50",
+    endPointText: "+",
+    meta: "Talented Squad",
     animationDelay: "100",
     bgColor: "#FF36AF",
   },
   {
     startCount: "0",
-    endCount: "3000",
+    endCount: "100",
+    endPointText: "%",
+    meta: "Job success",
+    animationDelay: "200",
+    bgColor: "#FFB13A",
+  },
+  {
+    startCount: "0",
+    endCount: "20",
     endPointText: "+",
-    meta: "Using Deski",
+    meta: "Countries served",
     animationDelay: "200",
     bgColor: "#FFB13A",
   },
@@ -35,7 +43,7 @@ const CounterSix = () => {
     <div className="row justify-content-center">
       {counterUpContent.map((val, i) => (
         <div
-          className="col-lg-4 "
+          className="col-lg-3"
           data-aos="fade-up"
           data-aos-duration="1200"
           data-aos-delay={val.animationDelay}

@@ -55,9 +55,9 @@ const WebsiteBuilderLanding = () => {
                 <div className="upper-title">Features</div>
                 <h2>
                   {" "}
-                  We’ve ton of features for give you
+                  Trailblazing Services Powering Your 
                   <span>
-                    the best website
+                    Blockchain Journey
                     <img
                       src="images/shape/line-shape-14.svg"
                       alt="line shape"
