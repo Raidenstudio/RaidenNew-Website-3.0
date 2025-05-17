@@ -5,8 +5,12 @@ export default function DocSlickAsNavTwo() {
   const [nav1, setNav1] = useState();
   const [nav2, setNav2] = useState();
 
+
+  console.log(nav1);
+  console.log(nav2);
+  
   var settings = {
-    slidesToShow: 3,
+    slidesToShow: 4,
     responsive: [
       {
         breakpoint: 991,
@@ -38,8 +42,9 @@ export default function DocSlickAsNavTwo() {
             <img src="images/icon/81.svg" alt="icon" />
           </div>
           <p>
-            Create task for any <br />
-            team person
+            Creative <br /> Mechanics
+            
+            
           </p>
         </div>
         {/* /.d-flex */}
@@ -48,8 +53,7 @@ export default function DocSlickAsNavTwo() {
             <img src="images/icon/81.svg" alt="icon" />
           </div>
           <p>
-            Make timeframe for <br />
-            do the task
+           Cross-Team <br /> Integration
           </p>
         </div>
         {/* /.d-flex */}
@@ -58,11 +62,18 @@ export default function DocSlickAsNavTwo() {
             <img src="images/icon/81.svg" alt="icon" />
           </div>
           <p>
-            Get task complated by <br />
-            your member
+            Production <br />Excellence
           </p>
         </div>
         {/* /.d-flex */}
+        <div className="d-flex item_content">
+          <div className="icon d-flex align-items-center justify-content-center">
+            <img src="images/icon/81.svg" alt="icon" />
+          </div>
+          <p>
+            Client-Centered Approach
+          </p>
+        </div>
       </Slider>
       {/* Bottom text slide */}
 

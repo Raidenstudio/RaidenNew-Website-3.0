@@ -10,72 +10,72 @@ import Solidity from "../../assets/images/assets/Solidity.png";
 import Webb from "../../assets/images/assets/Web3.png";
 
 
-const featureContent = [
+// const featureContent = [
 
-  {
-    delayAnimation: "150",
-    colorOfBorder: "#8F6BF6",
-    icon: HTML,
-    title: "HTML",
-  },
-  {
-    delayAnimation: "0",
-    colorOfBorder: "#FF5C5C",
-    icon: CSS,
-    title: "CSS",
-  },
-  {
-    delayAnimation: "0",
-    colorOfBorder: "#FF5C5C",
-    icon: Reactw,
-    title: "React",
-  },
-  {
-    delayAnimation: "150",
-    colorOfBorder: "#63EAA9",
-    icon: Reactw,
-    title: "React Native",
-  },
-  {
-    delayAnimation: "",
-    colorOfBorder: "#5BE2FF",
-    icon: Webb,
-    title: "Weeks",
-  },
-  {
-    delayAnimation: "150",
-    colorOfBorder: "#FF56EE",
-    icon: WEB,
-    title: "Websocket",
-  },
-  {
-    delayAnimation: "150",
-    colorOfBorder: "#8F6BF6",
-    icon: Rust,
-    title: "Rust",
-  },
-  {
-    delayAnimation: "0",
-    colorOfBorder: "#FF5C5C",
-    icon: Solidity,
-    title: "Solidity",
-  },
-  {
-    delayAnimation: "150",
-    colorOfBorder: "#63EAA9",
-    icon: Node,
-    title: "Node.js",
-  },
-  {
-    delayAnimation: "",
-    colorOfBorder: "#5BE2FF",
-    icon: Monogo,
-    title: "MongoDB",
-  },
+//   {
+//     delayAnimation: "150",
+//     colorOfBorder: "#8F6BF6",
+//     icon: HTML,
+//     title: "HTML",
+//   },
+//   {
+//     delayAnimation: "0",
+//     colorOfBorder: "#FF5C5C",
+//     icon: CSS,
+//     title: "CSS",
+//   },
+//   {
+//     delayAnimation: "0",
+//     colorOfBorder: "#FF5C5C",
+//     icon: Reactw,
+//     title: "React",
+//   },
+//   {
+//     delayAnimation: "150",
+//     colorOfBorder: "#63EAA9",
+//     icon: Reactw,
+//     title: "React Native",
+//   },
+//   {
+//     delayAnimation: "",
+//     colorOfBorder: "#5BE2FF",
+//     icon: Webb,
+//     title: "Weeks",
+//   },
+//   {
+//     delayAnimation: "150",
+//     colorOfBorder: "#FF56EE",
+//     icon: WEB,
+//     title: "Websocket",
+//   },
+//   {
+//     delayAnimation: "150",
+//     colorOfBorder: "#8F6BF6",
+//     icon: Rust,
+//     title: "Rust",
+//   },
+//   {
+//     delayAnimation: "0",
+//     colorOfBorder: "#FF5C5C",
+//     icon: Solidity,
+//     title: "Solidity",
+//   },
+//   {
+//     delayAnimation: "150",
+//     colorOfBorder: "#63EAA9",
+//     icon: Node,
+//     title: "Node.js",
+//   },
+//   {
+//     delayAnimation: "",
+//     colorOfBorder: "#5BE2FF",
+//     icon: Monogo,
+//     title: "MongoDB",
+//   },
  
-];
+// ];
 
-const FancyFeatureNinteen = () => {
+const FancyFeatureNinteen = ({featureContent}) => {
   return (
     <div className="row">
       {featureContent.map((val, i) => (
