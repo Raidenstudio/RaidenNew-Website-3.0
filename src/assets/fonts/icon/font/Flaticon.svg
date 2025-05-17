@@ -12,7 +12,7 @@ Created by FontForge 20170731 at Thu Oct 15 16:14:59 2020
 <defs>
 <font id="Flaticon" horiz-adv-x="512" >
   <font-face 
-    font-family="Flaticon"
+     font-family: "gordita"="Flaticon"
     font-weight="400"
     font-stretch="normal"
     units-per-em="512"
