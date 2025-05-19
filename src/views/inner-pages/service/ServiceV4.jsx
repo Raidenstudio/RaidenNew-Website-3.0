@@ -1,4 +1,4 @@
-import {React} from "react";
+import { React } from "react";
 import Modal from "react-modal";
 import Header from "../../../components/e-commerce/Header";
 import FancyFeatureTen from "../../../components/features/FancyFeatureTen";
@@ -18,6 +18,7 @@ import Rust from "../../../assets/images/assets/Rust.png";
 import Reactw from "../../../assets/images/assets/React.png";
 import Solidity from "../../../assets/images/assets/Solidity.png";
 import Webb from "../../../assets/images/assets/Web3.png";
+import serviceBack from "../../../assets/images/assets/metaverse/Both.svg"
 
 const featureContent = [
 
@@ -81,7 +82,7 @@ const featureContent = [
     icon: Monogo,
     title: "MongoDB",
   },
- 
+
 ];
 
 
@@ -121,16 +122,16 @@ const ServiceV4 = () => {
 
         <div className="partner-section-one mt-170 md-mt-90 pb-120 md-pb-80">
           <div className="container">
-            <div className="title-style-nine text-center mb-100">
-              <h6>Our Service</h6>
-              <h2>
-                Industries{" "}
-                <span>
-                  We Serve <img src="images/shape/201.svg" alt="shape" />
-                </span>
-              </h2>
+            <div className="position-relative">
+              <img src={serviceBack} />
+              <div style={{ width: "40%", textAlign: "center", margin: "auto", position: "absolute", top: "54%", left: "50%", transform: "translate(-50%, -50%)" }}>
+                <h3 style={{ fontWeight: "600" }}>Industries We Serve{" "}</h3>
+                <p className="sub-text pt-30 pb-30 text-center">
+                  With technical knowledge and creative solutions to tackle particular business problems, we produce outcomes across a range of industries.
+                </p>
+              </div>
             </div>
-            <SocialThree />
+
           </div>
         </div>
 
@@ -169,7 +170,7 @@ const ServiceV4 = () => {
                   data-aos-duration="1200"
                 >
                   <p className="sub-text pt-30 pb-30 text-start">
-                  Explore endless possibilities, let your imagination run wild, and build your world. Your adventure begins now.
+                    Explore endless possibilities, let your imagination run wild, and build your world. Your adventure begins now.
                   </p>
                 </div>
               </div>
@@ -183,32 +184,32 @@ const ServiceV4 = () => {
           </div>
         </div>
         <div className="fancy-text-block-twentyOne pt-170 md-pt-100 font-gordita" id="about">
-        <div className="container">
-          <FancyTextBlock21/>
+          <div className="container">
+            <FancyTextBlock21 />
+          </div>
         </div>
-      </div>
 
         <div class="fancy-feature-twentySix lg-container pt-160 md-pt-100">
-<div className="container">
-<div className="row">
-<div className="col-xl-11 m-auto" data-aos="fade-up">
-              <div className="title-style-twelve text-center pb-80 md-pb-30">
-                <div className="upper-title">Development Stories</div>
-                <h2>
-                  Architecting the Metaverse: <br />
-                  <span>
-                    Our Development Process.
-                    <img
-                      src="images/shape/line-shape-13.svg"
-                      alt="shape"
-                    />
-                  </span>
-                </h2>
+          <div className="container">
+            <div className="row">
+              <div className="col-xl-11 m-auto" data-aos="fade-up">
+                <div className="title-style-twelve text-center pb-80 md-pb-30">
+                  <div className="upper-title">Development Stories</div>
+                  <h2>
+                    Architecting the Metaverse: <br />
+                    <span>
+                      Our Development Process.
+                      <img
+                        src="images/shape/line-shape-13.svg"
+                        alt="shape"
+                      />
+                    </span>
+                  </h2>
+                </div>
               </div>
             </div>
-          </div>
 
-        <FancyFeatureTewentySix/></div></div>
+            <FancyFeatureTewentySix /></div></div>
 
         <div className="fancy-feature-nineteen pt-180 md-pt-100 " id="effect">
           <div className="container">
@@ -224,7 +225,7 @@ const ServiceV4 = () => {
                 </div>
               </div>
             </div>
-            <FancyFeatureNinteen featureContent={featureContent}/>
+            <FancyFeatureNinteen featureContent={featureContent} />
           </div>
         </div>
 
@@ -249,7 +250,7 @@ const ServiceV4 = () => {
           </div>
         </footer>
       </div>
-    </div>
+    </div >
   );
 };
 
