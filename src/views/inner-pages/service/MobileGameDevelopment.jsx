@@ -253,8 +253,8 @@ const MobileGameDevelopment = () => {
                 data-aos="fade-up"
                 data-aos-duration="1200"
               >
-                <h2>
-                Bringing Your Game to Life -The Process
+                <h2 className='text-wrap '>
+                 Bringing Your Game to Life <br /> The Process
                 </h2>
                 {/* <p>
                   Rotate, merge, trim, split, crop and flip videos with a modern

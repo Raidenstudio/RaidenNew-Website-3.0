@@ -77,7 +77,7 @@ import Webb from "../../assets/images/assets/Web3.png";
 
 const FancyFeatureNinteen = ({featureContent}) => {
   return (
-    <div className="row">
+    <div className="row ">
       {featureContent.map((val, i) => (
         <div
           className="col-lg-6"
@@ -89,7 +89,7 @@ const FancyFeatureNinteen = ({featureContent}) => {
             className="block-style-nineteen"
             style={{ borderLeftColor: val.colorOfBorder }}
           >
-            <div className="d-flex align-items-center">
+            <div className="d-flex align-items-center" style={{maxHeight:"100px"}}>
               <img
                 src={val.icon}
                 alt="icon"
