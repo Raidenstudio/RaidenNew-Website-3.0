@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import DocSlickAsNavTwo from '../../../components/block-slider/DocSlickAsNavTwo'
 import FancyFeatureNinteen from '../../../components/features/FancyFeatureNinteen'
 import DocEditorTabs from '../../../components/block-slider/DocEditorTabs';
 import FancyFeatureTwelve from '../../../components/features/FancyFeatureTwelve';
+
+//slider
+import Slider from "react-slick";
 
 //icons
 import icon1 from "../../../assets/images/assets/GameDevelopment/Elevate your vision with game-changing services/Concept to creation.png";
@@ -25,49 +28,51 @@ import icon17 from "../../../assets/images/assets/GameDevelopment/The Power Behi
 import icon18 from "../../../assets/images/assets/GameDevelopment/The Power Behind Play/innovation.png";
 
 
+
+
 const featureContent = [
 
   {
     delayAnimation: "150",
     colorOfBorder: "#8F6BF6",
     icon: icon1,
-    title: "Concept to creation",
-    description:"Our intelligent, captivating game concepts enthrall players with compelling plots, lovable characters, and realistic environments."
+    title: "Game Development",
+    description:"Making your game ideas a reality with the help of the robust Unity game maker platform."
   },
   {
     delayAnimation: "0",
     colorOfBorder: "#FF5C5C",
     icon: icon2,
-    title: "Smarter Development",
-    description:"Our code is clean, scalable, and optimized for smooth gameplay and high visual fidelity, with no compromises."
+    title: "AR/VR Solutions",
+    description:"Creating a high-quality AR/VR experience that blurs the line between the digital and physical world."
   },
   {
     delayAnimation: "0",
     colorOfBorder: "#FF5C5C",
     icon: icon3,
-    title: "Design That Clicks",
-    description:"UI/UX that is more than just functional; it is also intuitive, attractive, and addictive. Every single tap, swipe, and scroll feels natural."
+    title: "Interactive Simulations",
+    description:"A dynamic space created to safely simulate user scenarios, gameplay mechanics, and real-time decision-making."
   },
   {
     delayAnimation: "150",
     colorOfBorder: "#63EAA9",
     icon: icon4,
-    title: "Cross-Platform Ready",
-    description:"Play your game on any mobile screen. We build for iOS, Android, and beyond, ensuring maximum reach without compromise."
+    title: "UI/UX Design",
+    description:"Creating visually stunning and functionally smooth design that ensures every user journey is simple, enjoyable, and impactful."
   },
   {
     delayAnimation: "",
     colorOfBorder: "#5BE2FF",
     icon: icon5,
-    title: "Trustworthy Quality",
-    description:"Before your game is released to the public, extensive testing guarantees stability, speed, and fluid gameplay for a fun and frustration-free experience."
+    title: "Multi-Platform Deployment",
+    description:"Strategic deployment of applications across multiple platforms like web, mobile, desktop, and consoles for maximum reach and engagement."
   },
   {
     delayAnimation: "150",
     colorOfBorder: "#FF56EE",
     icon: icon6,
-    title: "Post-Launch Partnership",
-    description:"We continue to support you after release, providing updates, fixes, and enhancements to keep your game competitive and engaging."
+    title: "Maintenance & Support",
+    description:"Our services continue even after post-launch for maintenance, upgrades, and running the project hassle-free."
   },
   
 ];
@@ -76,39 +81,34 @@ const tabListContent = [
   {
     img: "img_81",
     // innerText: "Track Human faces",
-    title: "Discovery",
-    description: `We start with you, your imaginative ideas, what you need to achieve, and the uniqueness you want to create. This allows us to spot opportunities and challenges early on.`,
+    title: "Discovery & Planning",
+    description: `Identifying your goals, requirements, and target outcomes to create a strategic roadmap that sets the foundation for a successful project.`,
   },
   {
     img: "img_92",
     // innerText: "keyframing experience",
-    title: "Creating a blueprint",
-    description: `The strategic framework we create then describes the main concept, visual aesthetic, milestones, and release date of your game.`,
+    title: "Design & Prototype",
+    description: `Translating ideas into high-fidelity designs and interactive prototypes that ensure alignment between vision, usability, and functionality.`,
   },
   {
     img: "img_93",
     // innerText: "Audio track down",
-    title: "Building Your Game",
-    description: `Our team gets to turn your ideas into reality, focusing on smooth gameplay, eye-catching design, and a great player experience.`,
+    title: "Development & Testing",
+    description: `Building a project that is extensively tested at every stage of development to ensure optimal quality and functionality.`,
   },
   {
     img: "img_94",
     // innerText: "Take the color",
-    title: "Testing Every Detail",
-    description: `We thoroughly test your game to identify any issues and ensure that it works flawlessly across all devices.`,
+    title: "Deployment & Optimization",
+    description: `The next stage is to test the deployment on multiple platforms before delivery and adjust its functionality for a lasting real-world experience.`,
   },
   {
     img: "img_95",
     // innerText: "Edit videos at up to 4K",
-    title: "Launching and Improving",
-    description: `When your game goes live, we monitor its performance and make changes to keep players interested and returning for more.`,
+    title: "Maintenance & Updates",
+    description: `Ensure the product's long-term viability through post-launch services, such as strategic upgrades, performance tuning, and maintenance.`,
   },
-  {
-    img: "img_96",
-    // innerText: "Remove unwanted noise",
-    title: "Supporting the long run",
-    description: `Our assistance does not end at launch; we are here to assist with updates, fixes, and improvements as your game evolves.`,
-  },
+  
   
 ];
 
@@ -127,54 +127,79 @@ const tabList = [
 const FeatureContent = [
   {
     icon: icon13,
-    title: "Engagement",
-    subTitle: "Plugging in the imaginary storyline with a real, playful experience.",
-    hoverText: "Plugging in the imaginary storyline with a real, playful experience.",
+    title: "Immersive Experiences",
+    subTitle: "Create immersive experiences that use Unity to inspire, engage, and connect with users.",
+    hoverText: "Create immersive experiences that use Unity to inspire, engage, and connect with users.",
   },
   {
     icon: icon14,
-    title: "Brand Building",
-    subTitle: "Be the game changer in the market by creating your unique champion’s perspective.",
-    hoverText: "Be the game changer in the market by creating your unique champion’s perspective.",
+    title: "Scalability",
+    subTitle: "With Unity, you can make sure that your product is made for both the present and the future.",
+    hoverText: "With Unity, you can make sure that your product is made for both the present and the future.",
   },
   {
     icon: icon15,
-    title: "Monetization Opportunities",
-    subTitle: "Turn your ideas into a reliable source of income by unlocking customized pathways.",
-    hoverText: "Turn your ideas into a reliable source of income by unlocking customized pathways.",
+    title: "Cross-Platform Compatibility",
+    subTitle: "One solution, every device delivers unified functionality and flawless design across platforms to maximize your reach and efficiency.",
+    hoverText: "One solution, every device delivers unified functionality and flawless design across platforms to maximize your reach and efficiency.",
   },
   {
     icon: icon16,
-    title: "Audience Reach",
-    subTitle: "Reach millions of players across multiple platforms, seamlessly connected.",
-    hoverText: "Reach millions of players across multiple platforms, seamlessly connected.",
+    title: "Enhanced learning",
+    subTitle: "The digital world enables you to reach more clearly with visual learning on education and training, powered by Unity.",
+    hoverText: "The digital world enables you to reach more clearly with visual learning on education and training, powered by Unity.",
   },
   {
     icon: icon17,
-    title: "Customer Retention",
-    subTitle: "Keeping players hooked by regularly delivering new content and updates that they enjoy.",
-    hoverText: "Keeping players hooked by regularly delivering new content and updates that they enjoy.",
+    title: "Competitive Edge",
+    subTitle: "A king doesn't need any competition; likewise, Raiden's unity solution provides you with a competition-free zone.",
+    hoverText: "A king doesn't need any competition; likewise, Raiden's unity solution provides you with a competition-free zone.",
   },
   {
     icon: icon18,
-    title: "Innovation ",
-    subTitle: "Set the bar high with innovative ideas and high-tech graphics.Our goal is to create top mobile games with best graphics that define the future of play.",
-    hoverText: "Set the bar high with innovative ideas and high-tech graphics.Our goal is to create top mobile games with best graphics that define the future of play.",
+    title: "Cost-effectiveness",
+    subTitle: "Designation for effective quality solutions with efficient cost. ",
+    hoverText: "Designation for effective quality solutions with efficient cost. ",
   }
 ];
 
 const UnityGameDevelopment = () => {
+    //slider configure
+    const [nav1, setNav1] = useState();
+    const [nav2, setNav2] = useState();
+    
+    
+      console.log(nav1);
+      console.log(nav2);
+      
+      var settings = {
+        slidesToShow: 4,
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 420,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      };
+    
   return (
          <div className="hero-banner-twelve lg-container" id="home">
       <div className="container">
         <div className="row">
           <div className="col-xl-11 col-lg-12 col-md-10 m-auto text-center">
             <h1 style={{fontSize:"70px", fontStyle:"Raleway", color:"white"}} className="hero-heading" data-aos="fade-up">
-              Experience{" "}
+              Embark on{" "}
+              <span style={{ color: "#FF006B" }}>Unity Game</span>{" "}
               <br />
-              <span style={{ color: "#FF006B" }}>epic adventures</span>{" "}
-              <br />
-              with portable freedom.
+              Adventures
             </h1>
             <p
               style={{opacity:0.8}}
@@ -186,31 +211,129 @@ const UnityGameDevelopment = () => {
             </p>
           </div>
         </div>
-
-        
-        
-          
-        
       </div>
+
+                              {/*=============================================
+		   Fancy Feature Twelve
+	    ==============================================  */}
+      <div className="fancy-feature-twelve pt-250 md-pt-50 bg-black" id="about">
+        <div className="bg-wrapper">
+          <div className="container">
+            <div className="row">
+              <div className="col-xl-7 col-lg-10 col-md-8 m-auto">
+                <div className="title-style-six text-center">
+                  <h2 className='text-white'>
+                    Benefits of Choosing Unity for Your Project
+                  </h2>
+                </div>
+                {/* /.title-style-six */}
+              </div>
+            </div>
+            {/* End .row */}
+            <FancyFeatureTwelve  FeatureContent ={FeatureContent}/>
+          </div>
+        </div>
+        {/* /.bg-wrapper */}
+        <img src="images/shape/151.svg" alt="" className="shapes shape-one" />
+      </div>
+      {/*  /.fancy-feature-twelve */}
+      
       <div className="fancy-feature-thirteen pt-250 md-pt-110 " id="features">
               <div className="container">
                 <div className="row">
                   <div className="col-xl-8 col-lg-11 col-md-10 m-auto">
-                    <div className="title-style-six text-center text-nowrap">
-                      <h2 className='text-white'>
-                        Why Raiden’s<span> Game Zone</span> 
+                    <div className="title-style-six text-center">
+                      <h2 className='text-white '>
+                        Why Raiden’s <br /> <span> Unity Game Arena</span> 
                       </h2>
                       <p className="text-xs">
-                        Lorem ipsum dolor on adipisci elit io sed do eiusmod tempor
-                        dsu elit
+                        Combines innovation, collaboration, and expertise to create unique experiences across platforms.
                       </p>
                     </div>
                     {/* /.title-style-six */}
                   </div>
                 </div>
-      
+                {/* slider-wrapper */}
                 <div className="sldier-wrapper  mt-30 md-mt-50">
-                  <DocSlickAsNavTwo  />
+                    <Slider
+                        {...settings}
+                        asNavFor={nav1}
+                        ref={(slider2) => setNav2(slider2)}
+                        swipeToSlide={true}
+                        focusOnSelect={true}
+                        className="slick-nav-custom "
+                    >
+                        <div className="d-flex item_content">
+                        <div className="icon d-flex align-items-center justify-content-center">
+                            <img src="images/icon/81.svg" alt="icon" />
+                        </div>
+                        <p>
+                            Proven Track <br /> Record
+
+                            
+                            
+                        </p>
+                        </div>
+                        {/* /.d-flex */}
+                        <div className="d-flex item_content">
+                        <div className="icon d-flex align-items-center justify-content-center">
+                            <img src="images/icon/81.svg" alt="icon" />
+                        </div>
+                        <p>
+                            Collaborative <br /> Approach
+                        </p>
+                        </div>
+                        {/* /.d-flex */}
+                        <div className="d-flex item_content">
+                        <div className="icon d-flex align-items-center justify-content-center">
+                            <img src="images/icon/81.svg" alt="icon" />
+                        </div>
+                        <p>
+                           Innovative <br /> Solutions
+                        </p>
+                        </div>
+                        {/* /.d-flex */}
+                        <div className="d-flex item_content">
+                        <div className="icon d-flex align-items-center justify-content-center">
+                            <img src="images/icon/81.svg" alt="icon" />
+                        </div>
+                        <p>
+                           Timely <br /> Delivery
+                        </p>
+                        </div>
+                    </Slider>
+                    {/* Bottom text slide */}
+
+                    <div className="position-relative">
+                        <Slider
+                        className="slick-nav-none carousel-inner"
+                        asNavFor={nav2}
+                        fade={true}
+                        speed={600}
+                        ref={(slider1) => setNav1(slider1)}
+                        >
+                        <div className="carousel-item">
+                            <img src="images/assets/screen_07.png" alt="feature" />
+                        </div>
+                        <div className="carousel-item">
+                            <img src="images/assets/screen_08.png" alt="feature" />
+                        </div>
+                        <div className="carousel-item">
+                            <img src="images/assets/screen_09.png" alt="feature" />
+                        </div>
+                        </Slider>
+                        {/* Top Image slide */}
+                        <img
+                        src="images/shape/152.svg"
+                        alt="shape"
+                        className="shapes shape-one"
+                        />
+                        <img
+                        src="images/shape/153.png"
+                        alt="shape"
+                        className="shapes shape-two"
+                        />
+                    </div>
                 </div>
                 {/* /.sldier-wrapper  */}
               </div>
@@ -224,8 +347,8 @@ const UnityGameDevelopment = () => {
                 data-aos-duration="1200"
               >
                 <div className="title-style-eight text-center mb-80 md-mb-40">
-                  <h2>Elevate your vision with game-changing services.</h2>
-                  <p>Blockchain Front-end and Back-end</p>
+                  <h2>Unity Development Services</h2>
+                  
                 </div>
               </div>
             </div>
@@ -244,7 +367,7 @@ const UnityGameDevelopment = () => {
                 data-aos-duration="1200"
               >
                 <h2>
-                Bringing Your Game to Life -The Process
+                Unity Development Process
                 </h2>
                 {/* <p>
                   Rotate, merge, trim, split, crop and flip videos with a modern
@@ -262,34 +385,7 @@ const UnityGameDevelopment = () => {
         <img src="images/shape/175.svg" alt="" className="shapes shape-right" />
         <img src="images/shape/176.svg" alt="" className="shapes shape-left" />
       </div>
-      {/* /.fancy-feature-eighteen */}
-
-                 {/*=============================================
-		   Fancy Feature Twelve
-	    ==============================================  */}
-      <div className="fancy-feature-twelve pt-250 md-pt-50 bg-black" id="about">
-        <div className="bg-wrapper">
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-7 col-lg-10 col-md-8 m-auto">
-                <div className="title-style-six text-center">
-                  <h2 className='text-white'>
-                    The Power Behind Play
-                  </h2>
-                </div>
-                {/* /.title-style-six */}
-              </div>
-            </div>
-            {/* End .row */}
-            <FancyFeatureTwelve  FeatureContent ={FeatureContent}/>
-          </div>
-        </div>
-        {/* /.bg-wrapper */}
-        <img src="images/shape/151.svg" alt="" className="shapes shape-one" />
-      </div>
-      {/*  /.fancy-feature-twelve */}
-
-
+      
 
 
       </div>
