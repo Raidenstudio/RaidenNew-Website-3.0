@@ -111,7 +111,7 @@ const DocEditorTabs = ({tabListContent, tabList}) => {
                 </div>
                 <div className="col-md-6">
                   <div className="text-wrapper">
-                    <h4>{tabContent.title}</h4>
+                    <h4 class="text-black">{tabContent.title}</h4>
                     <p>{tabContent.description}</p>
                   </div>{" "}
                   {/* /.text-wrapper */}

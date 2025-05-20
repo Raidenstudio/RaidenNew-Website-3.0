@@ -1,8 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Header from "../e-commerce/Header";
+import CallToActionThree from "../call-to-action/CallToActionThree";
+import FooterTwo from "../footer/FooterTwo";
+import CopyRightTwo from "../footer/CopyRightTwo";
 
 const HeroBannerTwelve = () => {
   return (
+      <div className="main-page-wrapper">
+      <Header/>
     <div className="hero-banner-twelve lg-container" id="home">
       <div className="container">
         <div className="row">
@@ -29,6 +35,7 @@ const HeroBannerTwelve = () => {
           
         
       </div>
+    </div>
     </div>
     // /.hero-banner-twelve
   );

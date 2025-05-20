@@ -96,7 +96,7 @@ const FancyFeatureNinteen = ({featureContent}) => {
                 style={{ width: "50px", height: "50px", objectFit: "contain", marginRight: "15px" }}
               />
               <div className="text">
-                <h4>{val.title}</h4>
+                <h4 class="text-black">{val.title}</h4>
                 <p>{val.description}</p>
               </div>
             </div>

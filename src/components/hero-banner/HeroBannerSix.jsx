@@ -12,17 +12,17 @@ const HeroBannerSix = () => {
             data-aos="fade-up"
             data-aos-duration="1200"
           >
-            Build your Next <span>Product</span> with Deski.
+            Galaxies of Gameplay: An <span>Unreal</span> Engine Resource
           </h1>
-          <p
+          {/* <p
             className="hero-sub-heading"
             data-aos="fade-up"
             data-aos-duration="1200"
             data-aos-delay="100"
           >
-            Deski delivered blazing fast, striking soludtion
-          </p>
-          <div className="d-sm-flex align-items-center button-group">
+           Game Development
+          </p> */}
+          {/* <div className="d-sm-flex align-items-center button-group">
             <div
               className="d-flex align-items-center video-button fancybox order-sm-last"
               onClick={() => setOpen(true)}
@@ -50,7 +50,7 @@ const HeroBannerSix = () => {
                 <strong>App store</strong>
               </div>
             </a>
-          </div>
+          </div> */}
         </div>
         {/* End .col */}
       </div>
