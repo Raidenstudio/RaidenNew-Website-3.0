@@ -104,6 +104,7 @@ import HeroBannerTwelve from "../components/hero-banner/HeroBannerTwelve";
 import BlockchainDevelopment from "../views/inner-pages/service/BlockchainDevelopment";
 import MobileGameDevelopment from "../views/inner-pages/service/MobileGameDevelopment";
 import UnityGameDevelopment from "../views/inner-pages/service/UnityGameDevelopment";
+import MMORPGGameDevelopment from "../views/inner-pages/service/MMORPGGameDevelopment";
 
 const AllRoutes = () => {
   return (
@@ -183,10 +184,11 @@ const AllRoutes = () => {
         <Route path="web3-development" element={<FormSurveyLanding />} />
         <Route path="/nft-development-company" element={<NftService />} />
         <Route path="/de-fi-development" element={<VideoEditorLanding />} />
-        <Route path="/blockchain-development" element={<BlockchainDevelopment/>} />
-        <Route path="/mobile-game-development" element={<MobileGameDevelopment/>} />
-        <Route path="/unity-game-development" element={<UnityGameDevelopment/>}/>
-         <Route path="/unreal-development" element={<ProductLandingDark />} />
+        <Route path="/blockchain-development" element={<BlockchainDevelopment />} />
+        <Route path="/mobile-game-development" element={<MobileGameDevelopment />} />
+        <Route path="/unity-game-development" element={<UnityGameDevelopment />} />
+        <Route path="/unreal-development" element={<ProductLandingDark />} />
+        <Route path="/mmorpg-game-development" element={<MMORPGGameDevelopment />} />
 
 
 

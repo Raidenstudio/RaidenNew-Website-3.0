@@ -21,129 +21,150 @@ import DocSlickAsNavThree from "../../components/block-slider/DocSlickAsNavThree
 const ProductLandingDark = () => {
   const featureContent = [
 
-  {
-    delayAnimation: "150",
-    colorOfBorder: "#8F6BF6",
-    // icon: icon1,
-    title: "Game Development",
-    description:"We create engaging Unreal Engine games, captivating players from start to finish."
-  },
-  {
-    delayAnimation: "0",
-    colorOfBorder: "#FF5C5C",
-    // icon: icon2,
-    title: "VR & AR",
-    description:"Imagine entering the world of your dreams, one that is as realistic and captivating as you can imagine, from concept to interactive reality."
-  },
-  {
-    delayAnimation: "0",
-    colorOfBorder: "#FF5C5C",
-    // icon: icon3,
-    title: "Architectural Visualization",
-    description:"Make your blueprints interactive and engaging so you can see every detail before construction ever starts."
-  },
-  {
-    delayAnimation: "150",
-    colorOfBorder: "#63EAA9",
-    // icon: icon4,
-    title: "Simulation & Training",
-    description:"Discover education like never before. Our personalized simulations make training an engaging, practical experience that people remember."
-  },
-  {
-    delayAnimation: "",
-    colorOfBorder: "#5BE2FF",
-    // icon: icon5,
-    title: "Cinematics & Visual Effects",
-    description:"Use Unreal Engine to produce stunning images and mind-blowing effects to bring your story to life."
-  },
-  {
-    delayAnimation: "150",
-    colorOfBorder: "#FF56EE",
-    // icon: icon6,
-    title: "Custom Unreal Engine Solutions",
-    description:"We excel at creating unique Unreal Engine solutions, whether they are tools or specialized applications to address your specific problems."
-  },
-  
-];
+    {
+      delayAnimation: "150",
+      colorOfBorder: "#8F6BF6",
+      // icon: icon1,
+      title: "Game Development",
+      description: "We create engaging Unreal Engine games, captivating players from start to finish."
+    },
+    {
+      delayAnimation: "0",
+      colorOfBorder: "#FF5C5C",
+      // icon: icon2,
+      title: "VR & AR",
+      description: "Imagine entering the world of your dreams, one that is as realistic and captivating as you can imagine, from concept to interactive reality."
+    },
+    {
+      delayAnimation: "0",
+      colorOfBorder: "#FF5C5C",
+      // icon: icon3,
+      title: "Architectural Visualization",
+      description: "Make your blueprints interactive and engaging so you can see every detail before construction ever starts."
+    },
+    {
+      delayAnimation: "150",
+      colorOfBorder: "#63EAA9",
+      // icon: icon4,
+      title: "Simulation & Training",
+      description: "Discover education like never before. Our personalized simulations make training an engaging, practical experience that people remember."
+    },
+    {
+      delayAnimation: "",
+      colorOfBorder: "#5BE2FF",
+      // icon: icon5,
+      title: "Cinematics & Visual Effects",
+      description: "Use Unreal Engine to produce stunning images and mind-blowing effects to bring your story to life."
+    },
+    {
+      delayAnimation: "150",
+      colorOfBorder: "#FF56EE",
+      // icon: icon6,
+      title: "Custom Unreal Engine Solutions",
+      description: "We excel at creating unique Unreal Engine solutions, whether they are tools or specialized applications to address your specific problems."
+    },
+
+  ];
   const FeatureContent = [
-  {
-    icon: "84",
-    title: "Live the Vision",
-    subTitle: "Enter a world where users can feel the surroundings rather than just see them. We create experiences that stimulate the imagination and senses.",
-    hoverText: "Enter a world where users can feel the surroundings rather than just see them. We create experiences that stimulate the imagination and senses.",
-  },
-  {
-    icon: "84",
-    title: "Unreal Realism",
-    subTitle: "Games created with Unreal Engine offer hyper-realistic visuals, bringing projects to life with cinematic quality and unmatched precision.",
-    hoverText: "Games created with Unreal Engine offer hyper-realistic visuals, bringing projects to life with cinematic quality and unmatched precision.",
-  },
-  {
-    icon: "84",
-    title: "Enhanced Training ",
-    subTitle: "Learning and training become more engaging and understandable with real-time visual interactions.",
-    hoverText: "Learning and training become more engaging and understandable with real-time visual interactions.",
-  },
-  {
-    icon: "84",
-    title: "Competitive Advantage",
-    subTitle: "Make use of Unreal Engine's strength and adaptability to develop innovative solutions that will shape the future.",
-    hoverText: "Make use of Unreal Engine's strength and adaptability to develop innovative solutions that will shape the future.",
-  },
-  {
-    icon: "84",
-    title: "Scalability and Flexibility",
-    subTitle: "The extensible architecture of Unreal Engine enables teams to scale projects and integrate new features while maintaining workflow.",
-    hoverText: "The extensible architecture of Unreal Engine enables teams to scale projects and integrate new features while maintaining workflow.",
-  },
-  {
-    icon: "84",
-    title: "Future-proof Technology",
-    subTitle: "Modern technology and ongoing improvements from Unreal Engine guarantee that your projects remain competitive both now and in the future.",
-    hoverText: "Modern technology and ongoing improvements from Unreal Engine guarantee that your projects remain competitive both now and in the future.",
-  }
-];
+    {
+      icon: "84",
+      title: "Live the Vision",
+      subTitle: "Enter a world where users can feel the surroundings rather than just see them. We create experiences that stimulate the imagination and senses.",
+      hoverText: "Enter a world where users can feel the surroundings rather than just see them. We create experiences that stimulate the imagination and senses.",
+    },
+    {
+      icon: "84",
+      title: "Unreal Realism",
+      subTitle: "Games created with Unreal Engine offer hyper-realistic visuals, bringing projects to life with cinematic quality and unmatched precision.",
+      hoverText: "Games created with Unreal Engine offer hyper-realistic visuals, bringing projects to life with cinematic quality and unmatched precision.",
+    },
+    {
+      icon: "84",
+      title: "Enhanced Training ",
+      subTitle: "Learning and training become more engaging and understandable with real-time visual interactions.",
+      hoverText: "Learning and training become more engaging and understandable with real-time visual interactions.",
+    },
+    {
+      icon: "84",
+      title: "Competitive Advantage",
+      subTitle: "Make use of Unreal Engine's strength and adaptability to develop innovative solutions that will shape the future.",
+      hoverText: "Make use of Unreal Engine's strength and adaptability to develop innovative solutions that will shape the future.",
+    },
+    {
+      icon: "84",
+      title: "Scalability and Flexibility",
+      subTitle: "The extensible architecture of Unreal Engine enables teams to scale projects and integrate new features while maintaining workflow.",
+      hoverText: "The extensible architecture of Unreal Engine enables teams to scale projects and integrate new features while maintaining workflow.",
+    },
+    {
+      icon: "84",
+      title: "Future-proof Technology",
+      subTitle: "Modern technology and ongoing improvements from Unreal Engine guarantee that your projects remain competitive both now and in the future.",
+      hoverText: "Modern technology and ongoing improvements from Unreal Engine guarantee that your projects remain competitive both now and in the future.",
+    }
+  ];
 
-const tabList = [
-  { iconOne: "105", iconTwo: "105-c" },
-  { iconOne: "106", iconTwo: "106-c" },
-  { iconOne: "107", iconTwo: "107-c" },
-  { iconOne: "108", iconTwo: "108-c" },
-  { iconOne: "109", iconTwo: "109-c" },
-];
+  const tabList = [
+    { iconOne: "105", iconTwo: "105-c" },
+    { iconOne: "106", iconTwo: "106-c" },
+    { iconOne: "107", iconTwo: "107-c" },
+    { iconOne: "108", iconTwo: "108-c" },
+    { iconOne: "109", iconTwo: "109-c" },
+  ];
 
-const tabListContent = [
-  {
-    img: "img_81",
-    // innerText: "Track Human faces",
-    title: "Conceptualization and Planning",
-    description: `Mapping the needs and putting the technical specifications, features, and gaming mechanics into a concrete plan is the first step.`,
-  },
-  {
-    img: "img_92",
-    // innerText: "keyframing experience",
-    title: "Pre-production",
-    description: `We manage the entire asset flow, accurately and efficiently preparing and integrating 3D content directly into the Unreal Game Engine.`,
-  },
-  {
-    img: "img_93",
-    // innerText: "Audio track down",
-    title: "Level Design",
-    description: `The level editor in Unreal creatively creates all of the game's details, including environments, landscapes, and game levels. `,
-  },
-  {
-    img: "img_94",
-    // innerText: "Take the color",
-    title: "Gameplay Programming",
-    description: `We use blueprints or C++ to bring your game's AI behavior, player control, core mechanics, and interactions to life.`,
-  },
-  {
-    img: "img_95",
-    // innerText: "Edit videos at up to 4K",
-    title: "User testing",
-    description: `We collaborate on all technical elements necessary to establish a strong DeFi crowdfunding platform, guaranteeing an effective solution.`,
-  },
-];
+  const tabListContent = [
+    {
+      img: "img_81",
+      // innerText: "Track Human faces",
+      title: "Conceptualization and Planning",
+      description: `Mapping the needs and putting the technical specifications, features, and gaming mechanics into a concrete plan is the first step.`,
+    },
+    {
+      img: "img_92",
+      // innerText: "keyframing experience",
+      title: "Pre-production",
+      description: `We manage the entire asset flow, accurately and efficiently preparing and integrating 3D content directly into the Unreal Game Engine.`,
+    },
+    {
+      img: "img_93",
+      // innerText: "Audio track down",
+      title: "Level Design",
+      description: `The level editor in Unreal creatively creates all of the game's details, including environments, landscapes, and game levels. `,
+    },
+    {
+      img: "img_94",
+      // innerText: "Take the color",
+      title: "Gameplay Programming",
+      description: `We use blueprints or C++ to bring your game's AI behavior, player control, core mechanics, and interactions to life.`,
+    },
+    {
+      img: "img_95",
+      // innerText: "Edit videos at up to 4K",
+      title: "User testing",
+      description: `We collaborate on all technical elements necessary to establish a strong DeFi crowdfunding platform, guaranteeing an effective solution.`,
+    },
+  ];
+
+  const navContent = [
+    {
+      title: "Expert Craftsmanship",
+      image: "images/assets/screen_07.png",
+    },
+    {
+      title: "Innovation",
+      image: "images/assets/screen_08.png",
+    },
+    {
+      title: "Quality Assurance",
+      image: "images/assets/screen_09.png",
+    },
+    {
+      title: "Client Satisfaction",
+      image: "images/assets/screen_07.png", // optional reuse
+    },
+  ];
+
+
   return (
     <div className="main-page-wrapper font-gordita dark-style lg-container p0">
       <Helmet>
@@ -153,7 +174,7 @@ const tabListContent = [
       </Helmet>
       {/* End Page SEO Content */}
 
-      <Header/>
+      <Header />
       {/* End HeaderLanding */}
 
       {/*=============================================
@@ -226,30 +247,30 @@ const tabListContent = [
       {/*=============================================
 			Fancy Feature Thirteen
 		  ==============================================  */}
-          <div className="fancy-feature-nineteen pt-80 md-pt-100 bg-white pb-40 mt-40" id="effect">
-          <div className="container">
-            <div className="row">
-              <div
-                className="col-xl-9 col-lg-11 m-auto"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-              >
-                <div className="title-style-eight text-center mb-80 md-mb-40">
-                  <h2 class="text-black">Unreal Development Services</h2>
-                  
-                </div>
+      <div className="fancy-feature-nineteen pt-80 md-pt-100 bg-white pb-40 mt-40" id="effect">
+        <div className="container">
+          <div className="row">
+            <div
+              className="col-xl-9 col-lg-11 m-auto"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
+              <div className="title-style-eight text-center mb-80 md-mb-40">
+                <h2 class="text-black">Unreal Development Services</h2>
+
               </div>
             </div>
-            <FancyFeatureNinteen featureContent={featureContent}/>
           </div>
-          </div>
+          <FancyFeatureNinteen featureContent={featureContent} />
+        </div>
+      </div>
       <div className="fancy-feature-thirteen pt-250 md-pt-110 " id="features">
         <div className="container">
           <div className="row">
             <div className="col-xl-8 col-lg-11 col-md-10 m-auto">
               <div className="title-style-six text-center">
                 <h2>
-                  Why with Raiden’s <span>Unreal</span> Development 
+                  Why with Raiden’s <span>Unreal</span> Development
                 </h2>
                 <p className="text-xs">
                   Lorem ipsum dolor on adipisci elit io sed do eiusmod tempor
@@ -261,7 +282,7 @@ const tabListContent = [
           </div>
 
           <div className="sldier-wrapper  mt-30 md-mt-50">
-            <DocSlickAsNavThree />
+            <DocSlickAsNavThree navContent={navContent} />
           </div>
           {/* /.sldier-wrapper  */}
         </div>
@@ -271,7 +292,7 @@ const tabListContent = [
       {/*=====================================================
 				Fancy Feature Fourteen
 			===================================================== */}
-         <div className="fancy-feature-eighteen mt-130 md-mt-80" id="feature">
+      <div className="fancy-feature-eighteen mt-130 md-mt-80" id="feature">
         <div className="container">
           <div className="row">
             <div className="col-xl-9 m-auto">
@@ -281,7 +302,7 @@ const tabListContent = [
                 data-aos-duration="1200"
               >
                 <h2 class="text-black">
-             Unreal Development Process
+                  Unreal Development Process
                 </h2>
                 {/* <p>
                   Rotate, merge, trim, split, crop and flip videos with a modern
@@ -294,13 +315,13 @@ const tabListContent = [
           {/* Nav tabs */}
         </div>
         {/* End .container */}
-        <DocEditorTabs tabListContent={tabListContent} tabList={tabList}/>
+        <DocEditorTabs tabListContent={tabListContent} tabList={tabList} />
 
         <img src="images/shape/175.svg" alt="" className="shapes shape-right" />
         <img src="images/shape/176.svg" alt="" className="shapes shape-left" />
       </div>
 
-       <div className="fancy-feature-twelve pt-250 md-pt-50" id="about">
+      <div className="fancy-feature-twelve pt-250 md-pt-50" id="about">
         <div className="bg-wrapper">
           <div className="container">
             <div className="row">
@@ -315,13 +336,13 @@ const tabListContent = [
               </div>
             </div>
             {/* End .row */}
-            <FancyFeatureTwelve FeatureContent={FeatureContent}  />
+            <FancyFeatureTwelve FeatureContent={FeatureContent} />
           </div>
         </div>
-   
+
         <img src="images/shape/151.svg" alt="" className="shapes shape-one" />
       </div>
-   
+
       {/* <div className="fancy-feature-fourteen mt-250 pt-80 md-mt-80">
         <div className="container">
           <div className="row">
@@ -574,26 +595,26 @@ const tabListContent = [
       {/*=====================================================
 					Footer Style Six
 				===================================================== */}
-    <div className="fancy-short-banner-three mt-200 md-mt-150">
-          <div className="container">
-            <div className="bg-wrapper">
-              <CallToActionThree/>
-            </div>
+      <div className="fancy-short-banner-three mt-200 md-mt-150">
+        <div className="container">
+          <div className="bg-wrapper">
+            <CallToActionThree />
           </div>
         </div>
+      </div>
 
-        <footer className="theme-footer-two pt-150 md-pt-80">
-          <div className="top-footer">
-            <div className="container">
-              <FooterTwo />
-            </div>
-          </div>
+      <footer className="theme-footer-two pt-150 md-pt-80">
+        <div className="top-footer">
           <div className="container">
-            <div className="bottom-footer-content">
-              <CopyRightTwo />
-            </div>
+            <FooterTwo />
           </div>
-        </footer>
+        </div>
+        <div className="container">
+          <div className="bottom-footer-content">
+            <CopyRightTwo />
+          </div>
+        </div>
+      </footer>
       {/* /.theme-footer-six */}
     </div>
   );
