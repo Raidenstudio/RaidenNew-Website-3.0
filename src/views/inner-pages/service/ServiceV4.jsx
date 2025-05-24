@@ -19,6 +19,7 @@ import Reactw from "../../../assets/images/assets/React.png";
 import Solidity from "../../../assets/images/assets/Solidity.png";
 import Webb from "../../../assets/images/assets/Web3.png";
 import serviceBack from "../../../assets/images/assets/metaverse/Both.svg"
+import HeaderThree from "../../../components/header/HeaderThree";
 
 const featureContent = [
 
@@ -93,14 +94,14 @@ Modal.setAppElement("#root");
 const ServiceV4 = () => {
   return (
     <div className="main-page-wrapper">
-      <Header />
+      <HeaderThree />
 
       <div className="hero-banner-five">
         <div className="container">
           <div className="row">
             <div className="col-xl-10 col-lg-11 col-md-10 m-auto">
               <h1
-                className="font-recoleta hero-heading"
+                className="font-raleway hero-heading"
                 data-aos="fade-up"
                 data-aos-duration="1200"
               >
@@ -120,12 +121,12 @@ const ServiceV4 = () => {
           </div>
         </div>
 
-        <div className="partner-section-one mt-170 md-mt-90 pb-120 md-pb-80">
+        <div className="partner-section-one mt-170 md-mt-90 pb-120 md-pb-80 ">
           <div className="container">
             <div className="position-relative">
               <img src={serviceBack} />
               <div style={{ width: "40%", textAlign: "center", margin: "auto", position: "absolute", top: "54%", left: "50%", transform: "translate(-50%, -50%)" }}>
-                <h3 style={{ fontWeight: "600" }}>Industries We Serve{" "}</h3>
+                <h3 className="font-raleway" style={{ fontWeight: "600" }}>Industries We Serve{" "}</h3>
                 <p className="sub-text pt-30 pb-30 text-center">
                   With technical knowledge and creative solutions to tackle particular business problems, we produce outcomes across a range of industries.
                 </p>

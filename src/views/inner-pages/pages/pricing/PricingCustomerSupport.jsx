@@ -128,7 +128,7 @@ const PricingCustomerSupport = () => {
               >
                 <div className="quote-wrapper pt-60">
                   <img src="images/icon/26.svg" alt="icon" className="icon" />
-                  <blockquote className="font-rubik">
+                  <blockquote className="font-gordita">
                     Deski combines excellent live chat, ticketing and automation
                     that allow us to provide quality.
                   </blockquote>

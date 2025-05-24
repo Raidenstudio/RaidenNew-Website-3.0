@@ -208,6 +208,14 @@ const Services = [
   {
     name: "MMORPG Game Development",
     routerPath: "/mmorpg-game-development"
+  },
+  {
+    name: "P2E Game Development",
+    routerPath: "/p2e-game-develpment"
+  },
+  {
+    name: "Web3 Game Development",
+    routerPath: "/web3-game-develpment"
   }
 
 

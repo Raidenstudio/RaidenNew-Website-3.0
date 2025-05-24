@@ -17,6 +17,7 @@ import CopyRightTwo from "../../components/footer/CopyRightTwo";
 import CallToActionThree from "../../components/call-to-action/CallToActionThree";
 import Webservices from "../../components/features/Webservices";
 import Technologies from "./Techonologies";
+import HeaderThree from "../../components/header/HeaderThree";
 
 const FormSurveyLanding = () => {
   return (
@@ -28,7 +29,7 @@ const FormSurveyLanding = () => {
       </Helmet>
       {/* End Page SEO Content */}
 
-      <Header />     
+      <HeaderThree />
 
       <HeroBannerThirteen />
       {/* End Hero banner */}
@@ -47,9 +48,9 @@ const FormSurveyLanding = () => {
               data-aos-duration="1200"
             >
               <div className="title-style-eleven text-center mb-70 md-mb-10">
-                <div className="upper-title">Why Choose Raiden?                </div>
+                <div className="upper-title font-raleway">Why Choose Raiden ?                </div>
                 <h2>
-                We simplify hard chains and deliver you real-world solutions with tangible value.
+                  We simplify hard chains and deliver you real-world solutions with tangible value.
                 </h2>
               </div>
             </div>
@@ -77,87 +78,87 @@ const FormSurveyLanding = () => {
       </div>
 
       <div className="fancy-feature-ten md-pt-70" id="features">
-          <div className="bg-wrapper">
-            <div className="container">
-              <div className="row justify-content-between align-items-center">
-                <div
-                  className="col-md-12 text-center"
-                  data-aos="fade-right"
-                  data-aos-duration="1200"
-                >
-                  <div className="title-style-six">
-                    <h2>
+        <div className="bg-wrapper">
+          <div className="container">
+            <div className="row justify-content-between align-items-center">
+              <div
+                className="col-md-12 text-center"
+                data-aos="fade-right"
+                data-aos-duration="1200"
+              >
+                <div className="title-style-six">
+                  <h2>
                     Our Web3 Development Services
-                    </h2>
-                  </div>
+                  </h2>
                 </div>
               </div>
-              <Webservices />
             </div>
-            <img
-              src="images/shape/137.svg"
-              alt="shape"
-              className="shapes shape-one"
-            />
+            <Webservices />
           </div>
+          <img
+            src="images/shape/137.svg"
+            alt="shape"
+            className="shapes shape-one"
+          />
         </div>
-        <div
+      </div>
+      <div
         className="block-style-thirtySix lg-container pt-225 md-pt-120"
         id="feature"
       >
         <div className="container">
-        <div className="row">
-      <div className="col-xl-6 col-lg-7 order-lg-first" data-aos="fade-right">
-        <div className="ps-lg-5">
-          <div className="title-style-fourteen">
-            <h2 className="mb-20">Our Web3 Development Process
-            </h2>
+          <div className="row">
+            <div className="col-xl-6 col-lg-7 order-lg-first" data-aos="fade-right">
+              <div className="ps-lg-5">
+                <div className="title-style-fourteen">
+                  <h2 className="mb-20">Our Web3 Development Process
+                  </h2>
+                </div>
+                <ul className="list-item">
+                  <li><span style={{ color: "#745DFA" }}>Consultation - </span>We start by understanding your vision, challenges, and objectives</li>
+                  <li><span style={{ color: "#745DFA" }}>Concept Design -</span> Our team creates technical architecture and product specifications
+
+                  </li>
+                  <li><span style={{ color: "#745DFA" }}>Development -</span> Iterative building with regular check-ins and demonstrations
+                  </li>
+                  <li><span style={{ color: "#745DFA" }}>Testing & Auditing - </span>Multiple levels of testing and security review
+                  </li>
+                  <li><span style={{ color: "#745DFA" }}>Deployment</span> Smooth launch across your target blockchain networks</li>
+                  <li><span style={{ color: "#745DFA" }}>Ongoing Support -</span> Continued optimization, updates, and scaling assistance
+                  </li>
+                </ul>
+              </div>
+            </div>
+            {/* Emd .col */}
+
+            <div
+              className="col-xl-6 col-lg-5 text-center text-lg-right order-lg-last"
+              data-aos="fade-left"
+            >
+              <div className="illustration-holder d-inline-block md-mt-60">
+                <img src="images/assets/ils_23.svg" alt="" className="w-100" />
+                <img
+                  src="images/assets/ils_23.1.svg"
+                  alt=""
+                  className="shapes shape-one"
+                />
+                <img
+                  src="images/assets/ils_23.2.svg"
+                  alt=""
+                  className="shapes shape-two"
+                />
+                <img
+                  src="images/assets/ils_23.3.svg"
+                  alt=""
+                  className="shapes shape-three"
+                />
+              </div>
+            </div>
+            {/* End .col */}
           </div>
-          <ul className="list-item">
-            <li><span style={{color: "#745DFA"}}>Consultation - </span>We start by understanding your vision, challenges, and objectives</li>
-            <li><span style={{color: "#745DFA"}}>Concept Design -</span> Our team creates technical architecture and product specifications
-
-            </li>
-            <li><span style={{color: "#745DFA"}}>Development -</span> Iterative building with regular check-ins and demonstrations
-            </li>
-            <li><span style={{color: "#745DFA"}}>Testing & Auditing - </span>Multiple levels of testing and security review
-            </li>
-            <li><span style={{color: "#745DFA"}}>Deployment</span> Smooth launch across your target blockchain networks</li>
-            <li><span style={{color: "#745DFA"}}>Ongoing Support -</span> Continued optimization, updates, and scaling assistance
-            </li>
-          </ul>
         </div>
       </div>
-      {/* Emd .col */}
 
-      <div
-        className="col-xl-6 col-lg-5 text-center text-lg-right order-lg-last"
-        data-aos="fade-left"
-      >
-        <div className="illustration-holder d-inline-block md-mt-60">
-          <img src="images/assets/ils_23.svg" alt="" className="w-100" />
-          <img
-            src="images/assets/ils_23.1.svg"
-            alt=""
-            className="shapes shape-one"
-          />
-          <img
-            src="images/assets/ils_23.2.svg"
-            alt=""
-            className="shapes shape-two"
-          />
-          <img
-            src="images/assets/ils_23.3.svg"
-            alt=""
-            className="shapes shape-three"
-          />
-        </div>
-      </div>
-      {/* End .col */}
-    </div>     
-      </div>
-      </div>
-      
       {/* <!-- /.block-style-thirtySix --> */}
 
       {/* <!-- 
@@ -182,16 +183,16 @@ const FormSurveyLanding = () => {
                 </div>
               </div>
               {/* <!-- /.block-style-thirtySix --> */}
-            {/* </div>
+      {/* </div>
           </div> */}
-        {/* </div> */} 
-        {/* <div className="slider-wrapper">
+      {/* </div> */}
+      {/* <div className="slider-wrapper">
           <div className="portfolio_slider_two survey-slider">
             <Portfolio />
           </div> */}
-          {/* <!-- /.portfolio_slider_two --> */}
-        {/* </div> */}
-        {/* <!-- /.slider-wrapper --> */}
+      {/* <!-- /.portfolio_slider_two --> */}
+      {/* </div> */}
+      {/* <!-- /.slider-wrapper --> */}
       {/* </div> */}
       {/* <!-- /.fancy-feature-thirtyFive --> */}
 
@@ -242,15 +243,15 @@ const FormSurveyLanding = () => {
         data-aos="fade-up"
         id="feedback"
       > */}
-        {/* <div className="client-feedback-slider-eight">
+      {/* <div className="client-feedback-slider-eight">
           <div className="container">
             <div className="main-content position-relative">
               <div className="clientSliderSeven">
                 <Testimonial />
               </div>
             </div> */}
-            {/* <!-- /.main-content --> */}
-          {/* </div>
+      {/* <!-- /.main-content --> */}
+      {/* </div>
         </div>
       </div> */}
       {/* <!-- /.client-feedback-slider-eight --> */}
@@ -315,43 +316,43 @@ const FormSurveyLanding = () => {
         =====================================================
         --> */}
 
-<div className="fancy-feature-nineteen pt-180 md-pt-100" id="effect">
-          <div className="container">
-            <div className="row">
-              <div
-                className="col-xl-9 col-lg-11 m-auto"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-              >
-                <div className="title-style-eight text-center mb-80 md-mb-40">
-                  <h2>Technologies We Use</h2>
-                </div>
+      <div className="fancy-feature-nineteen pt-180 md-pt-100" id="effect">
+        <div className="container">
+          <div className="row">
+            <div
+              className="col-xl-9 col-lg-11 m-auto"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
+              <div className="title-style-eight text-center mb-80 md-mb-40">
+                <h2>Technologies We Use</h2>
               </div>
             </div>
-            <Technologies />
+          </div>
+          <Technologies />
+        </div>
+      </div>
+
+      <div className="fancy-short-banner-three mt-200 md-mt-150">
+        <div className="container">
+          <div className="bg-wrapper">
+            <CallToActionThree />
           </div>
         </div>
+      </div>
 
-       <div className="fancy-short-banner-three mt-200 md-mt-150">
+      <footer className="theme-footer-two pt-150 md-pt-80">
+        <div className="top-footer">
           <div className="container">
-            <div className="bg-wrapper">
-              <CallToActionThree />
-            </div>
+            <FooterTwo />
           </div>
         </div>
-
-        <footer className="theme-footer-two pt-150 md-pt-80">
-          <div className="top-footer">
-            <div className="container">
-              <FooterTwo />
-            </div>
+        <div className="container">
+          <div className="bottom-footer-content">
+            <CopyRightTwo />
           </div>
-          <div className="container">
-            <div className="bottom-footer-content">
-              <CopyRightTwo />
-            </div>
-          </div>
-        </footer>
+        </div>
+      </footer>
     </div>
   );
 };

@@ -12,7 +12,7 @@ const SignUp = () => {
       {/* End Page SEO Content */}
       <div className="user-data-page clearfix d-lg-flex">
         <div className="illustration-wrapper d-flex align-items-center justify-content-between flex-column">
-          <h3 className="font-rubik">
+          <h3 className="font-gordita">
             We have a “strategic” plan its <br /> called doing things.
           </h3>
           <div className="illustration-holder">

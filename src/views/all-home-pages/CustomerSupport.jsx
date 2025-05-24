@@ -20,6 +20,8 @@ import Profile3 from "../../assets/images/assets/Profile 3.png";
 import Profile4 from "../../assets/images/assets/Profile 4.png";
 import Profile5 from "../../assets/images/assets/Profile 5.png";
 import Header from "../../components/e-commerce/Header";
+import HeaderThree from "../../components/header/HeaderThree";
+import Portfolio from "../../components/portfolio/Portfolio";
 
 const CustomerSupport = () => {
   return (
@@ -32,7 +34,7 @@ const CustomerSupport = () => {
       {/* =============================================
 		   Start Header
 		   ============================================== */}
-      <Header />
+      <HeaderThree />
       {/* End HeaderTwo Variation Three */}
 
       {/* =============================================
@@ -59,7 +61,7 @@ const CustomerSupport = () => {
           <div className="container">
             <div className="title-style-two text-center mb-100 md-mb-50">
               <div className="row">
-                <div className="col-xl-8 col-lg-9 col-md-10 m-auto">
+                <div className="col-xl-8 col-lg-9 col-md-10 m-auto font-raleway">
                   <h2>
                     <span style={{ display: "block", whiteSpace: "nowrap" }}>
                       We unlock a meaningful
@@ -217,182 +219,21 @@ const CustomerSupport = () => {
       </div>
       {/* /.fancy-text-block-seven */}
 
-      {/* 
-     =============================================
-				Fancy Text block Eight
-		============================================== */}
-      <div className="fancy-text-block-eight pt-150 pb-200 md-pt-100 md-pb-150">
+
+      <div className="fancy-portfolio-one pb-180 md-pb-100 pt-180 md-pt-100" id="product">
         <div className="container">
-          <div className="title-style-two text-center mb-150 md-mb-70">
-            <div className="row">
-              <div className="col-xl-8 col-lg-9 col-md-10 m-auto">
-                <p>Features</p>
-                <h2>
-                  Discover the Impact
-                  <span>
-                    <br />
-                    We've Made
-                    <img src="images/shape/line-shape-2.svg" alt="shape" />
-                  </span>
-                </h2>
-              </div>
-              {/* End .col */}
-            </div>
+          <div className="title-style-six">
+            <h2>
+              Our <span>Products</span>
+            </h2>
           </div>
-          {/* End .title */}
+        </div>
 
-          <div className="block-style-six pb-150 md-pb-70">
-            <div className="row">
-              <div
-                className="col-lg-5"
-                data-aos="fade-right"
-                data-aos-duration="1200"
-              >
-                <div className="text-details pt-35 md-pb-50">
-                  <img src="images/icon/27.svg" alt="icon" className="icon" />
-                  <h3 className="title font-gilroy-bold">
-                    Smart Assistance, Right Now.
-                  </h3>
-                  <p className="text-meta">
-                    Hello, your instant support assistant! Our chatbot is here to help you find what you are looking for, answer your questions quickly, and guide you through our crucial services.
-                  </p>
-                  <div className="quote-wrapper">
-                    <div
-                      className="
-                        quote-icon
-                        d-flex
-                        align-items-center
-                        justify-content-center
-                      "
-                    >
-                      <img src="images/icon/28.svg" alt="icon" />
-                    </div>
-                    <blockquote>
-                      “Our team finds this platform to be extremely valuable due to its consistently high quality.”
-                    </blockquote>
-                    <div className="name">
-                      <strong>- A Happy User.</strong>
-                    </div>
-                  </div>
-                  {/* /.quote-wrapper */}
-                </div>
-                {/* /.text-details */}
-              </div>
-              {/* End .col */}
-
-              <div
-                className="col-lg-7 col-md-9 m-auto"
-                data-aos="fade-left"
-                data-aos-duration="1200"
-              >
-                <div className="illustration-holder illustration-one">
-                  <img
-                    src={Chatbot}
-                    alt=""
-                    className="ms-auto"
-                  />
-                  <div className="shapes shape-one"></div>
-                  <div className="shapes shape-two"></div>
-                  <div className="shapes shape-three"></div>
-                  <div className="shapes shape-four"></div>
-                  <div className="shapes shape-five"></div>
-                  <img
-                    src="images/shape/35.svg"
-                    alt="shape"
-                    className="shapes shape-six"
-                  />
-                  <img
-                    src="images/shape/36.svg"
-                    alt="shape"
-                    className="shapes shape-seven"
-                  />
-                </div>
-              </div>
-              {/* End .col */}
-            </div>
-            {/* End .title */}
-          </div>
-          {/* /.block-style-six */}
-
-          <div className="block-style-six pt-150 md-pt-40">
-            <div className="row">
-              <div
-                className="col-lg-5 order-lg-last"
-                data-aos="fade-left"
-                data-aos-duration="1200"
-              >
-                <div className="text-details pt-35 md-pb-50">
-                  <img src="images/icon/29.svg" alt="" className="icon" />
-                  <h3 className="title font-gilroy-bold">
-                    Witnessing Trust in Action: Client Stories
-                  </h3>
-                  <p className="text-meta">
-                    Beyond traditional therapy, COGNI+ is helping ASD understand and accept society, providing holistic support for a more fulfilling life.
-                  </p>
-                  <div className="quote-wrapper">
-                    <div
-                      className="
-                        quote-icon
-                        d-flex
-                        align-items-center
-                        justify-content-center
-                      "
-                    >
-                      <img src={Chat} alt="icon" />
-                    </div>
-                    <blockquote>
-                      “We rely on RaidenSimX and RaidenCogni+ for dependable simulation and cognitive intelligence solutions.”
-                    </blockquote>
-                    <div className="name">
-                      <strong>- A Happy User.</strong>
-                    </div>
-                  </div>
-                  {/* /.quote-wrapper */}
-                </div>
-                {/* /.text-details */}
-              </div>
-              {/* End .col */}
-
-              <div
-                className="col-lg-7 col-md-9 m-auto order-lg-first"
-                data-aos="fade-right"
-                data-aos-duration="1200"
-              >
-                <div className="illustration-holder illustration-two">
-                  <img
-                    src={Chat}
-                    alt=""
-                    className="me-auto"
-                  />
-                  <div className="shapes shape-one"></div>
-                  <div className="shapes shape-two"></div>
-                  <div className="shapes shape-three"></div>
-                  <div className="shapes shape-four"></div>
-                  <img
-                    src="images/shape/40.svg"
-                    alt="shape"
-                    className="shapes shape-five"
-                  />
-                  <img
-                    src="images/shape/41.svg"
-                    alt="shape"
-                    className="shapes shape-six"
-                  />
-                </div>
-              </div>
-              {/* End .col */}
-            </div>
-          </div>
-          {/* /.block-style-six  */}
+        <div className="portfolioSliderOne arrow-top-right pt-120 md-pt-70">
+          <Portfolio />
         </div>
       </div>
-      {/* /.fancy-text-block-eight */}
 
-      {/*=====================================================
-				Useable Tools
-			===================================================== */}
-
-      {/* /.useable-tools-section-two */}
 
       {/* 	=====================================================
 				Client Feedback Slider One

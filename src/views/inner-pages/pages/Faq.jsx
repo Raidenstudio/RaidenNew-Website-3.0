@@ -84,7 +84,7 @@ const Faq = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-9 m-auto">
-              <h2 className="font-rubik">Help & Support</h2>
+              <h2 className="font-gordita">Help & Support</h2>
               <p className="sub-heading">
                 Advice and answers from our expert and proffesional deski Team
               </p>
@@ -172,7 +172,7 @@ const Faq = () => {
                         className="avatar-img"
                       />
                       <div>
-                        <h3 className="font-rubik">{item.title}</h3>
+                        <h3 className="font-gordita">{item.title}</h3>
                         <div className="avatar-info">
                           Written by <span>{item.writterName}</span> <br />
                           {item.date}

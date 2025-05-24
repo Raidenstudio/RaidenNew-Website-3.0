@@ -12,7 +12,7 @@ const Login = () => {
       {/* End Page SEO Content */}
       <div className="user-data-page clearfix d-lg-flex">
         <div className="illustration-wrapper d-flex align-items-center justify-content-between flex-column">
-          <h3 className="font-rubik">
+          <h3 className="font-gordita">
             Want your best managment <br />
             software? <Link to="/signup">sign up</Link>
           </h3>

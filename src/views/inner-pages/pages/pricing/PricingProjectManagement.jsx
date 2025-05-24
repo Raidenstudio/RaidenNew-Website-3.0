@@ -31,10 +31,10 @@ const ProjectManagement = () => {
           <div className="container">
             <div className="row">
               <div className="col-xl-10 col-lg-11 m-auto">
-                <h2 className="font-rubik">Choose package match your budget</h2>
+                <h2 className="font-gordita">Choose package match your budget</h2>
               </div>
               <div className="col-12 m-auto">
-                <p className="font-rubik">
+                <p className="font-gordita">
                   5 minute installation · Try Team plan features for 14 days ·
                   No credit card required
                 </p>
@@ -101,7 +101,7 @@ const ProjectManagement = () => {
                   <div className="more-text">
                     More Over <span>1500+ customers</span>
                   </div>
-                  <p className="font-rubik">
+                  <p className="font-gordita">
                     Just simply amazing. Feel lucky use their service. Highly
                     recommended andappriciate their service & highly trusted.
                   </p>
@@ -136,7 +136,7 @@ const ProjectManagement = () => {
                 data-aos="fade-right"
                 data-aos-duration="1200"
               >
-                <p className="font-rubik">
+                <p className="font-gordita">
                   Want a custome pricing for your business? Send us mail
                 </p>
               </div>
@@ -165,7 +165,7 @@ const ProjectManagement = () => {
           <div className="row">
             <div className="col-lg-6">
               <div className="title-style-one">
-                <h6 className="font-rubik">Find your answers</h6>
+                <h6 className="font-gordita">Find your answers</h6>
                 <h2>Have any thought? Look here.</h2>
               </div>
               {/* /.title-style-one */}

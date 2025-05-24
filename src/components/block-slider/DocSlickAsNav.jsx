@@ -54,7 +54,7 @@ export default function SlickAsNav() {
         <div className="block-style-eleven mt-40">
           <div className="num font-rubik">01</div>
           <div className="title">Personal Notes</div>
-          <p className="font-rubik">
+          <p className="font-gordita">
             A place to think and track ideas for you and your team
           </p>
         </div>
@@ -62,7 +62,7 @@ export default function SlickAsNav() {
         <div className="block-style-eleven mt-40">
           <div className="num font-rubik">02</div>
           <div className="title">Knowledge Base</div>
-          <p className="font-rubik">
+          <p className="font-gordita">
             A home for your team, best practices and thoughts.
           </p>
         </div>
@@ -70,7 +70,7 @@ export default function SlickAsNav() {
         <div className="block-style-eleven mt-40">
           <div className="num font-rubik">03</div>
           <div className="title">Products Doc</div>
-          <p className="font-rubik">
+          <p className="font-gordita">
             Beautiful docs for your APIs, Products, FAQs, & User Guides,
           </p>
         </div>

@@ -34,7 +34,7 @@ const NotFound = () => {
             The Page Can’t <br />
             be Found.
           </h1>
-          <p className="font-rubik">
+          <p className="font-gordita">
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat
           </p>

@@ -9,6 +9,7 @@ import CallToActionThree from "../../../components/call-to-action/CallToActionTh
 import FancyFeatureThirtyThree from "../../../components/features/FancyFeatureThirtyThree";
 import FancyFeatureThirtyFour from "../../../components/features/FancyFeatureThirtyFour";
 import Header from "../../../components/e-commerce/Header";
+import HeaderThree from "../../../components/header/HeaderThree";
 
 const ServiceV1 = () => {
   return (
@@ -18,7 +19,7 @@ const ServiceV1 = () => {
       </Helmet>
       {/* End Page SEO Content */}
 
-      <Header />
+      <HeaderThree />
       {/* End Header */}
 
       {/* 	=============================================

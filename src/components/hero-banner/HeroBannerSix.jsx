@@ -8,7 +8,7 @@ const HeroBannerSix = () => {
       <div className="row">
         <div className="col-xl-6 col-lg-6">
           <h1
-            className="font-recoleta hero-heading"
+            className="font-raleway hero-heading"
             data-aos="fade-up"
             data-aos-duration="1200"
           >

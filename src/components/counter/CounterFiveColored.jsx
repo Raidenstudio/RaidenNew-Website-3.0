@@ -67,7 +67,7 @@ const CounterFiveColored = () => {
               {val.endPointText}
             </h2>
             <em>{val.countMeta}</em>
-            <p className="font-rubik">{val.meta}</p>
+            <p className="font-gordita">{val.meta}</p>
           </div>
         </div>
       ))}

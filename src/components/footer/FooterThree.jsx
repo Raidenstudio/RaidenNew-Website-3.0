@@ -92,7 +92,7 @@ const FooterThree = () => {
         data-aos-delay="150"
       >
         <h5 className="footer-title">Contact Info</h5>
-        <p className="font-rubik">
+        <p className="font-gordita">
           432 Melbourne Stadium Market <br />
           Melbourne , Australia
         </p>

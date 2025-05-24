@@ -29,12 +29,12 @@ const SolutionMangement = () => {
         <div className="container">
           <div className="row">
             <div className="col-xl-10 m-auto">
-              <h2 className="font-rubik">
+              <h2 className="font-gordita">
                 Get effective solution for your business
               </h2>
             </div>
             <div className="col-xl-9 m-auto">
-              <p className="font-rubik">
+              <p className="font-gordita">
                 With deski, get all kind of business solution to start your
                 journey
               </p>
@@ -65,7 +65,7 @@ const SolutionMangement = () => {
             <div className="col-xl-7 col-lg-8">
               <div className="title-style-one mb-40 md-mb-20">
                 <h2>For all kinds of Teams</h2>
-                <p className="font-rubik">
+                <p className="font-gordita">
                   Duis aute irure dolor in reprehenderit in voluptate velit io
                   cillum dolore eu fugiat nulla pariatur non labrum.
                 </p>
@@ -92,7 +92,7 @@ const SolutionMangement = () => {
             <div className="col-lg-7 ms-auto">
               <div className="title-style-one mb-50 md-mb-30">
                 <h2>For all kinds of Startup</h2>
-                <p className="font-rubik">
+                <p className="font-gordita">
                   Excepteur sint occaecat cupidat non proident, sunt in culpa
                   qui officia deserunt mollit anim est laborum.
                 </p>
@@ -118,7 +118,7 @@ const SolutionMangement = () => {
           <div className="row">
             <div className="col-lg-11 m-auto">
               <div className="title-style-one text-center mb-50 md-mb-20">
-                <h6 className="font-rubik" style={{ color: "#787CFF" }}>
+                <h6 className="font-gordita" style={{ color: "#787CFF" }}>
                   Some success stories
                 </h6>
                 <h2>
@@ -145,7 +145,7 @@ const SolutionMangement = () => {
           <div className="row">
             <div className="col-lg-6">
               <div className="title-style-one">
-                <h6 className="font-rubik">Find your answers</h6>
+                <h6 className="font-gordita">Find your answers</h6>
                 <h2>Have any thought? Look here.</h2>
               </div>
               {/* /.title-style-one */}

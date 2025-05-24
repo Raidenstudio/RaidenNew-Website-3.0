@@ -16,6 +16,7 @@ import service4 from "../../../assets/images/assets/ARservice/3D Design and Deve
 import service2 from "../../../assets/images/assets/ARservice/AR Game development.png"
 import service1 from "../../../assets/images/assets/ARservice/Custom AR development.png"
 import service3 from "../../../assets/images/assets/ARservice/Web AR development.png"
+import HeaderThree from "../../../components/header/HeaderThree";
 
 const ARServices = () => {
     return (
@@ -25,7 +26,7 @@ const ARServices = () => {
             </Helmet>
             {/* End Page SEO Content */}
 
-            <Header />
+            <HeaderThree />
             {/* End Header */}
 
             {/* 	=============================================
@@ -352,7 +353,7 @@ const ARServices = () => {
                 <div className="bubble-four"></div>
                 <div className="bubble-five"></div>
                 <div className="container">
-                    <h6 className="font-rubik">Integrates with your tools</h6>
+                    <h6 className="font-gordita">Integrates with your tools</h6>
                     <h2>
                         Deski ties into your existing tools, services, & workflow. Get
                         notifications or create a Story with others tools.

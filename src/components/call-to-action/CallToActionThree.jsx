@@ -9,7 +9,7 @@ const CallToActionThree = () => {
     <div className="row align-items-center">
       <div className="col-lg-6">
         <div className="title-style-one">
-          <h6 className="font-rubik" style={{ color: "#f96f60" }}>
+          <h6 className="font-gordita" style={{ color: "#f96f60" }}>
             Start your free trial.
           </h6>
           <h2>New here? Start your free trial now.</h2>
@@ -25,7 +25,7 @@ const CallToActionThree = () => {
             <button>Subscribe</button>
           </form>
           {/* End form */}
-          <p className="font-rubik">
+          <p className="font-gordita">
             Already a member? <Link to="login">Sign in.</Link>
           </p>
         </div>

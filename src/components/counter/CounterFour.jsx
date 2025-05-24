@@ -63,7 +63,7 @@ const CounterFour = () => {
               </span>
               {val.endPointText}
             </h2>
-            <p className="font-rubik">{val.meta}</p>
+            <p className="font-gordita">{val.meta}</p>
           </div>
         </div>
       ))}

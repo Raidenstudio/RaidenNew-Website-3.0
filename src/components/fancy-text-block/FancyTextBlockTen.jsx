@@ -10,7 +10,7 @@ const FancyTextBlockTen = () => {
           data-aos-duration="1200"
         >
           <img src="images/icon/34.svg" alt="" className="icon" />
-          <p className="font-rubik">
+          <p className="font-gordita">
             Deski combines excellent live chat, ticketing and automation that
             allow us to provide quality.
           </p>

@@ -53,7 +53,7 @@ const CounterOne = () => {
             </span>{" "}
             k
           </h2>
-          <p className="font-rubik">{val.meta}</p>
+          <p className="font-gordita">{val.meta}</p>
         </div>
       ))}
 

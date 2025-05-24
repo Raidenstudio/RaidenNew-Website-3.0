@@ -42,43 +42,43 @@ const featureContent_service = [
         delayAnimation: "0",
         colorOfBorder: "#8F6BF6",
         icon: icon1,
-        title: "Conceptualization and Design",
-        description: "From your initial ideas to a fully realized game world with detailed environments and compelling narratives perfect for bringing your first MMORPG to life."
+        title: "Concept, Design & storyboarding",
+        description: "We take your rough game ideas and turn them into a compelling narrative that will resonate with your target audience."
     },
     {
         delayAnimation: "50",
         colorOfBorder: "#FF5C5C",
         icon: icon2,
-        title: "Game Development",
-        description: "Building immersive and lively games centered around a seamless player experience."
+        title: "Blockchain Integration",
+        description: "Building a blockchain-based shield for your game to ensure safe assets and an open in-game experience."
     },
     {
         delayAnimation: "150",
         colorOfBorder: "#FF5C5C",
         icon: icon3,
-        title: "Multiplayer Integration",
-        description: "You can create active online communities by providing players with exciting and reliable multiplayer features."
+        title: "Smart Contract Development",
+        description: "Maintained a specially designed smart contract for secure and equitable game mechanics."
     },
     {
         delayAnimation: "150",
         colorOfBorder: "#63EAA9",
         icon: icon4,
-        title: "Content Expansion",
-        description: "Delivering regular updates, expansions, and new features to maintain player excitement and longevity."
+        title: "Game Development",
+        description: "Utilizing the updated tools and technologies, we keep building your P2E game to make you feel lively with stunning visuals and architecture."
     },
     {
         delayAnimation: "150",
         colorOfBorder: "#5BE2FF",
         icon: icon5,
         title: "Monetization Strategies",
-        description: "Creating equitable revenue models that improve the main gaming experience rather than detract from it."
+        description: "Experience engagement that brings both excitement and earnings with stunning visuals while tapping into rewarding revenue streams."
     },
     {
         delayAnimation: "150",
         colorOfBorder: "#FF56EE",
         icon: icon6,
-        title: "Community Management",
-        description: "We cultivate a positive player experience through dedicated support, interactive events, and open communication."
+        title: "Community building and Marketing",
+        description: "Utilizing influencer partnerships, effective engagement campaigns, and strategic marketing to create a vibrant community around the game."
     }
 
 ];
@@ -88,39 +88,38 @@ const tabListContent = [
     {
         img: "img_81",
         // innerText: "Track Human faces",
-        title: "Immersive Experience",
-        description: `Blur the line between reality and fantasy by weaving grounded, relatable elements into your fantastical worlds, where every player's choice dynamically shapes the evolving narrative.`,
+        title: "Engaging Gameplay",
+        description: `P2E games provide rewarding and engaging experiences that entice players to return for more.`,
     },
     {
         img: "img_92",
         // innerText: "keyframing experience",
-        title: "Global Reach",
-        description: `Foster meaningful connections with gamers worldwide, beyond geographic and cultural limits.
-`,
+        title: "Financial Freedom",
+        description: `Players can pursue financial independence and explore new opportunities by earning real rewards in-game.`,
     },
     {
         img: "img_93",
         // innerText: "Audio track down",
-        title: "Revenue Potential",
-        description: `Encourage long-term revenue generation without sacrificing the gaming experience.`,
+        title: "Community Building",
+        description: `P2E games that use blockchain technology guarantee safe and transparent transactions, building developer and player trust.`,
     },
     {
         img: "img_94",
         // innerText: "Take the color",
-        title: "Community Building",
-        description: `Create something greater than the game by bringing players together via a common passion.`,
+        title: "Transparency and Trust",
+        description: `We prioritize player trust and transparency by using blockchain to secure all transactions, as well as other features.`,
     },
     {
         img: "img_95",
         // innerText: "Edit videos at up to 4K",
-        title: "Continuous Evolution",
-        description: `Keep your game competitive with consistent updates and engaging expansions that drive player return.`,
+        title: "Innovation in Gaming",
+        description: `Our approach combines futuristic technologies with classic gaming to create a distinctive and innovative gaming experience.`,
     },
     {
         img: "img_95",
         // innerText: "Edit videos at up to 4K",
-        title: "Brand Recognition",
-        description: `Create outstanding MMORPG experiences to position your brand as a leader in the gaming industry.`,
+        title: "Diverse Opportunities",
+        description: `Our ecosystem offers a variety of revenue streams catered to each kind of player, from asset trading to in-game feature unlocking.`,
     },
 
 ];
@@ -140,28 +139,28 @@ const tabList = [
 const FeatureContent = [
     {
         icon: icon13,
-        title: "Discovery",
-        subTitle: "We engage deeply with your team to fully grasp your goals and vision, guaranteeing realistic and attainable outcomes.",
+        title: "Vision & Blueprint",
+        subTitle: "We begin by carefully outlining the essential game mechanics and features that will make your concept a reality after thoroughly understanding your goals, objectives, and vision.",
     },
     {
         icon: icon14,
-        title: "Planning",
-        subTitle: "The entire development process is guided by a thorough plan that outlines the project's scope, important milestones, and launch objectives.",
+        title: "Secure Blockchain Integration",
+        subTitle: "Ensuring safe asset ownership and an open, reliable economy for all players, we create a blockchain specifically for your game.",
     },
     {
         icon: icon15,
-        title: "Development",
-        subTitle: "Our developers bring your world to life by incorporating feedback and delivering quality at every turn, whether for PC or MMORPG in mobiles.",
+        title: "Interactive Prototyping",
+        subTitle: "Make use of interactive prototypes to see your design in action. We improve the experience in response to user input, guaranteeing a polished and captivating end result.",
     },
     {
         icon: icon16,
-        title: "Testing & Refinement",
-        subTitle: "Every system is thoroughly tested to find and address problems and provide a flawless and well-designed gaming experience.",
+        title: "Scalable & Robust Architecture",
+        subTitle: "Our experience creates a flexible and effective infrastructure. As your game develops, stability and fluid performance are guaranteed because we design for excellence.",
     },
     {
         icon: icon18,
-        title: "Launch & Support",
-        subTitle: "We ensure a seamless game launch and keep offering committed support to optimize efficiency and player happiness.",
+        title: "Agile Development & Continuous Improvement",
+        subTitle: "Our philosophy is agile: create, learn, and get better quickly. We make constant adjustments based on your feedback and data-driven analytics to provide the greatest possible gaming experience.",
     },
     {
         icon: icon18,
@@ -172,24 +171,24 @@ const FeatureContent = [
 
 const navContent = [
     {
-        title: "Proven Expertise",
+        title: "Proven Track Record",
         image: "images/assets/screen_07.png",
     },
     {
-        title: "Innovative by Design",
+        title: "Holistic Approach",
         image: "images/assets/screen_08.png",
     },
     {
-        title: "Client-Centered Collaboration",
+        title: "Transparent Communication",
         image: "images/assets/screen_09.png",
     },
     {
-        title: "End-to-End Support",
+        title: "Client-Centric Solutions",
         image: "images/assets/screen_07.png", // optional reuse
     },
 ];
 
-const MMORPGGameDevelopment = () => {
+const P2eGameDevelopment = () => {
     //slider configure
     const [nav1, setNav1] = useState();
     const [nav2, setNav2] = useState();
@@ -221,14 +220,14 @@ const MMORPGGameDevelopment = () => {
 
             <HeaderThree />
 
+            {/* banner */}
             <div className="container">
                 <div className="row">
                     <div className="col-xl-11 col-lg-12 col-md-10 m-auto text-center">
                         <h1 style={{ fontSize: "70px", fontStyle: "Raleway", color: "white" }} className="hero-heading" data-aos="fade-up">
-                            An
-                            <span style={{ color: "#FF006B" }}> MMORPG's</span>{" "} Crafting Journey
+                            <span style={{ color: "#FF006B" }}> Gaming Innovation:</span>{" "}
                             <br />
-                            From Pixels to Kingdoms
+                            where your passion pays
                         </h1>
                         <p
                             style={{ opacity: 0.8 }}
@@ -242,8 +241,9 @@ const MMORPGGameDevelopment = () => {
                 </div>
             </div>
 
-            <div className="fancy-feature-nineteen pb-180 pt-180 md-pt-100 bg-white" id="effect">
 
+            {/* services */}
+            <div className="fancy-feature-nineteen pb-180 pt-180 md-pt-100 bg-white" id="effect">
                 <div className="container">
                     <div className="row">
                         <div
@@ -252,7 +252,7 @@ const MMORPGGameDevelopment = () => {
                             data-aos-duration="1200"
                         >
                             <div className="title-style-eight text-center mb-80 md-mb-40">
-                                <h2>MMORPG Creation Services</h2>
+                                <h2>Play to Earn Experience</h2>
                             </div>
                         </div>
                     </div>
@@ -260,16 +260,18 @@ const MMORPGGameDevelopment = () => {
                 </div>
             </div>
 
+
+            {/* why choose raiden */}
             <div className="fancy-feature-thirteen pt-250 md-pt-110 " id="features">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-8 col-lg-11 col-md-10 m-auto">
                             <div className="title-style-six text-center">
                                 <h2 className='text-white'>
-                                    Why Choose <span>Raiden</span>
+                                    Why <span>Raiden's P2E</span>
                                 </h2>
                                 <p className="text-xs text-white">
-                                    Raiden builds scalable, immersive MMORPGs perfect for your first MMORPG launch or expanding into MMORPGs in mobiles.
+                                    Play-to-Earn (P2E) is a gaming model in which players actively participate in the game and reach in-game objectives or milestones to earn real-world rewards.
                                 </p>
                             </div>
                             {/* /.title-style-six */}
@@ -283,6 +285,29 @@ const MMORPGGameDevelopment = () => {
                 </div>
             </div>
 
+            {/* Development Process */}
+            <div className="fancy-feature-twelve pb-180 pt-250 md-pt-50 bg-black" id="about">
+                <div className="bg-wrapper">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-xl-7 col-lg-10 col-md-8 m-auto">
+                                <div className="title-style-six text-center">
+                                    <h2 className='text-white'>
+                                        Game Development, Crafted to Your Vision
+                                    </h2>
+                                </div>
+                                {/* /.title-style-six */}
+                            </div>
+                        </div>
+                        {/* End .row */}
+                        <FancyFeatureTwelve FeatureContent={FeatureContent} />
+                    </div>
+                </div>
+                {/* /.bg-wrapper */}
+                <img src="images/shape/151.svg" alt="" className="shapes shape-one" />
+            </div>
+
+            {/* why choose raiden */}
             <div className="fancy-feature-eighteen mt-130 md-mt-80" id="feature">
                 <div className="container">
                     <div className="row">
@@ -292,8 +317,8 @@ const MMORPGGameDevelopment = () => {
                                 data-aos="fade-up"
                                 data-aos-duration="1200"
                             >
-                                <h2 class="text-black">
-                                    MMORPG Development
+                                <h2>
+                                    Elevate Your Gaming Experience
                                 </h2>
                                 {/* <p>
                   Rotate, merge, trim, split, crop and flip videos with a modern
@@ -310,27 +335,6 @@ const MMORPGGameDevelopment = () => {
 
                 <img src="images/shape/175.svg" alt="" className="shapes shape-right" />
                 <img src="images/shape/176.svg" alt="" className="shapes shape-left" />
-            </div>
-
-            <div className="fancy-feature-twelve pb-180 pt-250 md-pt-50 bg-black" id="about">
-                <div className="bg-wrapper">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-xl-7 col-lg-10 col-md-8 m-auto">
-                                <div className="title-style-six text-center">
-                                    <h2 className='text-white'>
-                                        MMORPG Game Development Process
-                                    </h2>
-                                </div>
-                                {/* /.title-style-six */}
-                            </div>
-                        </div>
-                        {/* End .row */}
-                        <FancyFeatureTwelve FeatureContent={FeatureContent} />
-                    </div>
-                </div>
-                {/* /.bg-wrapper */}
-                <img src="images/shape/151.svg" alt="" className="shapes shape-one" />
             </div>
 
 
@@ -372,4 +376,4 @@ const MMORPGGameDevelopment = () => {
     )
 }
 
-export default MMORPGGameDevelopment
+export default P2eGameDevelopment

@@ -31,6 +31,11 @@ import icon18 from "../../../assets/images/assets/GameDevelopment/The Power Behi
 
 import DocEditorTabs from '../../../components/block-slider/DocEditorTabs';
 import FancyFeatureTwelve from '../../../components/features/FancyFeatureTwelve';
+import { Helmet } from 'react-helmet';
+import HeaderThree from '../../../components/header/HeaderThree';
+import FooterTwo from '../../../components/footer/FooterTwo';
+import CopyRightTwo from '../../../components/footer/CopyRightTwo';
+import CallToActionThree from '../../../components/call-to-action/CallToActionThree';
 
 const featureContent = [
 
@@ -39,44 +44,44 @@ const featureContent = [
     colorOfBorder: "#8F6BF6",
     icon: icon1,
     title: "Concept to creation",
-    description:"Our intelligent, captivating game concepts enthrall players with compelling plots, lovable characters, and realistic environments."
+    description: "Our intelligent, captivating game concepts enthrall players with compelling plots, lovable characters, and realistic environments."
   },
   {
     delayAnimation: "0",
     colorOfBorder: "#FF5C5C",
     icon: icon2,
     title: "Smarter Development",
-    description:"Our code is clean, scalable, and optimized for smooth gameplay and high visual fidelity, with no compromises."
+    description: "Our code is clean, scalable, and optimized for smooth gameplay and high visual fidelity, with no compromises."
   },
   {
     delayAnimation: "0",
     colorOfBorder: "#FF5C5C",
     icon: icon3,
     title: "Design That Clicks",
-    description:"UI/UX that is more than just functional; it is also intuitive, attractive, and addictive. Every single tap, swipe, and scroll feels natural."
+    description: "UI/UX that is more than just functional; it is also intuitive, attractive, and addictive. Every single tap, swipe, and scroll feels natural."
   },
   {
     delayAnimation: "150",
     colorOfBorder: "#63EAA9",
     icon: icon4,
     title: "Cross-Platform Ready",
-    description:"Play your game on any mobile screen. We build for iOS, Android, and beyond, ensuring maximum reach without compromise."
+    description: "Play your game on any mobile screen. We build for iOS, Android, and beyond, ensuring maximum reach without compromise."
   },
   {
     delayAnimation: "",
     colorOfBorder: "#5BE2FF",
     icon: icon5,
     title: "Trustworthy Quality",
-    description:"Before your game is released to the public, extensive testing guarantees stability, speed, and fluid gameplay for a fun and frustration-free experience."
+    description: "Before your game is released to the public, extensive testing guarantees stability, speed, and fluid gameplay for a fun and frustration-free experience."
   },
   {
     delayAnimation: "150",
     colorOfBorder: "#FF56EE",
     icon: icon6,
     title: "Post-Launch Partnership",
-    description:"We continue to support you after release, providing updates, fixes, and enhancements to keep your game competitive and engaging."
+    description: "We continue to support you after release, providing updates, fixes, and enhancements to keep your game competitive and engaging."
   },
-  
+
 ];
 
 const tabListContent = [
@@ -116,7 +121,7 @@ const tabListContent = [
     title: "Supporting the long run",
     description: `Our assistance does not end at launch; we are here to assist with updates, fixes, and improvements as your game evolves.`,
   },
-  
+
 ];
 
 const tabList = [
@@ -127,8 +132,8 @@ const tabList = [
   { iconOne: icon11, iconTwo: icon11 },
   { iconOne: icon12, iconTwo: icon12 },
 
-  
-  
+
+
 ];
 
 const FeatureContent = [
@@ -175,57 +180,60 @@ const FeatureContent = [
 
 const MobileGameDevelopment = () => {
   return (
-     <div className="hero-banner-twelve lg-container" id="home">
-      <div className="container">
-        <div className="row">
-          <div className="col-xl-11 col-lg-12 col-md-10 m-auto text-center">
-            <h1 style={{fontSize:"70px", fontStyle:"Raleway", color:"white"}} className="hero-heading" data-aos="fade-up">
-              Experience{" "}
-              <br />
-              <span style={{ color: "#FF006B" }}>epic adventures</span>{" "}
-              <br />
-              with portable freedom.
-            </h1>
-            <p
-              style={{opacity:0.8}}
-              className="font-gordita hero-sub-heading"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              Bringing stories to screens—mobile game development driven by imagination and fun.
-            </p>
+    <div className="main-page-wrapper p0">
+      <Helmet>
+        <title>Service Version 1 || Deski-Saas & Software React Template</title>
+      </Helmet>
+      {/* End Page SEO Content */}
+
+      <HeaderThree />
+      {/* End Header */}
+      <div className="hero-banner-twelve lg-container" id="home">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-11 col-lg-12 col-md-10 m-auto text-center">
+              <h1 style={{ fontSize: "70px", fontStyle: "Raleway", color: "white" }} className="hero-heading" data-aos="fade-up">
+                Experience{" "}
+                <br />
+                <span style={{ color: "#FF006B" }}>epic adventures</span>{" "}
+                <br />
+                with portable freedom.
+              </h1>
+              <p
+                style={{ opacity: 0.8 }}
+                className="font-gordita hero-sub-heading"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                Bringing stories to screens—mobile game development driven by imagination and fun.
+              </p>
+            </div>
           </div>
         </div>
-
-        
-        
-          
-        
-      </div>
-      <div className="fancy-feature-thirteen pt-250 md-pt-110 " id="features">
-              <div className="container">
-                <div className="row">
-                  <div className="col-xl-8 col-lg-11 col-md-10 m-auto">
-                    <div className="title-style-six text-center text-nowrap">
-                      <h2 className='text-white'>
-                        Why Raiden’s<span> Game Zone</span> 
-                      </h2>
-                      <p className="text-xs">
-                        Lorem ipsum dolor on adipisci elit io sed do eiusmod tempor
-                        dsu elit
-                      </p>
-                    </div>
-                    {/* /.title-style-six */}
-                  </div>
+        <div className="fancy-feature-thirteen pt-250 md-pt-110 " id="features">
+          <div className="container">
+            <div className="row">
+              <div className="col-xl-8 col-lg-11 col-md-10 m-auto">
+                <div className="title-style-six text-center text-nowrap">
+                  <h2 className='text-white'>
+                    Why Raiden’s<span> Game Zone</span>
+                  </h2>
+                  <p className="text-xs">
+                    Lorem ipsum dolor on adipisci elit io sed do eiusmod tempor
+                    dsu elit
+                  </p>
                 </div>
-      
-                <div className="sldier-wrapper  mt-30 md-mt-50">
-                  <DocSlickAsNavTwo  />
-                </div>
-                {/* /.sldier-wrapper  */}
+                {/* /.title-style-six */}
               </div>
-      </div> 
-      <div className="fancy-feature-nineteen pt-180 md-pt-100 bg-white" id="effect">
+            </div>
+
+            <div className="sldier-wrapper  mt-30 md-mt-50">
+              <DocSlickAsNavTwo />
+            </div>
+            {/* /.sldier-wrapper  */}
+          </div>
+        </div>
+        <div className="fancy-feature-nineteen pt-180 md-pt-100 bg-white" id="effect">
           <div className="container">
             <div className="row">
               <div
@@ -239,70 +247,101 @@ const MobileGameDevelopment = () => {
                 </div>
               </div>
             </div>
-            <FancyFeatureNinteen featureContent={featureContent}/>
+            <FancyFeatureNinteen featureContent={featureContent} />
           </div>
           {/* 		=============================================
 				Fancy Feature Eighteen
 			==============================================  */}
-      <div className="fancy-feature-eighteen mt-130 md-mt-80" id="feature">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-9 m-auto">
-              <div
-                className="title-style-eight text-center"
-                data-aos="fade-up"
-                data-aos-duration="1200"
-              >
-                <h2 className='text-wrap '>
-                 Bringing Your Game to Life <br /> The Process
-                </h2>
-                {/* <p>
+          <div className="fancy-feature-eighteen mt-130 md-mt-80" id="feature">
+            <div className="container">
+              <div className="row">
+                <div className="col-xl-9 m-auto">
+                  <div
+                    className="title-style-eight text-center"
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                  >
+                    <h2 className='text-wrap '>
+                      Bringing Your Game to Life <br /> The Process
+                    </h2>
+                    {/* <p>
                   Rotate, merge, trim, split, crop and flip videos with a modern
                   & simple ui
                 </p> */}
+                  </div>
+                </div>
               </div>
+
+              {/* Nav tabs */}
             </div>
+            {/* End .container */}
+            <DocEditorTabs tabListContent={tabListContent} tabList={tabList} />
+
+            <img src="images/shape/175.svg" alt="" className="shapes shape-right" />
+            <img src="images/shape/176.svg" alt="" className="shapes shape-left" />
           </div>
+          {/* /.fancy-feature-eighteen */}
 
-          {/* Nav tabs */}
-        </div>
-        {/* End .container */}
-        <DocEditorTabs tabListContent={tabListContent} tabList={tabList}/>
-
-        <img src="images/shape/175.svg" alt="" className="shapes shape-right" />
-        <img src="images/shape/176.svg" alt="" className="shapes shape-left" />
-      </div>
-      {/* /.fancy-feature-eighteen */}
-
-                 {/*=============================================
+          {/*=============================================
 		   Fancy Feature Twelve
 	    ==============================================  */}
-      <div className="fancy-feature-twelve pt-250 md-pt-50 bg-black" id="about">
-        <div className="bg-wrapper">
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-7 col-lg-10 col-md-8 m-auto">
-                <div className="title-style-six text-center">
-                  <h2 className='text-white'>
-                    The Power Behind Play
-                  </h2>
+          <div className="fancy-feature-twelve pb-180 md-pt-50 pt-250 md-pt-50 bg-black" id="about">
+            <div className="bg-wrapper">
+              <div className="container">
+                <div className="row">
+                  <div className="col-xl-7 col-lg-10 col-md-8 m-auto">
+                    <div className="title-style-six text-center">
+                      <h2 className='text-white'>
+                        The Power Behind Play
+                      </h2>
+                    </div>
+                    {/* /.title-style-six */}
+                  </div>
                 </div>
-                {/* /.title-style-six */}
+                {/* End .row */}
+                <FancyFeatureTwelve FeatureContent={FeatureContent} />
               </div>
             </div>
-            {/* End .row */}
-            <FancyFeatureTwelve  FeatureContent ={FeatureContent}/>
+            {/* /.bg-wrapper */}
+            <img src="images/shape/151.svg" alt="" className="shapes shape-one" />
           </div>
+          {/*  /.fancy-feature-twelve */}
+
+
+
+
         </div>
-        {/* /.bg-wrapper */}
-        <img src="images/shape/151.svg" alt="" className="shapes shape-one" />
       </div>
-      {/*  /.fancy-feature-twelve */}
-
-
-
-
+      <div className="fancy-short-banner-three mt-200 md-mt-150">
+        <div className="container">
+          <div className="bg-wrapper">
+            <CallToActionThree />
+          </div>
+          {/* /.bg-wrapper */}
+        </div>
+        {/* /.container */}
       </div>
+      {/* /.fancy-short-banner-four */}
+
+      {/* =====================================================
+        Footer Style Two
+    ===================================================== */}
+      <footer className="theme-footer-two pt-150 md-pt-80">
+        <div className="top-footer">
+          <div className="container">
+            <FooterTwo />
+          </div>
+          {/* /.container */}
+        </div>
+        {/* /.top-footer */}
+
+        <div className="container">
+          <div className="bottom-footer-content">
+            <CopyRightTwo />
+          </div>
+          {/*  /.bottom-footer */}
+        </div>
+      </footer>
     </div>
   )
 }

@@ -37,7 +37,7 @@ const FeatureThree = () => {
               <img src={`images/icon/${val.icon}.svg`} alt="icon" />
             </div>
             <h4>{val.meta}</h4>
-            <p className="font-rubik">{val.subTitle}</p>
+            <p className="font-gordita">{val.subTitle}</p>
           </div>
         </div>
       ))}

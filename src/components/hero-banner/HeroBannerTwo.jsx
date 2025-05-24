@@ -35,16 +35,16 @@ const ComingSoon = () => {
       </Helmet>
       {/* End Page SEO Content */}
       <div className="full-height-layout d-flex align-items-center">
-        <div className="coming-soon-content font-gordita">
+        <div className="coming-soon-content font-raleway">
           <h1 data-aos="fade-up">Ingenuity Unbound: Reimagined Digital World.</h1>
           <div className="row">
             <div className="col-lg-9 m-auto">
-              <p>
-              One pixel, one line of code at a time—where creativity ignites innovation.
+              <p className="font-gordita">
+                One pixel, one line of code at a time—where creativity ignites innovation.
               </p>
             </div>
           </div>
-{/* 
+          {/* 
           <ul className="social-icon d-flex justify-content-center">
             {socialContent.map((val, i) => (
               <li key={i}>

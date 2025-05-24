@@ -41,7 +41,7 @@ export default function Testimonial() {
           data-aos="fade-up"
           data-aos-duration="1200"
         >
-          <p className="font-rubik">{val.desc}</p>
+          <p className="font-gordita">{val.desc}</p>
           <div className="d-lg-flex align-items-center">
             <img
               src={val.reviewerImg}

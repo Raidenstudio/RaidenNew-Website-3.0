@@ -30,12 +30,12 @@ const ProjectManagement = () => {
         <div className="container">
           <div className="row">
             <div className="col-xl-9 col-lg-11 m-auto">
-              <h2 className="font-rubik">
+              <h2 className="font-gordita">
                 We're built for software management.
               </h2>
             </div>
             <div className="col-xl-9 col-lg-11 m-auto">
-              <p className="font-rubik">
+              <p className="font-gordita">
                 Our mission is to ensure software development teams can do their
                 best work. So we created Clubhouse to provide the most intuitive
                 and enjoyable project management platform teams actually want to
@@ -67,7 +67,7 @@ const ProjectManagement = () => {
                 <p>
                   More over <span>1500+ customers</span>
                 </p>
-                <blockquote className="font-rubik">
+                <blockquote className="font-gordita">
                   Just simply amazing. Feel lucky use their service.Highly
                   recommended andappriciate their service & highly trusted.
                 </blockquote>
@@ -113,7 +113,7 @@ const ProjectManagement = () => {
               data-aos-delay="100"
             >
               <div className="title-style-one md-mb-40">
-                <h6 className="font-rubik" style={{ color: "#787CFF" }}>
+                <h6 className="font-gordita" style={{ color: "#787CFF" }}>
                   Our product philosophy
                 </h6>
                 <h2>
@@ -193,7 +193,7 @@ const ProjectManagement = () => {
       <div className="useable-tools-section bg-color mt-50 md-mt-10">
         <div className="container">
           <div className="text-center">
-            <h6 className="font-rubik">Integrates with your tools</h6>
+            <h6 className="font-gordita">Integrates with your tools</h6>
             <h2>
               Deski ties into your existing tools, services, & workflow. Get
               notifications or create a Story with others tools.
@@ -212,7 +212,7 @@ const ProjectManagement = () => {
         <div className="container">
           <div className="header d-md-flex align-items-center justify-content-between mb-90 md-mb-40">
             <div className="title-style-one">
-              <h6 className="font-rubik">Our News</h6>
+              <h6 className="font-gordita">Our News</h6>
               <h2>Have any thought? Look here.</h2>
             </div>
             {/*  /.title-style-one */}

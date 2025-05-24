@@ -8,7 +8,7 @@ const HeroBannerThree = () => {
       <div className="container">
         <div className="row">
           <div className="col-xl-9 col-lg-11 col-md-8 m-auto">
-            <h1 className="font-rubik">Doc software you looking for.</h1>
+            <h1 className="font-gordita">Doc software you looking for.</h1>
           </div>
           {/* End .col */}
 
@@ -29,7 +29,7 @@ const HeroBannerThree = () => {
 
         <p className="sing-in-call">
           Already using deski?{" "}
-          <Link to="/login" className="font-rubik">
+          <Link to="/login" className="font-gordita">
             Sign in.
           </Link>
           .

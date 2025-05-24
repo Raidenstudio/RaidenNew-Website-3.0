@@ -44,7 +44,7 @@ const HeaderThree = () => {
                   {/* End MegaMenu */}
 
                   <ul className="right-widget user-login-button d-flex align-items-center justify-content-center">
-                    <li>
+                    {/* <li>
                       <Link
                         to="/login"
                         className="signIn-action d-flex align-items-center"
@@ -52,7 +52,7 @@ const HeaderThree = () => {
                         <img src="images/icon/52.svg" alt="icon" />
                         <span>Login</span>
                       </Link>
-                    </li>
+                    </li> */}
                     {/* End li */}
                     <li>
                       <Link

@@ -22,94 +22,95 @@ import FancyFeatureTewentySeven from "../../../components/features/FancyFeatureT
 import FancyFeatureTewentyNine from "../../../components/features/FancyFeatureTewentyNine";
 import FancyFeatureTwelve from "../../../components/features/FancyFeatureTwelve";
 import demo from "../../../assets/images/assets/Advantage Marketing.png"
+import HeaderThree from "../../../components/header/HeaderThree";
 
 const NftService = () => {
 
-const FeaturesContent = [
-  {
-    img: "94",
-    title: "Non-Fungible Token",
-    desc: `Have a reliable token conversion process for your physical and digital assets, and trade them on the NFT Marketplace to increase your trading opportunities.`,
-  },
-  {
-    img: "95",
-    title: "NFT Marketplace",
-    desc: `Establishing your marketplace's user interface and back-end system to enable NFT trading with smooth end-to-end encryption.`,
-  },
-  {
-    img: "96",
-    title: "Web3 Wallet Integration",
-    desc: `Future-proofed through innovative crypto wallet integration. Seamlessly connect across diverse blockchains, applying the latest features.`,
-  },
-  {
-    img: "97",
-    title: "Smart Contract Development",
-    desc: `Customize and configure your own marketplace, adopting Raiden's NFT features and experience to ensure efficient trading.`,
-  },
-  {
-    img: "98",
-    title: "Cross-Chain NFT Platform Development",
-    desc: `NFTs are created using multi-token wallet systems, cross-chain transactions, and blockchain network interoperability.`,
-  },
-  {
-    img: "99",
-    title: "NFT Game Development",
-    desc: `Raiden handles the development of full-cycle NFT games, creating a game platform with tradable and collectible non-fungible tokens.`,
-  },
-  {
-    img: "95",
-    title: "NFT Art Gallery",
-    desc: `Utilize Raiden's design expertise to create an influential NFT art gallery that will guarantee your tokenized art captures attention.`,
-  },
-  {
-    img: "96",
-    title: "NFT Streaming Platform",
-    desc: `Empower creators with Raiden's NFT multimedia platform. Tokenize and generate your audio podcast, music, video, and even live concerts.`,
-  },
-  {
-    img: "97",
-    title: "NFT Aggregator Development",
-    desc: `With the blockchain expertise and standard NFT, we cut through the difficulties and make sure you receive it in time.`,
-  },
-];
-const FeatureContent = [
-  {
-    icon: demo,
-    title: "Planning",
-    subTitle: "Strategically mapping all critical elements — from design and development to execution — before project initiation to ensure a seamless launch.",
-    hoverText: "Strategically mapping all critical elements — from design and development to execution — before project initiation to ensure a seamless launch.",
-  },
-  {
-    icon: "84",
-    title: "Wireframing",
-    subTitle: "Creating a strong project plan and framework that incorporates market integration, token minting, blockchain, and other elements.",
-    hoverText: "Creating a strong project plan and framework that incorporates market integration, token minting, blockchain, and other elements.",
-  },
-  {
-    icon: "84",
-    title: "UI/UX",
-    subTitle: "An approach that highlights user-centric interaction, usability, and aesthetic design as the three main pillars of successful NFT platform development.",
-    hoverText: "An approach that highlights user-centric interaction, usability, and aesthetic design as the three main pillars of successful NFT platform development.",
-  },
-  {
-    icon: "84",
-    title: "Development",
-    subTitle: "By building on core essentials, we streamline NFT development and empower projects to realize measurable success.",
-    hoverText: "By building on core essentials, we streamline NFT development and empower projects to realize measurable success.",
-  },
-  {
-    icon: "84",
-    title: "Product Integrity",
-    subTitle: "Executing rigorous quality analysis and comprehensive testing to deliver a bug-free NFT application with zero coding errors.",
-    hoverText: "Executing rigorous quality analysis and comprehensive testing to deliver a bug-free NFT application with zero coding errors.",
-  },
-  {
-    icon: "84",
-    title: "Setting Up for Launch",
-    subTitle: "We ensure the launch of your NFT project on all significant platforms, establishing a connection with users and opening up revenue streams.",
-    hoverText: "We ensure the launch of your NFT project on all significant platforms, establishing a connection with users and opening up revenue streams.",
-  }
-];
+    const FeaturesContent = [
+        {
+            img: "94",
+            title: "Non-Fungible Token",
+            desc: `Have a reliable token conversion process for your physical and digital assets, and trade them on the NFT Marketplace to increase your trading opportunities.`,
+        },
+        {
+            img: "95",
+            title: "NFT Marketplace",
+            desc: `Establishing your marketplace's user interface and back-end system to enable NFT trading with smooth end-to-end encryption.`,
+        },
+        {
+            img: "96",
+            title: "Web3 Wallet Integration",
+            desc: `Future-proofed through innovative crypto wallet integration. Seamlessly connect across diverse blockchains, applying the latest features.`,
+        },
+        {
+            img: "97",
+            title: "Smart Contract Development",
+            desc: `Customize and configure your own marketplace, adopting Raiden's NFT features and experience to ensure efficient trading.`,
+        },
+        {
+            img: "98",
+            title: "Cross-Chain NFT Platform Development",
+            desc: `NFTs are created using multi-token wallet systems, cross-chain transactions, and blockchain network interoperability.`,
+        },
+        {
+            img: "99",
+            title: "NFT Game Development",
+            desc: `Raiden handles the development of full-cycle NFT games, creating a game platform with tradable and collectible non-fungible tokens.`,
+        },
+        {
+            img: "95",
+            title: "NFT Art Gallery",
+            desc: `Utilize Raiden's design expertise to create an influential NFT art gallery that will guarantee your tokenized art captures attention.`,
+        },
+        {
+            img: "96",
+            title: "NFT Streaming Platform",
+            desc: `Empower creators with Raiden's NFT multimedia platform. Tokenize and generate your audio podcast, music, video, and even live concerts.`,
+        },
+        {
+            img: "97",
+            title: "NFT Aggregator Development",
+            desc: `With the blockchain expertise and standard NFT, we cut through the difficulties and make sure you receive it in time.`,
+        },
+    ];
+    const FeatureContent = [
+        {
+            icon: demo,
+            title: "Planning",
+            subTitle: "Strategically mapping all critical elements — from design and development to execution — before project initiation to ensure a seamless launch.",
+            hoverText: "Strategically mapping all critical elements — from design and development to execution — before project initiation to ensure a seamless launch.",
+        },
+        {
+            icon: "84",
+            title: "Wireframing",
+            subTitle: "Creating a strong project plan and framework that incorporates market integration, token minting, blockchain, and other elements.",
+            hoverText: "Creating a strong project plan and framework that incorporates market integration, token minting, blockchain, and other elements.",
+        },
+        {
+            icon: "84",
+            title: "UI/UX",
+            subTitle: "An approach that highlights user-centric interaction, usability, and aesthetic design as the three main pillars of successful NFT platform development.",
+            hoverText: "An approach that highlights user-centric interaction, usability, and aesthetic design as the three main pillars of successful NFT platform development.",
+        },
+        {
+            icon: "84",
+            title: "Development",
+            subTitle: "By building on core essentials, we streamline NFT development and empower projects to realize measurable success.",
+            hoverText: "By building on core essentials, we streamline NFT development and empower projects to realize measurable success.",
+        },
+        {
+            icon: "84",
+            title: "Product Integrity",
+            subTitle: "Executing rigorous quality analysis and comprehensive testing to deliver a bug-free NFT application with zero coding errors.",
+            hoverText: "Executing rigorous quality analysis and comprehensive testing to deliver a bug-free NFT application with zero coding errors.",
+        },
+        {
+            icon: "84",
+            title: "Setting Up for Launch",
+            subTitle: "We ensure the launch of your NFT project on all significant platforms, establishing a connection with users and opening up revenue streams.",
+            hoverText: "We ensure the launch of your NFT project on all significant platforms, establishing a connection with users and opening up revenue streams.",
+        }
+    ];
 
     return (
         <div className="main-page-wrapper p0">
@@ -118,7 +119,7 @@ const FeatureContent = [
             </Helmet>
             {/* End Page SEO Content */}
 
-            <Header />
+            <HeaderThree />
             {/* End Header */}
 
             {/* 	=============================================
@@ -227,7 +228,7 @@ const FeatureContent = [
                             </div>
                         </div>
                         {/* End .row */}
-                        <FancyFeatureTwelve FeatureContent={FeatureContent} />
+                        <FancyFeatureTwelve FeatureContent={FeatureContent} fontColor="text-black" />
                     </div>
                 </div>
                 {/* /.bg-wrapper */}

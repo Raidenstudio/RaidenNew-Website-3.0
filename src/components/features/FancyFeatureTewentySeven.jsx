@@ -36,7 +36,7 @@ const FancyFeatureTewentySeven = () => {
             <div className="icon d-flex align-items-end justify-content-center">
               <img src={`images/icon/${val.icon}.svg`} alt="icon" />
             </div>
-            <h4 className="font-gordita">{val.title}</h4>
+            <h4 className="font-raleway">{val.title}</h4>
             <p>{val.desc}</p>
           </div>
           {/* /.block-style-twentySeven */}

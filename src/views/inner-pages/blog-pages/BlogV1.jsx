@@ -27,7 +27,7 @@ const BlogV1 = () => {
               </h2>
             </div>
             <div className="col-lg-9 m-auto">
-              <p className="font-rubik">
+              <p className="font-gordita">
                 You will find here our company news and latest update
               </p>
             </div>

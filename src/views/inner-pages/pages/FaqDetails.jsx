@@ -26,7 +26,7 @@ const FaqDetails = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-9 m-auto">
-              <h2 className="font-rubik">Help & Support</h2>
+              <h2 className="font-gordita">Help & Support</h2>
               <p className="sub-heading">
                 Advice and answers from our expert and proffesional deski Team
               </p>
@@ -73,7 +73,7 @@ const FaqDetails = () => {
                         className="avatar-img"
                       />
                       <div>
-                        <h3 className="font-rubik">
+                        <h3 className="font-gordita">
                           How to set up two-factor authentication (2FA)
                         </h3>
                         <div className="avatar-info">

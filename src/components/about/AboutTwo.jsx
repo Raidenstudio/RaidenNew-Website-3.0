@@ -15,7 +15,7 @@ const AboutTwo = () => {
             src={Steve}
             alt="shape"
             className="shapes shape-six"
-            style={{height: "450px"}}
+            style={{ height: "450px" }}
           />
         </div>
         {/* img-holder */}
@@ -29,11 +29,11 @@ const AboutTwo = () => {
       >
         <div className="quote-wrapper pt-60">
           <img src="images/icon/26.svg" alt="icon" className="icon" />
-          <blockquote className="font-rubik">
-          Great things in business are never done by one person they are done by a team of people.
+          <blockquote className="font-raleway">
+            Great things in business are never done by one person they are done by a team of people.
           </blockquote>
           <h5>
-           - STEVE JOBS
+            - STEVE JOBS
           </h5>
           {/* <Link to="/about-cs" className="theme-btn-two mt-45 md-mt-30">
             {" "}

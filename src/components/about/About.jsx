@@ -18,11 +18,11 @@ const About = () => {
               <span>Best event & online</span> ticket platform.
             </h2>
           </div>
-          <p className="font-rubik">
+          <p className="font-gordita">
             Things go wrong. You’ll have questions. We understand. So we have
             people, not bots, on hand to help.
           </p>
-          <p className="font-rubik">
+          <p className="font-gordita">
             We aim to answer any query in less than 10 minutes.
           </p>
           <div className="name font-slab">Mitchell Garner</div>

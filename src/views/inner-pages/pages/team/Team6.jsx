@@ -24,10 +24,10 @@ const Team6 = () => {
         <div className="container">
           <div className="row">
             <div className="col-xl-9 col-lg-11 m-auto">
-              <h2 className="font-rubik">We’ve Most Talented Team Members</h2>
+              <h2 className="font-gordita">We’ve Most Talented Team Members</h2>
             </div>
             <div className="col-xl-9 col-lg-11 m-auto">
-              <p className="font-rubik">
+              <p className="font-gordita">
                 With deski, get all kind of business solution to start your
                 journey
               </p>
@@ -79,7 +79,7 @@ const Team6 = () => {
             <div className="row">
               <div className="col-lg-8 col-md-9 m-auto">
                 <h2
-                  className="font-rubik"
+                  className="font-gordita"
                   data-aos="fade-up"
                   data-aos-duration="1200"
                 >

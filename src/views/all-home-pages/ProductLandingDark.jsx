@@ -16,6 +16,7 @@ import FooterTwo from "../../components/footer/FooterTwo";
 import CopyRightTwo from "../../components/footer/CopyRightTwo";
 import FancyFeatureNinteen from "../../components/features/FancyFeatureNinteen";
 import DocSlickAsNavThree from "../../components/block-slider/DocSlickAsNavThree";
+import HeaderThree from "../../components/header/HeaderThree";
 
 
 const ProductLandingDark = () => {
@@ -174,7 +175,7 @@ const ProductLandingDark = () => {
       </Helmet>
       {/* End Page SEO Content */}
 
-      <Header />
+      <HeaderThree />
       {/* End HeaderLanding */}
 
       {/*=============================================

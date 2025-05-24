@@ -70,7 +70,7 @@ const Team1 = () => {
             <div className="row">
               <div className="col-lg-8 col-md-9 m-auto">
                 <h2
-                  className="font-rubik"
+                  className="font-gordita"
                   data-aos="fade-up"
                   data-aos-duration="1200"
                 >

@@ -24,7 +24,7 @@ const ContactAddress = () => {
             <img src="images/icon/44.svg" alt="icon" />
           </div>
           <div className="title">Location</div>
-          <p className="font-rubik">
+          <p className="font-gordita">
             Melbourne, R. Market <br /> 1201 VIC
           </p>
         </div>{" "}
@@ -38,7 +38,7 @@ const ContactAddress = () => {
             <img src="images/icon/45.svg" alt="icon" />
           </div>
           <div className="title">Contact</div>
-          <p className="font-rubik">
+          <p className="font-gordita">
             bawejkor@duwvude.gov <br />
             (779) 564-1593
           </p>
@@ -53,7 +53,7 @@ const ContactAddress = () => {
             <img src="images/icon/46.svg" alt="icon" />
           </div>
           <div className="title">Social Media</div>
-          <p className="font-rubik">Find on social media</p>
+          <p className="font-gordita">Find on social media</p>
           <ul className="d-flex justify-content-center">
             {socialContent.map((val, i) => (
               <li key={i}>

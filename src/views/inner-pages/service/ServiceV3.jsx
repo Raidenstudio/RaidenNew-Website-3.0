@@ -10,9 +10,10 @@ import service4 from "../../../assets/images/assets/ARservice/3D Design and Deve
 import service2 from "../../../assets/images/assets/ARservice/AR Game development.png"
 import service1 from "../../../assets/images/assets/ARservice/Custom AR development.png"
 import service3 from "../../../assets/images/assets/ARservice/Web AR development.png"
+import HeaderThree from "../../../components/header/HeaderThree";
 
 const ServiceV3 = () => {
-    const [showAllServices, setShowAllServices] = useState(false);
+  const [showAllServices, setShowAllServices] = useState(false);
 
   const toggleShowAllServices = () => {
     setShowAllServices(!showAllServices);
@@ -20,51 +21,51 @@ const ServiceV3 = () => {
 
   return (
     <div className="main-page-wrapper p0">
-        <Helmet>
-            <title>Service Version 1 || Deski-Saas & Software React Template</title>
-        </Helmet>
-        {/* End Page SEO Content */}
+      <Helmet>
+        <title>Service Version 1 || Deski-Saas & Software React Template</title>
+      </Helmet>
+      {/* End Page SEO Content */}
 
-        <Header />
-        {/* End Header */}
+      <HeaderThree />
+      {/* End Header */}
 
-        {/* 	=============================================
+      {/* 	=============================================
         Fancy Hero Three
     ============================================== */}
-        <div className="fancy-hero-three">
-            <div className="shapes shape-one"></div>
-            <div className="shapes shape-two"></div>
-            <div className="shapes shape-three"></div>
-            <div className="shapes shape-four"></div>
-            <div className="shapes shape-five"></div>
-            <div className="shapes shape-six"></div>
-            <div className="bg-wrapper">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-xl-9 col-lg-10 m-auto">
-                            <h1 className="heading">
-                                <span style={{ fontSize: "0.8em", whiteSpace: "nowrap" }}>
-                                Interplaying Cognition with
-                                </span>{" "}
-                                <span style={{ fontSize: "1em", color: "#000", fontWeight: "bold" }}>
-                                    <br /> World Manifestation
-                                </span>
-                            </h1>
-                            <p className="sub-heading">
-                            You can explore and shape your imagination with our VR creativity, bringing together the real and virtual worlds in an exciting way.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+      <div className="fancy-hero-three">
+        <div className="shapes shape-one"></div>
+        <div className="shapes shape-two"></div>
+        <div className="shapes shape-three"></div>
+        <div className="shapes shape-four"></div>
+        <div className="shapes shape-five"></div>
+        <div className="shapes shape-six"></div>
+        <div className="bg-wrapper">
+          <div className="container">
+            <div className="row">
+              <div className="col-xl-9 col-lg-10 m-auto">
+                <h1 className="heading">
+                  <span style={{ fontSize: "0.8em", whiteSpace: "nowrap" }}>
+                    Interplaying Cognition with
+                  </span>{" "}
+                  <span style={{ fontSize: "1em", color: "#000", fontWeight: "bold" }}>
+                    <br /> World Manifestation
+                  </span>
+                </h1>
+                <p className="sub-heading">
+                  You can explore and shape your imagination with our VR creativity, bringing together the real and virtual worlds in an exciting way.
+                </p>
+              </div>
             </div>
-            {/* /.bg-wrapper  */}
+          </div>
         </div>
-        {/* /.fancy-hero-three */}
+        {/* /.bg-wrapper  */}
+      </div>
+      {/* /.fancy-hero-three */}
 
-        {/* =============================================
+      {/* =============================================
         Fancy Feature Twenty Three
     ==============================================  */}
-         <div className="fancy-feature-twentyThree pt-170 md-pt-100" id="feature">
+      <div className="fancy-feature-twentyThree pt-170 md-pt-100" id="feature">
         <div className="container">
           <div
             className="title-style-nine text-center pb-180 md-pb-100"
@@ -196,7 +197,7 @@ const ServiceV3 = () => {
           </div>
 
           <div className="text-center mt-50 mb-50 d-flex justify-content-center">
-            <button 
+            <button
               onClick={toggleShowAllServices}
               className="theme-btn-nine"
             >
@@ -325,59 +326,59 @@ const ServiceV3 = () => {
         </div>
       </div>
 
-        <div className="fancy-feature-twentyFour pt-140 md-pt-60" id="service">
-            <div className="container">
-                <div className="title-style-nine text-center">
-                    <h6>Indutries Include</h6>
-                    <h2>
-                        Unveiling Key Features and Their Strategic Benefits{" "}
-                        <span>
-                        Transformative VR Solutions<img src="images/shape/192.svg" alt="shape" />
-                        </span>
-                    </h2>
-                </div>
-            </div>
-            <div className="bg-wrapper mt-100 md-mt-80">
-                <a
-                    href="#feedback"
-                    className="click-scroll-button scroll-target d-flex justify-content-center"
-                >
-                    <img src="images/shape/200.svg" alt="shape" />
-                </a>
-                <div className="container">
-                    <FancyFeatureTwentyFour />
-                </div>
-                <img
-                    src="images/shape/195.svg"
-                    alt="shape"
-                    className="shapes shape-one"
-                />
-                <img
-                    src="images/shape/196.svg"
-                    alt="shape"
-                    className="shapes shape-two"
-                />
-                <img
-                    src="images/shape/197.svg"
-                    alt="shape"
-                    className="shapes shape-three"
-                />
-                <img
-                    src="images/shape/198.svg"
-                    alt="shape"
-                    className="shapes shape-four"
-                />
-                <img
-                    src="images/shape/199.svg"
-                    alt="shape"
-                    className="shapes shape-five"
-                />
-            </div>
-            {/* /.bg-wrapper */}
+      <div className="fancy-feature-twentyFour pt-140 md-pt-60" id="service">
+        <div className="container">
+          <div className="title-style-nine text-center">
+            <h6>Indutries Include</h6>
+            <h2>
+              Unveiling Key Features and Their Strategic Benefits{" "}
+              <span>
+                Transformative VR Solutions<img src="images/shape/192.svg" alt="shape" />
+              </span>
+            </h2>
+          </div>
         </div>
+        <div className="bg-wrapper mt-100 md-mt-80">
+          <a
+            href="#feedback"
+            className="click-scroll-button scroll-target d-flex justify-content-center"
+          >
+            <img src="images/shape/200.svg" alt="shape" />
+          </a>
+          <div className="container">
+            <FancyFeatureTwentyFour />
+          </div>
+          <img
+            src="images/shape/195.svg"
+            alt="shape"
+            className="shapes shape-one"
+          />
+          <img
+            src="images/shape/196.svg"
+            alt="shape"
+            className="shapes shape-two"
+          />
+          <img
+            src="images/shape/197.svg"
+            alt="shape"
+            className="shapes shape-three"
+          />
+          <img
+            src="images/shape/198.svg"
+            alt="shape"
+            className="shapes shape-four"
+          />
+          <img
+            src="images/shape/199.svg"
+            alt="shape"
+            className="shapes shape-five"
+          />
+        </div>
+        {/* /.bg-wrapper */}
+      </div>
 
 
-        {/* <div className="pt-140 md-pt-60 pb-140 md-pb-60" id="template">
+      {/* <div className="pt-140 md-pt-60 pb-140 md-pb-60" id="template">
             <div className="container">
                 <div
                     className="title-style-eight text-center mb-80 md-mb-30"
@@ -407,60 +408,60 @@ const ServiceV3 = () => {
             /.lg-container
         </div> */}
 
-        <div className="useable-tools-section bg-color mb-50">
-            <div className="bubble-one"></div>
-            <div className="bubble-two"></div>
-            <div className="bubble-three"></div>
-            <div className="bubble-four"></div>
-            <div className="bubble-five"></div>
-            <div className="container">
-                <h6 className="font-rubik">Integrates with your tools</h6>
-                <h2>
-                    Deski ties into your existing tools, services, & workflow. Get
-                    notifications or create a Story with others tools.
-                </h2>
+      <div className="useable-tools-section bg-color mb-50">
+        <div className="bubble-one"></div>
+        <div className="bubble-two"></div>
+        <div className="bubble-three"></div>
+        <div className="bubble-four"></div>
+        <div className="bubble-five"></div>
+        <div className="container">
+          <h6 className="font-gordita">Integrates with your tools</h6>
+          <h2>
+            Deski ties into your existing tools, services, & workflow. Get
+            notifications or create a Story with others tools.
+          </h2>
 
-                <SocialTwo />
-            </div>
-            {/* /.container */}
+          <SocialTwo />
         </div>
+        {/* /.container */}
+      </div>
 
-        {/* =====================================================
+      {/* =====================================================
     Fancy Short Banner Three
     ===================================================== */}
-        <div className="fancy-short-banner-three mt-200 md-mt-150">
-            <div className="container">
-                <div className="bg-wrapper">
-                    <CallToActionThree />
-                </div>
-                {/* /.bg-wrapper */}
-            </div>
-            {/* /.container */}
+      <div className="fancy-short-banner-three mt-200 md-mt-150">
+        <div className="container">
+          <div className="bg-wrapper">
+            <CallToActionThree />
+          </div>
+          {/* /.bg-wrapper */}
         </div>
-        {/* /.fancy-short-banner-four */}
+        {/* /.container */}
+      </div>
+      {/* /.fancy-short-banner-four */}
 
-        {/* =====================================================
+      {/* =====================================================
         Footer Style Two
     ===================================================== */}
-        <footer className="theme-footer-two pt-150 md-pt-80">
-            <div className="top-footer">
-                <div className="container">
-                    <FooterTwo />
-                </div>
-                {/* /.container */}
-            </div>
-            {/* /.top-footer */}
+      <footer className="theme-footer-two pt-150 md-pt-80">
+        <div className="top-footer">
+          <div className="container">
+            <FooterTwo />
+          </div>
+          {/* /.container */}
+        </div>
+        {/* /.top-footer */}
 
-            <div className="container">
-                <div className="bottom-footer-content">
-                    <CopyRightTwo />
-                </div>
-                {/*  /.bottom-footer */}
-            </div>
-        </footer>
-        {/* /.theme-footer-one */}
+        <div className="container">
+          <div className="bottom-footer-content">
+            <CopyRightTwo />
+          </div>
+          {/*  /.bottom-footer */}
+        </div>
+      </footer>
+      {/* /.theme-footer-one */}
     </div>
-);
+  );
 };
 
 export default ServiceV3;

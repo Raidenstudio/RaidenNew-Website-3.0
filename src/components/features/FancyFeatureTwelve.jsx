@@ -39,7 +39,7 @@ import React from "react";
 //   }
 // ];
 
-const FancyFeatureTwelve = ({FeatureContent}) => {
+const FancyFeatureTwelve = ({ FeatureContent, fontColor }) => {
   return (
     <div className="row justify-content-center pt-50 md-pt-20">
       {FeatureContent.map((val, i) => (
@@ -49,8 +49,8 @@ const FancyFeatureTwelve = ({FeatureContent}) => {
               <img src={`${val.icon}`} alt="icon" />
             </div>
             <div className="static-text">
-              <h3 className="text-white">{val.title}</h3>
-              <p className="text-white" style={{opacity:0.7}}>{val.subTitle}</p>
+              <h3 className={`font-raleway ${fontColor ? fontColor : "text-white"}`}>{val.title}</h3>
+              <p className={fontColor ? fontColor : "text-white"} style={{ opacity: 0.7 }}>{val.subTitle}</p>
             </div>
             <div className="hover-text">{val.subTitle}</div>
           </div>

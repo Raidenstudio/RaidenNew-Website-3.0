@@ -27,10 +27,10 @@ const ServiceV2 = () => {
         <div className="container">
           <div className="row">
             <div className="col-xl-10 m-auto">
-              <h2 className="font-rubik">Our Services</h2>
+              <h2 className="font-gordita">Our Services</h2>
             </div>
             <div className="col-xl-9 m-auto">
-              <p className="font-rubik">
+              <p className="font-gordita">
                 We are a creative company that focuses on establishing long-term
                 relationships with customers.
               </p>

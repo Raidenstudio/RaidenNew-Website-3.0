@@ -1,4 +1,4 @@
-import {React} from "react";
+import { React } from "react";
 import { Helmet } from "react-helmet";
 import DocEditorTabs from "../../components/block-slider/DocEditorTabs";
 import FacnyVideoTwo from "../../components/video/FacnyVideoTwo";
@@ -8,6 +8,7 @@ import FancyDEFIServices from "../../components/features/FancyDEFIServices";
 import CallToActionThree from "../../components/call-to-action/CallToActionThree";
 import FooterTwo from "../../components/footer/FooterTwo";
 import CopyRightTwo from "../../components/footer/CopyRightTwo";
+import HeaderThree from "../../components/header/HeaderThree";
 
 const tabListContent = [
   {
@@ -90,13 +91,13 @@ const VideoEditorLanding = () => {
       </Helmet>
       {/* End Page SEO Content */}
 
-      <Header />
+      <HeaderThree />
       {/* End Header Landing Editor */}
 
       {/* 	=============================================
 				Theme Hero Banner
 			==============================================  */}
-       <div className="hero-banner-ten">
+      <div className="hero-banner-ten">
         <div className="container">
           <div className="row">
             <div className="col-xl-9 col-lg-11 col-md-8 m-auto">
@@ -105,7 +106,7 @@ const VideoEditorLanding = () => {
                 data-aos="fade-up"
                 data-aos-duration="1200"
               >
-               Global Connoisseurs of DeFi Technology
+                Global Connoisseurs of DeFi Technology
               </h1>
               <p
                 className="hero-sub-heading"
@@ -118,9 +119,9 @@ const VideoEditorLanding = () => {
             </div>
           </div>
           {/* End .row */}
-<div>
+          <div>
 
-</div>
+          </div>
         </div>
         {/* End .container */}
 
@@ -163,7 +164,7 @@ const VideoEditorLanding = () => {
                 data-aos-duration="1200"
               >
                 <h2>
-                Strategic DeFi Implementation Solutions
+                  Strategic DeFi Implementation Solutions
                 </h2>
                 {/* <p>
                   Rotate, merge, trim, split, crop and flip videos with a modern
@@ -176,7 +177,7 @@ const VideoEditorLanding = () => {
           {/* Nav tabs */}
         </div>
         {/* End .container */}
-        <DocEditorTabs tabListContent={tabListContent} tabList={tabList}/>
+        <DocEditorTabs tabListContent={tabListContent} tabList={tabList} />
 
         <img src="images/shape/175.svg" alt="" className="shapes shape-right" />
         <img src="images/shape/176.svg" alt="" className="shapes shape-left" />
@@ -187,7 +188,7 @@ const VideoEditorLanding = () => {
 				Fancy Feature Nineteen
 			==============================================  */}
 
-<div className="fancy-feature-twenty mt-225 md-mt-150">
+      <div className="fancy-feature-twenty mt-225 md-mt-150">
         <div className="container">
           <div className="block-style-twenty">
             <FacnyVideoTwo />
@@ -361,26 +362,26 @@ const VideoEditorLanding = () => {
       {/* =====================================================
 				Footer Style Seven
 			===================================================== */}
-       <div className="fancy-short-banner-three mt-200 md-mt-150">
-          <div className="container">
-            <div className="bg-wrapper">
-              <CallToActionThree />
-            </div>
+      <div className="fancy-short-banner-three mt-200 md-mt-150">
+        <div className="container">
+          <div className="bg-wrapper">
+            <CallToActionThree />
           </div>
         </div>
+      </div>
 
-        <footer className="theme-footer-two pt-150 md-pt-80">
-          <div className="top-footer">
-            <div className="container">
-              <FooterTwo />
-            </div>
-          </div>
+      <footer className="theme-footer-two pt-150 md-pt-80">
+        <div className="top-footer">
           <div className="container">
-            <div className="bottom-footer-content">
-              <CopyRightTwo />
-            </div>
+            <FooterTwo />
           </div>
-        </footer>
+        </div>
+        <div className="container">
+          <div className="bottom-footer-content">
+            <CopyRightTwo />
+          </div>
+        </div>
+      </footer>
       {/* /.theme-footer-seven */}
     </div>
   );

@@ -101,7 +101,8 @@ Primary use:  ib-themes
 
  ***/
  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-.ctn-preloader {
+
+ .ctn-preloader {
   align-items: center;
   -webkit-align-items: center;
   display: flex;
@@ -284,7 +285,7 @@ Primary use:  ib-themes
   color: #fff;
 }
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "gordita" !important;
   font-weight: normal;
   font-size: 18px;
   position: relative;
@@ -351,6 +352,10 @@ h6 {
 }
 .font-recoleta {
   font-family: "Recoleta" !important;
+}
+.font-raleway {
+  font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
 }
 ::-webkit-input-placeholder {
   /* Edge */
@@ -435,9 +440,10 @@ h6 {
 }
 /*^^^^^^^^^^^^^^^^^^^^^ Section Title ^^^^^^^^^^^^^^^^^^^^^^^^^*/
 .title-style-one h2 {
-  font-family: "gilroy-black";
+    font-family: "Raleway", sans-serif !important;
   font-size: 58px;
   line-height: 1.15em;
+  font-weight: 700;
 }
 .title-style-one h6 {
   font-size: 20px;
@@ -458,9 +464,10 @@ h6 {
   padding-bottom: 7px;
 }
 .title-style-two h2 {
-  font-family: "gilroy-black";
+  font-family: "Raleway", sans-serif !important;
   font-size: 58px;
   line-height: 1.15em;
+  font-weight: 700;
 }
 .title-style-two span {
   position: relative;
@@ -491,9 +498,10 @@ h6 {
   padding-bottom: 15px;
 }
 .title-style-three h2 {
-  font-family: "gilroy-black";
+  font-family: "Raleway", sans-serif !important;
   font-size: 54px;
   line-height: 1.18em;
+  font-weight: 700;
 }
 .title-style-three span {
   position: relative;
@@ -511,7 +519,8 @@ h6 {
   padding-bottom: 15px;
 }
 .title-style-four h2 {
-  font-family: "gilroy-black";
+  font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
   font-size: 58px;
   line-height: 1.15em;
   color: #2a2a2a;
@@ -554,8 +563,8 @@ h6 {
   padding-bottom: 12px;
 }
 .title-style-six h2 {
-  font-family: "Recoleta";
-  font-weight: normal;
+  font-family: "Raleway", sans-serif !important;
+    font-weight: bold !important;
   font-size: 72px;
   line-height: 1.27em;
   color: #000;
@@ -611,6 +620,7 @@ h6 {
   font-size: 68px;
   font-weight: 700;
   line-height: 1.26em;
+  font-family: "Raleway", sans-serif !important;
 }
 .title-style-eight h2 span {
   display: inline-block;
@@ -643,6 +653,8 @@ h6 {
   padding-bottom: 25px;
 }
 .title-style-nine h2 {
+   font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
   font-size: 52px;
   font-weight: 700;
   line-height: 1.34em;
@@ -678,6 +690,8 @@ h6 {
   font-size: 58px;
   font-weight: 500;
   line-height: 1.29em;
+  font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
 }
 .title-style-ten h6 {
   font-size: 16px;
@@ -692,11 +706,13 @@ h6 {
   color: rgba(0, 0, 0, 0.4);
   letter-spacing: 3px;
   padding-bottom: 8px;
+    font-family: "Raleway", sans-serif !important;
 }
 .title-style-twelve h2 {
   font-weight: 700;
   font-size: 58px;
   line-height: 1.29em;
+  font-family: "Raleway", sans-serif !important;
 }
 .title-style-twelve span {
   position: relative;
@@ -714,6 +730,7 @@ h6 {
 }
 .title-style-thirteen .upper-title {
   text-transform: uppercase;
+      font-family: "Raleway", sans-serif !important;
   font-size: 15px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.2);
@@ -721,8 +738,9 @@ h6 {
   padding-bottom: 16px;
 }
 .title-style-thirteen h2 {
-  font-family: "gordita";
-  font-weight: 700;
+    font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
+    font-weight: 700;
   font-size: 72px;
   line-height: 1.25em;
   letter-spacing: -1px;
@@ -738,12 +756,15 @@ h6 {
   z-index: -1;
 }
 .title-style-fourteen h2 {
+    font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
   font-size: 52px;
   font-weight: 500;
   line-height: 1.25em;
   letter-spacing: -1px;
 }
 .title-style-fourteen .upper-title {
+  font-family: "Raleway", sans-serif !important;
   text-transform: uppercase;
   font-size: 14px;
   color: #000;
@@ -1923,8 +1944,9 @@ body .shop-btn-two:hover {
   margin: 0;
 }
 .useable-tools-section h2 {
-  font-family: "gilroy-black";
-  font-size: 58px;
+   font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
+    font-size: 58px;
   line-height: 1.2em;
   color: #fff;
   margin: 20px 0 120px;
@@ -3709,6 +3731,7 @@ body .shop-btn-two:hover {
   padding: 46px 30px 50px 48px;
   margin-top: 30px;
   border-radius: 5px;
+  height: 90%;
 }
 .block-style-five:hover {
   box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.04);
@@ -3721,11 +3744,12 @@ body .shop-btn-two:hover {
   max-height: 100%;
 }
 .block-style-five .title {
-  font-family: "gilroy-bold";
+  font-family: "Raleway", sans-serif !important;
   font-size: 20px;
   margin: 24px 0 29px;
   display: inline-block;
   position: relative;
+  font-weight: 700;
 }
 .block-style-five .title:before {
   content: "";
@@ -3741,6 +3765,7 @@ body .shop-btn-two:hover {
   font-size: 24px;
   line-height: 1.45em;
   color: #000;
+    font-family: "gordita" !important;
 }
 .fancy-feature-four .shape-right {
   right: -16px;
@@ -3832,7 +3857,8 @@ body .shop-btn-two:hover {
   width: 100%;
   text-align: left;
   padding: 22px 70px 22px 0;
-  font-family: "Rubik", sans-serif;
+  font-family: "Raleway", sans-serif !important;
+  font-weight:600;
   font-size: 30px;
   line-height: 1.4em;
   border: none;
@@ -4393,7 +4419,8 @@ body .shop-btn-two:hover {
   margin-bottom: 30px;
 }
 .theme-footer-two .top-footer .footer-title {
-  font-family: "Rubik", sans-serif;
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 600;
   font-size: 24px;
   padding-bottom: 25px;
 }
@@ -4768,7 +4795,8 @@ body .shop-btn-two:hover {
   animation: jumpTwo 5s infinite linear;
 }
 .fancy-hero-three .heading {
-  font-family: "gilroy-black";
+  font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
   font-size: 80px;
   line-height: 1.1em;
   padding: 0 0 38px;
@@ -8771,6 +8799,8 @@ body .shop-btn-two:hover {
   font-size: 24px;
   text-transform: capitalize;
   padding: 27px 0 22px;
+    font-family: "Raleway", sans-serif !important;
+    font-weight: bold !important;
 }
 /*----------------- Fancy Text block Twenty One -------------------*/
 .fancy-text-block-twentyOne .container {
@@ -8781,6 +8811,7 @@ body .shop-btn-two:hover {
 .fancy-text-block-twentyOne .text-wrapper .client-info {
   font-size: 24px;
   padding: 36px 0 28px;
+    font-family: "Raleway", sans-serif !important;
 }
 .fancy-text-block-twentyOne .text-wrapper .client-info span {
   color: #000;
@@ -10539,6 +10570,8 @@ body .shop-btn-two:hover {
   font-size: 24px;
   font-weight: 500;
   padding: 28px 0 14px;
+  font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
 }
 .fancy-feature-seventeen .block-meta p {
   line-height: 32px;
@@ -11069,6 +11102,8 @@ body .shop-btn-two:hover {
   font-size: 36px;
   font-weight: 700;
   padding-bottom: 40px;
+    font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
 }
 .fancy-feature-eighteen .tab-content .text-wrapper p {
   font-size: 24px;
@@ -11136,6 +11171,8 @@ body .shop-btn-two:hover {
 .block-style-nineteen .text h4 {
   font-size: 24px;
   font-weight: 700;
+      font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
 }
 .block-style-nineteen .text p {
   font-size: 16px;
@@ -11148,11 +11185,15 @@ body .shop-btn-two:hover {
   letter-spacing: 1px;
   padding-bottom: 35px;
   color: rgba(0, 0, 0, 0.63);
+      font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
 }
 .block-style-twenty .text-wrapper .title {
   font-size: 60px;
   line-height: 1.2em;
   font-weight: 700;
+      font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
 }
 .block-style-twenty .text-wrapper p {
   font-size: 20px;
@@ -11284,7 +11325,7 @@ body .shop-btn-two:hover {
 
 /*----------------- Coming Soon ---------------*/
 .full-height-layout {
-  min-height: 100vh;
+  min-height: 90vh;
   padding: 40px 15px;
   position: relative;
   z-index: 5;
@@ -11312,6 +11353,7 @@ body .shop-btn-two:hover {
   line-height: 1.79em;
   color: #000;
   padding-bottom: 55px;
+  font-weight: 400 !important;
 }
 .coming-soon-content form {
   max-width: 670px;
@@ -11649,6 +11691,8 @@ body .shop-btn-two:hover {
   line-height: 1.3em;
   font-weight: 700;
   padding: 28px 0 24px;
+      font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
 }
 .block-style-twentyThree .text-wrapper p {
   font-size: 20px;
@@ -11761,6 +11805,8 @@ body .shop-btn-two:hover {
 .block-style-twentyFour .text h4 {
   font-size: 22px;
   font-weight: 500;
+      font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
 }
 .block-style-twentyFour .text p {
   font-size: 16px;
@@ -12312,6 +12358,8 @@ body .shop-btn-two:hover {
   font-size: 82px;
   line-height: 1.21em;
   font-weight: 500;
+    font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
 }
 .hero-banner-ten .hero-sub-heading {
   font-size: 24px;
@@ -12849,6 +12897,7 @@ body .shop-btn-two:hover {
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 22px;
+  font-family: "Raleway", sans-serif !important;
 }
 .block-style-twentySix h4 {
   font-weight: 700;
@@ -12879,6 +12928,7 @@ body .shop-btn-two:hover {
   text-align: center;
   margin-top: 35px;
   transition: all 0.3s ease-in-out;
+  height: 90%;
 }
 .block-style-twentySeven:hover {
   border-color: #fff;
@@ -13657,6 +13707,8 @@ body .shop-btn-two:hover {
   color: #fff;
   line-height: 1.1em;
   letter-spacing: -1px;
+    font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
 }
 .hero-banner-twelve .hero-sub-heading {
   font-size: 23px;
@@ -13799,6 +13851,8 @@ body .shop-btn-two:hover {
   color: #000;
   display: block;
   padding-bottom: 13px;
+   font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
 }
 .block-style-thirty .feature-list-one span {
   display: block;
@@ -13880,6 +13934,7 @@ body .shop-btn-two:hover {
   background: #F4F9FC;
   border-radius: 10px;
   margin-top: 40px;
+  height: 90%;
 }
 .block-style-thirtyTwo .icon {
   width: 55px;
@@ -13893,6 +13948,8 @@ body .shop-btn-two:hover {
 .block-style-thirtyTwo .text h4 {
   font-weight: 500;
   font-size: 24px;
+  font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
 }
 .block-style-thirtyTwo .text p {
   font-size: 17px;
@@ -13962,7 +14019,8 @@ body .shop-btn-two:hover {
   height: 40px;
 }
 .block-style-thirtyThree .title {
-  font-family: "gilroy-bold";
+  font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
   font-size: 24px;
   margin: 25px 0;
   display: inline-block;
@@ -14280,6 +14338,8 @@ body .shop-btn-two:hover {
   line-height: 1.11em;
   letter-spacing: -2px;
   margin: 45px 0 50px;
+   font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
 }
 .hero-banner-thirteen .hero-sub-heading {
   font-size: 24px;
@@ -14325,6 +14385,8 @@ body .shop-btn-two:hover {
   font-size: 22px;
   font-weight: 500;
   margin: 25px 0 15px;
+  font-family: "Raleway", sans-serif !important;
+  font-weight: bold;
 }
 .block-style-thirtyFive p {
   line-height: 28px;

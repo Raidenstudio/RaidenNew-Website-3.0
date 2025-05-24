@@ -140,9 +140,9 @@ const MegaMenuLanding = () => {
         <li key={i}>
           <Link to={val.routerPath} className={val.clasName}>
             <img src={`images/menu/${val.img}.png`} alt="home-demo" />
-            <span className="font-rubik">{val.title}</span>
+            <span className="font-gordita">{val.title}</span>
             <div className={val.inenerTextWrapClass}>
-              <div className="font-rubik">{val.inenerText}</div>
+              <div className="font-gordita">{val.inenerText}</div>
             </div>
           </Link>
         </li>

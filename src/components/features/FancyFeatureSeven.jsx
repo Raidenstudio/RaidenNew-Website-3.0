@@ -39,7 +39,7 @@ const FancyFeatureSeven = () => {
             <div className="feature-info">
               <span>{val.meta}</span>
             </div>
-            <p className="font-rubik">{val.subTitle}</p>
+            <p className="font-gordita">{val.subTitle}</p>
           </div>
         </div>
       ))}

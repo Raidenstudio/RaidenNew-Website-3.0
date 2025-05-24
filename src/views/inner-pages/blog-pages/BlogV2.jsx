@@ -23,10 +23,10 @@ const BlogV2 = () => {
         <div className="container">
           <div className="row">
             <div className="col-xl-9 col-lg-10 m-auto">
-              <h2 className="font-rubik">Check our company inside story</h2>
+              <h2 className="font-gordita">Check our company inside story</h2>
             </div>
             <div className="col-lg-9 m-auto">
-              <p className="font-rubik">
+              <p className="font-gordita">
                 You will find here our company news and latest update
               </p>
             </div>

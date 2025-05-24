@@ -223,7 +223,7 @@ const ProjectManagement = () => {
                 data-aos="fade-left"
                 data-aos-duration="1200"
               >
-                <h6 className="font-rubik" style={{ color: "#FF5291" }}>
+                <h6 className="font-gordita" style={{ color: "#FF5291" }}>
                   FLEXIBILITY
                 </h6>
                 <h3 className="font-gilroy-bold">
@@ -277,7 +277,7 @@ const ProjectManagement = () => {
                 data-aos="fade-right"
                 data-aos-duration="1200"
               >
-                <h6 className="font-rubik" style={{ color: "#AA4CFF" }}>
+                <h6 className="font-gordita" style={{ color: "#AA4CFF" }}>
                   QUICK & FAST
                 </h6>
                 <h3 className="font-gilroy-bold">Fast App response time</h3>
@@ -294,7 +294,7 @@ const ProjectManagement = () => {
                     <img src="images/media/img_01.png" alt="media" />
                     <div className="info-meta">
                       <h5>Micle Duke, Product Manager</h5>
-                      <span className="font-rubik">Uber Inc.</span>
+                      <span className="font-gordita">Uber Inc.</span>
                     </div>
                   </div>
                 </div>
@@ -341,7 +341,7 @@ const ProjectManagement = () => {
                 data-aos="fade-left"
                 data-aos-duration="1200"
               >
-                <h6 className="font-rubik" style={{ color: "#03DDD5" }}>
+                <h6 className="font-gordita" style={{ color: "#03DDD5" }}>
                   PROJECT STATUS
                 </h6>
                 <h3 className="font-gilroy-bold">
@@ -374,7 +374,7 @@ const ProjectManagement = () => {
         <div className="bubble-four"></div>
         <div className="bubble-five"></div>
         <div className="container">
-          <h6 className="font-rubik">Integrates with your tools</h6>
+          <h6 className="font-gordita">Integrates with your tools</h6>
           <h2>
             Deski ties into your existing tools, services, & workflow. Get
             notifications or create a Story with others tools.
@@ -395,7 +395,7 @@ const ProjectManagement = () => {
           <div className="row">
             <div className="col-lg-6">
               <div className="title-style-one">
-                <h6 className="font-rubik">You’re in good company</h6>
+                <h6 className="font-gordita">You’re in good company</h6>
                 <h2>Join the community by using our apps to grow faster.</h2>
               </div>
               {/* /.title-style-one */}
@@ -501,7 +501,7 @@ const ProjectManagement = () => {
           <div className="row">
             <div className="col-lg-6">
               <div className="title-style-one">
-                <h6 className="font-rubik">Find your answers</h6>
+                <h6 className="font-gordita">Find your answers</h6>
                 <h2>Have any thought? Look here.</h2>
               </div>
               {/* /.title-style-one */}

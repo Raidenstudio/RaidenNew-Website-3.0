@@ -35,7 +35,7 @@ const FeatureNine = () => {
               <img src={`images/assets/${val.icon}.svg`} alt="icon" />
             </div>
             <div className="title">{val.meta}</div>
-            <p className="font-rubik">{val.subTitle}</p>
+            <p className="font-gordita">{val.subTitle}</p>
           </div>
           {/* /.block-style-fourteen */}
         </div>

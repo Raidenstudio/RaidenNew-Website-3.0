@@ -1,187 +1,199 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const HomeDropdown = [
+//   {
+//     img: "home01",
+//     routerPath: "/",
+//     inenerText: "",
+//     inenerTextWrapClass: "",
+//     clasName: `dropdown-item img-box`,
+//     title: "Event Organizer",
+//   },
+//   {
+//     img: "home02",
+//     routerPath: "/doc-landing",
+//     inenerText: "",
+//     inenerTextWrapClass: "",
+//     clasName: `dropdown-item img-box`,
+//     title: "Doc Landing",
+//   },
+//   {
+//     img: "home03",
+//     routerPath: "/project-management",
+//     inenerText: "",
+//     inenerTextWrapClass: "",
+//     clasName: `dropdown-item img-box`,
+//     title: "Project Management",
+//   },
+//   {
+//     img: "home04",
+//     routerPath: "/customer-support",
+//     inenerText: "",
+//     inenerTextWrapClass: "",
+//     clasName: `dropdown-item img-box`,
+//     title: "Customer Support",
+//   },
+//   {
+//     img: "home05",
+//     routerPath: "/product-landing",
+//     inenerText: "",
+//     inenerTextWrapClass: "",
+//     clasName: `dropdown-item img-box`,
+//     title: "Product Landing",
+//   },
+//   {
+//     img: "home06",
+//     routerPath: "/product-landing-dark",
+//     inenerText: "",
+//     inenerTextWrapClass: "",
+//     clasName: `dropdown-item img-box`,
+//     title: "Product Landing Dark",
+//   },
+//   {
+//     img: "home07",
+//     routerPath: "/note-taking-landing",
+//     inenerText: "",
+//     inenerTextWrapClass: "",
+//     clasName: `dropdown-item img-box`,
+//     title: "Not Taking Landing",
+//   },
+//   {
+//     img: "home08",
+//     routerPath: "/video-editor-landing",
+//     inenerText: "",
+//     inenerTextWrapClass: "",
+//     clasName: `dropdown-item img-box`,
+//     title: "Video Editor Landing",
+//   },
+//   {
+//     img: "home10",
+//     routerPath: "/appointment-scheduling",
+//     inenerText: "",
+//     inenerTextWrapClass: "",
+//     clasName: `dropdown-item img-box`,
+//     title: "Appointment Scheduling",
+//   },
+//   {
+//     img: "home11",
+//     routerPath: "/mobile-app-landing",
+//     inenerText: "",
+//     inenerTextWrapClass: "",
+//     clasName: `dropdown-item img-box`,
+//     title: "Mobile App Landing",
+//   },
+//   {
+//     img: "home12",
+//     routerPath: "/doc-signature",
+//     inenerText: "",
+//     inenerTextWrapClass: "",
+//     clasName: `dropdown-item img-box`,
+//     title: "Doc Signature",
+//   },
+//   {
+//     img: "home13",
+//     routerPath: "/website-builder",
+//     inenerText: "",
+//     inenerTextWrapClass: "",
+//     clasName: `dropdown-item img-box`,
+//     title: "Website Builder",
+//   },
+//   {
+//     img: "home14",
+//     routerPath: "/form-survey-landing",
+//     inenerText: "",
+//     inenerTextWrapClass: "",
+//     clasName: `dropdown-item img-box`,
+//     title: "Form Survey",
+//   },
+//   {
+//     img: "home16",
+//     routerPath: "/vr-landing",
+//     inenerText: "",
+//     inenerTextWrapClass: "",
+//     clasName: `dropdown-item img-box`,
+//     title: "VR Landing",
+//   },
+//   {
+//     img: "home15",
+//     routerPath: "/e-commerce",
+//     inenerText: "",
+//     inenerTextWrapClass: "",
+//     clasName: `dropdown-item img-box`,
+//     title: "E-commerce",
+//   },
+//   {
+//     img: "home09",
+//     routerPath: "/coming-soon",
+//     inenerText: "",
+//     inenerTextWrapClass: "",
+//     clasName: `dropdown-item img-box`,
+//     title: "Coming Soon",
+//   },
+// ];
+
+const BlockChain = [
   {
-    img: "home01",
-    routerPath: "/",
-    inenerText: "",
-    inenerTextWrapClass: "",
-    clasName: `dropdown-item img-box`,
-    title: "Event Organizer",
+    name: "Blockchain Game",
+    routerPath: "/blockchain-game-development-company",
   },
   {
-    img: "home02",
-    routerPath: "/doc-landing",
-    inenerText: "",
-    inenerTextWrapClass: "",
-    clasName: `dropdown-item img-box`,
-    title: "Doc Landing",
+    name: "Metaverse",
+    routerPath: "/metaverse-development",
   },
   {
-    img: "home03",
-    routerPath: "/project-management",
-    inenerText: "",
-    inenerTextWrapClass: "",
-    clasName: `dropdown-item img-box`,
-    title: "Project Management",
+    name: "Web3",
+    routerPath: "/web3-development",
   },
   {
-    img: "home04",
-    routerPath: "/customer-support",
-    inenerText: "",
-    inenerTextWrapClass: "",
-    clasName: `dropdown-item img-box`,
-    title: "Customer Support",
+    name: "NFT",
+    routerPath: "/nft-development-company",
   },
   {
-    img: "home05",
-    routerPath: "/product-landing",
-    inenerText: "",
-    inenerTextWrapClass: "",
-    clasName: `dropdown-item img-box`,
-    title: "Product Landing",
+    name: "Blockchain",
+    routerPath: "/blockchain-development"
   },
   {
-    img: "home06",
-    routerPath: "/product-landing-dark",
-    inenerText: "",
-    inenerTextWrapClass: "",
-    clasName: `dropdown-item img-box`,
-    title: "Product Landing Dark",
-  },
-  {
-    img: "home07",
-    routerPath: "/note-taking-landing",
-    inenerText: "",
-    inenerTextWrapClass: "",
-    clasName: `dropdown-item img-box`,
-    title: "Not Taking Landing",
-  },
-  {
-    img: "home08",
-    routerPath: "/video-editor-landing",
-    inenerText: "",
-    inenerTextWrapClass: "",
-    clasName: `dropdown-item img-box`,
-    title: "Video Editor Landing",
-  },
-  {
-    img: "home10",
-    routerPath: "/appointment-scheduling",
-    inenerText: "",
-    inenerTextWrapClass: "",
-    clasName: `dropdown-item img-box`,
-    title: "Appointment Scheduling",
-  },
-  {
-    img: "home11",
-    routerPath: "/mobile-app-landing",
-    inenerText: "",
-    inenerTextWrapClass: "",
-    clasName: `dropdown-item img-box`,
-    title: "Mobile App Landing",
-  },
-  {
-    img: "home12",
-    routerPath: "/doc-signature",
-    inenerText: "",
-    inenerTextWrapClass: "",
-    clasName: `dropdown-item img-box`,
-    title: "Doc Signature",
-  },
-  {
-    img: "home13",
-    routerPath: "/website-builder",
-    inenerText: "",
-    inenerTextWrapClass: "",
-    clasName: `dropdown-item img-box`,
-    title: "Website Builder",
-  },
-  {
-    img: "home14",
-    routerPath: "/form-survey-landing",
-    inenerText: "",
-    inenerTextWrapClass: "",
-    clasName: `dropdown-item img-box`,
-    title: "Form Survey",
-  },
-  {
-    img: "home16",
-    routerPath: "/vr-landing",
-    inenerText: "",
-    inenerTextWrapClass: "",
-    clasName: `dropdown-item img-box`,
-    title: "VR Landing",
-  },
-  {
-    img: "home15",
-    routerPath: "/e-commerce",
-    inenerText: "",
-    inenerTextWrapClass: "",
-    clasName: `dropdown-item img-box`,
-    title: "E-commerce",
-  },
-  {
-    img: "home09",
-    routerPath: "/coming-soon",
-    inenerText: "",
-    inenerTextWrapClass: "",
-    clasName: `dropdown-item img-box`,
-    title: "Coming Soon",
+    name: "De-Fi",
+    routerPath: "/de-fi-development"
   },
 ];
 
-const Pricing = [
-  {
-    name: "Customer Support",
-    routerPath: "/pricing-cs",
-  },
-  {
-    name: "Event Organiser",
-    routerPath: "/pricing-eo",
-  },
-  {
-    name: "Project Management",
-    routerPath: "/pricing-pm",
-  },
-];
 const AboutUs = [
   {
-    name: "Customer Support",
-    routerPath: "/about-cs",
+    name: "AR Services",
+    routerPath: "/augmented-reality-ar-development-company",
   },
   {
-    name: "Event Organiser",
-    routerPath: "/about-eo",
-  },
-  {
-    name: "Project Management",
-    routerPath: "/about-pm",
-  },
-  {
-    name: "Documentation",
-    routerPath: "/about-doc",
+    name: "VR Services",
+    routerPath: "/augmented-reality-vr-development-company",
   },
 ];
 
 const ContactUS = [
   {
-    name: "Customer Support",
-    routerPath: "/contact-cs",
+    name: "Mobile Game Development",
+    routerPath: "/mobile-game-development"
   },
   {
-    name: "Event Organiser",
-    routerPath: "/contact-eo",
+    name: "Unity Game Development",
+    routerPath: "/unity-game-development"
   },
   {
-    name: "Project Management",
-    routerPath: "/contact-pm",
+    name: "Unreal Development",
+    routerPath: "/unreal-development"
   },
   {
-    name: "Documentation",
-    routerPath: "/contact-doc",
+    name: "MMORPG Game Development",
+    routerPath: "/mmorpg-game-development"
   },
+  {
+    name: "P2E Game Development",
+    routerPath: "/p2e-game-develpment"
+  },
+  {
+    name: "Web3 Game Development",
+    routerPath: "/web3-game-develpment"
+  }
 ];
 const Team = [
   {
@@ -268,29 +280,13 @@ const Miscellaneous = [
 ];
 const Portfolio = [
   {
-    name: "Classic Style",
-    routerPath: "/classic-style",
+    name: "Blog",
+    routerPath: "/blog",
   },
   {
-    name: "Grid 2 Columns",
-    routerPath: "/grid-two-col",
-  },
-  {
-    name: "Grid 3 Columns",
-    routerPath: "/grid-three-col",
-  },
-  {
-    name: "Gallery Slider",
-    routerPath: "/gallery-slider",
-  },
-  {
-    name: "Grid Single",
-    routerPath: "/grid-single",
-  },
-  {
-    name: "Classic Details",
-    routerPath: "/portfolio-details-v1",
-  },
+    name: "Case Study",
+    routerPath: "/case-study",
+  }
 ];
 const Blogs = [
   {
@@ -349,31 +345,15 @@ const MegaMenu = () => {
   return (
     <ul className="navbar-nav">
       <li className="nav-item dropdown position-static active">
-        <a className="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+        <Link className="nav-link" >
           Home
-        </a>
-        <div className="dropdown-menu">
-          <ul className="mega-menu d-flex ">
-            {HomeDropdown.map((val, i) => (
-              <li key={i}>
-                <Link to={val.routerPath} className={val.clasName}>
-                  <img src={`images/menu/${val.img}.png`} alt="home-demo" />
-                  <span className="font-rubik">{val.title}</span>
-                  <div className={val.inenerTextWrapClass}>
-                    <div className="font-rubik">{val.inenerText}</div>
-                  </div>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        {/* /.dropdown-menu */}
+        </Link>
       </li>
       {/* End li */}
 
       <li className="nav-item dropdown">
         <a className="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-          Pages
+          Services
         </a>
         <ul className="dropdown-menu">
           <li className="dropdown-submenu dropdown">
@@ -382,10 +362,10 @@ const MegaMenu = () => {
               className="dropdown-item dropdown-toggle"
               data-toggle="dropdown"
             >
-              Pricing
+              BlockChain
             </a>
             <ul className="dropdown-menu">
-              {Pricing.map((val, i) => (
+              {BlockChain.map((val, i) => (
                 <li key={i}>
                   <Link to={val.routerPath} className="dropdown-item">
                     {val.name}
@@ -400,7 +380,7 @@ const MegaMenu = () => {
               className="dropdown-item dropdown-toggle"
               data-toggle="dropdown"
             >
-              About Us
+              XR
             </a>
             <ul className="dropdown-menu">
               {AboutUs.map((val, i) => (
@@ -418,7 +398,7 @@ const MegaMenu = () => {
               className="dropdown-item dropdown-toggle"
               data-toggle="dropdown"
             >
-              Contact Us
+              Game
             </a>
             <ul className="dropdown-menu">
               {ContactUS.map((val, i) => (
@@ -430,7 +410,7 @@ const MegaMenu = () => {
               ))}
             </ul>
           </li>
-          <li className="dropdown-submenu dropdown">
+          {/* <li className="dropdown-submenu dropdown">
             <a
               href="#"
               className="dropdown-item dropdown-toggle"
@@ -459,7 +439,7 @@ const MegaMenu = () => {
               {" "}
               Faq Details
             </Link>
-          </li>
+          </li> */}
         </ul>
         {/* /.dropdown-menu */}
       </li>
@@ -467,7 +447,7 @@ const MegaMenu = () => {
 
       <li className="nav-item dropdown">
         <a className="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-          Feature
+          Products
         </a>
 
         <ul className="dropdown-menu">
@@ -529,7 +509,7 @@ const MegaMenu = () => {
 
       <li className="nav-item dropdown">
         <a className="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-          Portfolio
+          Resourses
         </a>
         <ul className="dropdown-menu">
           {Portfolio.map((val, i) => (
@@ -546,7 +526,7 @@ const MegaMenu = () => {
 
       <li className="nav-item dropdown">
         <a className="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-          Blogs
+          Company
         </a>
         <ul className="dropdown-menu">
           {Blogs.map((val, i) => (
@@ -561,11 +541,11 @@ const MegaMenu = () => {
       </li>
       {/* End li */}
 
-      <li className="nav-item dropdown">
+      {/* <li className="nav-item dropdown">
         <a className="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
           Docs
-        </a>
-        <ul className="dropdown-menu">
+        </a> */}
+      {/* <ul className="dropdown-menu">
           {Docs.map((val, i) => (
             <li key={i}>
               <Link to={val.routerPath} className="dropdown-item">
@@ -573,9 +553,9 @@ const MegaMenu = () => {
               </Link>
             </li>
           ))}
-        </ul>
-        {/* /.dropdown-menu */}
-      </li>
+        </ul> */}
+      {/* /.dropdown-menu */}
+      {/* </li> */}
       {/* End li */}
     </ul>
   );

@@ -27,7 +27,7 @@ const ContactProjectManagement = () => {
           <div className="row">
             <div className="col-xl-9 col-lg-11 m-auto">
               <div className="page-title">Contact us</div>
-              <h2 className="font-rubik">
+              <h2 className="font-gordita">
                 Feel free to contact us or just say hi!
               </h2>
             </div>

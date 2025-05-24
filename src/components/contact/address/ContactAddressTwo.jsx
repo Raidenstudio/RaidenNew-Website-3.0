@@ -24,7 +24,7 @@ const ContactAddressTwo = () => {
             <img src="images/icon/15.svg" alt="icon" />
           </div>
           <div className="title">Location</div>
-          <p className="font-rubik">
+          <p className="font-gordita">
             Melbourne, R. Market <br /> 1201 VIC
           </p>
         </div>
@@ -38,7 +38,7 @@ const ContactAddressTwo = () => {
             <img src="images/icon/16.svg" alt="icon" />
           </div>
           <div className="title">Contact</div>
-          <p className="font-rubik">
+          <p className="font-gordita">
             bawejkor@duwvude.gov <br />
             (779) 564-1593
           </p>
@@ -53,7 +53,7 @@ const ContactAddressTwo = () => {
             <img src="images/icon/17.svg" alt="icon" />
           </div>
           <div className="title">Social Media</div>
-          <p className="font-rubik">Follow on social media</p>
+          <p className="font-gordita">Follow on social media</p>
           <ul className="d-flex justify-content-center">
             {socialContent.map((val, i) => (
               <li key={i}>

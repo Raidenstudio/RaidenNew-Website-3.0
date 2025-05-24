@@ -96,7 +96,7 @@ const ProductCustomerSupport = () => {
                     <h3 className="title font-gilroy-bold">
                       Provide your support now simple and easy.
                     </h3>
-                    <p className="font-rubik">
+                    <p className="font-gordita">
                       Set-up a simple, professional box-office page on your site
                       (or standalone) in minutes. Then design and customise it
                       as much (or as little) as you like with our user-friendly
@@ -130,7 +130,7 @@ const ProductCustomerSupport = () => {
                     <h3 className="title font-gilroy-bold">
                       Sell tickets anywhere anytime online.
                     </h3>
-                    <p className="font-rubik">
+                    <p className="font-gordita">
                       Run your box office as it’s own website, embed it into
                       your website with a simple piece of HTML or widget, or put
                       it on your Facebook page*. All with a reliable,
@@ -164,7 +164,7 @@ const ProductCustomerSupport = () => {
                     <h3 className="title font-gilroy-bold">
                       Manage client easily by a simple click.
                     </h3>
-                    <p className="font-rubik">
+                    <p className="font-gordita">
                       Set-up a simple, professional box-office page on your site
                       (or standalone) in minutes. Then design & customise it as
                       much (or as little) as you like with our user-friendly
@@ -198,7 +198,7 @@ const ProductCustomerSupport = () => {
                     <h3 className="title font-gilroy-bold">
                       All the data & info for your need.
                     </h3>
-                    <p className="font-rubik">
+                    <p className="font-gordita">
                       You decide what data you want from your guests – and it’s
                       your data. We don’t see or touch it. Understand how and
                       who you’re selling to, with ticket sale notifications, and

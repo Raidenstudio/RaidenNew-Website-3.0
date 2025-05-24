@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Blockchain from "../../assets/images/icon/2025.svg";
 import NFT from "../../assets/images/icon/2024.svg";
 import AI from "../../assets/images/icon/2023.svg";
 
+// Add 6 more items if needed
 const FeatureContent = [
   {
     icon: NFT,
@@ -22,13 +23,53 @@ const FeatureContent = [
     subTitle: `Smart contracts and decentralized value transmission turn digital assets into valuable properties.`,
     dataDelay: "300",
   },
+  {
+    icon: NFT,
+    meta: "GameFi",
+    subTitle: `Play-to-earn mechanisms that engage users and reward time spent.`,
+    dataDelay: "400",
+  },
+  {
+    icon: AI,
+    meta: "Metaverse",
+    subTitle: `Immersive environments for next-gen social and gaming experiences.`,
+    dataDelay: "500",
+  },
+  {
+    icon: Blockchain,
+    meta: "Web3 Integration",
+    subTitle: `Empowering user ownership and interoperability across platforms.`,
+    dataDelay: "600",
+  },
+  {
+    icon: NFT,
+    meta: "GameFi",
+    subTitle: `Play-to-earn mechanisms that engage users and reward time spent.`,
+    dataDelay: "400",
+  },
+  {
+    icon: AI,
+    meta: "Metaverse",
+    subTitle: `Immersive environments for next-gen social and gaming experiences.`,
+    dataDelay: "500",
+  },
+  {
+    icon: Blockchain,
+    meta: "Web3 Integration",
+    subTitle: `Empowering user ownership and interoperability across platforms.`,
+    dataDelay: "600",
+  },
 ];
 
 const FeatureFour = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  const visibleContent = showAll ? FeatureContent : FeatureContent.slice(0, 3);
+
   return (
     <div className="text-center">
       <div className="row justify-content-center">
-        {FeatureContent.map((val, i) => (
+        {visibleContent.map((val, i) => (
           <div
             className="col-lg-4 col-md-6"
             key={i}
@@ -49,25 +90,24 @@ const FeatureFour = () => {
         ))}
       </div>
 
-      {/* Read More Button */}
-     {/* Read More Button */}
-<div className="mt-5 d-flex justify-content-center">
-  <button
-    style={{
-      width: "286px",
-      height: "60px",
-      backgroundColor: "#FFB840",
-      borderRadius: "10px",
-      border: "none",
-      color: "#fff", // White text
-      fontWeight: "600",
-      fontSize: "18px",
-    }}
-  >
-    View More
-  </button>
-</div>
-
+      {/* Toggle Button */}
+      <div className="mt-5 d-flex justify-content-center">
+        <button
+          style={{
+            width: "286px",
+            height: "60px",
+            backgroundColor: "#FFB840",
+            borderRadius: "10px",
+            border: "none",
+            color: "#fff",
+            fontWeight: "600",
+            fontSize: "18px",
+          }}
+          onClick={() => setShowAll(!showAll)}
+        >
+          {showAll ? "View Less" : "View More"}
+        </button>
+      </div>
     </div>
   );
 };

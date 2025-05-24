@@ -7,7 +7,7 @@ const FancyTextBlockThree = () => {
         <div className="feature-content light-bg">
           <div className="header" data-aos="fade-up" data-aos-duration="1200">
             <h3>Individual</h3>
-            <p className="font-rubik">
+            <p className="font-gordita">
               Wzprenr Investor Network is a global community that extends the
               reach of leading
             </p>
@@ -59,7 +59,7 @@ const FancyTextBlockThree = () => {
         <div className="feature-content dark-bg">
           <div className="header" data-aos="fade-up" data-aos-duration="1200">
             <h3>Big Company</h3>
-            <p className="font-rubik">
+            <p className="font-gordita">
               Wzprenr Investor Network is a global community that extends the
               reach of leading
             </p>

@@ -105,6 +105,8 @@ import BlockchainDevelopment from "../views/inner-pages/service/BlockchainDevelo
 import MobileGameDevelopment from "../views/inner-pages/service/MobileGameDevelopment";
 import UnityGameDevelopment from "../views/inner-pages/service/UnityGameDevelopment";
 import MMORPGGameDevelopment from "../views/inner-pages/service/MMORPGGameDevelopment";
+import P2eGameDevelopment from "../views/inner-pages/service/P2eGameDevelopment";
+import WebGameDevelopment from "../views/inner-pages/service/WebGameDevelopment";
 
 const AllRoutes = () => {
   return (
@@ -176,12 +178,12 @@ const AllRoutes = () => {
         />
 
         {/* Service inner pages */}
-        <Route path="blockchain-game-development-company" element={<ServiceV1 />} />
-        <Route path="augmented-reality-ar-development-company" element={<ARServices />} />
+        <Route path="/blockchain-game-development-company" element={<ServiceV1 />} />
+        <Route path="/augmented-reality-ar-development-company" element={<ARServices />} />
         <Route path="/augmented-reality-ar-development" element={<ServiceV2 />} />
-        <Route path="augmented-reality-vr-development-company" element={<ServiceV3 />} />
-        <Route path="metaverse-development" element={<ServiceV4 />} />
-        <Route path="web3-development" element={<FormSurveyLanding />} />
+        <Route path="/augmented-reality-vr-development-company" element={<ServiceV3 />} />
+        <Route path="/metaverse-development" element={<ServiceV4 />} />
+        <Route path="/web3-development" element={<FormSurveyLanding />} />
         <Route path="/nft-development-company" element={<NftService />} />
         <Route path="/de-fi-development" element={<VideoEditorLanding />} />
         <Route path="/blockchain-development" element={<BlockchainDevelopment />} />
@@ -189,7 +191,10 @@ const AllRoutes = () => {
         <Route path="/unity-game-development" element={<UnityGameDevelopment />} />
         <Route path="/unreal-development" element={<ProductLandingDark />} />
         <Route path="/mmorpg-game-development" element={<MMORPGGameDevelopment />} />
-
+        <Route path="/p2e-game-develpment" element={<P2eGameDevelopment />} />
+        <Route path="/web3-game-develpment" element={<WebGameDevelopment />} />
+        <Route path="/blog" element={<BlogV1 />} />
+        <Route path="/case-study" element={<BlogV5 />} />
 
 
 

@@ -23,7 +23,7 @@ const CallToActionTwo = () => {
             <button>Subscribe</button>
           </form>
           {/* End form */}
-          <p className="font-rubik">
+          <p className="font-gordita">
             Already a member? <Link to="login">Sign in.</Link>
           </p>
         </div>
