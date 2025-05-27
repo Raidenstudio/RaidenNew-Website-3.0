@@ -5,31 +5,63 @@ const FancyBlock = () => {
     {
       id: 1,
       icon: "203",
-      title: "Free Shipping",
+      title: "Healthcare",
       text: `Simplify the process to create proposals.`,
       delayAnim: "0",
     },
     {
       id: 2,
       icon: "204",
-      title: "Free Return",
+      title: "Education",
       text: `Return money within 7 days only!`,
       delayAnim: "100",
     },
     {
       id: 3,
       icon: "205",
-      title: "Secured Payment",
+      title: "Manufacturing",
       text: `We ensure secure payment with PEV`,
       delayAnim: "200",
     },
     {
       id: 4,
       icon: "206",
-      title: "100% Safe",
+      title: "IT",
       text: `We provide world best security system`,
       delayAnim: "300",
     },
+    ,
+    {
+      id: 5,
+      icon: "206",
+      title: "Finance",
+      text: `We provide world best security system`,
+      delayAnim: "300",
+    }
+    ,
+    {
+      id: 6,
+      icon: "206",
+      title: "Retail",
+      text: `We provide world best security system`,
+      delayAnim: "300",
+    }
+    ,
+    {
+      id: 7,
+      icon: "206",
+      title: "Hospitality",
+      text: `We provide world best security system`,
+      delayAnim: "300",
+    }
+    ,
+    {
+      id: 8,
+      icon: "206",
+      title: "Energy and Utilities",
+      text: `We provide world best security system`,
+      delayAnim: "300",
+    }
   ];
 
   return (
@@ -46,7 +78,7 @@ const FancyBlock = () => {
               <img src={`images/icon/${item.icon}.svg`} alt="icon" />
             </div>
             <h3>{item.title}</h3>
-            <p className="ps-xl-3 pe-xl-3">{item.text}</p>
+            {/* <p className="ps-xl-3 pe-xl-3">{item.text}</p> */}
           </div>
           {/* <!-- /.block-style-thirtyNine --> */}
         </div>

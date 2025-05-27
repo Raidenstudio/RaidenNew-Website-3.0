@@ -107,6 +107,7 @@ import UnityGameDevelopment from "../views/inner-pages/service/UnityGameDevelopm
 import MMORPGGameDevelopment from "../views/inner-pages/service/MMORPGGameDevelopment";
 import P2eGameDevelopment from "../views/inner-pages/service/P2eGameDevelopment";
 import WebGameDevelopment from "../views/inner-pages/service/WebGameDevelopment";
+import RaidenVerse from "../views/inner-pages/service/RaidenVerse";
 
 const AllRoutes = () => {
   return (
@@ -195,6 +196,7 @@ const AllRoutes = () => {
         <Route path="/web3-game-develpment" element={<WebGameDevelopment />} />
         <Route path="/blog" element={<BlogV1 />} />
         <Route path="/case-study" element={<BlogV5 />} />
+        <Route path="/raiden-verse" element={<RaidenVerse />} />
 
 
 

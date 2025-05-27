@@ -10,7 +10,7 @@ const Features = () => {
             </h2>
           </div>
           <div className="tag-line">
-          We build successful Web3 projects by joining hands with technical excellence and practical business value.
+            We build successful Web3 projects by joining hands with technical excellence and practical business value.
           </div>
           <ul className="list-item">
             <li>Understanding your vision and objectives for better consultation</li>

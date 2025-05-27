@@ -55,7 +55,7 @@ const WebsiteBuilderLanding = () => {
                 <div className="upper-title">Features</div>
                 <h2>
                   {" "}
-                  Trailblazing Services Powering Your 
+                  Trailblazing Services Powering Your
                   <span>
                     Blockchain Journey
                     <img

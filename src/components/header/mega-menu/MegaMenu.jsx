@@ -232,51 +232,35 @@ const Team = [
 
 const Services = [
   {
-    name: "Service Version 01",
-    routerPath: "/blockchain-game-development-company",
+    name: "RaidenVerse",
+    routerPath: "/raiden-verse",
   },
   {
-    name: "Service Version 02",
+    name: "RaidenSimX",
     routerPath: "/augmented-reality-ar-development-company",
   },
   {
-    name: "Service Version 03",
+    name: "RaidenCogni+",
     routerPath: "/augmented-reality-vr-development-company",
   },
   {
-    name: "Service Version 04",
+    name: "RaidenArcviz",
     routerPath: "/metaverse-development",
-  },
-  {
-    name: "Service Details",
-    routerPath: "/web3-development",
-  },
-  {
-    name: "NFT Development",
-    routerPath: "/nft-development-company",
-  },
-  {
-    name: "De-Fi Development",
-    routerPath: "/de-fi-development"
-  },
+  }
 ];
 const Miscellaneous = [
   {
-    name: "Terms & Condition",
-    routerPath: "/terms-conditions",
+    name: "Clash of Empires",
+    routerPath: "/blog",
   },
   {
-    name: "Login",
-    routerPath: "/login",
+    name: "Virtual Vegas",
+    routerPath: "/case-study",
   },
   {
-    name: "Signup",
-    routerPath: "/signup",
-  },
-  {
-    name: "404",
-    routerPath: "/404",
-  },
+    name: "Metaverse Royale",
+    routerPath: "/case-study",
+  }
 ];
 const Portfolio = [
   {
@@ -457,7 +441,7 @@ const MegaMenu = () => {
               className="dropdown-item dropdown-toggle"
               data-toggle="dropdown"
             >
-              Services
+              XR
             </a>
             <ul className="dropdown-menu">
               {Services.map((val, i) => (
@@ -475,7 +459,7 @@ const MegaMenu = () => {
               className="dropdown-item dropdown-toggle"
               data-toggle="dropdown"
             >
-              Miscellaneous
+              Game
             </a>
             <ul className="dropdown-menu">
               {Miscellaneous.map((val, i) => (
@@ -486,21 +470,6 @@ const MegaMenu = () => {
                 </li>
               ))}
             </ul>
-          </li>
-          <li>
-            <Link to="/solution-management" className="dropdown-item">
-              Our Solution
-            </Link>
-          </li>
-          <li>
-            <Link to="/product-customer-support" className="dropdown-item">
-              Product Feature
-            </Link>
-          </li>
-          <li>
-            <Link to="/features-customer-support" className="dropdown-item">
-              Our Features
-            </Link>
           </li>
         </ul>
         {/* /.dropdown-menu */}
