@@ -1,6 +1,6 @@
 import React from "react";
 
-const FancyTextBlockThree = () => {
+const FancyTextBlockThree = ({ keyfeature }) => {
   return (
     <div className="row no-gutters">
       <div className="col-lg-6">
@@ -15,10 +15,8 @@ const FancyTextBlockThree = () => {
               <img src="images/icon/07.svg" alt="icon" />
             </div>
             <div className="text-meta">
-              <h4>Immersive Simulations</h4>
-              <p>
-                Experience learning in authentic, scenario-based settings that go beyond conventional approaches by involving users in practical application.
-              </p>
+              <h4>{keyfeature.name} </h4>
+              <p>{keyfeature.description} </p>
             </div>
             {/* /.text-meta */}
           </div>
@@ -33,13 +31,13 @@ const FancyTextBlockThree = () => {
               <img src="images/icon/08.svg" alt="icon" />
             </div>
             <div className="text-meta">
-              <h4>Human Powered AI</h4>
-              <p>
-                We combine AI with human insight to provide genuinely customized learning experiences that adjust to your preferences and objectives.
-              </p>
+              <h4>{keyfeature.name2}</h4>
+              <p>{keyfeature.description2}</p>
             </div>
             {/* /.text-meta */}
           </div>
+          {
+            keyfeature.name3 && (
           <div
             className="feature-list d-flex"
             data-aos="fade-up"
@@ -50,13 +48,13 @@ const FancyTextBlockThree = () => {
               <img src="images/icon/08.svg" alt="icon" />
             </div>
             <div className="text-meta">
-              <h4>Interactive Learning</h4>
-              <p>
-                Make significant choices and watch the results unfold in real time as you hone your critical thinking and problem-solving skills through hands-on learning.
-              </p>
+              <h4> {keyfeature.name3}</h4>
+              <p>{keyfeature.description3} </p>
             </div>
             {/* /.text-meta */}
           </div>
+            )
+          }
           {/* /.feature-list  */}
         </div>
         {/* /.feature-content */}
@@ -73,10 +71,8 @@ const FancyTextBlockThree = () => {
               <img src="images/icon/07.svg" alt="icon" />
             </div>
             <div className="text-meta">
-              <h4>Adaptive Feedback</h4>
-              <p>
-                Smart, real-time feedback that changes as you progress will help you stay on course and learn more effectively at every turn.
-              </p>
+              <h4>{keyfeature.name4}</h4>
+              <p>{keyfeature.description4} </p>
             </div>
             {/* /.text-meta */}
           </div>
@@ -91,14 +87,15 @@ const FancyTextBlockThree = () => {
               <img src="images/icon/08.svg" alt="icon" />
             </div>
             <div className="text-meta">
-              <h4>Community Engagement</h4>
-              <p>
-                Interact with a vibrant community of experts, mentors, and learners where knowledge is shared freely and collaboration flourishes.
-              </p>
+              <h4>{keyfeature.name5} </h4>
+              <p>{keyfeature.description5}</p>
             </div>
             {/* /.text-meta */}
           </div>
-          <div
+      
+          {
+            keyfeature.name6 && (
+                  <div
             className="feature-list d-flex"
             data-aos="fade-up"
             data-aos-duration="1200"
@@ -108,13 +105,13 @@ const FancyTextBlockThree = () => {
               <img src="images/icon/08.svg" alt="icon" />
             </div>
             <div className="text-meta">
-              <h4>Multidisciplinary Approach</h4>
-              <p>
-                Expand your knowledge in a variety of fields. Our individualized learning programs are made to change based on your goals and interests.
-              </p>
+              <h4>{keyfeature.name6}</h4>
+              <p>{keyfeature.description6}</p>
             </div>
             {/* /.text-meta */}
           </div>
+            )
+          }
           {/* /.feature-list  */}
         </div>{" "}
         {/* /.feature-content */}

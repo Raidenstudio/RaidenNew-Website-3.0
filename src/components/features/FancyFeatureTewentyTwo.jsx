@@ -1,9 +1,10 @@
 import React from "react";
 
+
 const FeatureContent = [
   {
     icon: "121",
-    title: "Appoinments",
+    title: "Appointment",
     subTitle: `Online video meetings image Online Video Meetings SimplyBook`,
     bgColor: "#FF4A8B",
   },
@@ -19,9 +20,10 @@ const FeatureContent = [
     subTitle: `Customize your virtual office with personalized page URLs, logos, colors and more.`,
     bgColor: "#FFB951",
   },
+  
 ];
 
-const FancyFeatureTewentyTwo = () => {
+const FancyFeatureTewentyTwo = ({FeatureContent}) => {
   return (
     <>
       {FeatureContent.map((val, i) => (
@@ -33,7 +35,7 @@ const FancyFeatureTewentyTwo = () => {
         >
           <div className="block-style-twentyTwo">
             <div
-              className="icon d-flex align-items-center justify-content-center"
+              className="icon d-flex align-items-center  justify-content-center"
               style={{ background: val.bgColor }}
             >
               <img src={`images/icon/${val.icon}.svg`} alt="icon" />

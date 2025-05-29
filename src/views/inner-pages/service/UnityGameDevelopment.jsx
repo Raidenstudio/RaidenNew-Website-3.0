@@ -8,30 +8,35 @@ import FancyFeatureTwelve from '../../../components/features/FancyFeatureTwelve'
 import Slider from "react-slick";
 
 //icons
-import icon1 from "../../../assets/images/assets/GameDevelopment/Elevate your vision with game-changing services/Concept to creation.png";
-import icon2 from "../../../assets/images/assets/GameDevelopment/Elevate your vision with game-changing services/Smarter Development.png";
-import icon3 from "../../../assets/images/assets/GameDevelopment/Elevate your vision with game-changing services/Design.png";
-import icon4 from "../../../assets/images/assets/GameDevelopment/Elevate your vision with game-changing services/Cross-Platform.png";
-import icon5 from "../../../assets/images/assets/GameDevelopment/Elevate your vision with game-changing services/Trustworthy.png";
-import icon6 from "../../../assets/images/assets/GameDevelopment/Elevate your vision with game-changing services/Post-Launch Partnership.png";
+import icon1 from "../../../assets/Unity-development-services/Game-development.png";
+import icon2 from "../../../assets/Unity-development-services/VR-solutions.png";
+import icon3 from "../../../assets/Unity-development-services/Interactive-simulations.png";
+import icon4 from "../../../assets/Unity-development-services/UX-design.png";
+import icon5 from "../../../assets/Unity-development-services/Multi-Platform-deployment.png";
+import icon6 from "../../../assets/Unity-development-services/Maintenance&support.png";
 import icon7 from "../../../assets/images/assets/GameDevelopment/Bringing Your Game to Life -The Process/Post-Launch Partnership.png";
-import icon8 from "../../../assets/images/assets/GameDevelopment/Bringing Your Game to Life -The Process/blueprint.png";
-import icon9 from "../../../assets/images/assets/GameDevelopment/Bringing Your Game to Life -The Process/Building Your Game.png";
-import icon10 from "../../../assets/images/assets/GameDevelopment/Bringing Your Game to Life -The Process/Testing Every Detail.png";
-import icon11 from "../../../assets/images/assets/GameDevelopment/Bringing Your Game to Life -The Process/Launching and Improving.png";
-import icon12 from "../../../assets/images/assets/GameDevelopment/Bringing Your Game to Life -The Process/Launching and Improving-1.png";
-import icon13 from "../../../assets/images/assets/GameDevelopment/The Power Behind Play/Engagement.png";
-import icon14 from "../../../assets/images/assets/GameDevelopment/The Power Behind Play/Brand Building.png";
-import icon15 from "../../../assets/images/assets/GameDevelopment/The Power Behind Play/Monetization Opportunities.png";
-import icon16 from "../../../assets/images/assets/GameDevelopment/The Power Behind Play/Audience Reach.png";
-import icon17 from "../../../assets/images/assets/GameDevelopment/The Power Behind Play/Customer Retention.png";
-import icon18 from "../../../assets/images/assets/GameDevelopment/The Power Behind Play/innovation.png";
+import icon8 from "../../../assets/Unity-Development-Process/Design-Prototype.png";
+import icon9 from "../../../assets/Unity-Development-Process/Development-Testing.png";
+import icon10 from "../../../assets/Unity-Development-Process/Deployment-Optimization.png";
+import icon11 from "../../../assets/Unity-Development-Process/Maintenance-Updates.png";
+// import icon12 from "../../../assets/Unity-Development-Process/";
+import icon13 from "../../../assets/Benefits-of-Choosing-Unity/Immersive-experiences.png";
+import icon14 from "../../../assets/Benefits-of-Choosing-Unity/scalability.png";
+import icon15 from "../../../assets/Benefits-of-Choosing-Unity/Cross-Platform Compatibility.png";
+import icon16 from "../../../assets/Benefits-of-Choosing-Unity/Enhanced-learning.png";
+import icon17 from "../../../assets/Benefits-of-Choosing-Unity/Competitive-edge.png";
+import icon18 from "../../../assets/Benefits-of-Choosing-Unity/cost-effectiveness.png";
 import { Helmet } from 'react-helmet';
 import HeaderThree from '../../../components/header/HeaderThree';
 import CallToActionThree from '../../../components/call-to-action/CallToActionThree';
 import FooterTwo from '../../../components/footer/FooterTwo';
 import CopyRightTwo from '../../../components/footer/CopyRightTwo';
-
+import icon19 from '../../../assets/Why-Raiden’s-Unity-Game-Arena/Proven-Track-Record.png'
+import icon20 from '../../../assets/Why-Raiden’s-Unity-Game-Arena/Collaborative-Approach.png'
+import icon21 from '../../../assets/Why-Raiden’s-Unity-Game-Arena/Innovative-Solutions.png'
+import icon22 from '../../../assets/Why-Raiden’s-Unity-Game-Arena/Timely-Delivery.png'
+import icon31 from '../../../assets/Unity-Development-Process/Discovery-Planning.png'
+import { TabList } from 'react-tabs';
 
 
 
@@ -84,50 +89,44 @@ const featureContent = [
 
 const tabListContent = [
   {
-    img: "img_81",
+    img: icon31,
     // innerText: "Track Human faces",
     title: "Discovery & Planning",
     description: `Identifying your goals, requirements, and target outcomes to create a strategic roadmap that sets the foundation for a successful project.`,
   },
   {
-    img: "img_92",
+    img: icon8,
     // innerText: "keyframing experience",
     title: "Design & Prototype",
     description: `Translating ideas into high-fidelity designs and interactive prototypes that ensure alignment between vision, usability, and functionality.`,
   },
   {
-    img: "img_93",
+    img: icon9,
     // innerText: "Audio track down",
     title: "Development & Testing",
     description: `Building a project that is extensively tested at every stage of development to ensure optimal quality and functionality.`,
   },
   {
-    img: "img_94",
+    img: icon10,
     // innerText: "Take the color",
     title: "Deployment & Optimization",
     description: `The next stage is to test the deployment on multiple platforms before delivery and adjust its functionality for a lasting real-world experience.`,
   },
   {
-    img: "img_95",
+    img: icon11,
     // innerText: "Edit videos at up to 4K",
     title: "Maintenance & Updates",
-    description: `Ensure the product's long-term viability through post-launch services, such as strategic upgrades, performance tuning, and maintenance.`,
-  },
-
-
-];
-
-const tabList = [
-  { iconOne: icon7, iconTwo: icon7 },
-  { iconOne: icon8, iconTwo: icon8 },
-  { iconOne: icon9, iconTwo: icon9 },
-  { iconOne: icon10, iconTwo: icon10 },
-  { iconOne: icon11, iconTwo: icon11 },
-  { iconOne: icon12, iconTwo: icon12 },
-
-
-
-];
+    description: `Ensure the product's long-term viability through post-const tabList`
+   },
+  ];
+  const tabList = [
+ { iconOne: icon31, iconTwo: icon31 },
+ { iconOne: icon8, iconTwo: icon8 },
+ { iconOne: icon9, iconTwo: icon9 },
+ { iconOne: icon10, iconTwo: icon10 },
+ { iconOne: icon11, iconTwo: icon11 },
+//  { iconOne: icon12, iconTwo: icon12 },
+  ]
 
 const FeatureContent = [
   {
@@ -174,8 +173,6 @@ const UnityGameDevelopment = () => {
   const [nav2, setNav2] = useState();
 
 
-  console.log(nav1);
-  console.log(nav2);
 
   var settings = {
     slidesToShow: 4,
@@ -281,9 +278,6 @@ const UnityGameDevelopment = () => {
                   </div>
                   <p>
                     Proven Track <br /> Record
-
-
-
                   </p>
                 </div>
                 {/* /.d-flex */}
@@ -325,13 +319,16 @@ const UnityGameDevelopment = () => {
                   ref={(slider1) => setNav1(slider1)}
                 >
                   <div className="carousel-item">
-                    <img src="images/assets/screen_07.png" alt="feature" />
+                    <img src={icon19} alt="feature" />
                   </div>
                   <div className="carousel-item">
-                    <img src="images/assets/screen_08.png" alt="feature" />
+                    <img src={icon20} alt="feature" />
                   </div>
                   <div className="carousel-item">
-                    <img src="images/assets/screen_09.png" alt="feature" />
+                    <img src={icon21} alt="feature" />
+                  </div>
+                    <div className="carousel-item">
+                    <img src={icon22} alt="feature" />
                   </div>
                 </Slider>
                 {/* Top Image slide */}
@@ -402,6 +399,10 @@ const UnityGameDevelopment = () => {
 
         </div>
       </div>
+
+
+
+
 
       <div className="fancy-short-banner-three mt-200 md-mt-150">
         <div className="container">

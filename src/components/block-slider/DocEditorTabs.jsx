@@ -1,6 +1,6 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-
+// import img31 from '../../assets/Unity-Development-Process/Deployment-Optimization.png'
 // const tabList = [
 //   { iconOne: "105", iconTwo: "105-c" },
 //   { iconOne: "106", iconTwo: "106-c" },
@@ -70,7 +70,9 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 //   },
 // ];
 
-const DocEditorTabs = ({tabListContent, tabList}) => {
+const DocEditorTabs = ({ tabListContent, tabList }) => {
+  console.log(tabListContent);
+
   return (
     <>
       <Tabs>
@@ -100,8 +102,10 @@ const DocEditorTabs = ({tabListContent, tabList}) => {
                 <div className="col-md-6">
                   <div className="img-holder">
                     <img
-                      src={`images/media/${tabContent.img}.png`}
-                      alt="media"
+                      src={
+                        tabContent.img
+                      }
+                      alt={tabContent.alt || "media content"}
                     />
                     <div className="ripple-box d-flex align-items-center justify-content-center">
                       <p>{tabContent.innerText}</p>

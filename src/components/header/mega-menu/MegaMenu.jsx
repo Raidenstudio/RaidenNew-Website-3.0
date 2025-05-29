@@ -237,21 +237,21 @@ const Services = [
   },
   {
     name: "RaidenSimX",
-    routerPath: "/augmented-reality-ar-development-company",
+    routerPath: "/raiden-simx",
   },
   {
     name: "RaidenCogni+",
-    routerPath: "/augmented-reality-vr-development-company",
+    routerPath: "/raiden-cogni",
   },
   {
     name: "RaidenArcviz",
-    routerPath: "/metaverse-development",
+    routerPath: "/raiden-arcviz",
   }
 ];
 const Miscellaneous = [
   {
     name: "Clash of Empires",
-    routerPath: "/blog",
+    routerPath: "/clash-empire",
   },
   {
     name: "Virtual Vegas",

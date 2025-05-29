@@ -2,13 +2,8 @@ import React from "react";
 import Video from "../../elements/Video";
 import BrandFive from "../../components/brand/BrandFive";
 
-const heroContent = {
-  title: "Edit video & create great content",
-  description: `Make stunning videos with animation, stock footage, and photos.`,
-  buttonText: " Download - It’s free",
-};
 
-const HeroBannerEight = () => {
+const HeroBannerEight = ({heroContent}) => {
   return (
     <div className="hero-banner-eight mt-180">
       <div className="container">

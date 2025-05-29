@@ -108,6 +108,10 @@ import MMORPGGameDevelopment from "../views/inner-pages/service/MMORPGGameDevelo
 import P2eGameDevelopment from "../views/inner-pages/service/P2eGameDevelopment";
 import WebGameDevelopment from "../views/inner-pages/service/WebGameDevelopment";
 import RaidenVerse from "../views/inner-pages/service/RaidenVerse";
+import RaidenSimx from "../views/inner-pages/service/RaidenSimx";
+import RaidenCogni from "../views/inner-pages/service/RaidenCongni";
+import RaidenArcviz from "../views/inner-pages/service/RaidenArcviz";
+import ClashofEmpire from "../views/inner-pages/service/ClashofEmpire";
 
 const AllRoutes = () => {
   return (
@@ -197,6 +201,11 @@ const AllRoutes = () => {
         <Route path="/blog" element={<BlogV1 />} />
         <Route path="/case-study" element={<BlogV5 />} />
         <Route path="/raiden-verse" element={<RaidenVerse />} />
+        <Route path="/raiden-simx" element={<RaidenSimx />} />
+        <Route path="/raiden-cogni" element={<RaidenCogni/>} />
+        <Route path="/raiden-arcviz" element={<RaidenArcviz/>} />
+        <Route path="/clash-empire" element={<ClashofEmpire/>} />
+
 
 
 
@@ -206,6 +215,7 @@ const AllRoutes = () => {
         <Route path="/doc-box" element={<DocBox />} />
         <Route path="/doc-box-with-banner" element={<DocBoxWithBanner />} />
         <Route path="/changelog" element={<Changelog />} />
+
 
         {/* inner Portfolio pages Dropdown   */}
         <Route path="/classic-style" element={<PortfolioV1 />} />

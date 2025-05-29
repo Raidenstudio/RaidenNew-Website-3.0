@@ -72,7 +72,6 @@ import Webb from "../../assets/images/assets/Web3.png";
 //     icon: Monogo,
 //     title: "MongoDB",
 //   },
- 
 // ];
 
 const FancyFeatureNinteen = ({featureContent}) => {
