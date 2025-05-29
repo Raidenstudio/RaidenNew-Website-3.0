@@ -42,6 +42,7 @@ const ClashofEmpire = () => {
 `,
     dataDealy: "0",
   },
+  
   {
     bgColor: "#FFB5BC",
     icon: Contract,
