@@ -37,7 +37,7 @@ const HeroBannerEight = ({heroContent}) => {
       </div>
 
       {/* /.partner-slider-two */}
-      <img
+      {/* <img
         src="images/shape/173.svg"
         alt="shape"
         className="shapes shape-right"
@@ -46,7 +46,7 @@ const HeroBannerEight = ({heroContent}) => {
         src="images/shape/174.svg"
         alt="shape"
         className="shapes shape-left"
-      />
+      /> */}
     </div>
     //   /.hero-banner-eight
   );
