@@ -23,6 +23,22 @@ import FancyFeatureTewentyNine from "../../../components/features/FancyFeatureTe
 import FancyFeatureTwelve from "../../../components/features/FancyFeatureTwelve";
 import demo from "../../../assets/images/assets/Advantage Marketing.png"
 import HeaderThree from "../../../components/header/HeaderThree";
+import FancyFeatureTewentyEight from "../../../components/features/FancyFeatureTewentyEight";
+import erc721 from '../../../assets/Features-of-NFT/ERC-721-&-1155-Support.png'
+import ercint from '../../../assets/Features-of-NFT/ERP-&-CRM-integration.png'
+import ercint1 from '../../../assets/Features-of-NFT/ERP-&-CRM-integration-1.png'
+import expo from '../../../assets/Features-of-NFT/Export-NFTs.png'
+import gasless from '../../../assets/Features-of-NFT/Gasless-Transactions.png'
+import global from '../../../assets/Features-of-NFT/Global-Royalty-Standard.png'
+import ipfs from '../../../assets/Features-of-NFT/IPFS-NFT-Storage.png'
+import multi from '../../../assets/Features-of-NFT/Multi-chain-Compatibility.png'
+import nft from  '../../../assets/Features-of-NFT/NFT-MetaData.png'
+import payment from '../../../assets/Features-of-NFT/Payment-Gateway-Integration.png'
+import store from '../../../assets/Features-of-NFT/Storefront.png'
+import token from '../../../assets/Features-of-NFT/Tokenization.png'
+import user from '../../../assets/Features-of-NFT/User-management.png'
+import wallet from '../../../assets/Features-of-NFT/Wallet-integration.png'
+
 
 const NftService = () => {
 
@@ -111,6 +127,65 @@ const NftService = () => {
             hoverText: "We ensure the launch of your NFT project on all significant platforms, establishing a connection with users and opening up revenue streams.",
         }
     ];
+      const featuresContent = [{
+        icon: erc721 ,
+        title:'ERC 721 & 1155 Support',
+      },
+      {
+        icon: ercint ,
+        title:'ERP & CRM Integration',
+      },
+      {
+        icon: ercint1 ,
+        title:'ERP & CRM Integration1',
+      },
+       {
+        icon: expo ,
+        title:'Export NTF',
+      },
+       {
+        icon: gasless,
+        title:'Gasless Transaction',
+      },
+       {
+        icon: global ,
+        title:'Global Royality Standard',
+      },
+       {
+        icon: ipfs ,
+        title:'IPFS NFT Storage',
+      },
+          {
+        icon: multi ,
+        title:'Multi Chain Compatibility',
+      },
+          {
+        icon: nft ,
+        title:'NTF MetaData ',
+      },
+          {
+        icon: payment ,
+        title:'Payment Gateway Integration',
+      },
+          {
+        icon: store ,
+        title:'Storefront',
+      },
+      {
+        icon: token ,
+        title:'Tokenization',
+      },
+      {
+        icon: user ,
+        title:'User Management',
+      },
+       {
+        icon: wallet ,
+        title:'Wallet Integration',
+      },
+    
+    
+    ]
 
     return (
         <div className="main-page-wrapper p0">
@@ -180,7 +255,7 @@ const NftService = () => {
                         </div>
                     </div>
                 </div>
-                {/* /.bg-wrapper */}
+            
             </div>
 
             <div
@@ -234,6 +309,7 @@ const NftService = () => {
                 {/* /.bg-wrapper */}
                 <img src="images/shape/151.svg" alt="" className="shapes shape-one" />
             </div>
+            <FancyFeatureTewentyEight  featuresContent={featuresContent} color="card rounded shadow custom-transition" />
 
 
 

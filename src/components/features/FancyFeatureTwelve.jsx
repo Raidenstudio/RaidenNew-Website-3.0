@@ -49,10 +49,40 @@ const FancyFeatureTwelve = ({ FeatureContent, fontColor }) => {
               <img src={`${val.icon}`} alt="icon" />
             </div>
             <div className="static-text">
-              <h3 className={`font-raleway ${fontColor ? fontColor : "text-white"}`}>{val.title}</h3>
-              <p className={fontColor ? fontColor : "text-white"} style={{ opacity: 0.7 }}>{val.subTitle}</p>
+              <h3
+                className={`font-raleway ${
+                  fontColor ? fontColor : "text-white"
+                }`}
+              >
+                {val.title}
+              </h3>
+              {val.subTitle ? (
+                <p
+                  className={fontColor ? fontColor : "text-white"}
+                  style={{ opacity: 0.7 }}
+                >
+                  {val.subTitle}
+                </p>
+              ) : (
+                <>
+                  <li >{val.li}</li>
+                  <li >{val.li2}</li>
+                  <li >{val.li3}</li>
+                  <li >{val.li4}</li>
+                </>
+              )}
             </div>
-            <div className="hover-text">{val.subTitle}</div>
+            {
+              val.subTitle ?
+              <div className="hover-text">  {val.subTitle}
+          </div> :
+            <div className="hover-text">   <li >{val.li}</li>
+                  <li >{val.li2}</li>
+                  <li >{val.li3}</li>
+                  <li >{val.li4}</li>
+                  
+                  </div>
+        }
           </div>
           {/* /.block-style-seventeen */}
         </div>

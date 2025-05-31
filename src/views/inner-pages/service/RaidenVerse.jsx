@@ -28,6 +28,7 @@ import FancyFeatureTewentNine from "../../../components/features/FancyFeatureTew
 import FancyFeatureThirtyTwo from "../../../components/features/FancyFeatureThirtyTwo";
 import Features3 from "../../../components/form-survey-landing/Feature3";
 import FancyBlock from "../../../components/e-commerce/FancyBlock";
+import FancyFeatureTwelve from "../../../components/features/FancyFeatureTwelve";
 
 const RaidenVerse = () => {
   const benefits = [
@@ -41,6 +42,29 @@ const RaidenVerse = () => {
       name3: "Organizers",
       value3:
         "Increase workforce competencies by providing hands-on training that promotes continuous improvement and operational excellence.",
+    },
+  ];
+ const FeatureContents = [
+    {
+      title: "Multiplayer Integration",
+      li: "Advanced Networking in Unity/Unreal",
+      li2: "Custom Netcode Solution",
+      li3: "Cross-platform Multiplayer",
+      li4: "Network Optimization	",
+    },
+    {
+      title: "Streaming Services",
+      li: "Video streaming in Unity/Unreal",
+      li2: "Interactive Streaming ",
+      li3: "Performance Optimization",
+      li4: "Content Protection",
+    },
+      {
+      title: "Game Engine Expertise",
+      li: "Unity Development",
+      li2: "Unreal Engine Development ",
+      li3: "Cross-Platform Development",
+      li4: "Integration with External Services",
     },
   ];
 
@@ -277,7 +301,7 @@ const RaidenVerse = () => {
               >
                 <div className="text-wrapper order-lg-first">
                   <h6>
-                    <span>Best Solution</span>
+                   
                   </h6>
                   <h3 className="title">Metaverse Game </h3>
                   <p> We develop games for VR/AR, PCs, and consoles. Building strong multiplayer and social features, as well as integrating AI for procedural generation, NPC behavior, and dynamic content, are among our specialties.</p>
@@ -370,7 +394,7 @@ const RaidenVerse = () => {
               >
                 <div className="text-wrapper order-lg-first">
                   {/* <h6>
-                    <span>Best Solution</span>
+                   
                   </h6> */}
                   <h3 className="title">Metaverse Application </h3>
                   <p> We create flexible desktop, mobile, and VR/AR apps. Our skills include using cloud services for collaboration and data, as well as integrating AI features like sentiment analysis, computer vision, and language processing.</p>
@@ -493,8 +517,7 @@ const RaidenVerse = () => {
       {/* Raiden's Core  */}
   
 
-      
-
+    
       {/* footer */}
       <footer className="theme-footer-two pt-150 md-pt-80">
         <div className="top-footer">

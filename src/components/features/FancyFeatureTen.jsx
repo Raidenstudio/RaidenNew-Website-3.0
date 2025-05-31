@@ -53,7 +53,7 @@ const FeaturesContent = [
   },
 ];
 
-const FancyFeatureTen = () => {
+const FancyFeatureTen = ({FeaturesContent}) => {
   return (
     <div className="row justify-content-center mt-35 md-mt-20">
       {FeaturesContent.map((val, i) => (
