@@ -5,60 +5,61 @@ import { Link } from "react-router-dom";
 const PricingContent = [
   {
     icon: "85",
-    packName: "Dimond Plan",
-    features: ["Unlimited Email", "5gb Hosting & Domain", "Email & Live chat."],
+    packName: "Game Development",
+    features: [
+      "Enter the next era of gaming with our expertise in game development. Our legitimate digital worlds allow for transparent in-game economies, play-to-earn models that empower players, and true digital asset ownership (NFTs). From conception to stunning visuals, Raiden offers creative, secure, and expandable experiences across various platforms."
+    ],
     price: "59.99",
     trialText: "up to 10 user + 1.99 per user",
-    activeClass: "active",
+    activeClass: "active ",
+    background: "#ff2759",
+    paddingLeft: "10px",
   },
   {
     icon: "86",
     icon2: "159",
-    packName: "Dimond Plan",
+    packName: "BlockChain",
     features: [
-      "Unlimited Email",
-      "5gb Hosting & Domain",
-      "Email & Live chat.",
-      "3 Domain",
+      "Our core expertise lies in the development of decentralized applications utilizing blockchain technology. It's a key technology that enables safe, transparent, and verifiable data sharing and transactions over a global network, radically changing the way we establish trust in the digital age.",
     ],
     price: "29.99",
     trialText: "up to 7 user + 1.99 per user",
-    activeClass: "most-popular",
+    activeClass: "active",
+    background: "black",
+    paddingLeft: "0",
   },
 ];
 
 const PricingFive = () => {
   return (
-    <div className="row align-items-center">
+    <div className="row align-items-start">
       {PricingContent.map((val, i) => (
-        <div className="col-md-6" key={i}>
+        <div style={{ padding: "0" }} className="col-md-6" key={i}>
           <Tilt>
-            <div className={`pr-table-wrapper ${val.activeClass}`}>
-              <img
+            <div style={{ backgroundColor: val.background, marginRight: val.paddingLeft }} className={`pr-table-wrapper ${val.activeClass}`}>
+              {/* <img
                 src={`images/icon/${val.icon}.svg`}
                 alt="icon"
                 className="icon"
-              />
-              <img
+              /> */}
+              {/* <img
                 src={`images/shape/${val.icon2}.svg`}
                 className="popular-badge"
                 alt="shape"
-              />
+              /> */}
               <div className="pack-name">{val.packName}</div>
               <ul className="pr-feature">
                 {val.features.map((list, i) => (
-                  <li key={i}>{list}</li>
+                  <p key={i}>{list}</p>
                 ))}
               </ul>
-              <div className="price">$ {val.price}</div>
-              <div className="trial-text">{val.trialText}</div>
-              <Link
+              {/* <Link
                 to="/signup"
                 className="trial-button hover-reverse-gr-bg-one gr-bg-one"
               >
                 {" "}
                 Sign up
-              </Link>
+              </Link> */}
             </div>
             {/* /.pr-table-wrapper */}
           </Tilt>

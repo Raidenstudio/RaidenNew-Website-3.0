@@ -41,7 +41,7 @@ const Portfolio = () => {
     arrow: true,
     infinite: false,
     speed: 900,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
     responsive: [
