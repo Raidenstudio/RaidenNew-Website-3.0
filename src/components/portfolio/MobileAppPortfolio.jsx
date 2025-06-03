@@ -62,9 +62,9 @@ const MobileAppPortfolio = () => {
   };
 
   return (
-    <div className="mobile-app-portfolio-wrapper py-5">
+    <div className="mobile-app-portfolio-wrapper ">
       <div className="text-center mb-4">
-        <h2 className="fw-bold mb-4">Our Mobile App Portfolio</h2>
+        <h2 className="fw-bold mb-4" style={{ fontFamily: 'Raleway, sans-serif' }} >Our Mobile App Portfolio</h2>
         <p className="text-muted mb-5">
           Explore our beautifully designed and highly functional mobile apps crafted for various industries.
         </p>
@@ -80,10 +80,10 @@ const MobileAppPortfolio = () => {
               }}
             >
               <div className="overlay-content px-4 py-5">
-                <h4 className={`title-text mb-4 fw-bold ${i === activeIndex ? "text-white" : "text-dark"}`}>
+                <h4 className={`title-text mb-4 fw-bold ${i === activeIndex ? "text-white" : "text-dark"}`}  >
                   {val.id}
                 </h4>
-                <h4 className={`title-text mb-4 fw-bold ${i === activeIndex ? "text-white" : "text-dark"}`}>
+                <h4 className={`title-text mb-4 fw-bold ${i === activeIndex ? "text-white" : "text-dark"}`} style={{ fontFamily: 'Raleway, sans-serif',font:'bold' }}>
                   {val.title}
                 </h4>
                 <p className={`desc-text ${i === activeIndex ? "text-white" : "text-dark"}`}>

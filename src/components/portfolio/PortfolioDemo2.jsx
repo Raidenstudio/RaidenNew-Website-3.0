@@ -1,5 +1,5 @@
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
+// import { FaArrowRight } from "react-icons/fa";
 
 const PortfolioContent = [
     {
@@ -26,7 +26,7 @@ const PortfolioDemo2 = () => {
                 <div class="card col-4">
                     {PortfolioContent.map((val, i) => (
                         <a class="card1 col-4" href="#">
-                            <p>{val.title}</p>
+                            <p className="font-raleway fw-bold">{val.title}</p>
                             <p class="small">{val.description}</p>
                             <div class="go-corner" href="#">
                                 <div class="go-arrow">

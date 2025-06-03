@@ -2,7 +2,12 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import agile from '../../assets/images/assets/Delivering-Excellence-to-Transform-Businesses/Agile-Dev.png'
+import clint from '../../assets/images/assets/Delivering-Excellence-to-Transform-Businesses/Client-centric-dev.png'
+import dedi from '../../assets/images/assets/Delivering-Excellence-to-Transform-Businesses/Dedicated-Dev-team.png'
+import enha from '../../assets/images/assets/Delivering-Excellence-to-Transform-Businesses/Enhancement.png'
+import data from '../../assets/images/assets/Delivering-Excellence-to-Transform-Businesses/data-backup.png'
+import production from '../../assets/images/assets/Delivering-Excellence-to-Transform-Businesses/data-protection.png'
 const LatestProduct = () => {
   const settings = {
     dots: false,
@@ -32,8 +37,8 @@ const LatestProduct = () => {
   const vrProducts = [
     {
       _id: 1,
-      image: "img_117",
-      title: "Data Backups",
+      image: data,
+      title: "Encryption",
       productLink: "#",
       price: "72.00",
       rating: ["fa-star", "fa-star", "fa-star", "fa-star", "fa-star-o"],
@@ -41,8 +46,8 @@ const LatestProduct = () => {
     },
     {
       _id: 2,
-      image: "img_117",
-      title: "Data Protection",
+      image: production,
+      title: "Secured Data ",
       productLink: "#",
       price: "27.00",
       rating: ["fa-star", "fa-star", "fa-star", "fa-star", "fa-star"],
@@ -52,7 +57,7 @@ const LatestProduct = () => {
     {
       _id: 3,
       image: "img_117",
-      title: "Quality Deliverance",
+      title: "Better Quality ",
       productLink: "#",
       price: "382.00",
       rating: ["fa-star", "fa-star", "fa-star", "fa-star", "fa-star"],
@@ -61,25 +66,25 @@ const LatestProduct = () => {
     },
     {
       _id: 4,
-      image: "img_117",
-      title: "Enhancement",
+      image: enha,
+      title: "Refinement ",
       productLink: "#",
       price: "27.00",
       rating: ["fa-star", "fa-star", "fa-star", "fa-star", "fa-star"],
       paragraph: "We appreciate your feedback and suggestions for our expert technicians to complete your project to your full satisfaction."
     },
     {
-      _id: 4,
-      image: "img_117",
-      title: "Client centric",
+      _id: 5,
+      image: clint,
+      title: "Customer-focused",
       productLink: "#",
       price: "27.00",
       rating: ["fa-star", "fa-star", "fa-star", "fa-star", "fa-star"],
       paragraph: "Clients needs are verified across the web, mobile, and blockchain to provide solutions and make a way for the growth of business."
     },
     {
-      _id: 4,
-      image: "img_117",
+      _id: 6,
+      image: agile,
       title: "Agile Development",
       productLink: "#",
       price: "27.00",
@@ -87,18 +92,18 @@ const LatestProduct = () => {
       paragraph: "We employ agile development to finish projects fast and flexibly while providing ongoing feedback and on-time delivery of functional features."
     },
     {
-      _id: 4,
-      image: "img_117",
-      title: "Dedicated Development Team",
+      _id: 7,
+      image: dedi,
+      title: "Expertised Technicians",
       productLink: "#",
       price: "27.00",
       rating: ["fa-star", "fa-star", "fa-star", "fa-star", "fa-star"],
       paragraph: "Take charge of your project with our talented development team, a full-time integrated unit of professionals dedicated to its success."
     },
     {
-      _id: 4,
+      _id: 8,
       image: "img_117",
-      title: "Excellent Support",
+      title: "End to end assistance",
       productLink: "#",
       price: "27.00",
       rating: ["fa-star", "fa-star", "fa-star", "fa-star", "fa-star"],
@@ -114,12 +119,12 @@ const LatestProduct = () => {
             <div className="block-style-thirtySeven">
               <div className="img-meta d-flex align-items-center justify-content-center">
                 <img
-                  src={`images/media/${product.image}.png`}
+                  src={product.image}
                   alt="vr product"
                 />
               </div>
               <h4 className="p-title mt-25 text-start">
-                <a className="text-black" href={product.productLink}>{product.title}</a>
+                <a className="text-black font-raleway fw-bold"  href={product.productLink}>{product.title}</a>
                 <p className="text-black mt-3">
                   {product.paragraph}
                 </p>

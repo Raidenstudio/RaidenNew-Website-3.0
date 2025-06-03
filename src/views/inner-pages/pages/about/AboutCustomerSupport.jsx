@@ -15,7 +15,7 @@ const CustomerSupport = () => {
     <div className="main-page-wrapper">
       <Helmet>
         <title>
-          About Customer Support || Deski-Saas & Software React Template
+          The Powerhouse behind Vision and Innovation
         </title>
       </Helmet>
       {/* End Page SEO Content */}
@@ -32,13 +32,12 @@ const CustomerSupport = () => {
       <div className="fancy-hero-two">
         <div className="bg-wrapper">
           <div className="container">
-            <div className="page-title">About us</div>
+            <div className="page-title">About Us</div>
             <div className="row">
               <div className="col-xl-8 col-lg-10 col-md-10 m-auto">
-                <h1 className="heading">World best customer support portal</h1>
+                <h1 className="heading">The Powerhouse behind Vision and Innovation</h1>
                 <p className="sub-heading">
-                  deski helps teams of all sizes get better at delivering
-                  effortless customer service experiences.
+                  We create experiences that not only transform but also reinvent through the use of cutting-edge technology and relentless innovation.
                 </p>
               </div>
             </div>
@@ -61,8 +60,8 @@ const CustomerSupport = () => {
           <div className="title-style-two text-center mb-35 md-mb-10">
             <div className="row">
               <div className="col-lg-10 m-auto">
-                <p>Our Story</p>
-                <h2>The world’s first Conversational Relationship Platform</h2>
+                {/* <p>Our Story</p> */}
+                <h2>RAIDEN  LABS</h2>
               </div>
             </div>
           </div>
@@ -75,10 +74,7 @@ const CustomerSupport = () => {
                 data-aos="fade-up"
                 data-aos-duration="1200"
               >
-                We created Help deski for businesses that share our passion for
-                doing right by the customer. For many of us, great customer
-                service isn’t a cost center — it’s an effective marketing tool,
-                a competitive differentiator, and a cornerstone of the brand.
+                We’re passionate about turning bold ideas into powerful digital experiences. Our extensive  expertise in gaming, virtual reality, augmented reality, and blockchain allows us to create solutions that are not only inventive but also genuinely significant. 
               </p>
               <p
                 className="text-meta"
@@ -86,11 +82,7 @@ const CustomerSupport = () => {
                 data-aos-duration="1200"
                 data-aos-delay="100"
               >
-                But in 2008, there were no customer service platforms available
-                that embodied our customer-centric values. There were help desks
-                that quite literally treated each person like a number and made
-                it far too difficult to build a long-term relationship. We felt
-                a strong pull to make something different, and we did.
+                Every project we take on is built on your goals, ensuring that your vision becomes a reality you can trust and grow with.
               </p>
             </div>
           </div>
@@ -102,24 +94,17 @@ const CustomerSupport = () => {
       {/* =====================================================
 				Counter With Icon One
 			===================================================== */}
-      <div className="counter-with-icon-one border-style pt-120 pb-45 md-pt-70">
-        <div className="container">
-          <div className="border-style">
-            <CounterThreeColored />
-          </div>
-        </div>
-        {/* End .container */}
-      </div>
+    
       {/*  /.counter-with-icon-one */}
 
       {/* 	=============================================
 				Fancy Text block Ten
 			==============================================  */}
-      <div className="fancy-text-block-ten mt-120 md-mt-60">
+      {/* <div className="fancy-text-block-ten mt-120 md-mt-60">
         <div className="container">
           <FancyTextBlockTen />
         </div>
-      </div>
+      </div> */}
       {/* /.fancy-text-block-ten */}
 
       {/* =====================================================
@@ -141,7 +126,7 @@ const CustomerSupport = () => {
               <div className="row">
                 <div className="col-xl-8 col-lg-9 m-auto">
                   <p>Our Values</p>
-                  <h2>We’r driven by our values</h2>
+                  <h2> WHY CHOOSE RAIDEN LABS</h2>
                   <div className="sub-text">
                     Deski stand with friendly interface with lots of features
                     that help our team and csutomer to collbarate easily.
@@ -163,34 +148,7 @@ const CustomerSupport = () => {
       {/* =====================================================
 				Team Section Two
 			===================================================== */}
-      <div className="team-section-two mt-200 md-mt-100">
-        <div className="shapes shape-one"></div>
-        <div className="shapes shape-two"></div>
-        <div className="shapes shape-three"></div>
-        <div className="shapes shape-four"></div>
-        <div className="container">
-          <div className="row align-items-center justify-content-between mb-80 md-mb-10">
-            <div className="col-lg-8">
-              <div className="title-style-two">
-                <p>Our Team</p>
-                <h2>Our talented team member waiting to server.</h2>
-              </div>
-            </div>
-            {/* End .col */}
-            <div className="col-lg-4 d-lg-flex justify-content-end">
-              <Link to="/team-3" className="theme-btn-three md-mt-20">
-                See All Members
-              </Link>
-            </div>
-            {/* End .col */}
-          </div>
-          {/* End .row */}
-          <div className="row">
-            <TeamFour />
-          </div>
-          {/* End .row */}
-        </div>
-      </div>
+
       {/* /.team-section-two */}
 
       {/* 	=====================================================

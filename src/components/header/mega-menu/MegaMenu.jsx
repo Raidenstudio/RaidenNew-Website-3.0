@@ -298,6 +298,11 @@ const Blogs = [
     routerPath: "/blog-v6",
   },
   {
+    name: "About Us",
+    routerPath: "/about-cs",
+  },
+  
+  {
     name: "Blog Details",
     routerPath: "/blog-details",
   },

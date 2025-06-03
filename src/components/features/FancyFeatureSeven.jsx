@@ -3,20 +3,20 @@ import React from "react";
 const FeatureContent = [
   {
     icon: "35",
-    meta: "Customer Value",
-    subTitle: ` A place to think and track ideas for you and your team`,
+    meta: "Expertise",
+    subTitle: ` Our years of practical experience range from blockchain logic to game mechanics. We Raiden, understand the work and tailor it to your specific requirements.`,
     dataDelay: "0",
   },
   {
     icon: "36",
-    meta: "Trusted & Reliable",
-    subTitle: ` A home for your team, best practices and thoughts.`,
+    meta: "Innovation",
+    subTitle: `Innovation is Raiden’s core. Our ability to predict trends, embrace change, and transform ideas into ground-breaking, scalable solutions.`,
     dataDelay: "100",
   },
   {
     icon: "37",
-    meta: "Fast Response",
-    subTitle: `Beautiful docs for your APIs, Products, FAQs, & User Guides,`,
+    meta: "Collaboration",
+    subTitle: `Teamwork and trust are the foundations of great results. We thoroughly examine your objectives, pay close attention, and collaborate on each stage for a complete solution.,`,
     dataDelay: "300",
   },
 ];
@@ -39,7 +39,7 @@ const FancyFeatureSeven = () => {
             <div className="feature-info">
               <span>{val.meta}</span>
             </div>
-            <p className="font-gordita">{val.subTitle}</p>
+            <p className="font-gordita fs-5">{val.subTitle}</p>
           </div>
         </div>
       ))}

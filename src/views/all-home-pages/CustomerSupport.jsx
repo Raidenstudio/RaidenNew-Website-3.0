@@ -23,11 +23,11 @@ import Header from "../../components/e-commerce/Header";
 import HeaderThree from "../../components/header/HeaderThree";
 import Portfolio from "../../components/portfolio/Portfolio";
 import Tilt from "react-parallax-tilt";
-import AppImage from "../../assets/Home/App-Developed.png"
-import CLIENTS from "../../assets/Home/CLIENTS.png"
-import PROJECTS from "../../assets/Home/PROJECTS.png"
-import TeamMembers from "../../assets/Home/Team-Members.png"
-import YearsImage from "../../assets/Home/Years-of-Experience.png"
+import AppImage from "../../assets/Home/App-Developed.png";
+import CLIENTS from "../../assets/Home/CLIENTS.png";
+import PROJECTS from "../../assets/Home/PROJECTS.png";
+import TeamMembers from "../../assets/Home/Team-Members.png";
+import YearsImage from "../../assets/Home/Years-of-Experience.png";
 import PricingFive from "../../components/pricing/PricingFive";
 import BlockMetaData from "../../components/fancy-text-block/BlockMetaData";
 import LatestProduct from "../../components/vr-landing/LatestProduct";
@@ -35,8 +35,15 @@ import MobileAppScreenSlider from "../../components/portfolio/MobileAppScreenSli
 import MobileAppPortfolio from "../../components/portfolio/MobileAppPortfolio";
 import PortfolioDemo2 from "../../components/portfolio/PortfolioDemo2";
 
+import reacts from "../../assets/Prgm-Icon/React.png";
+import ethereum from "../../assets/Prgm-Icon/Ethereum.png";
+import flutter from "../../assets/Prgm-Icon/Flutter.png";
+import mean from "../../assets/Prgm-Icon/Mean.png";
+import mern from "../../assets/Prgm-Icon/Mern.png";
+import solana from "../../assets/Prgm-Icon/Solana.png";
+import unre1 from "../../assets/Prgm-Icon/Unreal-1.png";
+import unre2 from "../../assets/Prgm-Icon/Unreal.png";
 const CustomerSupport = () => {
-
   const [activeIndex, setActiveIndex] = useState(0);
 
   const blockchainServices = [
@@ -192,7 +199,6 @@ const CustomerSupport = () => {
     },
   ];
 
-
   return (
     <div className="main-page-wrapper">
       <Helmet>
@@ -212,20 +218,25 @@ const CustomerSupport = () => {
       {/* below hero banner */}
 
       <div
-        className="fancy-feature-twentyTwo mpt-200 pt-130 md-mt-80 sm-pt-100"
+        className="fancy-feature-twentyTwo mpt-200 pt-130 md-mt-80 sm-pt-100 pb-150"
         id="product"
       >
         <div className="container">
           <div className="title-style-ten hero-banner-below  mb-40 md-mb-20">
             <div className="row align-items-start">
               <div className="col-lg-7">
-                <h2>
-                  Leading Software Development, IT Consulting, and Mobile Application Development Firm, Creating Intelligent Solutions for a Smarter World.
+                <h2 style={{ fontFamily: "Raleway" }}>
+                  Leading Software Development, IT Consulting, and Mobile
+                  Application Development Firm, Creating Intelligent Solutions
+                  for a Smarter World.
                 </h2>
               </div>
               <div className="col-lg-5">
                 <p className="md-pt-20 mb-4">
-                  Established in 2022, Raiden is a top software development, web development, and mobile app company that assists multinational corporations with their digital transformation. As a true technology partner, Raiden assists companies of all sizes in.
+                  Established in 2022, Raiden is a top software development, web
+                  development, and mobile app company that assists multinational
+                  corporations with their digital transformation. As a true
+                  technology partner, Raiden assists companies of all sizes in.
                 </p>
                 <a
                   href="#"
@@ -240,7 +251,6 @@ const CustomerSupport = () => {
           </div>
         </div>
       </div>
-
 
       {/* service */}
 
@@ -293,8 +303,6 @@ const CustomerSupport = () => {
           </div>
         </div>
       </div>
-
-
 
       {/*  */}
 
@@ -383,8 +391,8 @@ const CustomerSupport = () => {
 				Pricing Section Five
 			===================================================== */}
       <div
-        className="pricing-section-five  pt-250 md-mt-150 sm-mt-80 md-pt-80"
         id="pricing"
+        className="pricing-section-five  mb-150 md-mt-150 sm-mt-80 md-pt-80 "
       >
         <div className="container">
           <div className="row align-items-start flex-row">
@@ -421,7 +429,6 @@ const CustomerSupport = () => {
               </div>
             </div>
 
-
             <div className="col-lg-6">
               <div className="pricing-table-area-five md-mt-60">
                 {/* <img
@@ -436,33 +443,30 @@ const CustomerSupport = () => {
                 /> */}
                 <PricingFive />
               </div>
-
             </div>
-
           </div>
-
         </div>
       </div>
-
-
 
       {/*  */}
 
       <div
-        className="fancy-feature-twentyTwo mpt-200 pt-130 md-mt-80 sm-pt-100 pb-130 sm-pb-100"
+        className="fancy-feature-twentyTwo  mb-150 md-mt-80 sm-pt-100 pb-130 sm-pb-100"
         id="product"
       >
         <div className="container">
           <div className="title-style-ten hero-banner-below  mb-40 md-mb-20">
             <div className="row align-items-start">
               <div className="col-lg-7">
-                <h2>
+                <h2 className="font-raleway fw-bold">
                   Boosting Business Progress With Smart Solutions
                 </h2>
               </div>
               <div className="col-lg-5">
                 <p className="md-pt-20 mb-4">
-                  With the expertise of a prominent development company, you may receive robust software solutions, modernize systems, and rely on cutting-edge technology for growth opportunities.
+                  With the expertise of a prominent development company, you may
+                  receive robust software solutions, modernize systems, and rely
+                  on cutting-edge technology for growth opportunities.
                 </p>
                 <a
                   href="#"
@@ -482,14 +486,20 @@ const CustomerSupport = () => {
       <div className="container my-5" id="product">
         <div className="row align-items-center">
           {/* Left - Buttons */}
-          <div className="col-md-4 mb-4 bg-black p-4 rounded">
-            <h3 className="mb-4 text-bold card-title-heading">Empowering innovation : Raiden Lab's cutting-edge Technology solutions</h3>
+          <div className="col-md-4  bg-black p-4 rounded">
+            <h3 className="mb-4 text-bold card-title-heading">
+              Empowering innovation : Raiden Lab's cutting-edge Technology
+              solutions
+            </h3>
             <div className="d-flex flex-column gap-2">
               {blockchainServices.map((service, index) => (
                 <button
                   key={index}
-                  className={` ${activeIndex === index ? 'theme-btn-nine1' : 'theme-btn-nine-no-bg'
-                    } text-start`}
+                  className={` ${
+                    activeIndex === index
+                      ? "theme-btn-nine1"
+                      : "theme-btn-nine-no-bg"
+                  } text-start`}
                   onClick={() => setActiveIndex(index)}
                 >
                   {service.buttonHeading}
@@ -516,16 +526,19 @@ const CustomerSupport = () => {
         </div>
       </div>
 
-
       {/* Why Choose Raiden */}
 
-      <div className="fancy-feature-one pb-150 md-pb-80">
+      <div className="fancy-feature-one  md-pb-80">
         <div className="text-center">
-          <div className="feature-img-area">
-          </div>
+          <div className="feature-img-area"></div>
         </div>
         <div className="block-style-one">
-          <h2 className="text-center fw-bold mb-120">Why Choose Raiden?</h2>
+          <h2
+            className="text-center fw-bold mb-120"
+            style={{ fontFamily: "Raleway, sans-serif" }}
+          >
+            Why Choose Raiden?
+          </h2>
           <div className="container">
             <div className="d-lg-flex justify-content-between inner-container">
               <BlockMetaData />
@@ -536,18 +549,22 @@ const CustomerSupport = () => {
         {/* /.block-style-one */}
       </div>
 
-
-
       {/* Technology Stack */}
 
-      <div className="container py-5" id="tech-stack">
+      <div className="container pb-150" id="tech-stack">
         <div className="row align-items-center">
           {/* Left Side */}
           <div className="col-md-5 mb-4">
-            <h2 className="fw-bold">Our Technology Stack</h2>
+            <h2
+              className="fw-bold"
+              style={{ fontFamily: "Raleway, sans-serif" }}
+            >
+              Our Technology Stack
+            </h2>
             <p className="mt-3 text-muted">
-              We use cutting-edge technologies to deliver high-quality, scalable, and efficient solutions.
-              Our stack includes the latest frameworks and platforms trusted by the industry.
+              We use cutting-edge technologies to deliver high-quality,
+              scalable, and efficient solutions. Our stack includes the latest
+              frameworks and platforms trusted by the industry.
             </p>
           </div>
 
@@ -556,18 +573,18 @@ const CustomerSupport = () => {
             <div className="row g-4">
               {/* Loop this card for 8 items */}
               {[
-                { icon: "🟦", title: "React.js" },
-                { icon: "🟨", title: "Node.js" },
-                { icon: "🟥", title: "MongoDB" },
-                { icon: "🟩", title: "Express.js" },
-                { icon: "⚙️", title: "Docker" },
-                { icon: "☁️", title: "AWS" },
-                { icon: "🔒", title: "Firebase" },
-                { icon: "⚛️", title: "Next.js" },
+                { icon: reacts, title: "React.js" },
+                { icon: ethereum, title: "Ethereum" },
+                { icon: flutter, title: "Flutter" },
+                { icon: mean, title: "Mean" },
+                { icon: mern, title: "Mern" },
+                { icon: solana, title: "Solana" },
+                { icon: unre1, title: "Firebase" },
+                { icon: unre2, title: "Next.js" },
               ].map((stack, index) => (
                 <div key={index} className="col-md-3">
                   <div className="border rounded p-3 h-100 d-flex align-items-center flex-column gap-3 shadow-sm bg-white">
-                    <div className="fs-2">{stack.icon}</div>
+                    <img className="fs-2" src={stack.icon}></img>
                     <h5 className="mb-0">{stack.title}</h5>
                   </div>
                 </div>
@@ -577,11 +594,10 @@ const CustomerSupport = () => {
         </div>
       </div>
 
-
       {/*  */}
 
       <div
-        className="fancy-feature-thirtySix lg-container pt-170 pb-110 md-pt-120 md-pb-60 bg-white"
+        className="fancy-feature-thirtySix lg-container pb-150 md-pt-120 md-pb-60 bg-white"
         id="product"
       >
         <div className="container position-relative">
@@ -592,9 +608,14 @@ const CustomerSupport = () => {
               data-aos-duration="1200"
             >
               <div className="title-style-eleven md-mb-40 text-lg-left">
-                <h2 className="text-black" style={{ fontSize: "40px" }}>Delivering Excellence to Transform Businesses</h2>
+                <h2 className="text-black" style={{ fontSize: "40px" }}>
+                  Our Core Strengths and Services
+                </h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos odio, voluptatum ex magni omnis in fugit quia qui totam corporis aspernatur, a repellat nisi ea ab incidunt dolorem quam praesentium?
+                  Our core strengths and strategies reward you with quality
+                  success by combining blockchain services, client
+                  recommendations, and optimistic solutions that assist you in
+                  reaching your objectives.
                 </p>
               </div>
             </div>
@@ -609,7 +630,7 @@ const CustomerSupport = () => {
 
       {/*  */}
 
-      <div className="app-screen-preview-one">
+      <div className="">
         <div className="container">
           <div className="app-preview-slider-one arrow-middle-center ">
             <MobileAppPortfolio />
@@ -617,7 +638,6 @@ const CustomerSupport = () => {
         </div>
         {/* End .container */}
       </div>
-
 
       {/*  */}
       {/* <div className="fancy-text-block-seven mt-150 md-mt-100">
@@ -654,57 +674,38 @@ const CustomerSupport = () => {
       </div> */}
       {/* /.fancy-text-block-seven */}
 
-
-      <div className="fancy-portfolio-one pb-180 md-pb-100 pt-180 md-pt-100" id="product">
+      <div
+        className="fancy-portfolio-one pt-150 pb-150 md-py-150 "
+        id="product"
+      >
         <div className="container">
           <div className="title-style-six">
             <h2>
               Our <span>Products</span>
             </h2>
           </div>
-        </div>
 
-        <div className="portfolioSliderOne arrow-top-right pt-120 md-pt-70">
-          <PortfolioDemo2 />
+          <div className="portfolioSliderOne arrow-top-right pt-100 md-pt-70">
+            <PortfolioDemo2 />
+          </div>
         </div>
       </div>
-
 
       {/* 	=====================================================
 				Client Feedback Slider One
 			===================================================== */}
-      <div className="client-feedback-slider-one pt-50 pb-170 md-pb-80">
+      <div className="client-feedback-slider-one pt-50 pb-150 md-pb-80">
         <div className="shapes-holder">
           <img src="images/shape/39.svg" alt="shape" />
-          <img
-            src={Profile1}
-            alt="shape"
-            className="shapes shape-one"
-          />
-          <img
-            src={Profile2}
-            alt="shape"
-            className="cp-img-one"
-          />
-          <img
-            src={Profile3}
-            alt="shape"
-            className="cp-img-two"
-          />
-          <img
-            src={Profile4}
-            alt="shape"
-            className="cp-img-three"
-          />
-          <img
-            src={Profile5}
-            alt="shape"
-            className="cp-img-four"
-          />
+          <img src={Profile1} alt="shape" className="shapes shape-one" />
+          <img src={Profile2} alt="shape" className="cp-img-one" />
+          <img src={Profile3} alt="shape" className="cp-img-two" />
+          <img src={Profile4} alt="shape" className="cp-img-three" />
+          <img src={Profile5} alt="shape" className="cp-img-four" />
           <div className="title-style-two">
             <h2>
               Hear <br />
-              From Our  <br />
+              From Our <br />
               Clients.
             </h2>
           </div>
@@ -762,7 +763,7 @@ const CustomerSupport = () => {
         </div>
       </footer>
       {/* /.theme-footer-one */}
-    </div >
+    </div>
   );
 };
 

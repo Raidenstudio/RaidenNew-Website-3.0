@@ -7,7 +7,7 @@ const PricingContent = [
     icon: "85",
     packName: "Game Development",
     features: [
-      "Enter the next era of gaming with our expertise in game development. Our legitimate digital worlds allow for transparent in-game economies, play-to-earn models that empower players, and true digital asset ownership (NFTs). From conception to stunning visuals, Raiden offers creative, secure, and expandable experiences across various platforms."
+      "Building virtual realms enabling digital asset ownership, play-to-earn models that empower players, and transparent in-game economies. We provide innovative and versatile experiences on platforms, from idea to stunning visuals."
     ],
     price: "59.99",
     trialText: "up to 10 user + 1.99 per user",
@@ -47,7 +47,7 @@ const PricingFive = () => {
                 className="popular-badge"
                 alt="shape"
               /> */}
-              <div className="pack-name">{val.packName}</div>
+              <div className="pack-name font-raleway fw-bold">{val.packName}</div>
               <ul className="pr-feature">
                 {val.features.map((list, i) => (
                   <p key={i}>{list}</p>
