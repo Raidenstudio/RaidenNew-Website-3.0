@@ -272,7 +272,7 @@ const CustomerSupport = () => {
                   <a
                     type="submit"
                     className="theme-btn-nine w-100"
-                    data-aos="fade-up"
+                    // data-aos="fade-up"
                     data-aos-delay="200"
                   >
                     Contact Us
