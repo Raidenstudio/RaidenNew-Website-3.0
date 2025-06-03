@@ -2,14 +2,13 @@ import React from "react";
 
 
 const FancyFeatureTewentyEight = ({featuresContent,color}) => {
-console.log('paul',color);
-
  
   return (
-    <div className="row justify-content-between">
+    <div className={`row justify-content-between ${color ? 'row justify-content-center d-flex' : ''} `}>
       {featuresContent.map((val, i) => (
-        <div
-          className={`col-xl-3 col-md-4  ${color ? color : ''}`}
+        <div 
+        style={{width:color ? "24%" :""}}
+          className={`col-xl-3 col-md-4 ${color ? `${color} `: ''}`}
           data-aos="fade-up"
           data-aos-delay={val.delayAnimation}
           key={i} >

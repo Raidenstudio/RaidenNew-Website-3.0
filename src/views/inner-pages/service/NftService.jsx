@@ -174,15 +174,7 @@ const NftService = () => {
       {
         icon: token ,
         title:'Tokenization',
-      },
-      {
-        icon: user ,
-        title:'User Management',
-      },
-       {
-        icon: wallet ,
-        title:'Wallet Integration',
-      },
+      }
     
     
     ]
@@ -303,14 +295,81 @@ const NftService = () => {
                             </div>
                         </div>
                         {/* End .row */}
+                     
                         <FancyFeatureTwelve FeatureContent={FeatureContent} fontColor="text-black" />
                     </div>
                 </div>
                 {/* /.bg-wrapper */}
                 <img src="images/shape/151.svg" alt="" className="shapes shape-one" />
             </div>
-            <FancyFeatureTewentyEight  featuresContent={featuresContent} color="card rounded shadow custom-transition" />
+                 
+ 
+      
+          
+      <div
+        className="fancy-text-block-twentyThree lg-container pt-200 mt-3 md-pt-20"
+        id="feature"
+      >
+        <div className="container">
+          <div className="row">
+          
+                <div className="title-style-twelve text-center">
+                  <h2>Feature of NTF</h2>
+                
+                </div>
+             
+             
+           
+            {/* End .col */}
 
+          
+            {/* End .col */}
+          </div>
+        </div>
+
+        <div className="mt-90 md-mt-50">
+          <div className="container">
+            <FancyFeatureTewentyEight  featuresContent={featuresContent} color=" col-md-3 mb-4 shadow justify-content-center" />
+          </div>
+        </div>
+      </div>
+
+      <div className="container">
+        <div className="row">
+
+        <div className="col-md-4">
+           
+                <h4 className=" mb-6">Empowering Innovation: TokyoTechie's Cutting-Edge Technology Solutions</h4>
+                <p className=" mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                <p className=" mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                <p className=" mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                <p className=" mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                <p className=" mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                <p className=" mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+         
+
+        </div>
+        <div className="col-md-8 row">
+            <div className="col-md-6 ">
+                <h4>Private Blockchain Development</h4>
+                <p>We design custom blockchain networks for seamless integration with your IT infrastructure. Our secure, scalable solutions protect sensitive data and grow with your business, ensuring reliability and adaptability for your enterprise.</p>
+            </div>
+            <div className="col-md-6">
+                <h4>Private Blockchain Development</h4>
+                <p>We design custom blockchain networks for seamless integration with your IT infrastructure. Our secure, scalable solutions protect sensitive data and grow with your business, ensuring reliability and adaptability for your enterprise.</p>
+            </div>
+            <div className="col-md-6">
+                <h4>Private Blockchain Development</h4>
+                <p>We design custom blockchain networks for seamless integration with your IT infrastructure. Our secure, scalable solutions protect sensitive data and grow with your business, ensuring reliability and adaptability for your enterprise.</p>
+            </div>
+            <div className="col-md-6">
+                <h4>Private Blockchain Development</h4>
+                <p>We design custom blockchain networks for seamless integration with your IT infrastructure. Our secure, scalable solutions protect sensitive data and grow with your business, ensuring reliability and adaptability for your enterprise.</p>
+            </div>
+
+        </div>
+        </div>
+      </div>
 
 
             {/* =====================================================
