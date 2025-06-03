@@ -2,40 +2,52 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import industry1 from "../../assets/Home/industry.jpg";
-import industry2 from "../../assets/Home/industry2.jpg";
-import industry3 from "../../assets/Home/industry.jpg";
-import industry4 from "../../assets/Home/industry2.jpg";
+import industry1 from "../../assets/Home/Manufacturing/concept.png";
+import industry2 from "../../assets/Home/Manufacturing/tactics.png";
+import industry3 from "../../assets/Home/Manufacturing/Point.png";
+import industry4 from "../../assets/Home/Manufacturing/Execute.png";
+import industry5 from "../../assets/Home/Manufacturing/Assessment.png";
+import industry6 from "../../assets/Home/Manufacturing/Setting.png";
 
-const PortfolioImages = [
+const PortfolioSteps = [
   {
     id: "01",
+    title: "The Concept",
+    desc: "Our expertise and attention to detail enable us to meticulously plan, shape, and transform your idea into a successful solution.",
     image: industry1,
-    title: "Food Delivery App",
-    desc: "Customizing and delivering cutting-edge solutions employing the custom software development lifecycle to help businesses meet their future demands",
   },
   {
-    id: "02",
-
     image: industry2,
-    title: "Fitness Tracker",
-    desc: "Customizing and delivering cutting-edge solutions employing the custom software development lifecycle to help businesses meet their future demands",
+    id: "02",
+    title: "The Tactics",
+    desc: "Establishing clear, milestone-driven project timelines and selecting the most qualified team are made easier by your goals.",
   },
   {
-    id: "03",
-
     image: industry3,
-    title: "E-commerce Platform",
-    desc: "Customizing and delivering cutting-edge solutions employing the custom software development lifecycle to help businesses meet their future demands",
+    id: "03",
+    title: "Point of Origin",
+    desc: "We transform wireframe designs and preliminary concepts into a responsive prototype that offers a clear picture of the final user interface.",
   },
   {
-    id: "04",
-
     image: industry4,
-    title: "Learning App",
-    desc: "Customizing and delivering cutting-edge solutions employing the custom software development lifecycle to help businesses meet their future demands",
+    id: "04",
+    title: "Execute",
+    desc: "Create your project with Raiden's suitable tools and technology by utilizing the project score, timeline, and many other features.",
+  },
+  {
+    image: industry5,
+    id: "05",
+    title: "Assessment",
+    desc: "Products are tested using both the best manual and the most sophisticated automated testing methods to ensure they are thoroughly inspected and free of errors.",
+  },
+  {
+    image: industry6,
+    id: "06",
+    title: "Setting Up",
+    desc: "We guarantee timely delivery of your desired quality while considering all of your suggestions and ideas.",
   },
 ];
+
 
 const MobileAppPortfolio = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -63,15 +75,15 @@ const MobileAppPortfolio = () => {
 
   return (
     <div className="mobile-app-portfolio-wrapper ">
-      <div className="text-center mb-4">
-        <h2 className="fw-bold mb-4" style={{ fontFamily: 'Raleway, sans-serif' }} >Our Mobile App Portfolio</h2>
-        <p className="text-muted mb-5">
+      <div className="text-center mb-xl-5">
+        <h2 className="fw-bold mb-5" style={{ fontFamily: 'Raleway, sans-serif' }} >Our Development Approach - From Ideology to Launch</h2>
+        {/* <p className="text-muted mb-5">
           Explore our beautifully designed and highly functional mobile apps crafted for various industries.
-        </p>
+        </p> */}
       </div>
 
       <Slider {...settings}>
-        {PortfolioImages.map((val, i) => (
+        {PortfolioSteps.map((val, i) => (
           <div className="item" key={i}>
             <div
               className={`img-holder ${i === activeIndex ? "active" : ""}`}
@@ -83,7 +95,7 @@ const MobileAppPortfolio = () => {
                 <h4 className={`title-text mb-4 fw-bold ${i === activeIndex ? "text-white" : "text-dark"}`}  >
                   {val.id}
                 </h4>
-                <h4 className={`title-text mb-4 fw-bold ${i === activeIndex ? "text-white" : "text-dark"}`} style={{ fontFamily: 'Raleway, sans-serif',font:'bold' }}>
+                <h4 className={`title-text mb-4 fw-bold ${i === activeIndex ? "text-white" : "text-dark"}`} style={{ fontFamily: 'Raleway, sans-serif', font: 'bold' }}>
                   {val.title}
                 </h4>
                 <p className={`desc-text ${i === activeIndex ? "text-white" : "text-dark"}`}>

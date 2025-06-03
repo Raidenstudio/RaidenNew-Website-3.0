@@ -8,6 +8,10 @@ import dedi from '../../assets/images/assets/Delivering-Excellence-to-Transform-
 import enha from '../../assets/images/assets/Delivering-Excellence-to-Transform-Businesses/Enhancement.png'
 import data from '../../assets/images/assets/Delivering-Excellence-to-Transform-Businesses/data-backup.png'
 import production from '../../assets/images/assets/Delivering-Excellence-to-Transform-Businesses/data-protection.png'
+import Excellent from '../../assets/images/assets/Delivering-Excellence-to-Transform-Businesses/Excellent-support.png'
+import Quality from '../../assets/images/assets/Delivering-Excellence-to-Transform-Businesses/Quality-Deliverance.png'
+
+
 const LatestProduct = () => {
   const settings = {
     dots: false,
@@ -56,7 +60,7 @@ const LatestProduct = () => {
     },
     {
       _id: 3,
-      image: "img_117",
+      image: Quality,
       title: "Better Quality ",
       productLink: "#",
       price: "382.00",
@@ -102,7 +106,7 @@ const LatestProduct = () => {
     },
     {
       _id: 8,
-      image: "img_117",
+      image: Excellent,
       title: "End to end assistance",
       productLink: "#",
       price: "27.00",
@@ -124,7 +128,7 @@ const LatestProduct = () => {
                 />
               </div>
               <h4 className="p-title mt-25 text-start">
-                <a className="text-black font-raleway fw-bold"  href={product.productLink}>{product.title}</a>
+                <a className="text-black font-raleway fw-bold" href={product.productLink}>{product.title}</a>
                 <p className="text-black mt-3">
                   {product.paragraph}
                 </p>

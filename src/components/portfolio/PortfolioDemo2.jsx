@@ -1,21 +1,21 @@
 import React from "react";
-// import { FaArrowRight } from "react-icons/fa";
+import { TfiArrowTopLeft } from "react-icons/tfi";
 
 const PortfolioContent = [
     {
-        title: "Ideation",
+        title: "Fixed price model",
         description:
-            "Brainstorm creative ideas and come up with a plan to turn them into a successful smart solution.",
+            "Predictability is the foundation of our development process, which includes a detailed description of the work's scope, related expenses, and delivery schedule up front.",
     },
     {
-        title: "Design",
+        title: "Hire Dedicated Model",
         description:
-            "Designing intuitive and engaging user interfaces for enhanced user experience.",
+            "Employ a dedicated team of developers to handle the unique requirements of your project with care. With this hourly-rate model, you are in charge and can guarantee precise cost control and concentrated effort.",
     },
     {
-        title: "Development",
+        title: "Onsite model",
         description:
-            "Developing scalable and performant applications tailored to your business needs.",
+            "Our qualified developers can be immediately incorporated into your team, offering short-term, contract-based resources for direct on-site development.",
     },
 ];
 
@@ -23,14 +23,15 @@ const PortfolioDemo2 = () => {
     return (
         <div className="container py-5">
             <div className="row justify-content-center">
-                <div class="card col-4">
+                <div class="card col-4 d-flex justify-content-center align-items-start">
                     {PortfolioContent.map((val, i) => (
                         <a class="card1 col-4" href="#">
-                            <p className="font-raleway fw-bold">{val.title}</p>
-                            <p class="small">{val.description}</p>
-                            <div class="go-corner" href="#">
-                                <div class="go-arrow">
-                                    →
+                            <h4 className="font-raleway title-text mb-4 fw-bold text-black">{val.title}</h4>
+                            <div className="card-line"></div>
+                            <p className="small desc-text text-black">{val.description}</p>
+                            <div className="go-corner" href="#">
+                                <div className="go-arrow">
+                                    <TfiArrowTopLeft />
                                 </div>
                             </div>
                         </a>

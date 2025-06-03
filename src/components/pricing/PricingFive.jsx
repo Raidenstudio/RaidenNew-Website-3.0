@@ -32,7 +32,7 @@ const PricingContent = [
 
 const PricingFive = () => {
   return (
-    <div className="row align-items-start">
+    <div className="row d-flex align-items-start justify-content-center">
       {PricingContent.map((val, i) => (
         <div style={{ padding: "0" }} className="col-md-6" key={i}>
           <Tilt>
@@ -65,6 +65,14 @@ const PricingFive = () => {
           </Tilt>
         </div>
       ))}
+      <a
+        href="#"
+        className="theme-btn-nine w-auto mt-3"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        Hire Developer
+      </a>
     </div>
   );
 };

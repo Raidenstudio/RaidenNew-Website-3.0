@@ -43,6 +43,10 @@ import mern from "../../assets/Prgm-Icon/Mern.png";
 import solana from "../../assets/Prgm-Icon/Solana.png";
 import unre1 from "../../assets/Prgm-Icon/Unreal-1.png";
 import unre2 from "../../assets/Prgm-Icon/Unreal.png";
+import TestimonialSix from "../../components/testimonial/TestimonialSix";
+import BlogStyle5 from "../../components/blog/BlogStyle5";
+import SignUp from "../inner-pages/features/miscellaneous/SignUp";
+
 const CustomerSupport = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -213,7 +217,74 @@ const CustomerSupport = () => {
 
       {/* hero banner */}
 
-      <HeroBannerTwo />
+      <>
+        <Helmet>
+          <title>
+            Appointment Scheduling || Deski-Saas & Software React Template
+          </title>
+        </Helmet>
+        {/* End Page SEO Content */}
+        <div className="container py-5">
+          <div className="row d-flex align-items-center justify-content-between min-vh-100">
+            {/* Left Content */}
+            <div className="col-md-6 mb-5 mb-md-0">
+              <div className="coming-soon-content font-raleway">
+                <h1 className="text-start" data-aos="fade-up">
+                  Ingenuity Unbound: Reimagined Digital World.
+                </h1>
+                <p className="font-gordita text-start mt-3">
+                  One pixel, one line of code at a time—where creativity ignites innovation.
+                </p>
+              </div>
+            </div>
+
+            {/* Right Contact Form */}
+            <div className="col-md-6" style={{ display: "contents" }}>
+              <div style={{ maxWidth: "500px" }} className="p-4 rounded-4 shadow bg-white">
+                <h4 className="mb-4 text-center fw-bold">Book Free Consultation</h4>
+                <form>
+                  <div className="mb-3">
+                    <label style={{ fontSize: "16px" }} className="form-label m-0">Name</label>
+                    <input type="text" className="form-control" placeholder="Your name" />
+                  </div>
+                  <div className="mb-3">
+                    <label style={{ fontSize: "16px" }} className="form-label m-0">Email</label>
+                    <input type="email" className="form-control" placeholder="Your email" />
+                  </div>
+                  <div className="mb-3">
+                    <label style={{ fontSize: "16px" }} className="form-label m-0">Phone Number</label>
+                    <input type="tel" className="form-control" placeholder="Your phone number" />
+                  </div>
+                  <div className="mb-3">
+                    <label style={{ fontSize: "16px" }} className="form-label m-0">Message</label>
+                    <textarea
+                      className="form-control"
+                      rows="3"
+                      placeholder="Your message or description"
+                    ></textarea>
+                  </div>
+                  <div className="form-check mb-3">
+                    <input type="checkbox" className="form-check-input" id="acceptTerms" />
+                    <label className="form-check-label" htmlFor="acceptTerms">
+                      I accept the terms and conditions
+                    </label>
+                  </div>
+                  <a
+                    type="submit"
+                    className="theme-btn-nine w-100"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    Contact Us
+                  </a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </>
 
       {/* below hero banner */}
 
@@ -392,7 +463,7 @@ const CustomerSupport = () => {
 			===================================================== */}
       <div
         id="pricing"
-        className="pricing-section-five  mb-150 md-mt-150 sm-mt-80 md-pt-80 "
+        className="pricing-section-five mb-150 mt-150 sm-mt-100 sm-mb-100 "
       >
         <div className="container">
           <div className="row align-items-start flex-row">
@@ -451,7 +522,7 @@ const CustomerSupport = () => {
       {/*  */}
 
       <div
-        className="fancy-feature-twentyTwo  mb-150 md-mt-80 sm-pt-100 pb-130 sm-pb-100"
+        className="fancy-feature-twentyTwo  mt-150 md-mt-100 mb-150 md-mb-100"
         id="product"
       >
         <div className="container">
@@ -488,18 +559,16 @@ const CustomerSupport = () => {
           {/* Left - Buttons */}
           <div className="col-md-4  bg-black p-4 rounded">
             <h3 className="mb-4 text-bold card-title-heading">
-              Empowering innovation : Raiden Lab's cutting-edge Technology
-              solutions
+              Raiden’s Tech Advancements with Innovation
             </h3>
             <div className="d-flex flex-column gap-2">
               {blockchainServices.map((service, index) => (
                 <button
                   key={index}
-                  className={` ${
-                    activeIndex === index
-                      ? "theme-btn-nine1"
-                      : "theme-btn-nine-no-bg"
-                  } text-start`}
+                  className={` ${activeIndex === index
+                    ? "theme-btn-nine1"
+                    : "theme-btn-nine-no-bg"
+                    } text-start`}
                   onClick={() => setActiveIndex(index)}
                 >
                   {service.buttonHeading}
@@ -528,7 +597,7 @@ const CustomerSupport = () => {
 
       {/* Why Choose Raiden */}
 
-      <div className="fancy-feature-one  md-pb-80">
+      <div className="fancy-feature-one pb-150 md-pb-100">
         <div className="text-center">
           <div className="feature-img-area"></div>
         </div>
@@ -576,15 +645,15 @@ const CustomerSupport = () => {
                 { icon: reacts, title: "React.js" },
                 { icon: ethereum, title: "Ethereum" },
                 { icon: flutter, title: "Flutter" },
-                { icon: mean, title: "Mean" },
-                { icon: mern, title: "Mern" },
+                { icon: mean, title: "Mern" },
+                { icon: mern, title: "Mean" },
                 { icon: solana, title: "Solana" },
-                { icon: unre1, title: "Firebase" },
-                { icon: unre2, title: "Next.js" },
+                { icon: unre1, title: "Unity" },
+                { icon: unre2, title: "Unreal" },
               ].map((stack, index) => (
                 <div key={index} className="col-md-3">
                   <div className="border rounded p-3 h-100 d-flex align-items-center flex-column gap-3 shadow-sm bg-white">
-                    <img className="fs-2" src={stack.icon}></img>
+                    <img style={{ width: "50%" }} className="fs-2" src={stack.icon}></img>
                     <h5 className="mb-0">{stack.title}</h5>
                   </div>
                 </div>
@@ -674,26 +743,98 @@ const CustomerSupport = () => {
       </div> */}
       {/* /.fancy-text-block-seven */}
 
+      {/* development expertise */}
       <div
         className="fancy-portfolio-one pt-150 pb-150 md-py-150 "
         id="product"
       >
         <div className="container">
           <div className="title-style-six">
-            <h2>
-              Our <span>Products</span>
+            <h2 className="text-center fw-bold">
+              Maximize Your Projects with <span> Our Experience</span>
             </h2>
           </div>
 
-          <div className="portfolioSliderOne arrow-top-right pt-100 md-pt-70">
+          <div className="portfolioSliderOne arrow-top-right pt-50 md-pt-30">
             <PortfolioDemo2 />
           </div>
         </div>
       </div>
 
-      {/* 	=====================================================
-				Client Feedback Slider One
-			===================================================== */}
+      {/* industry */}
+
+      <div className="app-screen-preview-two mb-150 md-mb-100">
+        <div className="container">
+          <div className="title-style-eleven text-center mb-120 md-mb-70">
+            <h2 className="mb-3">Discover the industries that our <br />solutions transform</h2>
+            <p>
+              Raiden’s solutions support creativity, growth, and productivity, transforming industries and allowing businesses to thrive.
+            </p>
+          </div>
+        </div>
+
+        <div className="app-preview-slider-two arrow-none">
+          <MobileAppScreenSlider />
+        </div>
+        {/* /.app-preview-slider-two */}
+      </div>
+
+      {/*  */}
+
+      <div
+        className="fancy-feature-twentyTwo  mt-150 md-mt-100 sm-pb-100 pb-150 "
+        id="product"
+      >
+        <div className="container">
+          <div className="title-style-ten hero-banner-below  mb-40 md-mb-20">
+            <div className="row align-items-start">
+              <div className="col-lg-7">
+                <h2 className="font-raleway fw-bold">
+                  Boosting Business Progress With Smart Solutions
+                </h2>
+              </div>
+              <div className="col-lg-5">
+                <p className="md-pt-20 mb-4">
+                  With the expertise of a prominent development company, you may
+                  receive robust software solutions, modernize systems, and rely
+                  on cutting-edge technology for growth opportunities.
+                </p>
+                <a
+                  href="#"
+                  className="theme-btn-nine"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  Explore Service
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/*  */}
+
+      <div
+        className="client-feedback-slider-six pb-150 md-pb-100"
+        id="feedback"
+      >
+        <div className="inner-container">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+              </div>
+            </div>
+          </div>
+          <div className="clientSliderSix arrow-middle-center-demo">
+            <TestimonialSix />
+          </div>
+        </div>
+        {/* /.inner-container */}
+      </div>
+
+
+      {/* Client Feedback */}
       <div className="client-feedback-slider-one pt-50 pb-150 md-pb-80">
         <div className="shapes-holder">
           <img src="images/shape/39.svg" alt="shape" />
@@ -727,42 +868,59 @@ const CustomerSupport = () => {
         </div>
         {/* /.container */}
       </div>
-      {/* /.client-feedback-slider-one */}
 
-      {/* 	=====================================================
-			Fancy Short Banner Three
-			===================================================== */}
-      <div className="fancy-short-banner-three mt-100 md-mt-40">
+      {/* blog */}
+
+      <div className="feature-blog-four  blog-page-bg">
+        <h2 className="text-center fw-bold mb-120">Our Latest Blogs</h2>
+        <div className="shapes shape-one"></div>
+        <div className="shapes shape-two"></div>
+        <div className="shapes shape-three"></div>
+        <div className="container">
+          <div className="row">
+            <BlogStyle5 />
+          </div>
+          <div className="w-100 d-flex justify-content-center">
+            <a
+              href="#"
+              className="theme-btn-nine"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              More Blogs
+            </a>
+          </div>
+          {/* End .row */}
+        </div>
+      </div>
+
+      {/* newsletter */}
+      {/* <div className="fancy-short-banner-three mt-100 md-mt-40">
         <div className="container">
           <div className="bg-wrapper">
             <CallToActionThree />
           </div>
-          {/* /.bg-wrapper */}
         </div>
-        {/* /.container */}
-      </div>
-      {/* /.fancy-short-banner-four */}
+      </div> */}
 
-      {/* 	=====================================================
-				Footer Style Two
-			===================================================== */}
+      {/* contact us */}
+
+      <SignUp />
+
+      {/* Footer Style Two */}
       <footer className="theme-footer-two pt-150 md-pt-80">
         <div className="top-footer">
           <div className="container">
             <FooterTwo />
           </div>
-          {/* /.container */}
         </div>
-        {/* /.top-footer */}
-
         <div className="container">
           <div className="bottom-footer-content">
             <CopyRightTwo />
           </div>
-          {/*  /.bottom-footer */}
         </div>
       </footer>
-      {/* /.theme-footer-one */}
+
     </div>
   );
 };

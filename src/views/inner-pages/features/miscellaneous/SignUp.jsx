@@ -36,42 +36,16 @@ const SignUp = () => {
         {/* /.illustration-wrapper  */}
 
         <div className="form-wrapper">
-          <div className="d-flex justify-content-between">
-            <div className="logo">
-              <Link to="/">
-                <img src="images/logo/deski_01.svg" alt="logo" />
-              </Link>
-            </div>
-            <Link className="font-rubik go-back-button" to="/">
-              Go to home
-            </Link>
-          </div>
           {/* End d-flex */}
           <div className="mt-30">
-            <h2>Join with thousands of startup!</h2>
+            <h2>Get a Free Quote Today</h2>
             <p className="header-info pt-30 pb-50">
-              Already have an account? <Link to="/login">Login</Link>
+              Please fill out the quick form and we will be in touch with lightening speed.
             </p>
           </div>
           <SignUpForm />
-          {/* End Signup Form */}
-          <p className="text-center font-rubik copyright-text">
-            Copyright @{new Date().getFullYear()}{" "}
-            <a
-              href="https://themeforest.net/user/ib-themes/portfolio"
-              target="_blank"
-              title="myFrame"
-              rel="noreferrer"
-            >
-              ib-themes
-            </a>{" "}
-            inc.
-          </p>
-          {/* End .copyright */}
         </div>
-        {/* /.form-wrapper */}
       </div>
-      {/* /.user-data-page */}
     </div>
   );
 };

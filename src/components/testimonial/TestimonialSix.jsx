@@ -2,14 +2,19 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import demo from "../../assets/Home/demo.jpg";
+import cogni from "../../assets/Home/product/RaidenCogni+.png"
+import simx from "../../assets/Home/product/RaidenSimX.png"
+import arcviz from "../../assets/Home/product/Raiden ARCVIZ.png"
+import verse from "../../assets/Home/product/RaidenVerse.png"
 
 export default function TestimonialSix() {
   const settings = {
     dots: true,
-    arrow: false,
+    arrow: true,
     infinite: true,
     speed: 900,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
     centerMode: true,
@@ -32,36 +37,16 @@ export default function TestimonialSix() {
 
   const TestimonilContent = [
     {
-      img: "img_79",
-      desc: ` Already closed 1 deal from Accelerator and in the process of
-      closing 2 more now. Have “a few others” that will be closing
-      in the near future!`,
-      reviewerName: "Jannatul Ekra",
-      country: "USA",
+      img: verse,
     },
     {
-      img: "img_78",
-      desc: ` Already closed 1 deal from Accelerator and in the process of
-      closing 2 more now. Have “a few others” that will be closing
-      in the near future!`,
-      reviewerName: "Bostami Hasan",
-      country: "USA",
+      img: arcviz,
     },
     {
-      img: "img_79",
-      desc: ` Already closed 1 deal from Accelerator and in the process of
-      closing 2 more now. Have “a few others” that will be closing
-      in the near future!`,
-      reviewerName: "Kuyeti Krima",
-      country: "USA",
+      img: simx,
     },
     {
-      img: "img_80",
-      desc: ` Already closed 1 deal from Accelerator and in the process of
-      closing 2 more now. Have “a few others” that will be closing
-      in the near future!`,
-      reviewerName: "Zibaiya Reian",
-      country: "USA",
+      img: cogni,
     },
   ];
 
@@ -70,17 +55,7 @@ export default function TestimonialSix() {
       {TestimonilContent.map((val, i) => (
         <div className="item" key={i}>
           <div className="feedback-wrapper">
-            <p>{val.desc}</p>
-            <div className="d-flex align-items-center">
-              <img
-                src={`images/media/${val.img}.png`}
-                alt="icon"
-                className="avatar"
-              />
-              <h6 className="name">
-                {val.reviewerName},<span>{val.country}</span>
-              </h6>
-            </div>
+            <img className="w-100 h-100 object-fit-cover" src={val.img} alt="screen" />
           </div>
           {/* End .feedback-wrapper */}
         </div>

@@ -169,7 +169,7 @@ const SignUpForm = () => {
           </div>
           <div className="col-12">
             <button type="submit" className="theme-btn-one mt-30 mb-50">
-              Sign Up
+              Contact Us
             </button>
           </div>
           {/* End .col */}
