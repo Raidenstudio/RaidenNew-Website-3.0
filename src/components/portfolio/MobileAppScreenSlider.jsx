@@ -85,7 +85,7 @@ const MobileAppScreenSlider = () => {
     arrow: false,
     infinite: true,
     speed: 900,
-    slidesToShow: 5,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     centerMode: true,
@@ -94,7 +94,7 @@ const MobileAppScreenSlider = () => {
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
         },
       },
       {

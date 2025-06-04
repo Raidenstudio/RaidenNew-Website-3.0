@@ -487,12 +487,12 @@ const CustomerSupport = () => {
               <div className="custom-logo-design col-lg-4">
                 <img src={CLIENTS} alt="logo" />
                 <h4>25+</h4>
-                <h5>CLIENTS</h5>
+                <h5>Clients</h5>
               </div>
               <div className="custom-logo-design col-lg-4">
                 <img src={PROJECTS} alt="logo" />
                 <h4>25+</h4>
-                <h5>PROJECTS</h5>
+                <h5>Projects</h5>
               </div>
               <div className="custom-logo-design col-lg-4">
                 <img src={YearsImage} alt="logo" />
