@@ -789,15 +789,14 @@ const CustomerSupport = () => {
           <div className="title-style-ten hero-banner-below  mb-40 md-mb-20">
             <div className="row align-items-start">
               <div className="col-lg-7">
+              <h3 className="font-raleway fw-bold f-5 pb-3 text-decoration-underline"> Our Products</h3>
                 <h2 className="font-raleway fw-bold">
-                  Boosting Business Progress With Smart Solutions
+Next-Level Gaming,VR and Blockchain Innovations!
                 </h2>
               </div>
               <div className="col-lg-5">
                 <p className="md-pt-20 mb-4">
-                  With the expertise of a prominent development company, you may
-                  receive robust software solutions, modernize systems, and rely
-                  on cutting-edge technology for growth opportunities.
+                Dive into a Realm of Cutting-Edge Entertainment with Our Exciting Gaming, VR, and Blockchain Solutions. Unleash Innovation Today!
                 </p>
                 <a
                   href="#"

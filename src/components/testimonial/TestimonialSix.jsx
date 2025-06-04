@@ -3,9 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import demo from "../../assets/Home/demo.jpg";
-import cogni from "../../assets/Home/product/RaidenCogni+.png"
+import cogni from "../../assets/Raiden's-Frontier-of-Manufacturing/Group-36.png"
 import simx from "../../assets/Home/product/RaidenSimX.png"
-import arcviz from "../../assets/Home/product/Raiden ARCVIZ.png"
+import arcviz from "../../assets/Raiden's-Frontier-of-Manufacturing/Group-35.png"
 import verse from "../../assets/Home/product/RaidenVerse.png"
 
 export default function TestimonialSix() {
