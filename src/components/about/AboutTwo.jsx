@@ -35,7 +35,7 @@ const AboutTwo = () => {
           <h5>
             - STEVE JOBS
           </h5>
-          {/* <Link to="/about-cs" className="theme-btn-two mt-45 md-mt-30">
+          {/* <Link to="/about-us" className="theme-btn-two mt-45 md-mt-30">
             {" "}
             Learn More
           </Link> */}

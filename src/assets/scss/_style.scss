@@ -19879,7 +19879,7 @@ font-size: 24px;
 .img-holder-industry-content{
   position: absolute;
     padding: 50px;
-    top: 10px;
+    bottom: 10px;
 }
 
 .img-holder-industry-content h4{
@@ -19889,8 +19889,12 @@ color: #fff;
 font-weight: bold;
 }
 
+.slick-center .img-holder::before{
+    padding: 40px;
+}
+
 .img-holder-industry-content p{
-font-size: 20px;
+font-size: 18px;
 color: #fff;
 }
 

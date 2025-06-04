@@ -93,7 +93,7 @@ const Pricing = [
 const AboutUs = [
   {
     name: "Customer Support",
-    routerPath: "/about-cs",
+    routerPath: "/about-us",
   },
   {
     name: "Event Organiser",

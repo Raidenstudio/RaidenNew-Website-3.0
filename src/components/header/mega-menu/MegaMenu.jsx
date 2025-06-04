@@ -299,9 +299,9 @@ const Blogs = [
   },
   {
     name: "About Us",
-    routerPath: "/about-cs",
+    routerPath: "/about-us",
   },
-  
+
   {
     name: "Blog Details",
     routerPath: "/blog-details",

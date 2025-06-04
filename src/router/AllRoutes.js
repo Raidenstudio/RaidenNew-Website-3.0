@@ -159,7 +159,7 @@ const AllRoutes = () => {
         <Route path="/contact-pm" element={<ContactProjectManagement />} />
         <Route path="/contact-doc" element={<ContactDocumentation />} />
         {/* about us inner pages */}
-        <Route path="/about-cs" element={<AboutCustomerSupport />} />
+        <Route path="/about-us" element={<AboutCustomerSupport />} />
         <Route path="/about-eo" element={<AboutEventOrganizer />} />
         <Route path="/about-pm" element={<AboutProjectManagement />} />
         <Route path="/about-doc" element={<AboutDocumentation />} />
@@ -202,9 +202,9 @@ const AllRoutes = () => {
         <Route path="/case-study" element={<BlogV5 />} />
         <Route path="/raiden-verse" element={<RaidenVerse />} />
         <Route path="/raiden-simx" element={<RaidenSimx />} />
-        <Route path="/raiden-cogni" element={<RaidenCogni/>} />
-        <Route path="/raiden-arcviz" element={<RaidenArcviz/>} />
-        <Route path="/clash-empire" element={<ClashofEmpire/>} />
+        <Route path="/raiden-cogni" element={<RaidenCogni />} />
+        <Route path="/raiden-arcviz" element={<RaidenArcviz />} />
+        <Route path="/clash-empire" element={<ClashofEmpire />} />
 
 
 

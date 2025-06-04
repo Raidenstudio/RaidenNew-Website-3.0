@@ -10,9 +10,10 @@ import educationImg from "../../assets/Home/Industries/Education.png";
 import gamingImg from "../../assets/Home/Industries/Gaming.png";
 import healthcareImg from "../../assets/Home/Industries/Health care.png";
 import aviationImg from "../../assets/Home/Industries/Aviation.png";
-import manufacturingImg from "../../assets/Home/Industries/Manufacturing.png";
 import realEstateImg from "../../assets/Home/Industries/Real Estate.png";
 import tourismImg from "../../assets/Home/Industries/Tourism.png";
+import manufacturingImg from "../../assets/Home/Industries/manufacturing.png";
+
 
 const IndustriesData = [
   {

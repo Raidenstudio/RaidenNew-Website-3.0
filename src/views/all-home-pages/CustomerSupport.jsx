@@ -46,6 +46,7 @@ import unre2 from "../../assets/Prgm-Icon/Unreal.png";
 import TestimonialSix from "../../components/testimonial/TestimonialSix";
 import BlogStyle5 from "../../components/blog/BlogStyle5";
 import SignUp from "../inner-pages/features/miscellaneous/SignUp";
+import { Link } from "react-router-dom";
 
 const CustomerSupport = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -309,14 +310,14 @@ const CustomerSupport = () => {
                   corporations with their digital transformation. As a true
                   technology partner, Raiden assists companies of all sizes in.
                 </p>
-                <a
-                  href="#"
+                <Link
+                  to="/about-us"
                   className="theme-btn-nine"
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
                   About Us
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -782,21 +783,21 @@ const CustomerSupport = () => {
       {/*  */}
 
       <div
-        className="fancy-feature-twentyTwo  mt-150 md-mt-100 sm-pb-100 pb-150 "
+        className="fancy-feature-twentyTwo  mt-150 md-mt-100"
         id="product"
       >
         <div className="container">
           <div className="title-style-ten hero-banner-below  mb-40 md-mb-20">
             <div className="row align-items-start">
               <div className="col-lg-7">
-              <h3 className="font-raleway fw-bold f-5 pb-3 text-decoration-underline"> Our Products</h3>
+                <h3 className="font-raleway fw-bold f-5 pb-3 text-decoration-underline"> Our Products</h3>
                 <h2 className="font-raleway fw-bold">
-Next-Level Gaming,VR and Blockchain Innovations!
+                  Next-Level Gaming,VR and Blockchain Innovations!
                 </h2>
               </div>
               <div className="col-lg-5">
                 <p className="md-pt-20 mb-4">
-                Dive into a Realm of Cutting-Edge Entertainment with Our Exciting Gaming, VR, and Blockchain Solutions. Unleash Innovation Today!
+                  Dive into a Realm of Cutting-Edge Entertainment with Our Exciting Gaming, VR, and Blockchain Solutions. Unleash Innovation Today!
                 </p>
                 <a
                   href="#"

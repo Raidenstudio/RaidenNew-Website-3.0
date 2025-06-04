@@ -49,7 +49,7 @@ const Footer = () => {
         <h5 className="footer-title">About us</h5>
         <ul>
           <li>
-            <Link to="/about-cs">About us</Link>
+            <Link to="/about-us">About us</Link>
           </li>
           <li>
             <Link to="/faq-details">Faq Details</Link>
