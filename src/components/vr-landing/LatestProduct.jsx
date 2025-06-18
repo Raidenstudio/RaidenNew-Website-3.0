@@ -129,7 +129,7 @@ const LatestProduct = () => {
               </div>
               <h4 className="p-title mt-25 text-start">
                 <a className="text-black font-raleway fw-bold" href={product.productLink}>{product.title}</a>
-                <p className="text-black mt-3">
+                <p className="text-black mt-3 opacity-75">
                   {product.paragraph}
                 </p>
               </h4>

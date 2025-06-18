@@ -37,7 +37,7 @@ import PortfolioDemo2 from "../../components/portfolio/PortfolioDemo2";
 
 import reacts from "../../assets/Prgm-Icon/React.png";
 import ethereum from "../../assets/Prgm-Icon/Ethereum.png";
-import flutter from "../../assets/Prgm-Icon/Flutter.png";
+import flutter from "../../assets/Prgm-Icon/flutter.svg";
 import mean from "../../assets/Prgm-Icon/Mean.png";
 import mern from "../../assets/Prgm-Icon/Mern.png";
 import solana from "../../assets/Prgm-Icon/Solana.png";
@@ -225,8 +225,8 @@ const CustomerSupport = () => {
           </title>
         </Helmet>
         {/* End Page SEO Content */}
-        <div className="container py-5">
-          <div className="row d-flex align-items-center justify-content-between min-vh-100">
+        <div className="container">
+          <div className="row d-flex align-items-center justify-content-between min-vh-95">
             {/* Left Content */}
             <div className="col-md-6 mb-5 mb-md-0">
               <div className="coming-soon-content font-raleway">
@@ -290,7 +290,7 @@ const CustomerSupport = () => {
       {/* below hero banner */}
 
       <div
-        className="fancy-feature-twentyTwo mpt-200 pt-130 md-mt-80 sm-pt-100 pb-150"
+        className="fancy-feature-twentyTwo mpt-200 pt-150 md-mt-80 sm-pt-100 pb-150"
         id="product"
       >
         <div className="container">
@@ -304,7 +304,7 @@ const CustomerSupport = () => {
                 </h2>
               </div>
               <div className="col-lg-5">
-                <p className="md-pt-20 mb-4">
+                <p className="md-pt-20 mb-4 mt-3">
                   Established in 2022, Raiden is a top software development, web
                   development, and mobile app company that assists multinational
                   corporations with their digital transformation. As a true
@@ -326,7 +326,7 @@ const CustomerSupport = () => {
 
       {/* service */}
 
-      <div className="fancy-feature-four mt-20">
+      <div className="fancy-feature-four">
         <div className="bg-wrapper">
           <img
             src="images/shape/18.svg"
@@ -535,7 +535,7 @@ const CustomerSupport = () => {
                 </h2>
               </div>
               <div className="col-lg-5">
-                <p className="md-pt-20 mb-4">
+                <p className="md-pt-20 mb-4 mt-3">
                   With the expertise of a prominent development company, you may
                   receive robust software solutions, modernize systems, and rely
                   on cutting-edge technology for growth opportunities.
@@ -555,9 +555,8 @@ const CustomerSupport = () => {
       </div>
 
       {/* new actice components */}
-      <div className="container my-5" id="product">
+      <div className="container" id="product">
         <div className="row align-items-center">
-          {/* Left - Buttons */}
           <div className="col-md-4  bg-black p-4 rounded">
             <h3 className="mb-4 text-bold card-title-heading">
               Raiden’s Tech Advancements with Innovation
@@ -599,9 +598,6 @@ const CustomerSupport = () => {
       {/* Why Choose Raiden */}
 
       <div className="fancy-feature-one pb-150 md-pb-100">
-        <div className="text-center">
-          <div className="feature-img-area"></div>
-        </div>
         <div className="block-style-one">
           <h2
             className="text-center fw-bold mb-120"

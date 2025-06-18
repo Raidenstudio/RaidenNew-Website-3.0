@@ -9,25 +9,25 @@ const BlockMetaData = () => {
       _id: 1,
       icon: customer,
       title: "Streamlines Focus",
-      metaHoverContent: `Understanding your particular needs and difficulties is the first step in developing solutions that are specifically suited to you, with an emphasis on collaboration and open communication. Our ultimate goal is your success, from concept to launch and beyond that.`,
+      metaHoverContent: `Understanding your particular needs and difficulties is the first step in developing solutions that are specifically suited to you.`,
     },
     {
       _id: 2,
-      icon:qa ,
+      icon: qa,
       title: "Guaranteed Execution",
       metaHoverContent: `We focus on providing trustworthy solutions that meet your needs and ensure timely project completion and quality control.`,
     },
     {
       _id: 3,
-      icon: game ,
+      icon: game,
       title: "Consistent Methodology",
-      metaHoverContent: `Our team creates innovative gaming experiences by pushing the limits of creativity and technology. With unique mechanics, captivating narratives, and stunning visuals we captivate players and set your game apart in the rapidly changing digital landscape.`,
+      metaHoverContent: `Our team creates innovative gaming experiences by pushing the limits of creativity and technology.`,
     },
     {
       _id: 4,
       icon: flex,
       title: "Growth Driven solution",
-      metaHoverContent: `We offer flexible development solutions that can change and expand to meet your demands. We offer the appropriate tools and expertise at every stage, whether you're a business seeking expansion or a startup with a creative concept. Our services are designed to grow with you.`,
+      metaHoverContent: `We offer flexible development solutions that can change and expand to meet your demands.`,
     },
   ];
 
@@ -37,7 +37,7 @@ const BlockMetaData = () => {
         <div className="block-meta-data text-center col-3" key={blockMeta._id}>
           <div className="line-dot-container">
             <div className="icon-box">
-              <img src={blockMeta.icon} alt="icon" />
+              <img style={{ width: "60%" }} src={blockMeta.icon} alt="icon" />
             </div>
             {/* /.icon-box */}
             <p className="text-start mt-5 fw-bold" style={{ fontFamily: 'Raleway, sans-serif' }}>{blockMeta.title}</p>

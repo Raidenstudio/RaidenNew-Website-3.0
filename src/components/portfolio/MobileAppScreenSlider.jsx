@@ -85,10 +85,10 @@ const MobileAppScreenSlider = () => {
     arrow: false,
     infinite: true,
     speed: 900,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
-    centerMode: true,
+    // autoplay: true,
+    // centerMode: true,
     centerPadding: "0",
     responsive: [
       {
@@ -113,10 +113,12 @@ const MobileAppScreenSlider = () => {
         {IndustriesData.map((val, i) => (
           <div className="item" key={i}>
             <div className="img-holder img-holder-industry">
-              <img src={val.image} alt="screen" />
-              <div className="img-holder-industry-content">
-                <h4>{val.title}</h4>
-                <p>{val.desc}</p>
+              <div className="position-relative">
+                <img src={val.image} alt="screen" />
+                <div className="img-holder-industry-content">
+                  <h4>{val.title}</h4>
+                  <p>{val.desc}</p>
+                </div>
               </div>
             </div>
           </div>

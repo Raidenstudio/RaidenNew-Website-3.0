@@ -76,7 +76,7 @@ const MobileAppPortfolio = () => {
   return (
     <div className="mobile-app-portfolio-wrapper ">
       <div className="text-center mb-xl-5">
-        <h2 className="fw-bold mb-5" style={{ fontFamily: 'Raleway, sans-serif' }} >Our Development Approach - From Ideology to Launch</h2>
+        <h2 className="fw-bold mb-xxl-5" style={{ fontFamily: 'Raleway, sans-serif' }} >Our Development Approach From <br /> Ideology to Launch</h2>
         {/* <p className="text-muted mb-5">
           Explore our beautifully designed and highly functional mobile apps crafted for various industries.
         </p> */}
