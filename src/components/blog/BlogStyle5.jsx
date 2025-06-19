@@ -41,8 +41,8 @@ const BlogStyle5 = () => {
               <img src={`images/blog/${val.img}.jpg`} alt="media" />
             </div>
             <div className="post-meta">
-              <h3>
-                <Link to="/blog-details">{val.title}</Link>
+              <h3 >
+                <Link to="/blog-details" className="font-raleway">{val.title}</Link>
               </h3>
               <div className="author_info">
                 {val.author}. <span>{val.designation}</span>

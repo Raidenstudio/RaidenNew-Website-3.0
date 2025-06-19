@@ -1043,7 +1043,7 @@ const CustomerSupport = () => {
       {/* blog */}
 
       <div className="feature-blog-four  blog-page-bg">
-        <h2 className="text-center fw-bold mb-120">Our Latest Blogs</h2>
+        <h2 className="text-center fw-bold mb-120 font-rail" style={{fontFamily: 'Raleway'}}>Our Latest Blogs</h2>
         <div className="shapes shape-one"></div>
         <div className="shapes shape-two"></div>
         <div className="shapes shape-three"></div>
@@ -1054,7 +1054,7 @@ const CustomerSupport = () => {
           <div className="w-100 d-flex justify-content-center">
             <a
               href="#"
-              className="theme-btn-nine"
+              className="theme-btn-nine font-raleway"
               data-aos="fade-up"
               data-aos-delay="200"
             >

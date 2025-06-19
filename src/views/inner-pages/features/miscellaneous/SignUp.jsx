@@ -12,7 +12,7 @@ const SignUp = () => {
       {/* End Page SEO Content */}
       <div className="user-data-page clearfix d-lg-flex">
         <div className="illustration-wrapper d-flex align-items-center justify-content-between flex-column">
-          <h3 className="font-gordita">
+          <h3 className="" style={{fontFamily: 'Raleway'}}>
             We have a “strategic” plan its <br /> called doing things.
           </h3>
           <div className="illustration-holder">
@@ -38,7 +38,7 @@ const SignUp = () => {
         <div className="form-wrapper">
           {/* End d-flex */}
           <div className="mt-30">
-            <h2>Get a Free Quote Today</h2>
+            <h2 style={{fontFamily: 'Raleway'}}>Get a Free Quote Today</h2>
             <p className="header-info pt-30 pb-50">
               Please fill out the quick form and we will be in touch with lightening speed.
             </p>
