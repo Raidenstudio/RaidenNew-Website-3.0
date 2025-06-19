@@ -200,7 +200,7 @@ const CustomerSupport = () => {
         {
           heading: "Cryptocurrency creation",
           subheading:
-            "Cryptocurrencies are designed and developed on the basis of blockchain and consensus technology like Proof of Work (POW) and Proof of Stake (POS) for delivering top-tier security and integrated solutions.",
+            "Crypto are designed and developed on the basis of blockchain and consensus technology like Proof of Work (POW) and Proof of Stake (POS) for delivering top-tier security and integrated solutions.",
         },
         {
           heading: "Cryptocurrency Exchange ",
@@ -250,7 +250,7 @@ const CustomerSupport = () => {
         {
           heading: "Arbitrage Platform Development",
           subheading:
-            "Uses HFT and advanced algorithms to take advantage of changes in cryptocurrency prices, and develops distinctive arbitrage platforms with intuitive user interfaces for optimal trading outcomes.",
+            "Uses HFT and advanced algorithms to take advantage of changes in crypto prices, and develops distinctive arbitrage platforms with intuitive user interfaces for optimal trading outcomes.",
         },
         {
           heading: "Exchange Integration Services",
