@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 const PricingContent = [
   {
     icon: "85",
-    packName: "Game Development",
+    packName: "Game Creation",
     features: [
-      "Building virtual realms enabling digital asset ownership, play-to-earn models that empower players, and transparent in-game economies. We provide innovative and versatile experiences on platforms, from idea to stunning visuals."
+      "We provide versatile experiences on platforms by creating transparent in-game economies, play-to-earn models, and virtual worlds for digital asset ownership with stunning visuals."
     ],
     price: "59.99",
     trialText: "up to 10 user + 1.99 per user",
@@ -20,7 +20,7 @@ const PricingContent = [
     icon2: "159",
     packName: "BlockChain",
     features: [
-      "Our core expertise lies in the development of decentralized applications utilizing blockchain technology. It's a key technology that enables safe, transparent, and verifiable data sharing and transactions over a global network, radically changing the way we establish trust in the digital age.",
+      "Raiden has expertise in the development of decentralized applications with blockchain technology. Enabling trust with safe, clear, and verified data transactions over a global network.",
     ],
     price: "29.99",
     trialText: "up to 7 user + 1.99 per user",

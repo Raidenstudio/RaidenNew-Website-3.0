@@ -1639,19 +1639,21 @@ body .shop-btn-two:hover {
 
 /*------------------ Fancy Feature One --------------*/
 .fancy-feature-one {
+  // padding-bottom: 30px;
   background-image: url(../images/assets/dot-bg-01.svg);
   background-repeat: no-repeat;
-  background-position: center 230px;
+// background-position: center 390px;
+background-position: center 210px;
   background-size: cover;
   position: relative;
   z-index: 5;
 }
 
 .fancy-feature-one .feature-img-area {
-  display: inline-block;
+  display: hidden;
   position: relative;
   z-index: 5;
-  padding-right: 125px;
+  // padding-right: 125px;
 }
 
 .fancy-feature-one .feature-img-area:before {

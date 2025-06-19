@@ -37,7 +37,7 @@ import PortfolioDemo2 from "../../components/portfolio/PortfolioDemo2";
 
 import reacts from "../../assets/Prgm-Icon/React.png";
 import ethereum from "../../assets/Prgm-Icon/Ethereum.png";
-import flutter from "../../assets/Prgm-Icon/flutter.svg";
+import flutter from "../../assets/Prgm-Icon/Flutter.png";
 import mean from "../../assets/Prgm-Icon/Mean.png";
 import mern from "../../assets/Prgm-Icon/Mern.png";
 import solana from "../../assets/Prgm-Icon/Solana.png";
@@ -46,11 +46,128 @@ import unre2 from "../../assets/Prgm-Icon/Unreal.png";
 import TestimonialSix from "../../components/testimonial/TestimonialSix";
 import BlogStyle5 from "../../components/blog/BlogStyle5";
 import SignUp from "../inner-pages/features/miscellaneous/SignUp";
-import { Link } from "react-router-dom";
+
+import automotiveImg from "../../assets/Home/Industries/Automobile.png";
+import hospitalityImg from "../../assets/Home/Industries/Hospitality.png";
+import consumerGoodsImg from "../../assets/Home/Industries/Consumer-Goods.png";
+import educationImg from "../../assets/Home/Industries/Education.png";
+import gamingImg from "../../assets/Home/Industries/Gaming.png";
+import healthcareImg from "../../assets/Home/Industries/Health-care.png";
+import aviationImg from "../../assets/Home/Industries/Aviation.png";
+import manufacturingImg from "../../assets/Home/Industries/Manufacturing.png";
+import realEstateImg from "../../assets/Home/Industries/Real-Estate.png";
+import tourismImg from "../../assets/Home/Industries/Tourism.png";
+
+import industry1 from "../../assets/Home/Manufacturing/concept.png";
+import industry2 from "../../assets/Home/Manufacturing/tactics.png";
+import industry3 from "../../assets/Home/Manufacturing/Point.png";
+import industry4 from "../../assets/Home/Manufacturing/Execute.png";
+import industry5 from "../../assets/Home/Manufacturing/Assessment.png";
+import industry6 from "../../assets/Home/Manufacturing/Setting.png";
 
 const CustomerSupport = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const PortfolioSteps1 = [
+    {
+      id: "01",
+      title: "The Concept",
+      desc: "Our expertise and attention to detail enable us to meticulously plan, shape, and transform your idea into a successful solution.",
+      image: industry1,
+    },
+    {
+      image: industry2,
+      id: "02",
+      title: "The Tactics",
+      desc: "Establishing clear, milestone-driven project timelines and selecting the most qualified team are made easier by your goals.",
+    },
+    {
+      image: industry3,
+      id: "03",
+      title: "Point of Origin",
+      desc: "We transform wireframe designs and preliminary concepts into a responsive prototype that offers a clear picture of the final user interface.",
+    },
+    {
+      image: industry4,
+      id: "04",
+      title: "Execute",
+      desc: "Create your project with Raiden's suitable tools and technology by utilizing the project score, timeline, and many other features.",
+    },
+    {
+      image: industry5,
+      id: "05",
+      title: "Assessment",
+      desc: "Products are tested using both the best manual and the most sophisticated automated testing methods to ensure they are thoroughly inspected and free of errors.",
+    },
+    {
+      image: industry6,
+      id: "06",
+      title: "Setting Up",
+      desc: "We guarantee timely delivery of your desired quality while considering all of your suggestions and ideas.",
+    },
+  ];
 
+  const PortfolioSteps = [
+    {
+      id: "01",
+      image: automotiveImg,
+      title: "Automotive",
+      desc: "We are collaborating with the automotive sector to develop smarter, safer, and more fashionable transportation options.",
+    },
+    {
+      id: "02",
+      image: hospitalityImg,
+      title: "Hospitality",
+      desc: "Ensure your guests are satisfied and your business runs smoothly. Our goals are to enhance your service and make those incredible experiences even better.",
+    },
+    {
+      id: "03",
+      image: consumerGoodsImg,
+      title: "Consumer Goods",
+      desc: "We're transforming the way that products are conceived, produced, and consumed by bringing brands and customers together through efficient production and engaging interaction.",
+    },
+    {
+      id: "04",
+      image: educationImg,
+      title: "Education",
+      desc: "We change classrooms and study techniques to make them more interesting and accessible for all students, regardless of where they learn or how they learn it. Learning should be fun.",
+    },
+    {
+      id: "05",
+      image: gamingImg,
+      title: "Gaming",
+      desc: "Get ready for the next epic adventure with us. We are creating incredible, immersive worlds and rock-solid platforms that will redefine what it means to be fun.",
+    },
+    {
+      id: "06",
+      image: healthcareImg,
+      title: "Health care",
+      desc: "Improving healthcare for all is something we are passionate about. We facilitate medical progress, simplify care, and assist clinics and hospitals with operations management.",
+    },
+    {
+      id: "07",
+      image: aviationImg,
+      title: "Aviation",
+      desc: "We assist airlines and aerospace businesses in streamlining everything from training to maintenance, guaranteeing effective and safe travel.",
+    },
+    {
+      id: "08",
+      image: manufacturingImg,
+      title: "Manufacturing",
+      desc: "We're updating factories for the modern era. Develop more productive manufacturing lines that enable companies to achieve remarkable outcomes with a smaller amount of working capital.",
+    },
+    {
+      id: "09",
+      image: realEstateImg,
+      title: "Real Estate",
+      desc: "We're making it simpler to manage procedures, visualize properties, and locate precisely what you're looking for, making every step more transparent.",
+    },
+    {
+      id: "10",
+      image: tourismImg,
+      title: "Tourism",
+      desc: "Helping people travel the world is something we love. We simplify planning and create memorable experiences for both tourists and the establishments that host them.",
+    },
+  ];
   const blockchainServices = [
     {
       buttonHeading: "Blockchain Development",
@@ -63,12 +180,12 @@ const CustomerSupport = () => {
         {
           heading: "Public Blockchain Development",
           subheading:
-            "Our dApps, secured smart contracts, and decentralized governance marks with public blockchain. We offer end-to-end solutions for robust performance, and active community participation supports the launch and sustained blockchain network.",
+            "Developed on a public blockchain for decentralized control, our dApps and smart contracts are launched and maintained by an engaged community and end-to-end solutions.",
         },
         {
           heading: "Blockchain Consulting Services",
           subheading:
-            "Our roadmaps produce strategic planning and workable studies that result in profitable workshops and training to give you a blockchain advancement that efficiently empowers your company.",
+            "We deliver strategic planning, workable studies for profitable workshops, and training for a blockchain advancement that efficiently empowers your company. ",
         },
         {
           heading: "Hyperledger Development",
@@ -86,9 +203,9 @@ const CustomerSupport = () => {
             "Cryptocurrencies are designed and developed on the basis of blockchain and consensus technology like Proof of Work (POW) and Proof of Stake (POS) for delivering top-tier security and integrated solutions.",
         },
         {
-          heading: "Cryptocurrency Exchange Development",
+          heading: "Cryptocurrency Exchange ",
           subheading:
-            "We build a secure, seamless crypto trading experience with centralized and decentralized exchange platforms. This ensures optimal liquidity, security, and performance from login to encrypted transactions.",
+            "We build a secure, seamless crypto trading experience with centralized and decentralized exchange platforms for optimal liquidity, security, and streamlined performance.",
         },
         {
           heading: "White Label Crypto Exchange",
@@ -128,7 +245,7 @@ const CustomerSupport = () => {
       ],
     },
     {
-      buttonHeading: "Arbitrage Trading Platform Development",
+      buttonHeading: "Arbitrage Trading Platform ",
       cards: [
         {
           heading: "Arbitrage Platform Development",
@@ -141,12 +258,12 @@ const CustomerSupport = () => {
             "Our secure, real-time trading tools optimize liquidity and protect user data and API keys by integrating exchanges with robust APIs and multiple connectivity.",
         },
         {
-          heading: "Risk Management and Compliance",
+          heading: "Risk Management ",
           subheading:
             "We offer automated systems that manage arbitrage trading risks, ensure regulatory compliance, and optimize strategies with real time monitoring and portfolio diversification.",
         },
         {
-          heading: "Performance Analytics and Reporting",
+          heading: "Performance Analytics ",
           subheading:
             "With its advanced analytics, customized ROI reports, and effective data visualization tools, Raiden helps you deliver and report on in-depth insights with profitable trading strategies.",
         },
@@ -161,12 +278,12 @@ const CustomerSupport = () => {
             "Accurate filing services and professional regulatory advice ensure crypto tax compliance in both domestic and foreign jurisdictions.",
         },
         {
-          heading: "Tax Calculation and Record Keeping",
+          heading: "Tax Calculation ",
           subheading:
             "We maintain accurate records of all transactions and crypto tax computations to ensure uninterrupted tax filing and efficient management of gains, losses, and taxable amounts.",
         },
         {
-          heading: "Audit Support and Representation",
+          heading: "Audit Support ",
           subheading:
             "We assist in audit preparation and represent audits and disputes with tax authorities in order to guarantee compliance and offer a positive resolution.",
         },
@@ -225,8 +342,8 @@ const CustomerSupport = () => {
           </title>
         </Helmet>
         {/* End Page SEO Content */}
-        <div className="container">
-          <div className="row d-flex align-items-center justify-content-between min-vh-95">
+        <div className="container py-5 	">
+          <div className="row d-flex align-items-center justify-content-between min-vh-100">
             {/* Left Content */}
             <div className="col-md-6 mb-5 mb-md-0">
               <div className="coming-soon-content font-raleway">
@@ -234,30 +351,68 @@ const CustomerSupport = () => {
                   Ingenuity Unbound: Reimagined Digital World.
                 </h1>
                 <p className="font-gordita text-start mt-3">
-                  One pixel, one line of code at a time—where creativity ignites innovation.
+                  One pixel, one line of code at a time—where creativity ignites
+                  innovation.
                 </p>
               </div>
             </div>
 
             {/* Right Contact Form */}
             <div className="col-md-6" style={{ display: "contents" }}>
-              <div style={{ maxWidth: "500px" }} className="p-4 rounded-4 shadow bg-white">
-                <h4 className="mb-4 text-center fw-bold">Book Free Consultation</h4>
+              <div
+                style={{ maxWidth: "500px" }}
+                className="p-4 rounded-4 shadow bg-white"
+              >
+                <h4 className="mb-4 text-center fw-bold">
+                  Book Free Consultation
+                </h4>
                 <form>
                   <div className="mb-3">
-                    <label style={{ fontSize: "16px" }} className="form-label m-0">Name</label>
-                    <input type="text" className="form-control" placeholder="Your name" />
+                    <label
+                      style={{ fontSize: "16px" }}
+                      className="form-label m-0"
+                    >
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Your name"
+                    />
                   </div>
                   <div className="mb-3">
-                    <label style={{ fontSize: "16px" }} className="form-label m-0">Email</label>
-                    <input type="email" className="form-control" placeholder="Your email" />
+                    <label
+                      style={{ fontSize: "16px" }}
+                      className="form-label m-0"
+                    >
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      className="form-control"
+                      placeholder="Your email"
+                    />
                   </div>
                   <div className="mb-3">
-                    <label style={{ fontSize: "16px" }} className="form-label m-0">Phone Number</label>
-                    <input type="tel" className="form-control" placeholder="Your phone number" />
+                    <label
+                      style={{ fontSize: "16px" }}
+                      className="form-label m-0"
+                    >
+                      Phone Number
+                    </label>
+                    <input
+                      type="tel"
+                      className="form-control"
+                      placeholder="Your phone number"
+                    />
                   </div>
                   <div className="mb-3">
-                    <label style={{ fontSize: "16px" }} className="form-label m-0">Message</label>
+                    <label
+                      style={{ fontSize: "16px" }}
+                      className="form-label m-0"
+                    >
+                      Message
+                    </label>
                     <textarea
                       className="form-control"
                       rows="3"
@@ -265,7 +420,11 @@ const CustomerSupport = () => {
                     ></textarea>
                   </div>
                   <div className="form-check mb-3">
-                    <input type="checkbox" className="form-check-input" id="acceptTerms" />
+                    <input
+                      type="checkbox"
+                      className="form-check-input"
+                      id="acceptTerms"
+                    />
                     <label className="form-check-label" htmlFor="acceptTerms">
                       I accept the terms and conditions
                     </label>
@@ -283,17 +442,15 @@ const CustomerSupport = () => {
             </div>
           </div>
         </div>
-
-
       </>
 
       {/* below hero banner */}
 
       <div
-        className="fancy-feature-twentyTwo mpt-200 pt-150 md-mt-80 sm-pt-100 pb-150"
-        id="product"
+        className="fancy-feature-twentyTwo mpt-200  md-mt-80 sm-pt-100 "
+        id="product " 
       >
-        <div className="container">
+        <div className=" bg-light pb-130 pt-130 px-5">
           <div className="title-style-ten hero-banner-below  mb-40 md-mb-20">
             <div className="row align-items-start">
               <div className="col-lg-7">
@@ -304,20 +461,20 @@ const CustomerSupport = () => {
                 </h2>
               </div>
               <div className="col-lg-5">
-                <p className="md-pt-20 mb-4 mt-3">
+                <p className="md-pt-20 mb-4">
                   Established in 2022, Raiden is a top software development, web
                   development, and mobile app company that assists multinational
                   corporations with their digital transformation. As a true
                   technology partner, Raiden assists companies of all sizes in.
                 </p>
-                <Link
-                  to="/about-us"
+                <a
+                  href="#"
                   className="theme-btn-nine"
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
                   About Us
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -326,7 +483,7 @@ const CustomerSupport = () => {
 
       {/* service */}
 
-      <div className="fancy-feature-four">
+      <div className="fancy-feature-four ">
         <div className="bg-wrapper">
           <img
             src="images/shape/18.svg"
@@ -464,7 +621,7 @@ const CustomerSupport = () => {
 			===================================================== */}
       <div
         id="pricing"
-        className="pricing-section-five mb-150 mt-150 sm-mt-100 sm-mb-100 "
+        className="pricing-section-five mb-75 mt-150 sm-mt-100 sm-mb-75 "
       >
         <div className="container">
           <div className="row align-items-start flex-row">
@@ -472,7 +629,7 @@ const CustomerSupport = () => {
               <div className="custom-logo-design col-lg-4">
                 <img src={YearsImage} alt="logo" />
                 <h4>10+</h4>
-                <h5>Years of Experience</h5>
+                <h5>Experience</h5>
               </div>
               <div className="custom-logo-design col-lg-4">
                 <img src={TeamMembers} alt="logo" />
@@ -484,20 +641,20 @@ const CustomerSupport = () => {
                 <h4>50+</h4>
                 <h5>App Developed</h5>
               </div>
-              <div className="custom-logo-design col-lg-4">
+              <div className="custom-logo-design col-lg-4   mt-4 ">
                 <img src={CLIENTS} alt="logo" />
                 <h4>25+</h4>
                 <h5>Clients</h5>
               </div>
-              <div className="custom-logo-design col-lg-4">
+              <div className="custom-logo-design col-lg-4  mt-4   ">
                 <img src={PROJECTS} alt="logo" />
                 <h4>25+</h4>
                 <h5>Projects</h5>
               </div>
-              <div className="custom-logo-design col-lg-4">
+              <div className="custom-logo-design col-lg-4 mt-4 ">
                 <img src={YearsImage} alt="logo" />
                 <h4>25+</h4>
-                <h5>Countries Served</h5>
+                <h5>Countries </h5>
               </div>
             </div>
 
@@ -523,10 +680,10 @@ const CustomerSupport = () => {
       {/*  */}
 
       <div
-        className="fancy-feature-twentyTwo  mt-150 md-mt-100 mb-150 md-mb-100"
-        id="product"
+        className="fancy-feature-twentyTwo   mb-85  pt-130 pb-130  ps-48 pe-48"
+        id="product" style={{ backgroundColor: '#FFFFF1' }} 
       >
-        <div className="container">
+        <div className=" px-5">
           <div className="title-style-ten hero-banner-below  mb-40 md-mb-20">
             <div className="row align-items-start">
               <div className="col-lg-7">
@@ -535,7 +692,7 @@ const CustomerSupport = () => {
                 </h2>
               </div>
               <div className="col-lg-5">
-                <p className="md-pt-20 mb-4 mt-3">
+                <p className="md-pt-20 mb-4">
                   With the expertise of a prominent development company, you may
                   receive robust software solutions, modernize systems, and rely
                   on cutting-edge technology for growth opportunities.
@@ -555,8 +712,9 @@ const CustomerSupport = () => {
       </div>
 
       {/* new actice components */}
-      <div className="container" id="product">
+      <div className="container mt-80 " id="product">
         <div className="row align-items-center">
+          {/* Left - Buttons */}
           <div className="col-md-4  bg-black p-4 rounded">
             <h3 className="mb-4 text-bold card-title-heading">
               Raiden’s Tech Advancements with Innovation
@@ -565,10 +723,11 @@ const CustomerSupport = () => {
               {blockchainServices.map((service, index) => (
                 <button
                   key={index}
-                  className={` ${activeIndex === index
-                    ? "theme-btn-nine1"
-                    : "theme-btn-nine-no-bg"
-                    } text-start`}
+                  className={` ${
+                    activeIndex === index
+                      ? "theme-btn-nine1"
+                      : "theme-btn-nine-no-bg"
+                  } text-start`}
                   onClick={() => setActiveIndex(index)}
                 >
                   {service.buttonHeading}
@@ -598,7 +757,10 @@ const CustomerSupport = () => {
       {/* Why Choose Raiden */}
 
       <div className="fancy-feature-one pb-150 md-pb-100">
-        <div className="block-style-one">
+        <div className="text-center">
+          {/* <div className="feature-img-area"></div> */}
+        </div>
+        <div className="block-style-one ">
           <h2
             className="text-center fw-bold mb-120"
             style={{ fontFamily: "Raleway, sans-serif" }}
@@ -617,7 +779,7 @@ const CustomerSupport = () => {
 
       {/* Technology Stack */}
 
-      <div className="container pb-150" id="tech-stack">
+      <div className="container pb-150" id="tech-stack pt-4">
         <div className="row align-items-center">
           {/* Left Side */}
           <div className="col-md-5 mb-4">
@@ -650,7 +812,11 @@ const CustomerSupport = () => {
               ].map((stack, index) => (
                 <div key={index} className="col-md-3">
                   <div className="border rounded p-3 h-100 d-flex align-items-center flex-column gap-3 shadow-sm bg-white">
-                    <img style={{ width: "50%" }} className="fs-2" src={stack.icon}></img>
+                    <img
+                      style={{ width: "50%" }}
+                      className="fs-2"
+                      src={stack.icon}
+                    ></img>
                     <h5 className="mb-0">{stack.title}</h5>
                   </div>
                 </div>
@@ -699,7 +865,14 @@ const CustomerSupport = () => {
       <div className="">
         <div className="container">
           <div className="app-preview-slider-one arrow-middle-center ">
-            <MobileAppPortfolio />
+           <div className="text-center mb-xl-5">
+        <h2 className="fw-bold mb-xxl-5" style={{ fontFamily: 'Raleway, sans-serif' }} >Our Development Approach From <br /> Ideology to Launch</h2>
+        {/* <p className="text-muted mb-5">
+          Explore our beautifully designed and highly functional mobile apps crafted for various industries.
+        </p> */}
+      </div>
+
+            <MobileAppPortfolio PortfolioSteps={PortfolioSteps1} />
           </div>
         </div>
         {/* End .container */}
@@ -763,15 +936,21 @@ const CustomerSupport = () => {
       <div className="app-screen-preview-two mb-150 md-mb-100">
         <div className="container">
           <div className="title-style-eleven text-center mb-120 md-mb-70">
-            <h2 className="mb-3">Discover the industries that our <br />solutions transform</h2>
+            <h2 className="mb-3">
+              Discover the industries that our <br />
+              solutions transform
+            </h2>
             <p>
-              Raiden’s solutions support creativity, growth, and productivity, transforming industries and allowing businesses to thrive.
+              Raiden’s solutions support creativity, growth, and productivity,
+              transforming industries and allowing businesses to thrive.
             </p>
           </div>
         </div>
 
-        <div className="app-preview-slider-two arrow-none">
-          <MobileAppScreenSlider />
+        <div className="container">
+          <div className="app-preview-slider-one arrow-middle-center ">
+            <MobileAppPortfolio PortfolioSteps={PortfolioSteps} />
+          </div>
         </div>
         {/* /.app-preview-slider-two */}
       </div>
@@ -779,30 +958,28 @@ const CustomerSupport = () => {
       {/*  */}
 
       <div
-        className="fancy-feature-twentyTwo  mt-200 md-mt-100"
+        className="fancy-feature-twentyTwo  mt-150 md-mt-100   py-5 " style={{ backgroundColor: '#FDFCFA' }}
         id="product"
       >
         <div className="container">
           <div className="title-style-ten hero-banner-below  mb-40 md-mb-20">
             <div className="row align-items-start">
-              <div className="col-lg-7">
-                <h3 className="font-raleway fw-bold f-5 pb-3 text-decoration-underline"> Our Products</h3>
+                <h3 className="font-raleway fw-bold pb-5  text-center" style={{fontSize:58}}>
+                  {" "}
+                  Our Products
+                </h3>
+              <div className="col-lg-7 mt-4">
                 <h2 className="font-raleway fw-bold">
                   Next-Level Gaming,VR and Blockchain Innovations!
                 </h2>
               </div>
-              <div className="col-lg-5">
-                <p className="md-pt-20 mb-4">
-                  Dive into a Realm of Cutting-Edge Entertainment with Our Exciting Gaming, VR, and Blockchain Solutions. Unleash Innovation Today!
+              <div className="col-lg-5 mt-4">
+                <p className="md-pt-20 mb-4 ">
+                  Dive into a Realm of Cutting-Edge Entertainment with Our
+                  Exciting Gaming, VR, and Blockchain Solutions. Unleash
+                  Innovation Today!
                 </p>
-                {/* <a
-                  href="#"
-                  className="theme-btn-nine"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  Explore Service
-                </a> */}
+               
               </div>
             </div>
           </div>
@@ -818,8 +995,7 @@ const CustomerSupport = () => {
         <div className="inner-container">
           <div className="container">
             <div className="row">
-              <div className="col-12">
-              </div>
+              <div className="col-12"></div>
             </div>
           </div>
           <div className="clientSliderSix arrow-middle-center-demo">
@@ -828,7 +1004,6 @@ const CustomerSupport = () => {
         </div>
         {/* /.inner-container */}
       </div>
-
 
       {/* Client Feedback */}
       <div className="client-feedback-slider-one pt-50 pb-150 md-pb-80">
@@ -916,7 +1091,6 @@ const CustomerSupport = () => {
           </div>
         </div>
       </footer>
-
     </div>
   );
 };
