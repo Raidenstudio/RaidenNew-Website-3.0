@@ -65,6 +65,22 @@ import industry4 from "../../assets/Home/Manufacturing/Execute.png";
 import industry5 from "../../assets/Home/Manufacturing/Assessment.png";
 import industry6 from "../../assets/Home/Manufacturing/Setting.png";
 
+
+import leftimg from '../../assets/Group-37/left1.png'
+import rightimg from '../../assets/Group-37/leftimg.png'
+import one from '../../assets/Group-38/one.png'
+import three from '../../assets/Group-38/three.png'
+import two from '../../assets/Group-38/two.png'
+import four from '../../assets/Group-38/four.png'
+import five from '../../assets/Group-38/five.png'
+
+
+import icon1 from '../../assets/Icons9/The-Concept.png'
+import icon2 from '../../assets/Icons9/Point-of-origin.png'
+import icon3 from '../../assets/Icons9/Execute.png'
+import icon4 from '../../assets/Icons9/Assessment.png'
+import icon5 from '../../assets/Icons9/Setting-up.png'
+
 const CustomerSupport = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const PortfolioSteps1 = [
@@ -862,21 +878,91 @@ const CustomerSupport = () => {
 
       {/*  */}
 
-      <div className="">
-        <div className="container">
+      {/* <div className=""> */}
+        {/* <div className="container">
           <div className="app-preview-slider-one arrow-middle-center ">
            <div className="text-center mb-xl-5">
         <h2 className="fw-bold mb-xxl-5" style={{ fontFamily: 'Raleway, sans-serif' }} >Our Development Approach From <br /> Ideology to Launch</h2>
-        {/* <p className="text-muted mb-5">
+        <p className="text-muted mb-5">
           Explore our beautifully designed and highly functional mobile apps crafted for various industries.
-        </p> */}
+        </p>
       </div>
 
             <MobileAppPortfolio PortfolioSteps={PortfolioSteps1} />
           </div>
-        </div>
+        </div> */}
+
+
         {/* End .container */}
-      </div>
+        {/* <div className=""> */}
+          <div className="container main-img-container d-flex ">
+            
+              <div className="">
+            <div className="info-div">
+              <h3 className="info-h3">Our Development Approach  </h3>
+
+            </div>
+              <img src={leftimg} alt="" className="img-left" />
+              <div>
+              <img src={rightimg} alt="" className="img-right" />
+                <div  className="img-one">
+              <img src={one} alt="" />
+              <img src={icon1} alt="" className="icon1" />
+
+                </div>
+                <div className="img-two">
+              <img src={two} alt=""  />
+              <img src={icon2} alt="" className="icon2" />
+
+                </div>
+                <div  className="img-three" >
+              <img src={three} alt=""/>
+              <img src={icon3} alt="" className="icon3" />
+
+                </div>
+                <div className="img-four">
+              <img src={four} alt=""  />
+              <img src={icon4} alt="" className="icon4" />
+
+                </div>
+                <div  className="img-five">
+
+              <img src={five} alt=""  />
+              <img src={icon5} alt="" className="icon5" />
+                </div>
+              </div>
+              </div>
+              
+              <div className="container-text">
+                <div className="one-text">
+
+                <h3  className="h3-main-text">The Concept</h3>
+                <p>Our expertise and attention to detail enable us to meticulously plan, shape, and transform your idea into a successful solution.</p>
+                </div>
+                <div className="two-text">
+                  <h3 className="h3-main-text">Point of origin</h3>
+                  <p>We transform wireframe designs and preliminary concepts into a responsive prototype that offers a clear picture of the final user interface.</p>
+                </div>
+                <div className="three-text">
+                  <h3 className="h3-main-text">Execute</h3>
+                  <p>Create your project with Raiden's suitable tools and technology by utilizing the project score, timeline, and many other features.</p>
+                </div>
+                <div className="four-text">
+                  <h3 className="h3-main-text">Assessment </h3>
+                  <p>Products are tested using both the best manual and the most sophisticated automated testing methods to ensure they are thoroughly inspected and free of errors.</p>
+                </div>
+                <div className="five-text">
+                  <h3 className="h3-main-text">Setting up</h3>
+                  <p>We guarantee timely delivery of your desired quality while considering all of your suggestions and ideas.</p>
+                </div>
+
+
+              </div>
+           
+       
+          </div>
+        {/* </div> */}
+      {/* </div> */}
 
       {/*  */}
       {/* <div className="fancy-text-block-seven mt-150 md-mt-100">
