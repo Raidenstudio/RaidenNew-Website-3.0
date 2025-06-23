@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import MegaMenu from "./mega-menu/MegaMenu";
 import MegaMenuMobile from "./mega-menu/MegaMenuMobile";
-
+import raidenlogo from '../../assets/Logo/raiden-logo.png'
 const HeaderThree = () => {
   const [navbar, setNavbar] = useState(false);
 
@@ -28,7 +28,7 @@ const HeaderThree = () => {
         <div className="d-flex align-items-center justify-content-center">
           <div className="logo">
             <Link to="/">
-              <img src="images/logo/deski_01.svg" alt="brand logo" />
+              <img src={raidenlogo} alt="brand logo" style={{width:'12%'}} />
             </Link>
           </div>
           {/* End Logo */}

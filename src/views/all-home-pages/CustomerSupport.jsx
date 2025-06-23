@@ -700,7 +700,7 @@ const CustomerSupport = () => {
         id="product" style={{ backgroundColor: '#FFFFF1' }} 
       >
         <div className=" px-5">
-          <div className="title-style-ten hero-banner-below  mb-40 md-mb-20">
+          <div className="title-style-ten hero-banner-below   md-mb-20">
             <div className="row align-items-start">
               <div className="col-lg-7">
                 <h2 className="font-raleway fw-bold">
@@ -1001,7 +1001,7 @@ const CustomerSupport = () => {
 
       {/* development expertise */}
       <div
-        className="fancy-portfolio-one pt-150 pb-150 md-py-150 "
+        className="fancy-portfolio-one pt-28 pb-150 md-py-150 "
         id="product"
       >
         <div className="container">

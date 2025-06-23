@@ -272,7 +272,7 @@ Primary use:  ib-themes
   position: relative;
   // padding: 0 75px;
   padding-top: 210px;
-  padding-bottom: 200px;
+  // padding-bottom: 200px;
 }
 .info-div{
   width: 430px;
@@ -303,7 +303,7 @@ box-shadow: rgba(0, 0, 0, 0.45) 25px 15px 50px 0px;
   width: 250px;
   height: 500px;
   position: absolute;
-  top: 213px;
+  top: 220px;
 }
 .img-right{
   width: 250px;
@@ -322,8 +322,8 @@ box-shadow: rgba(0, 0, 0, 0.45) 25px 15px 50px 0px;
 .img-two{
   // width: 13%;
   position: absolute;
-  top: 155px;
-  left: 497px;
+  top: 147px;
+  left: 491px;
   height: 200px;
 }
 .img-three{
@@ -336,14 +336,14 @@ box-shadow: rgba(0, 0, 0, 0.45) 25px 15px 50px 0px;
 .img-four{
   //  width: 13%;
   position: absolute;
-  top: 601px;
+  top: 598px;
   left: 487px;
 }
 .img-five{
   // width: 13%;
   position: absolute;
   top: 738px;
-  left: 289px;
+  left: 292px;
   //  background: ;
   // border-radius: 50%;
 }
@@ -384,8 +384,8 @@ box-shadow: rgba(0, 0, 0, 0.45) 25px 15px 50px 0px;
 }
 .icon1{
   position: absolute;
-  top: 27px;
-  left: 35px;
+  top: 29px;
+  left: 37px;
   width: 125px;
       transition: transform 0.3s ease;
  box-shadow: 10px 5px 20px black;
@@ -409,7 +409,7 @@ box-shadow: rgba(0, 0, 0, 0.45) 25px 15px 50px 0px;
 }
 .icon3{
     position: absolute;
- top: 38px;
+ top: 35px;
   left: 45px;
    width: 125px;
        transition: transform 0.3s ease;
@@ -4479,16 +4479,16 @@ background-position: center 210px;
   transform: scale(1);
 }*/
 /*---------------------- Fancy Feature Two -------------------*/
-.fancy-feature-four {
-  padding: 0 15px;
-}
+// .fancy-feature-four {
+//   padding: 0 0px;
+// }
 
 .fancy-feature-four .inner-content {
   position: relative;
 }
 
 .fancy-feature-four .bg-wrapper {
-  max-width: 1460px;
+  // max-width: 1460px;
   margin: 0 auto;
   position: relative;
   background: #fff6ec;
