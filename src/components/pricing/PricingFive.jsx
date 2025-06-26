@@ -12,64 +12,47 @@ const PricingContent = [
     price: "59.99",
     trialText: "up to 10 user + 1.99 per user",
     activeClass: "active ",
-    background: "#ff2759",
+    background: "gameclass1",
     paddingLeft: "10px",
   },
   {
     icon: "86",
     icon2: "159",
-    packName: "BlockChain",
+    packName: "Blockchain",
     features: [
       "Raiden has expertise in the development of decentralized applications with blockchain technology. Enabling trust with safe, clear, and verified data transactions over a global network.",
     ],
     price: "29.99",
     trialText: "up to 7 user + 1.99 per user",
     activeClass: "active",
-    background: "black",
+    background: "gameclass2",
     paddingLeft: "0",
   },
 ];
 
 const PricingFive = () => {
   return (
-    <div className="row d-flex align-items-start justify-content-center">
+    <div className="row d-flex align-items-start justify-content-center ">
       {PricingContent.map((val, i) => (
-        <div style={{ padding: "0" }} className="col-md-6" key={i}>
-          <Tilt>
-            <div style={{ backgroundColor: val.background, marginRight: val.paddingLeft }} className={`pr-table-wrapper ${val.activeClass}`}>
-              {/* <img
-                src={`images/icon/${val.icon}.svg`}
-                alt="icon"
-                className="icon"
-              /> */}
-              {/* <img
-                src={`images/shape/${val.icon2}.svg`}
-                className="popular-badge"
-                alt="shape"
-              /> */}
-              <div className="pack-name font-raleway fw-bold">{val.packName}</div>
-              <ul className="pr-feature">
+        <div style={{ padding: "0" }} className="col-md-6 " key={i}>
+          {/* <Tilt> */}
+            <div style={{marginRight: val.paddingLeft }} className={`pr-table-wrapper ${val.activeClass} ${val.background}`}>
+            
+              <div className="pack-name font-raleway fw-bold"  style={{ color: val.background === "gameclass1" ? "black" : "white" }}>{val.packName}</div>
+              <ul className="pr-featu">
                 {val.features.map((list, i) => (
-                  <p key={i}>{list}</p>
+                  <p  style={{ color: val.background === "gameclass1" ? "black" : "white" }} key={i}>{list}</p>
                 ))}
               </ul>
-              {/* <Link
-                to="/signup"
-                className="trial-button hover-reverse-gr-bg-one gr-bg-one"
-              >
-                {" "}
-                Sign up
-              </Link> */}
+         
             </div>
-            {/* /.pr-table-wrapper */}
-          </Tilt>
+         
         </div>
       ))}
       <a
         href="#"
         className="theme-btn-nine w-auto mt-3"
-        data-aos="fade-up"
-        data-aos-delay="200"
+        
       >
         Hire Developer
       </a>

@@ -3,10 +3,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import demo from "../../assets/Home/demo.jpg";
-import cogni from "../../assets/Raiden's-Frontier-of-Manufacturing/Group-36.png"
-import simx from "../../assets/Home/product/RaidenSimX.png"
-import arcviz from "../../assets/Raiden's-Frontier-of-Manufacturing/Group-35.png"
-import verse from "../../assets/Home/product/RaidenVerse.png"
+import cogni from "../../assets//raiden-verse/Raidencogni.svg"
+import simx from "../../assets/raiden-verse/RaidenSimX.svg"
+import arcviz from "../../assets//raiden-verse/RaidenARCVIZ.svg"
+import verse from "../../assets/raiden-verse/RaidenVerse.svg"
 
 export default function TestimonialSix() {
   const settings = {
@@ -18,7 +18,7 @@ export default function TestimonialSix() {
     slidesToScroll: 1,
     autoplay: false,
     centerMode: true,
-    centerPadding: "0",
+    centerPadding: "5px",
     responsive: [
       {
         breakpoint: 991,
@@ -54,7 +54,7 @@ export default function TestimonialSix() {
     <Slider {...settings}>
       {TestimonilContent.map((val, i) => (
         <div className="item" key={i}>
-          <div className="feedback-wrapper">
+          <div className="feedback-wrapper pb-4">
             <img className="w-100 h-100 object-fit-cover" src={val.img} alt="screen" />
           </div>
           {/* End .feedback-wrapper */}

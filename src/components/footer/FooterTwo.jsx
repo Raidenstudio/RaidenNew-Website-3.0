@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import raidenlogo from '../../assets/Logo/raiden-logo.jpg'
 const socialContent = [
   {
     icon: "fa-facebook",
@@ -25,7 +25,7 @@ const FooterTwo = () => {
         data-aos-duration="1200"
       >
         <a href="index-customer-support.html" className="logo">
-          <img src="images/logo/deski_03.svg" alt="brand" />
+          <img src={raidenlogo} alt="brand" className="w-15" style={{width:100}}/>
         </a>
       </div>
       {/* /.about-widget */}

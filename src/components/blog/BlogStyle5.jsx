@@ -42,9 +42,9 @@ const BlogStyle5 = () => {
             </div>
             <div className="post-meta">
               <h3 >
-                <Link to="/blog-details" className="font-raleway">{val.title}</Link>
+                <Link to="/blog-details" className="font-raleway text-white">{val.title}</Link>
               </h3>
-              <div className="author_info">
+              <div className="author_info text-white">
                 {val.author}. <span>{val.designation}</span>
               </div>
             </div>

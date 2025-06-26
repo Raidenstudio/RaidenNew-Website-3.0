@@ -46,7 +46,7 @@ export default function Testimonial() {
             <img
               src={val.reviewerImg}
               alt=""
-              className="c_img"
+              className="c_img m-0"
             />
             <div className="info">
               <strong>{val.reviewerName}</strong> <span>{val.designation}</span>

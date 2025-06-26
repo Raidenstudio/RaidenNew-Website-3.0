@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Helmet } from "react-helmet";
 import HeaderTwo from "../../components/header/HeaderTwo";
 import HeroBannerTwo from "../../components/hero-banner/HeroBannerTwo";
@@ -14,20 +14,25 @@ import CopyRightTwo from "../../components/footer/CopyRightTwo";
 import Choose from "../../assets/images/assets/Home page (1).png";
 import Chatbot from "../../assets/images/assets/Group 6.png";
 import Chat from "../../assets/images/assets/Group 7.png";
+
 import Profile1 from "../../assets/images/assets/Profile 1.png";
 import Profile2 from "../../assets/images/assets/Profile 2.png";
 import Profile3 from "../../assets/images/assets/Profile 3.png";
 import Profile4 from "../../assets/images/assets/Profile 4.png";
 import Profile5 from "../../assets/images/assets/Profile 5.png";
+
 import Header from "../../components/e-commerce/Header";
 import HeaderThree from "../../components/header/HeaderThree";
 import Portfolio from "../../components/portfolio/Portfolio";
 import Tilt from "react-parallax-tilt";
-import AppImage from "../../assets/Home/App-Developed.png";
-import CLIENTS from "../../assets/Home/CLIENTS.png";
-import PROJECTS from "../../assets/Home/PROJECTS.png";
-import TeamMembers from "../../assets/Home/Team-Members.png";
-import YearsImage from "../../assets/Home/Years-of-Experience.png";
+
+import AppImage from "../../assets/Home/Game-creation/AppDeveloped.svg";
+import CLIENTS from "../../assets/Home/Game-creation/CLIENTS.svg";
+import PROJECTS from "../../assets/Home/Game-creation/PROJECTS.svg";
+import TeamMembers from "../../assets/Home/Game-creation/TeamMembers.svg";
+import YearsImage from "../../assets/Home/Game-creation/YearsofExperience.svg";
+import countries from "../../assets/Home/Game-creation/Countries.svg";
+
 import PricingFive from "../../components/pricing/PricingFive";
 import BlockMetaData from "../../components/fancy-text-block/BlockMetaData";
 import LatestProduct from "../../components/vr-landing/LatestProduct";
@@ -37,7 +42,7 @@ import PortfolioDemo2 from "../../components/portfolio/PortfolioDemo2";
 
 import reacts from "../../assets/Prgm-Icon/React.png";
 import ethereum from "../../assets/Prgm-Icon/Ethereum.png";
-import flutter from "../../assets/Prgm-Icon/Flutter.png";
+import flutter from "../../assets/Prgm-Icon/Flutter.png.svg";
 import mean from "../../assets/Prgm-Icon/Mean.png";
 import mern from "../../assets/Prgm-Icon/Mern.png";
 import solana from "../../assets/Prgm-Icon/Solana.png";
@@ -46,7 +51,7 @@ import unre2 from "../../assets/Prgm-Icon/Unreal.png";
 import TestimonialSix from "../../components/testimonial/TestimonialSix";
 import BlogStyle5 from "../../components/blog/BlogStyle5";
 import SignUp from "../inner-pages/features/miscellaneous/SignUp";
-
+import Typewriter from "react-typewriter-effect";
 import automotiveImg from "../../assets/Home/Industries/Automobile.png";
 import hospitalityImg from "../../assets/Home/Industries/Hospitality.png";
 import consumerGoodsImg from "../../assets/Home/Industries/Consumer-Goods.png";
@@ -54,8 +59,9 @@ import educationImg from "../../assets/Home/Industries/Education.png";
 import gamingImg from "../../assets/Home/Industries/Gaming.png";
 import healthcareImg from "../../assets/Home/Industries/Health-care.png";
 import aviationImg from "../../assets/Home/Industries/Aviation.png";
-import manufacturingImg from "../../assets/Home/Industries/Manufacturing.png";
+import manufacturingImg from "../../assets/Home/Industries/manufacturing.png";
 import realEstateImg from "../../assets/Home/Industries/Real-Estate.png";
+
 import tourismImg from "../../assets/Home/Industries/Tourism.png";
 
 import industry1 from "../../assets/Home/Manufacturing/concept.png";
@@ -65,24 +71,9 @@ import industry4 from "../../assets/Home/Manufacturing/Execute.png";
 import industry5 from "../../assets/Home/Manufacturing/Assessment.png";
 import industry6 from "../../assets/Home/Manufacturing/Setting.png";
 
-
-import leftimg from '../../assets/Group-37/left1.png'
-import rightimg from '../../assets/Group-37/leftimg.png'
-import one from '../../assets/Group-38/one.png'
-import three from '../../assets/Group-38/three.png'
-import two from '../../assets/Group-38/two.png'
-import four from '../../assets/Group-38/four.png'
-import five from '../../assets/Group-38/five.png'
-
-
-import icon1 from '../../assets/Icons9/The-Concept.png'
-import icon2 from '../../assets/Icons9/Point-of-origin.png'
-import icon3 from '../../assets/Icons9/Execute.png'
-import icon4 from '../../assets/Icons9/Assessment.png'
-import icon5 from '../../assets/Icons9/Setting-up.png'
-
 const CustomerSupport = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+
   const PortfolioSteps1 = [
     {
       id: "01",
@@ -358,15 +349,15 @@ const CustomerSupport = () => {
           </title>
         </Helmet>
         {/* End Page SEO Content */}
-        <div className="container py-5 	">
-          <div className="row d-flex align-items-center justify-content-between min-vh-100">
+        <div className="container	">
+          <div className=" min-vh-90 " style={{ minHeight: "90vh",display:"flex",alignItems:"center",justifyContent:"center" }}>
             {/* Left Content */}
-            <div className="col-md-6 mb-5 mb-md-0">
+            <div className="  mb-md-0">
               <div className="coming-soon-content font-raleway">
-                <h1 className="text-start" data-aos="fade-up">
-                  Ingenuity Unbound: Reimagined Digital World.
+                <h1 className="text-center" data-aos="fade-up">
+                  Ingenuity Unbound Reimagined Digital World.
                 </h1>
-                <p className="font-gordita text-start mt-3">
+                <p className="font-gordita text-center mt-3">
                   One pixel, one line of code at a time—where creativity ignites
                   innovation.
                 </p>
@@ -374,123 +365,34 @@ const CustomerSupport = () => {
             </div>
 
             {/* Right Contact Form */}
-            <div className="col-md-6" style={{ display: "contents" }}>
-              <div
-                style={{ maxWidth: "500px" }}
-                className="p-4 rounded-4 shadow bg-white"
-              >
-                <h4 className="mb-4 text-center fw-bold">
-                  Book Free Consultation
-                </h4>
-                <form>
-                  <div className="mb-3">
-                    <label
-                      style={{ fontSize: "16px" }}
-                      className="form-label m-0"
-                    >
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Your name"
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <label
-                      style={{ fontSize: "16px" }}
-                      className="form-label m-0"
-                    >
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      className="form-control"
-                      placeholder="Your email"
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <label
-                      style={{ fontSize: "16px" }}
-                      className="form-label m-0"
-                    >
-                      Phone Number
-                    </label>
-                    <input
-                      type="tel"
-                      className="form-control"
-                      placeholder="Your phone number"
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <label
-                      style={{ fontSize: "16px" }}
-                      className="form-label m-0"
-                    >
-                      Message
-                    </label>
-                    <textarea
-                      className="form-control"
-                      rows="3"
-                      placeholder="Your message or description"
-                    ></textarea>
-                  </div>
-                  <div className="form-check mb-3">
-                    <input
-                      type="checkbox"
-                      className="form-check-input"
-                      id="acceptTerms"
-                    />
-                    <label className="form-check-label" htmlFor="acceptTerms">
-                      I accept the terms and conditions
-                    </label>
-                  </div>
-                  <a
-                    type="submit"
-                    className="theme-btn-nine w-100"
-                    // data-aos="fade-up"
-                    data-aos-delay="200"
-                  >
-                    Contact Us
-                  </a>
-                </form>
-              </div>
-            </div>
           </div>
         </div>
       </>
 
       {/* below hero banner */}
 
-      <div
-        className="fancy-feature-twentyTwo mpt-200  md-mt-80 sm-pt-100 "
-        id="product " 
-      >
-        <div className=" bg-light pb-130 pt-130 px-5">
-          <div className="title-style-ten hero-banner-below  mb-40 md-mb-20">
+      <div className="fancy-feature-twentyTwo     " id="product ">
+        <div className="bg-second-section-grandient py-5 px-5">
+          <div className="title-style-ten hero-banner-below ">
             <div className="row align-items-start">
               <div className="col-lg-7">
-                <h2 style={{ fontFamily: "Raleway" }}>
-                  Leading Software Development, IT Consulting, and Mobile
-                  Application Development Firm, Creating Intelligent Solutions
-                  for a Smarter World.
+                <h2 style={{ fontFamily: "Raleway", fontWeight: 700,color:"white" }}>
+                  Unified Tech Solution Fuels Your Whole Digital Experience
                 </h2>
               </div>
               <div className="col-lg-5">
-                <p className="md-pt-20 mb-4">
-                  Established in 2022, Raiden is a top software development, web
-                  development, and mobile app company that assists multinational
-                  corporations with their digital transformation. As a true
-                  technology partner, Raiden assists companies of all sizes in.
+                <p style={{color:"white"}} className="md-pt-20 mb-4 mt-3">
+                  The enigma behind digital evolution since 2022. We pull out
+                  all the stops for multi-platform solutions, ensuring your
+                  development journey is an intriguing ride from concept to
+                  completion.
                 </p>
-                <a
-                  href="#"
-                  className="theme-btn-nine"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
+                <div className="d-flex justify-content-center " style={{marginLeft:'-60px'}}>
+
+                <a href="#" className="theme-btn-nine theme-btn-nine-bg-gradient">
                   About Us
                 </a>
+                </div>
               </div>
             </div>
           </div>
@@ -501,28 +403,15 @@ const CustomerSupport = () => {
 
       <div className="fancy-feature-four ">
         <div className="bg-wrapper">
-          <img
-            src="images/shape/18.svg"
-            alt="shape"
-            className="shapes shape-right"
-          />
-          <img
-            src="images/shape/19.svg"
-            alt="shape"
-            className="shapes shape-left"
-          />
           <div className="container">
             <div className="title-style-two text-center mb-100 md-mb-50">
-              <div className="row">
+              <div className="row ">
                 <div className="col-xl-8 col-lg-9 col-md-10 m-auto font-raleway">
-                  <h2>
+                  <h2 style={{fontSize:'40px'}}>
                     <span style={{ display: "block", whiteSpace: "nowrap" }}>
                       We unlock a meaningful
                     </span>
-                    <span style={{ display: "block" }}>
-                      experience.{" "}
-                      <img src="images/shape/line-shape-2.svg" alt="shape" />
-                    </span>
+                    <span style={{ display: "block" }}>experience. </span>
                   </h2>
                 </div>
 
@@ -532,16 +421,6 @@ const CustomerSupport = () => {
             {/* End .title */}
 
             <div className="inner-content">
-              <img
-                src="images/shape/20.svg"
-                alt="shape"
-                className="shapes shape-one"
-              />
-              <img
-                src="images/shape/21.svg"
-                alt="shape"
-                className="shapes shape-two"
-              />
               <FeatureFour />
             </div>
             {/* End .inner-content */}
@@ -551,93 +430,12 @@ const CustomerSupport = () => {
 
       {/*  */}
 
-      {/* <div className="fancy-feature-fourteen mt-150 mb-150 pt-80 md-mt-80 md-mb-80">
-        <div className="container">
-          <div className="row fancy-feature-fourteen-card-div" >
-            <div className="col-xl-6 col-lg-7 col-md-8">
-              <div className="title-style-six">
-                <h6 style={{ color: "#FF2759", fontSize: "15px" }}>
-                  Integrategration
-                </h6>
-                <h2>
-                  Connect App <br /> with the <span>Software</span> you use.
-                </h2>
-                <p className="text-xs pe-5 me-5">
-                  Lorem ipsum dolor on adipisci elit io quis sed do eiusmod tem.
-                </p>
-              </div>
-
-            </div>
-
-            <div className="col-lg-5">
-              <div className="right-side md-mt-60">
-                <div className="row">
-                  <div className="col-md-4">
-                    <Tilt>
-                      <div className="logo-meta lg d-flex align-items-center justify-content-center ">
-                        <img src={YearsImage} alt="logo" />
-                        <h4>10+</h4>
-                        <h5>Years of Experience</h5>
-                      </div>
-                    </Tilt>
-                    <Tilt>
-                      <div className="logo-meta lg d-flex align-items-center justify-content-center ">
-                        <img src={TeamMembers} alt="logo" />
-                        <h4>50+</h4>
-                        <h5>Team Members</h5>
-                      </div>
-                    </Tilt>
-                  </div>
-
-                  <div className="col-md-4">
-                    <Tilt>
-                      <div className="logo-meta lg d-flex align-items-center justify-content-center ">
-                        <img src={AppImage} alt="logo" />
-                        <h4>50+</h4>
-                        <h5>App Developed</h5>
-                      </div>
-                    </Tilt>
-                    <Tilt>
-                      <div className="logo-meta lg d-flex align-items-center justify-content-center ">
-                        <img src={CLIENTS} alt="logo" />
-                        <h4>25+</h4>
-                        <h5>CLIENTS</h5>
-                      </div>
-                    </Tilt>
-                  </div>
-
-
-                  <div className="col-md-4">
-                    <Tilt>
-                      <div className="logo-meta lg d-flex align-items-center justify-content-center ">
-                        <img src={PROJECTS} alt="logo" />
-                        <h4>25+</h4>
-                        <h5>PROJECTS</h5>
-                      </div>
-                    </Tilt>
-                    <Tilt>
-                      <div className="logo-meta lg d-flex align-items-center justify-content-center ">
-                        <img src={AppImage} alt="logo" />
-                        <h4>25+</h4>
-                        <h5>Countries Served</h5>
-                      </div>
-                    </Tilt>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div> */}
-
       {/* 	=====================================================
 				Pricing Section Five
 			===================================================== */}
       <div
         id="pricing"
-        className="pricing-section-five mb-75 mt-150 sm-mt-100 sm-mb-75 "
+        className="pricing-section-five mb-75 mt-75 sm-mt-100 sm-mb-75 "
       >
         <div className="container">
           <div className="row align-items-start flex-row">
@@ -668,7 +466,7 @@ const CustomerSupport = () => {
                 <h5>Projects</h5>
               </div>
               <div className="custom-logo-design col-lg-4 mt-4 ">
-                <img src={YearsImage} alt="logo" />
+                <img src={countries} alt="logo" />
                 <h4>25+</h4>
                 <h5>Countries </h5>
               </div>
@@ -676,16 +474,6 @@ const CustomerSupport = () => {
 
             <div className="col-lg-6">
               <div className="pricing-table-area-five md-mt-60">
-                {/* <img
-                  src="images/icon/88.png"
-                  alt="icon"
-                  className="shapes shape-one"
-                />
-                <img
-                  src="images/shape/160.png"
-                  alt="shape"
-                  className="shapes shape-two"
-                /> */}
                 <PricingFive />
               </div>
             </div>
@@ -696,31 +484,30 @@ const CustomerSupport = () => {
       {/*  */}
 
       <div
-        className="fancy-feature-twentyTwo   mb-85  pt-130 pb-130  ps-48 pe-48"
-        id="product" style={{ backgroundColor: '#FFFFF1' }} 
+        className="fancy-feature-twentyTwo   mb-100  py-5  ps-48 pe-48"
+        id="product"
+        style={{ backgroundColor: "black" }}
       >
         <div className=" px-5">
           <div className="title-style-ten hero-banner-below   md-mb-20">
             <div className="row align-items-start">
               <div className="col-lg-7">
-                <h2 className="font-raleway fw-bold">
-                  Boosting Business Progress With Smart Solutions
+                <h2 style={{color:"white"}} className="font-raleway fw-bold">
+                  Boosting Business Progress <br /> With Smart Solutions
                 </h2>
               </div>
-              <div className="col-lg-5">
-                <p className="md-pt-20 mb-4">
+              <div className="col-lg-5  ">
+                <h5 className="md-pt-20 mb-4 lh-base " style={{ marginTop: "17px" ,color:"white",fontSize:'22px'}}>
                   With the expertise of a prominent development company, you may
                   receive robust software solutions, modernize systems, and rely
                   on cutting-edge technology for growth opportunities.
-                </p>
-                <a
-                  href="#"
-                  className="theme-btn-nine"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
+                </h5>
+                <div className="d-flex justify-content-center " style={{marginLeft:'-60px'}}>
+                <a href="#" className="theme-btn-nine ">
                   Explore Service
                 </a>
+
+                </div>
               </div>
             </div>
           </div>
@@ -728,10 +515,10 @@ const CustomerSupport = () => {
       </div>
 
       {/* new actice components */}
-      <div className="container mt-80 " id="product">
-        <div className="row align-items-center">
+      <div className="container  " id="product">
+        <div className="row align-items-center d-flex">
           {/* Left - Buttons */}
-          <div className="col-md-4  bg-black p-4 rounded">
+          <div className="col-md-4  bg-black p-4 rounded" style={{background:'#F5C835'}}>
             <h3 className="mb-4 text-bold card-title-heading">
               Raiden’s Tech Advancements with Innovation
             </h3>
@@ -753,13 +540,13 @@ const CustomerSupport = () => {
           </div>
 
           {/* Right - Cards */}
-          <div className="col-md-8">
-            <div className="row row-cols-1 row-cols-md-2 g-4">
+          <div className="col-md-8 h-100 ">
+            <div className="row row-cols-1 row-cols-md-2 gy-4 ">
               {blockchainServices[activeIndex].cards.map((card, i) => (
-                <div className="col" key={i}>
-                  <div className="card card-body-div h-100 border-0">
-                    <div className="card-body">
-                      <h5 className="card-title">{card.heading}</h5>
+                <div className="col " key={i} style={{ marginTop: "30px" }} >
+                  <div className="card card-body-div h-100 border-0" >
+                    <div className="card-body " style={{ height: "286px" }}>
+                      <h5 className="card-title" style={{background:'#F5C835'}}> {card.heading}</h5>
                       <p className="card-text">{card.subheading}</p>
                     </div>
                   </div>
@@ -772,13 +559,13 @@ const CustomerSupport = () => {
 
       {/* Why Choose Raiden */}
 
-      <div className="fancy-feature-one pb-150 md-pb-100">
+      <div className="mt-100 mb-100 md-pb-100">
         <div className="text-center">
           {/* <div className="feature-img-area"></div> */}
         </div>
         <div className="block-style-one ">
           <h2
-            className="text-center fw-bold mb-120"
+            className="text-center fw-bold mb-70"
             style={{ fontFamily: "Raleway, sans-serif" }}
           >
             Why Choose Raiden?
@@ -795,7 +582,7 @@ const CustomerSupport = () => {
 
       {/* Technology Stack */}
 
-      <div className="container pb-150" id="tech-stack pt-4">
+      <div className="px-5 pb-100 pt-80" id="tech-stack " style={{background:'#F8F8F8'}}>
         <div className="row align-items-center">
           {/* Left Side */}
           <div className="col-md-5 mb-4">
@@ -814,7 +601,7 @@ const CustomerSupport = () => {
 
           {/* Right Side */}
           <div className="col-md-7">
-            <div className="row g-4">
+            <div className="row m-0 ">
               {/* Loop this card for 8 items */}
               {[
                 { icon: reacts, title: "React.js" },
@@ -826,8 +613,12 @@ const CustomerSupport = () => {
                 { icon: unre1, title: "Unity" },
                 { icon: unre2, title: "Unreal" },
               ].map((stack, index) => (
-                <div key={index} className="col-md-3">
-                  <div className="border rounded p-3 h-100 d-flex align-items-center flex-column gap-3 shadow-sm bg-white">
+                <div
+                  key={index}
+                  className="col-md-3 "
+                  style={{ marginTop: "27px" }}
+                >
+                  <div className="border rounded p-3 h-100 d-flex align-items-center flex-column gap-3  shadow-sm bg-white">
                     <img
                       style={{ width: "50%" }}
                       className="fs-2"
@@ -845,21 +636,21 @@ const CustomerSupport = () => {
       {/*  */}
 
       <div
-        className="fancy-feature-thirtySix lg-container pb-150 md-pt-120 md-pb-60 bg-white"
+        className="fancy-feature-thirtySix lg-container pb-100 pt-100 md-pb-60 bg-white"
         id="product"
       >
         <div className="container position-relative">
           <div className="row">
             <div
               className="col-xl-3 col-lg-4"
-              data-aos="fade-right"
-              data-aos-duration="1200"
+              // data-aos="fade-right"
+              // data-aos-duration="1200"
             >
               <div className="title-style-eleven md-mb-40 text-lg-left">
                 <h2 className="text-black" style={{ fontSize: "40px" }}>
                   Our Core Strengths and Services
                 </h2>
-                <p>
+                <p className="mt-3">
                   Our core strengths and strategies reward you with quality
                   success by combining blockchain services, client
                   recommendations, and optimistic solutions that assist you in
@@ -878,140 +669,19 @@ const CustomerSupport = () => {
 
       {/*  */}
 
-      {/* <div className=""> */}
-        {/* <div className="container">
-          <div className="app-preview-slider-one arrow-middle-center ">
-           <div className="text-center mb-xl-5">
-        <h2 className="fw-bold mb-xxl-5" style={{ fontFamily: 'Raleway, sans-serif' }} >Our Development Approach From <br /> Ideology to Launch</h2>
-        <p className="text-muted mb-5">
-          Explore our beautifully designed and highly functional mobile apps crafted for various industries.
-        </p>
-      </div>
-
-            <MobileAppPortfolio PortfolioSteps={PortfolioSteps1} />
-          </div>
-        </div> */}
-
-
-        {/* End .container */}
-        {/* <div className=""> */}
-          <div className="container main-img-container d-flex ">
-            
-              <div className="">
-            <div className="info-div">
-              <h3 className="info-h3">Our Development Approach  </h3>
-
-            </div>
-              <img src={leftimg} alt="" className="img-left" />
-              <div>
-              <img src={rightimg} alt="" className="img-right" />
-                <div  className="img-one">
-              <img src={one} alt="" />
-              <img src={icon1} alt="" className="icon1" />
-
-                </div>
-                <div className="img-two">
-              <img src={two} alt=""  />
-              <img src={icon2} alt="" className="icon2" />
-
-                </div>
-                <div  className="img-three" >
-              <img src={three} alt=""/>
-              <img src={icon3} alt="" className="icon3" />
-
-                </div>
-                <div className="img-four">
-              <img src={four} alt=""  />
-              <img src={icon4} alt="" className="icon4" />
-
-                </div>
-                <div  className="img-five">
-
-              <img src={five} alt=""  />
-              <img src={icon5} alt="" className="icon5" />
-                </div>
-              </div>
-              </div>
-              
-              <div className="container-text">
-                <div className="one-text">
-
-                <h3  className="h3-main-text">The Concept</h3>
-                <p>Our expertise and attention to detail enable us to meticulously plan, shape, and transform your idea into a successful solution.</p>
-                </div>
-                <div className="two-text">
-                  <h3 className="h3-main-text">Point of origin</h3>
-                  <p>We transform wireframe designs and preliminary concepts into a responsive prototype that offers a clear picture of the final user interface.</p>
-                </div>
-                <div className="three-text">
-                  <h3 className="h3-main-text">Execute</h3>
-                  <p>Create your project with Raiden's suitable tools and technology by utilizing the project score, timeline, and many other features.</p>
-                </div>
-                <div className="four-text">
-                  <h3 className="h3-main-text">Assessment </h3>
-                  <p>Products are tested using both the best manual and the most sophisticated automated testing methods to ensure they are thoroughly inspected and free of errors.</p>
-                </div>
-                <div className="five-text">
-                  <h3 className="h3-main-text">Setting up</h3>
-                  <p>We guarantee timely delivery of your desired quality while considering all of your suggestions and ideas.</p>
-                </div>
-
-
-              </div>
-           
-       
-          </div>
-        {/* </div> */}
-      {/* </div> */}
-
-      {/*  */}
-      {/* <div className="fancy-text-block-seven mt-150 md-mt-100">
-        <div className="bg-wrapper">
-          <img
-            src="images/shape/29.svg"
-            alt="shape"
-            className="shapes shape-one"
-          />
-          <img
-            src="images/shape/30.svg"
-            alt="shape"
-            className="shapes shape-two"
-          />
-          <img
-            src="images/shape/31.svg"
-            alt="shape"
-            className="shapes shape-three"
-          />
-          <img
-            src="images/shape/32.svg"
-            alt="shape"
-            className="shapes shape-four"
-          />
-          <img
-            src="images/shape/33.svg"
-            alt="shape"
-            className="shapes shape-five"
-          />
-          <div className="container">
-            <AboutTwo />
-          </div>
-        </div>
-      </div> */}
       {/* /.fancy-text-block-seven */}
 
       {/* development expertise */}
-      <div
-        className="fancy-portfolio-one pt-28 pb-150 md-py-150 "
-        id="product"
-      >
+      <div className="fancy-portfolio-one pt-28 pb-100 md-py-150 " id="product">
         <div className="container">
           <div className="title-style-six">
-            <h2 className="text-center fw-bold">
-              Maximize Your Projects with <span> Our Experience</span>
+            <h2 className="text-center fw-bold" style={{ fontSize: "40px" }}>
+              Maximize Your Projects with <br />
+              <span className="text-decoration-none text-dark"> Our Experience</span>
             </h2>
           </div>
 
-          <div className="portfolioSliderOne arrow-top-right pt-50 md-pt-30">
+          <div className="portfolioSliderOne arrow-top-right pt-50 md-pt-30 ">
             <PortfolioDemo2 />
           </div>
         </div>
@@ -1019,22 +689,23 @@ const CustomerSupport = () => {
 
       {/* industry */}
 
-      <div className="app-screen-preview-two mb-150 md-mb-100">
+      <div className="app-screen-preview-two mb-100 md-mb-100">
         <div className="container">
           <div className="title-style-eleven text-center mb-120 md-mb-70">
-            <h2 className="mb-3">
+            <h2 className="mb-3" style={{ fontSize: "40px" }}>
               Discover the industries that our <br />
               solutions transform
             </h2>
-            <p>
-              Raiden’s solutions support creativity, growth, and productivity,
+            <p className="text-center ">
+              Raiden’s solutions support creativity, growth, and productivity,{" "}
+              <br />
               transforming industries and allowing businesses to thrive.
             </p>
           </div>
         </div>
 
         <div className="container">
-          <div className="app-preview-slider-one arrow-middle-center ">
+          <div className="app-preview-slider-one arrow-middle-center px-5  ">
             <MobileAppPortfolio PortfolioSteps={PortfolioSteps} />
           </div>
         </div>
@@ -1044,28 +715,22 @@ const CustomerSupport = () => {
       {/*  */}
 
       <div
-        className="fancy-feature-twentyTwo  mt-150 md-mt-100   py-5 " style={{ backgroundColor: '#FDFCFA' }}
+        className="fancy-feature-twentyTwo  mt-100 md-mt-100 bg-dark  py-5 "
+        style={{ backgroundColor: "#FDFCFA" }}
         id="product"
       >
-        <div className="container">
+        <div className="px-5">
           <div className="title-style-ten hero-banner-below  mb-40 md-mb-20">
             <div className="row align-items-start">
-                <h3 className="font-raleway fw-bold pb-5  text-center" style={{fontSize:58}}>
-                  {" "}
-                  Our Products
-                </h3>
               <div className="col-lg-7 mt-4">
-                <h2 className="font-raleway fw-bold">
+                <h2 className="font-raleway fw-bold text-white ">
                   Next-Level Gaming,VR and Blockchain Innovations!
                 </h2>
               </div>
               <div className="col-lg-5 mt-4">
-                <p className="md-pt-20 mb-4 ">
-                  Dive into a Realm of Cutting-Edge Entertainment with Our
-                  Exciting Gaming, VR, and Blockchain Solutions. Unleash
-                  Innovation Today!
+                <p className="md-pt-20 mt-3 text-white " style={{ fontSize: 22 }}>
+                Dive into a Realm of Cutting-Edge Entertainment with Our Exciting Gaming, VR, and Blockchain Solutions. Unleash the innovation, and let's forge the future of play and engagement together today.
                 </p>
-               
               </div>
             </div>
           </div>
@@ -1075,7 +740,7 @@ const CustomerSupport = () => {
       {/*  */}
 
       <div
-        className="client-feedback-slider-six pb-150 md-pb-100"
+        className="client-feedback-slider-six pb-60 md-pb-100"
         id="feedback"
       >
         <div className="inner-container">
@@ -1092,16 +757,16 @@ const CustomerSupport = () => {
       </div>
 
       {/* Client Feedback */}
-      <div className="client-feedback-slider-one pt-50 pb-150 md-pb-80">
+      <div className="client-feedback-slider-one pt-50 pb-100 md-pb-80">
         <div className="shapes-holder">
           <img src="images/shape/39.svg" alt="shape" />
           <img src={Profile1} alt="shape" className="shapes shape-one" />
           <img src={Profile2} alt="shape" className="cp-img-one" />
           <img src={Profile3} alt="shape" className="cp-img-two" />
           <img src={Profile4} alt="shape" className="cp-img-three" />
-          <img src={Profile5} alt="shape" className="cp-img-four" />
+          {/* <img src={Profile5} alt="shape" className="cp-img-four" /> */}
           <div className="title-style-two">
-            <h2>
+            <h2 className="mt-140">
               Hear <br />
               From Our <br />
               Clients.
@@ -1128,8 +793,13 @@ const CustomerSupport = () => {
 
       {/* blog */}
 
-      <div className="feature-blog-four  blog-page-bg">
-        <h2 className="text-center fw-bold mb-120 font-rail" style={{fontFamily: 'Raleway'}}>Our Latest Blogs</h2>
+      <div className="feature-blog-four  blog-page-bg ">
+        <h2
+          className="text-center fw-bold mb-120 font-rail text-white"
+          style={{ fontFamily: "Raleway" }}
+        >
+          Our Latest Blogs
+        </h2>
         <div className="shapes shape-one"></div>
         <div className="shapes shape-two"></div>
         <div className="shapes shape-three"></div>
@@ -1150,15 +820,6 @@ const CustomerSupport = () => {
           {/* End .row */}
         </div>
       </div>
-
-      {/* newsletter */}
-      {/* <div className="fancy-short-banner-three mt-100 md-mt-40">
-        <div className="container">
-          <div className="bg-wrapper">
-            <CallToActionThree />
-          </div>
-        </div>
-      </div> */}
 
       {/* contact us */}
 

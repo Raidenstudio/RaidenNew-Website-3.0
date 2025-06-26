@@ -26,9 +26,9 @@ const PortfolioDemo2 = () => {
                 <div class="card col-4 d-flex justify-content-center align-items-start">
                     {PortfolioContent.map((val, i) => (
                         <a class="card1 col-4" href="#">
-                            <h4 className="font-raleway title-text mb-4 fw-bold text-black">{val.title}</h4>
+                            <h3 className="font-raleway title-text mb-4 fw-bold text-black">{val.title}</h3>
                             <div className="card-line"></div>
-                            <p className="small desc-text text-black">{val.description}</p>
+                            <p className="small desc-text text-black" style={{fontSize:'18px'}}>{val.description}</p>
                             <div className="go-corner" href="#">
                                 <div className="go-arrow">
                                     <TfiArrowTopLeft />

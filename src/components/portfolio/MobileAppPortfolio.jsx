@@ -72,6 +72,7 @@ const MobileAppPortfolio = ({PortfolioSteps}) => {
       },
     ],
   };
+ 
 
   return (
     <div className="mobile-app-portfolio-wrapper ">
@@ -84,7 +85,7 @@ const MobileAppPortfolio = ({PortfolioSteps}) => {
 
       <Slider {...settings}>
         {PortfolioSteps.map((val, i) => (
-          <div className="item" key={i}>
+          <div className="item" key={i} >
             <div
               className={`img-holder ${i === activeIndex ? "active" : ""}`}
               style={{

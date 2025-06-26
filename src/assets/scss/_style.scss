@@ -331,6 +331,9 @@ box-shadow: rgba(0, 0, 0, 0.45) 25px 15px 50px 0px;
   position: absolute;
   top: 377px;
   left: 567px;
+  // transition: transform 0.5s ease;
+  //  transform: scale(1.1);
+  //  color: red;
 }
 
 .img-four{
@@ -354,8 +357,8 @@ box-shadow: rgba(0, 0, 0, 0.45) 25px 15px 50px 0px;
 }
 .one-text{
   position: absolute;
-  top: 0;
-  left: 550px;
+  top: 56px;
+  left: 500px;
   width: 300px;
 }
 .two-text{
@@ -366,14 +369,14 @@ box-shadow: rgba(0, 0, 0, 0.45) 25px 15px 50px 0px;
 }
 .three-text{
   position: absolute;
-  top: 400px;
-  left: 800px;
+  top: 454px;
+  left: 780px;
   width: 300px;
 }
 .four-text{
   position: absolute;
-  top: 650px;
-  left: 725px;
+  top: 700px;
+  left: 696px;
   width: 300px;
 }
 .five-text{
@@ -391,6 +394,16 @@ box-shadow: rgba(0, 0, 0, 0.45) 25px 15px 50px 0px;
  box-shadow: 10px 5px 20px black;
  border-radius: 50%;
   
+}
+.tx-1{
+  position: relative;
+
+}
+.tx-3{
+  position: relative;
+}
+.tx-4{
+  position: relative;
 }
 .icon1:hover {
   transform: scale(1.1); /* slightly grow */
@@ -447,7 +460,10 @@ box-shadow: rgba(0, 0, 0, 0.45) 25px 15px 50px 0px;
   //  shadow: 10px 5px 20px black;
     // filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.4));
 
-
+.para{
+     transform: scale(1.1); 
+     transition: transform 2s ease-in-out;
+}
 
 .scroll-top:after {
   position: absolute;
@@ -532,13 +548,13 @@ h1 {
 
 .h2,
 h2 {
-  font-size: 52px;
+   font-size: 40px;
   line-height: 1.1em;
 }
 
 .h3,
 h3 {
-  font-size: 36px;
+  font-size: 22px;
 }
 
 .h4,
@@ -548,14 +564,16 @@ h4 {
 
 .h5,
 h5 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .h6,
 h6 {
   font-size: 15px;
 }
-
+p{
+   font-size: 18px;
+}
 .font-rubik {
   font-family: "Rubik", sans-serif !important;
 }
@@ -966,7 +984,7 @@ h6 {
 }
 
 .hero-banner-below h2 {
-  font-size: 34px;
+  font-size: 40px;
   font-weight: 500;
   line-height: 1.50em;
   width: 80%;
@@ -1266,11 +1284,16 @@ body .theme-btn-nine {
   line-height: 58px;
   border-radius: 50px;
   color: #fff;
-  padding: 0 34px;
+  padding: 0 30px;
   text-align: center;
-  background: #262626;
+background: linear-gradient(90deg, #F15A24 0%, #F1CC31 100%);
   transition: all 0.3s ease-in-out;
 }
+
+// body .theme-btn-nine:hover {
+//   background: linear-gradient(to right,#F1CC31,#F15A24);
+//   transition-duration: 3s;
+// }
 
 
 body .theme-btn-ten {
@@ -1899,7 +1922,7 @@ background-position: center 210px;
 }
 
 .fancy-feature-one .block-style-one {
-  margin-top:150px;
+  margin-top:100px;
 }
 
 .block-style-one .inner-container {
@@ -1913,12 +1936,12 @@ background-position: center 210px;
   position: relative;
   border-width: 5px;
   border-style: solid;
-  margin: 0 auto;
+  // margin: 0 auto;
   cursor: pointer;
 }
 
 .block-style-one .icon-box:after {
-  content: "\f10a";
+  // content: "\f10a";
   font-family: "Flaticon";
   position: absolute;
   top: -50px;
@@ -1947,30 +1970,30 @@ background-position: center 210px;
 }
 
 .block-style-one .block-meta-data:nth-child(1) .icon-box {
-  border-color: #ff6080;
-  color: #ff6080;
+  border-color: #ffba12;
+  color: #a2890a;
 }
 
 .block-style-one .block-meta-data:nth-child(1) .icon-box:before {
-  border-color: #ffd8e2;
+  border-color: #ffe0b8;
 }
 
 .block-style-one .block-meta-data:nth-child(2) .icon-box {
-  border-color: #02e7e8;
+  border-color: #ffba12;
   color: #02e7e8;
 }
 
 .block-style-one .block-meta-data:nth-child(2) .icon-box:before {
-  border-color: #c6fff6;
+  border-color: #ffe0b8;
 }
 
 .block-style-one .block-meta-data:nth-child(3) .icon-box {
-  border-color: #936dff;
-  color: #936dff;
+  border-color: #ffba12;
+  color: #ffba12;
 }
 
 .block-style-one .block-meta-data:nth-child(3) .icon-box:before {
-  border-color: #e3ddf4;
+  border-color: #ffe0b8;
 }
 
 .block-style-one .block-meta-data:nth-child(4) .icon-box {
@@ -4491,16 +4514,14 @@ background-position: center 210px;
   // max-width: 1460px;
   margin: 0 auto;
   position: relative;
-  background: #fff6ec;
   z-index: 1;
-  padding: 100px 0 190px;
+  padding: 100px 0 100px;
 }
 
 .fancy-feature-four .bg-wrapper:before {
   content: "";
   width: 100%;
   height: 28px;
-  background: url(../images/shape/17.svg) no-repeat center;
   background-size: cover;
   position: absolute;
   left: 0;
@@ -6194,6 +6215,9 @@ background-position: center 210px;
   bottom: -140px;
   animation: jumpThree 5s infinite linear;
 }
+.game-class{
+  background-color: linear-gradient(to top, #F8E07F, #F1CB31);
+}
 
 .pricing-section-one .pr-table-wrapper {
   background: #fff;
@@ -7236,7 +7260,7 @@ background-position: center 210px;
 
 /*------------------- Blog Pages ----------------*/
 .blog-page-bg {
-  background: linear-gradient(45deg, #fffbf2, #edfffd);
+  // background: linear-gradient(45deg, #fffbf2, #edfffd);
   padding: 180px 0 150px;
   position: relative;
   z-index: 5;
@@ -10122,13 +10146,14 @@ background-position: center 210px;
 
 /*-------------------- Feature Blog Four -----------------*/
 .feature-blog-four {
-  background: #fdecd8;
+  // background: #fdecd8;
   position: relative;
   z-index: 1;
   padding: 100px 0 100px;
 
   &.blog-page-bg {
-    background: linear-gradient(45deg, #fffbf2, #edfffd);
+    // background: linear-gradient(45deg, #fffbf2, #edfffd);
+    background-color: #000;
     padding: 180px 0 150px;
     position: relative;
     z-index: 5;
@@ -13520,11 +13545,12 @@ background-position: center 210px;
   line-height: 1.18em;
   font-weight: 700;
   color: #000;
-  padding: 35px 0 60px;
+  padding: 35px 0 35px;
+  margin-left: 27px;
 }
 
 .coming-soon-content p {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.79em;
   color: #000;
   padding-bottom: 55px;
@@ -14876,7 +14902,7 @@ background-position: center 210px;
 }
 
 .app-preview-slider-one {
-  margin: 0 -55px;
+  margin: 0 0px;
 }
 
 .app-screen-preview-one .shape-one {
@@ -17623,7 +17649,7 @@ background-position: center 210px;
 }
 
 .block-style-thirtySeven {
-    min-height: 460px;
+    min-height: 469px;
     height: 100%;
     background: rgba(255, 255, 255, 0.08);
     text-align: center;
@@ -19846,7 +19872,7 @@ body .theme-btn-nine1 {
   color: #fff;
   padding: 0 34px;
   text-align: center;
-  background: #FF2759;
+  background: #F5C835;
   transition: all 0.3s ease-in-out;
   padding:15px 35px;
 }
@@ -19862,7 +19888,7 @@ body .theme-btn-nine-no-bg {
 }
 
 body .theme-btn-nine-no-bg:hover {
-  background: #FF2759;
+  // background: #FF2759;
   color: #fff;
 }
 
@@ -19870,7 +19896,7 @@ body .theme-btn-nine-no-bg:hover {
   font-weight: bold;
   font-size: 22px;
   font-family: "Raleway", sans-serif !important;
-  background: #FF2759;
+  background: #32C5B6;
   color: white;
   padding: 10px;
   border-top-left-radius: 0.25rem;
@@ -19888,14 +19914,11 @@ body .theme-btn-nine-no-bg:hover {
 
 .card-title-heading {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 32px;
   font-family: "Raleway", sans-serif !important;
   color: #fff;
 }
 
-body .theme-btn-nine:hover {
-  background: #eb5e2a;
-}
 
 .card-body-div {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -19983,11 +20006,19 @@ font-size: 24px;
 .card1 p {
   font-size: 20px;
 }
-
+.gameclass2 {
+ background: linear-gradient(to top, #111111 20%, #414141 100%) !important; 
+}
+.gameclass1{
+ background: linear-gradient(to bottom, #F8E07F 10%, #F1CB31 100%) !important; 
+ border: none !important;
+ outline: none;
+ color: 'black' !important;
+}
 .card-line{
   width: 40%;
   height: 3px;
-  background-color: #FF2759;
+background: #F18E2A;
   margin-bottom: 24px;
 }
 
@@ -20002,7 +20033,7 @@ font-size: 24px;
   overflow: hidden;
   bottom: 0;
   right: 0;
-  background-color: #FF2759;
+background: #F18E2A;
 }
 
 .go-arrow {
@@ -20033,7 +20064,7 @@ font-size: 24px;
   z-index: -1;
   bottom: -16px;
   right: -16px;
-  background: #FF2759;
+ background: linear-gradient(to top, #F1CC31, #F15A24);
   width: 32px;
   height: 32px;
   transform: scale(1);
@@ -20043,6 +20074,10 @@ font-size: 24px;
 
 .card1:hover:before {
   transform: scale(30);
+}
+.card1:hover h3 {
+  transition: all 0.3s ease-out;
+  color: #ffffff !important;
 }
 
 .card1:hover p {

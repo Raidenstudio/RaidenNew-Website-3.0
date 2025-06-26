@@ -98,16 +98,16 @@ const LatestProduct = () => {
     {
       _id: 7,
       image: dedi,
-      title: "Expertised Technicians",
+      title: " Tech Experts",
       productLink: "#",
       price: "27.00",
       rating: ["fa-star", "fa-star", "fa-star", "fa-star", "fa-star"],
-      paragraph: "Take charge of your project with our talented development team, a full-time integrated unit of professionals dedicated to its success."
+      paragraph: "Take charge of your project with our talented  team, a full-time integrated unit of professionals dedicated to its success."
     },
     {
       _id: 8,
       image: Excellent,
-      title: "End to end assistance",
+      title: "End to end support",
       productLink: "#",
       price: "27.00",
       rating: ["fa-star", "fa-star", "fa-star", "fa-star", "fa-star"],
@@ -120,19 +120,19 @@ const LatestProduct = () => {
       <Slider {...settings}>
         {vrProducts.map((product) => (
           <div className="item" key={product._id}>
-            <div className="block-style-thirtySeven">
+            <div className="block-style-thirtySeven rounded">
               <div className="img-meta d-flex align-items-center justify-content-center">
                 <img
                   src={product.image}
-                  alt="vr product"
+                  alt="vr product" style={{borderRadius:'6px'}}
                 />
               </div>
-              <h4 className="p-title mt-25 text-start">
-                <a className="text-black font-raleway fw-bold" href={product.productLink}>{product.title}</a>
-                <p className="text-black mt-3 opacity-75">
+              {/* <h4 className="p-title mt-25 text-start"> */}
+                <h3 className="text-black font-raleway fw-bold p-title mt-25 text-start" >{product.title}</h3>
+                <p className="text-black mt-3 text-start opacity-75">
                   {product.paragraph}
                 </p>
-              </h4>
+              
             </div>
           </div>
         ))}
