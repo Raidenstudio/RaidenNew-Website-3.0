@@ -1,30 +1,17 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
-import HeaderTwo from "../../components/header/HeaderTwo";
-import HeroBannerTwo from "../../components/hero-banner/HeroBannerTwo";
+
 import FeatureFour from "../../components/features/FeatureFour";
-import Faq from "../../components/faq/Faq";
-import CounterThree from "../../components/counter/CounterThree";
-import AboutTwo from "../../components/about/AboutTwo";
-import Social from "../../components/social/Social";
 import Testimonial from "../../components/testimonial/Testimonial";
-import CallToActionThree from "../../components/call-to-action/CallToActionThree";
 import FooterTwo from "../../components/footer/FooterTwo";
 import CopyRightTwo from "../../components/footer/CopyRightTwo";
-import Choose from "../../assets/images/assets/Home page (1).png";
-import Chatbot from "../../assets/images/assets/Group 6.png";
-import Chat from "../../assets/images/assets/Group 7.png";
 
 import Profile1 from "../../assets/images/assets/Profile 1.png";
 import Profile2 from "../../assets/images/assets/Profile 2.png";
 import Profile3 from "../../assets/images/assets/Profile 3.png";
 import Profile4 from "../../assets/images/assets/Profile 4.png";
-import Profile5 from "../../assets/images/assets/Profile 5.png";
 
-import Header from "../../components/e-commerce/Header";
 import HeaderThree from "../../components/header/HeaderThree";
-import Portfolio from "../../components/portfolio/Portfolio";
-import Tilt from "react-parallax-tilt";
 
 import AppImage from "../../assets/Home/Game-creation/AppDeveloped.svg";
 import CLIENTS from "../../assets/Home/Game-creation/CLIENTS.svg";
@@ -36,8 +23,6 @@ import countries from "../../assets/Home/Game-creation/Countries.svg";
 import PricingFive from "../../components/pricing/PricingFive";
 import BlockMetaData from "../../components/fancy-text-block/BlockMetaData";
 import LatestProduct from "../../components/vr-landing/LatestProduct";
-import MobileAppScreenSlider from "../../components/portfolio/MobileAppScreenSlider";
-import MobileAppPortfolio from "../../components/portfolio/MobileAppPortfolio";
 import PortfolioDemo2 from "../../components/portfolio/PortfolioDemo2";
 
 import reacts from "../../assets/Prgm-Icon/React.png";
@@ -51,130 +36,10 @@ import unre2 from "../../assets/Prgm-Icon/Unreal.png";
 import TestimonialSix from "../../components/testimonial/TestimonialSix";
 import BlogStyle5 from "../../components/blog/BlogStyle5";
 import SignUp from "../inner-pages/features/miscellaneous/SignUp";
-import Typewriter from "react-typewriter-effect";
-import automotiveImg from "../../assets/Home/Industries/Automobile.png";
-import hospitalityImg from "../../assets/Home/Industries/Hospitality.png";
-import consumerGoodsImg from "../../assets/Home/Industries/Consumer-Goods.png";
-import educationImg from "../../assets/Home/Industries/Education.png";
-import gamingImg from "../../assets/Home/Industries/Gaming.png";
-import healthcareImg from "../../assets/Home/Industries/Health-care.png";
-import aviationImg from "../../assets/Home/Industries/Aviation.png";
-import manufacturingImg from "../../assets/Home/Industries/manufacturing.png";
-import realEstateImg from "../../assets/Home/Industries/Real-Estate.png";
-
-import tourismImg from "../../assets/Home/Industries/Tourism.png";
-
-import industry1 from "../../assets/Home/Manufacturing/concept.png";
-import industry2 from "../../assets/Home/Manufacturing/tactics.png";
-import industry3 from "../../assets/Home/Manufacturing/Point.png";
-import industry4 from "../../assets/Home/Manufacturing/Execute.png";
-import industry5 from "../../assets/Home/Manufacturing/Assessment.png";
-import industry6 from "../../assets/Home/Manufacturing/Setting.png";
 
 const CustomerSupport = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const PortfolioSteps1 = [
-    {
-      id: "01",
-      title: "The Concept",
-      desc: "Our expertise and attention to detail enable us to meticulously plan, shape, and transform your idea into a successful solution.",
-      image: industry1,
-    },
-    {
-      image: industry2,
-      id: "02",
-      title: "The Tactics",
-      desc: "Establishing clear, milestone-driven project timelines and selecting the most qualified team are made easier by your goals.",
-    },
-    {
-      image: industry3,
-      id: "03",
-      title: "Point of Origin",
-      desc: "We transform wireframe designs and preliminary concepts into a responsive prototype that offers a clear picture of the final user interface.",
-    },
-    {
-      image: industry4,
-      id: "04",
-      title: "Execute",
-      desc: "Create your project with Raiden's suitable tools and technology by utilizing the project score, timeline, and many other features.",
-    },
-    {
-      image: industry5,
-      id: "05",
-      title: "Assessment",
-      desc: "Products are tested using both the best manual and the most sophisticated automated testing methods to ensure they are thoroughly inspected and free of errors.",
-    },
-    {
-      image: industry6,
-      id: "06",
-      title: "Setting Up",
-      desc: "We guarantee timely delivery of your desired quality while considering all of your suggestions and ideas.",
-    },
-  ];
-
-  const PortfolioSteps = [
-    {
-      id: "01",
-      image: automotiveImg,
-      title: "Automotive",
-      desc: "We are collaborating with the automotive sector to develop smarter, safer, and more fashionable transportation options.",
-    },
-    {
-      id: "02",
-      image: hospitalityImg,
-      title: "Hospitality",
-      desc: "Ensure your guests are satisfied and your business runs smoothly. Our goals are to enhance your service and make those incredible experiences even better.",
-    },
-    {
-      id: "03",
-      image: consumerGoodsImg,
-      title: "Consumer Goods",
-      desc: "We're transforming the way that products are conceived, produced, and consumed by bringing brands and customers together through efficient production and engaging interaction.",
-    },
-    {
-      id: "04",
-      image: educationImg,
-      title: "Education",
-      desc: "We change classrooms and study techniques to make them more interesting and accessible for all students, regardless of where they learn or how they learn it. Learning should be fun.",
-    },
-    {
-      id: "05",
-      image: gamingImg,
-      title: "Gaming",
-      desc: "Get ready for the next epic adventure with us. We are creating incredible, immersive worlds and rock-solid platforms that will redefine what it means to be fun.",
-    },
-    {
-      id: "06",
-      image: healthcareImg,
-      title: "Health care",
-      desc: "Improving healthcare for all is something we are passionate about. We facilitate medical progress, simplify care, and assist clinics and hospitals with operations management.",
-    },
-    {
-      id: "07",
-      image: aviationImg,
-      title: "Aviation",
-      desc: "We assist airlines and aerospace businesses in streamlining everything from training to maintenance, guaranteeing effective and safe travel.",
-    },
-    {
-      id: "08",
-      image: manufacturingImg,
-      title: "Manufacturing",
-      desc: "We're updating factories for the modern era. Develop more productive manufacturing lines that enable companies to achieve remarkable outcomes with a smaller amount of working capital.",
-    },
-    {
-      id: "09",
-      image: realEstateImg,
-      title: "Real Estate",
-      desc: "We're making it simpler to manage procedures, visualize properties, and locate precisely what you're looking for, making every step more transparent.",
-    },
-    {
-      id: "10",
-      image: tourismImg,
-      title: "Tourism",
-      desc: "Helping people travel the world is something we love. We simplify planning and create memorable experiences for both tourists and the establishments that host them.",
-    },
-  ];
   const blockchainServices = [
     {
       buttonHeading: "Blockchain Development",
@@ -350,7 +215,15 @@ const CustomerSupport = () => {
         </Helmet>
         {/* End Page SEO Content */}
         <div className="container	">
-          <div className=" min-vh-90 " style={{ minHeight: "90vh",display:"flex",alignItems:"center",justifyContent:"center" }}>
+          <div
+            className=" min-vh-90 "
+            style={{
+              minHeight: "90vh",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             {/* Left Content */}
             <div className="  mb-md-0">
               <div className="coming-soon-content font-raleway">
@@ -376,22 +249,36 @@ const CustomerSupport = () => {
           <div className="title-style-ten hero-banner-below ">
             <div className="row align-items-start">
               <div className="col-lg-7">
-                <h2 style={{ fontFamily: "Raleway", fontWeight: 700,color:"white" }}>
+                <h2
+                  style={{
+                    fontFamily: "Raleway",
+                    fontWeight: 700,
+                    color: "white",
+                  }}
+                >
                   Unified Tech Solution Fuels Your Whole Digital Experience
                 </h2>
               </div>
               <div className="col-lg-5">
-                <p style={{color:"white"}} className="md-pt-20 mb-4 mt-3">
+                <p
+                  style={{ color: "white" }}
+                  className="md-pt-20 mb-4 mt-3 font-raleway"
+                >
                   The enigma behind digital evolution since 2022. We pull out
                   all the stops for multi-platform solutions, ensuring your
                   development journey is an intriguing ride from concept to
                   completion.
                 </p>
-                <div className="d-flex justify-content-center " style={{marginLeft:'-60px'}}>
-
-                <a href="#" className="theme-btn-nine theme-btn-nine-bg-gradient">
-                  About Us
-                </a>
+                <div
+                  className="d-flex justify-content-center "
+                  style={{ marginLeft: "-60px" }}
+                >
+                  <a
+                    href="#"
+                    className="theme-btn-nine theme-btn-nine-bg-gradient"
+                  >
+                    About Us
+                  </a>
                 </div>
               </div>
             </div>
@@ -407,7 +294,7 @@ const CustomerSupport = () => {
             <div className="title-style-two text-center mb-100 md-mb-50">
               <div className="row ">
                 <div className="col-xl-8 col-lg-9 col-md-10 m-auto font-raleway">
-                  <h2 style={{fontSize:'40px'}}>
+                  <h2 style={{ fontSize: "40px" }}>
                     <span style={{ display: "block", whiteSpace: "nowrap" }}>
                       We unlock a meaningful
                     </span>
@@ -492,21 +379,30 @@ const CustomerSupport = () => {
           <div className="title-style-ten hero-banner-below   md-mb-20">
             <div className="row align-items-start">
               <div className="col-lg-7">
-                <h2 style={{color:"white"}} className="font-raleway fw-bold">
+                <h2 style={{ color: "white" }} className="font-raleway fw-bold">
                   Boosting Business Progress <br /> With Smart Solutions
                 </h2>
               </div>
               <div className="col-lg-5  ">
-                <h5 className="md-pt-20 mb-4 lh-base " style={{ marginTop: "17px" ,color:"white",fontSize:'22px'}}>
+                <h5
+                  className="md-pt-20 mb-4 lh-base  font-raleway"
+                  style={{
+                    marginTop: "17px",
+                    color: "white",
+                    fontSize: "22px",
+                  }}
+                >
                   With the expertise of a prominent development company, you may
                   receive robust software solutions, modernize systems, and rely
                   on cutting-edge technology for growth opportunities.
                 </h5>
-                <div className="d-flex justify-content-center " style={{marginLeft:'-60px'}}>
-                <a href="#" className="theme-btn-nine ">
-                  Explore Service
-                </a>
-
+                <div
+                  className="d-flex justify-content-center "
+                  style={{ marginLeft: "-60px" }}
+                >
+                  <a href="#" className="theme-btn-nine ">
+                    Explore Service
+                  </a>
                 </div>
               </div>
             </div>
@@ -518,7 +414,10 @@ const CustomerSupport = () => {
       <div className="container  " id="product">
         <div className="row align-items-center d-flex">
           {/* Left - Buttons */}
-          <div className="col-md-4  bg-black p-4 rounded" style={{background:'#F5C835'}}>
+          <div
+            className="col-md-4  bg-black p-4 rounded"
+            style={{ background: "#F5C835" }}
+          >
             <h3 className="mb-4 text-bold card-title-heading">
               Raiden’s Tech Advancements with Innovation
             </h3>
@@ -543,10 +442,16 @@ const CustomerSupport = () => {
           <div className="col-md-8 h-100 ">
             <div className="row row-cols-1 row-cols-md-2 gy-4 ">
               {blockchainServices[activeIndex].cards.map((card, i) => (
-                <div className="col " key={i} style={{ marginTop: "30px" }} >
-                  <div className="card card-body-div h-100 border-0" >
+                <div className="col " key={i} style={{ marginTop: "30px" }}>
+                  <div className="card card-body-div h-100 border-0">
                     <div className="card-body " style={{ height: "286px" }}>
-                      <h5 className="card-title" style={{background:'#F5C835'}}> {card.heading}</h5>
+                      <h5
+                        className="card-title"
+                        style={{ background: "#F5C835" }}
+                      >
+                        {" "}
+                        {card.heading}
+                      </h5>
                       <p className="card-text">{card.subheading}</p>
                     </div>
                   </div>
@@ -582,7 +487,11 @@ const CustomerSupport = () => {
 
       {/* Technology Stack */}
 
-      <div className="px-5 pb-100 pt-80" id="tech-stack " style={{background:'#F8F8F8'}}>
+      <div
+        className="px-5 pb-100 pt-80"
+        id="tech-stack "
+        style={{ background: "#F8F8F8" }}
+      >
         <div className="row align-items-center">
           {/* Left Side */}
           <div className="col-md-5 mb-4">
@@ -641,11 +550,7 @@ const CustomerSupport = () => {
       >
         <div className="container position-relative">
           <div className="row">
-            <div
-              className="col-xl-3 col-lg-4"
-              // data-aos="fade-right"
-              // data-aos-duration="1200"
-            >
+            <div className="col-xl-3 col-lg-4">
               <div className="title-style-eleven md-mb-40 text-lg-left">
                 <h2 className="text-black" style={{ fontSize: "40px" }}>
                   Our Core Strengths and Services
@@ -677,7 +582,10 @@ const CustomerSupport = () => {
           <div className="title-style-six">
             <h2 className="text-center fw-bold" style={{ fontSize: "40px" }}>
               Maximize Your Projects with <br />
-              <span className="text-decoration-none text-dark"> Our Experience</span>
+              <span className="text-decoration-none text-dark">
+                {" "}
+                Our Experience
+              </span>
             </h2>
           </div>
 
@@ -686,33 +594,6 @@ const CustomerSupport = () => {
           </div>
         </div>
       </div>
-
-      {/* industry */}
-
-      <div className="app-screen-preview-two mb-100 md-mb-100">
-        <div className="container">
-          <div className="title-style-eleven text-center mb-120 md-mb-70">
-            <h2 className="mb-3" style={{ fontSize: "40px" }}>
-              Discover the industries that our <br />
-              solutions transform
-            </h2>
-            <p className="text-center ">
-              Raiden’s solutions support creativity, growth, and productivity,{" "}
-              <br />
-              transforming industries and allowing businesses to thrive.
-            </p>
-          </div>
-        </div>
-
-        <div className="container">
-          <div className="app-preview-slider-one arrow-middle-center px-5  ">
-            <MobileAppPortfolio PortfolioSteps={PortfolioSteps} />
-          </div>
-        </div>
-        {/* /.app-preview-slider-two */}
-      </div>
-
-      {/*  */}
 
       <div
         className="fancy-feature-twentyTwo  mt-100 md-mt-100 bg-dark  py-5 "
@@ -724,12 +605,19 @@ const CustomerSupport = () => {
             <div className="row align-items-start">
               <div className="col-lg-7 mt-4">
                 <h2 className="font-raleway fw-bold text-white ">
-                  Next-Level Gaming,VR and Blockchain Innovations!
+                  Next-Level Gaming, <br /> access VR and Blockchain
+ 
                 </h2>
               </div>
               <div className="col-lg-5 mt-4">
-                <p className="md-pt-20 mt-3 text-white " style={{ fontSize: 22 }}>
-                Dive into a Realm of Cutting-Edge Entertainment with Our Exciting Gaming, VR, and Blockchain Solutions. Unleash the innovation, and let's forge the future of play and engagement together today.
+                <p
+                  className="md-pt-20 mt-3 text-white font-raleway "
+                  style={{ fontSize: 22 }}
+                >
+                  Dive into a Realm of Cutting-Edge Entertainment with Our
+                  Exciting Gaming, VR, and Blockchain Solutions. Unleash the
+                  innovation, and let's forge the future of play and engagement
+                  together today.
                 </p>
               </div>
             </div>
@@ -739,10 +627,7 @@ const CustomerSupport = () => {
 
       {/*  */}
 
-      <div
-        className="client-feedback-slider-six pb-60 md-pb-100"
-        id="feedback"
-      >
+      <div className="client-feedback-slider-six pb-60 md-pb-100" id="feedback">
         <div className="inner-container">
           <div className="container">
             <div className="row">
@@ -764,7 +649,7 @@ const CustomerSupport = () => {
           <img src={Profile2} alt="shape" className="cp-img-one" />
           <img src={Profile3} alt="shape" className="cp-img-two" />
           <img src={Profile4} alt="shape" className="cp-img-three" />
-          {/* <img src={Profile5} alt="shape" className="cp-img-four" /> */}
+
           <div className="title-style-two">
             <h2 className="mt-140">
               Hear <br />

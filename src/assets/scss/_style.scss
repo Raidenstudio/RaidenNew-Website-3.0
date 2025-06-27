@@ -1135,7 +1135,7 @@ body .theme-btn-one {
   font-weight: 500;
   color: #fff;
   line-height: 50px;
-  background: var(--blue-dark);
+  background:linear-gradient(90deg, #F15A24 0%, #F1CC31 100%) ;
   padding: 0 42px;
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
@@ -1149,7 +1149,7 @@ body .theme-btn-one.btn-lg {
 }
 
 body .theme-btn-one:hover {
-  background: #ffba12;
+   background:linear-gradient(90deg,  #F1CC31 0%,   #F15A24 100%) ;
 }
 
 body .theme-btn-two {
@@ -11820,7 +11820,7 @@ background-position: center 210px;
 }
 
 .pricing-table-area-five .pr-table-wrapper {
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  // border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   position: relative;
   padding: 15px;

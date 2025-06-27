@@ -56,7 +56,7 @@ const FeatureContent = [
   {
     icon: vr,
     meta: "AR/VR",
-    subTitle: `We provide a unique way to engage with and visualize your ideas, bringing them to life exactly as you need`,
+    subTitle: `We access VR/AR to engage uniquely and visualize your ideas, bringing them to life exactly as you need `,
     dataDelay: "500",
   },
   {

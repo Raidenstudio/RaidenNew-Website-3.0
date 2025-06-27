@@ -11,8 +11,7 @@ const FeaturesContent = [
     bgColor: "#FFEBDB",
     icon: App,
     title: "Metaverse Application Development",
-    desc: `With AR, VR, blockchain, creating, user engagement, security, and API integration. 
-`,
+    desc: `With AR, VR, blockchain, creating, user engagement, security, and API integration. `,
     dataDealy: "0",
   },
   {
@@ -53,7 +52,7 @@ const FeaturesContent = [
   },
 ];
 
-const FancyFeatureTen = ({FeaturesContent}) => {
+const FancyFeatureTen = () => {
   return (
     <div className="row justify-content-center mt-35 md-mt-20">
       {FeaturesContent.map((val, i) => (

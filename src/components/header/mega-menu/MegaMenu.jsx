@@ -273,37 +273,37 @@ const Portfolio = [
   }
 ];
 const Blogs = [
-  {
-    name: "Blog Version 01",
-    routerPath: "/blog-v1",
-  },
-  {
-    name: "Blog Version 02",
-    routerPath: "/blog-v2",
-  },
-  {
-    name: "Blog Version 03",
-    routerPath: "/blog-v3",
-  },
-  {
-    name: "Blog Version 04",
-    routerPath: "/blog-v4",
-  },
-  {
-    name: "Blog Version 05",
-    routerPath: "/blog-v5",
-  },
-  {
-    name: "Blog Version 06",
-    routerPath: "/blog-v6",
-  },
+  // {
+  //   name: "Blog Version 01",
+  //   routerPath: "/blog-v1",
+  // },
+  // {
+  //   name: "Blog Version 02",
+  //   routerPath: "/blog-v2",
+  // },
+  // {
+  //   name: "Blog Version 03",
+  //   routerPath: "/blog-v3",
+  // },
+  // {
+  //   name: "Blog Version 04",
+  //   routerPath: "/blog-v4",
+  // },
+  // {
+  //   name: "Blog Version 05",
+  //   routerPath: "/blog-v5",
+  // },
+  // {
+  //   name: "Blog Version 06",
+  //   routerPath: "/blog-v6",
+  // },
   {
     name: "About Us",
     routerPath: "/about-us",
   },
 
   {
-    name: "Blog Details",
+    name: "Carrier",
     routerPath: "/blog-details",
   },
 ];

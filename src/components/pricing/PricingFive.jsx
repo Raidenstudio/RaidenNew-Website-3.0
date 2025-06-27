@@ -1,6 +1,4 @@
 import React from "react";
-import Tilt from "react-parallax-tilt";
-import { Link } from "react-router-dom";
 
 const PricingContent = [
   {
@@ -20,7 +18,7 @@ const PricingContent = [
     icon2: "159",
     packName: "Blockchain",
     features: [
-      "Raiden has expertise in the development of decentralized applications with blockchain technology. Enabling trust with safe, clear, and verified data transactions over a global network.",
+      "Raiden has expertise in the blockchain based streaming services and decentralized applications. Enabling trust with safe, clear, and verified data transactions over a global network.",
     ],
     price: "29.99",
     trialText: "up to 7 user + 1.99 per user",
