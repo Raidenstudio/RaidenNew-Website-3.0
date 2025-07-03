@@ -62,10 +62,10 @@ const FancyFeatureThirtyFour = () => {
           data-aos-delay={item.dealyAnimation}
           key={i}
         >
-          <div className="block-style-thirtyTwo d-flex">
+          <div className="block-style-thirtyTwo d-flex ">
             <div
-              className="icon d-flex align-items-center justify-content-center"
-              style={{ background: item.bgColor }}
+              className="icon d-flex align-items-center justify-content-center "
+              // style={{ background: item.bgColor }}
             >
               <img src={item.icon} alt="icon" />
             </div>

@@ -11,53 +11,6 @@ import CallToActionThree from '../../../components/call-to-action/CallToActionTh
 
 const BlockchainDevelopment = () => {
 
-  const FeaturesContent = [
-    {
-      img: "94",
-      title: "Web3",
-      desc: `Blockchain-powered solutions transform your digital experience by giving you total control over your data, identity, and assets with no middlemen, just secure direct communication.`,
-    },
-    {
-      img: "95",
-      title: "Public Blockchain",
-      desc: `Developing decentralized apps that provide open access to data, transparency, and trust over a global network.`,
-    },
-    {
-      img: "96",
-      title: "Private blockchain",
-      desc: `Effective consensus processes provide faster transactions, enhanced security, and access restrictions ideal for companies seeking scalability and reliability.`,
-    },
-    {
-      img: "97",
-      title: "Cryptocurrency",
-      desc: `We assist you in creating digital assets that are effective, secure, and future-proof, whether you are launching a token, coin, or an entire crypto ecosystem.`,
-    },
-    {
-      img: "98",
-      title: "DEX",
-      desc: `Allow your users to trade cryptocurrency securely with utmost benefit on a custom-built decentralized exchange with no third parties and total control.`,
-    },
-    {
-      img: "99",
-      title: "Crypto wallet",
-      desc: `Our secure wallets are designed for easy storage and transfers, so you can keep your cryptocurrency safe and accessible.`,
-    },
-    {
-      img: "95",
-      title: "NFT Marketplace",
-      desc: `We create scalable NFT marketplaces that make it easy to buy, sell, trade, and mint digital assets.`,
-    },
-    {
-      img: "96",
-      title: "Smart Contract",
-      desc: `Ensuring efficiency and integrity in every interaction through safe and transparent transactions.`,
-    },
-    {
-      img: "97",
-      title: "DAPP",
-      desc: `Assist you in creating a DApp that offers users complete decentralization and genuine ownership and control.`,
-    },
-  ];
 
   const featureList = [
     {
@@ -139,53 +92,53 @@ const BlockchainDevelopment = () => {
   return (
     <div>
       <HeroBannerTwelve />
-      <div className="counter-style-three lg-container mt-130">
-        <div className="container">
-          <div className="bottom-border">
+       <div className="fancy-feature-twentyTwo   " id="product ">
+        <div className="  bg-black pb-5 pt-60">
+          <div className="title-style-ten hero-banner-below container org-div  ">
+            <div className="row align-items-start">
+              <div className="col-lg-7 ">
+                <h2
+                  style={{
+                    fontFamily: "Raleway",
+                    fontWeight: 700,
+                    color: "white",
+                  }}
+                >
+                 Organizational Excellence with Blockchain Security
+                </h2>
+              </div>
+              <div className="col-lg-5">
+                <p
+                  style={{ color: "white" }}
+                  className="md-pt-20 mb-4 mt-3 font-raleway"
+                >
+                  Our blockchain is built by mission-driven developers solving real-world problems through digital innovation. Whether you're a business, creator, or privacy enthusiast, our platform delivers secure digital ownership and direct global connections.
+
+                </p>
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="counter-style-three lg-container  ">
+        <div className=" bg-black">
+          <div className=" container bottom-border">
             <CounterSix />
           </div>
         </div>
       </div>
       <div
-        className="fancy-feature-seventeen lg-container pt-150 md-pt-90"
+        className="fancy-feature-seventeen  lg-container  "
         id="feature"
       >
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-10 m-auto">
-              <div className="title-style-thirteen text-center mb-130 md-mb-90">
-                <div className="upper-title">Features</div>
-                <h2>
-                  {" "}
-                  Trailblazing Services Powering Your
-                  <span>
-                    {" "}Blockchain Journey
-                    <img
-                      src="images/shape/line-shape-14.svg"
-                      alt="line shape"
-                    />
-                  </span>
-                </h2>
-              </div>
-            </div>
-          </div>
-          {/* End .row */}
-        </div>
-        {/* End .container */}
-
-        <div className="container">
-          <div className="bottom-border pb-50">
-            <div className="row">
-              <FancyFeatureSeventeen FeaturesContent={FeaturesContent} />
-            </div>
-          </div>
-        </div>
+     
 
         {/* =============================================
             Fancy Feature Twenty Nine
         ==============================================  */}
         <div
-          className="fancy-feature-twentyNine lg-container pt-150 mt-20 md-pt-70"
+          className="fancy-feature-twentyNine lg-container "
           id="p-tour"
         >
           <FancyTextBlock29 featureList={featureList} />
@@ -193,21 +146,21 @@ const BlockchainDevelopment = () => {
         {/* =============================================
             Fancy Feature Thirty
         ==============================================  */}
-        <div className="fancy-feature-thirty mt-180 md-mt-100">
+        <div className="fancy-feature-thirty mt-100">
           <div className="container">
             <div className="row">
               <div className="col-xl-10 col-lg-9 m-auto">
-                <div className="title-style-thirteen text-center mb-80 md-mb-60">
-                  <div className="upper-title">Others Features</div>
-                  <h2>
+                <div className="title-style-thirteen text-center mb-60">
+                  {/* <div className="upper-title">Others Features</div> */}
+                  <h2>Our
                     {" "}
                     Development
                     <span>
                       {" "}Process{" "}
-                      <img
+                      {/* <img
                         src="images/shape/line-shape-14.svg"
                         alt="line shape"
-                      />
+                      /> */}
                     </span>
 
                   </h2>
@@ -215,25 +168,16 @@ const BlockchainDevelopment = () => {
               </div>
             </div>
           </div>
-          <div className="wrapper">
+          <div className="bg-white">
             <div className="container">
               <FancyFeatureThirtyTwo featuresContent={featuresContentblockchain} />
             </div>
-            <img
-              src="images/shape/237.svg"
-              alt="shape"
-              className="shapes shape-one"
-            />
-            <img
-              src="images/shape/238.svg"
-              alt="shape"
-              className="shapes shape-two"
-            />
+            
           </div>
           {/* <!-- /.wrapper --> */}
         </div>
         {/* <!-- /.fancy-feature-thirty --> */}
-        <div className="fancy-short-banner-three mt-200 md-mt-150">
+        <div className="fancy-short-banner-three mt-100 md-mt-100">
           <div className="container">
             <div className="bg-wrapper">
               <CallToActionThree />

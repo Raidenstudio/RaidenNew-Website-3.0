@@ -244,8 +244,8 @@ const CustomerSupport = () => {
 
       {/* below hero banner */}
 
-      <div className="fancy-feature-twentyTwo     " id="product ">
-        <div className="bg-second-section-grandient py-5 px-5">
+      <div className="fancy-feature-twentyTwo  bg-black   " id="product ">
+        <div className=" py-5 px-5">
           <div className="title-style-ten hero-banner-below ">
             <div className="row align-items-start">
               <div className="col-lg-7">
@@ -501,7 +501,7 @@ const CustomerSupport = () => {
             >
               Our Technology Stack
             </h2>
-            <p className="mt-3 text-muted">
+            <p className="mt-3 text-black">
               We use cutting-edge technologies to deliver high-quality,
               scalable, and efficient solutions. Our stack includes the latest
               frameworks and platforms trusted by the industry.
@@ -606,7 +606,6 @@ const CustomerSupport = () => {
               <div className="col-lg-7 mt-4">
                 <h2 className="font-raleway fw-bold text-white ">
                   Next-Level Gaming, <br /> access VR and Blockchain
- 
                 </h2>
               </div>
               <div className="col-lg-5 mt-4">

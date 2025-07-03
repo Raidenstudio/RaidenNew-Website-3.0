@@ -9,10 +9,10 @@ const CallToActionThree = () => {
     <div className="row align-items-center">
       <div className="col-lg-6">
         <div className="title-style-one">
-          <h6 className="font-gordita" style={{ color: "#f96f60" }}>
-            Start your free trial.
+          <h6 className="font-gordita text-white" style={{ color: "#f96f60",fontSize:18 }}>
+            Start your free consultation.
           </h6>
-          <h2>New here? Start your free trial now.</h2>
+          <h2 className="text-white" style={{fontSize:40}}>New here?Get your free consultation now.</h2>
         </div>
         {/* /.title-style-one */}
       </div>
@@ -22,7 +22,7 @@ const CallToActionThree = () => {
         <div className="form-wrapper">
           <form onClick={handleSubmit}>
             <input type="text" placeholder="Email address" />
-            <button>Subscribe</button>
+            <button>Submit</button>
           </form>
           {/* End form */}
           <p className="font-gordita">

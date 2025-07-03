@@ -44,10 +44,10 @@ const ARServices = () => {
                         <div className="row">
                             <div className="col-xl-9 col-lg-10 m-auto">
                                 <h1 className="heading">
-                                    <span style={{ fontSize: "0.8em", whiteSpace: "nowrap" }}>
+                                    <span style={{ fontSize: "74px", whiteSpace: "nowrap" }}>
                                         Orchestrating Transformative
                                     </span>{" "}
-                                    <span style={{ fontSize: "1em", color: "#000", fontWeight: "bold" }}>
+                                    <span style={{ fontSize: "74px", color: "#000", fontWeight: "700" }}>
                                         <br /> AR Solutions
                                     </span>
                                 </h1>

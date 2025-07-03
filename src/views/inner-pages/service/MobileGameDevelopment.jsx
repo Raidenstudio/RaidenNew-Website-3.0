@@ -207,7 +207,7 @@ const MobileGameDevelopment = () => {
             <div className="col-xl-11 col-lg-12 col-md-10 m-auto text-center">
               <h1
                 style={{
-                  fontSize: "70px",
+                  fontSize: "74px",
                   fontStyle: "Raleway",
                   color: "white",
                 }}
@@ -215,7 +215,7 @@ const MobileGameDevelopment = () => {
                 data-aos="fade-up"
               >
                 Experience <br />
-                <span style={{ color: "#FF006B" }}>epic adventures</span> <br />
+                <span >epic adventures</span> <br />
                 with portable freedom.
               </h1>
               <p

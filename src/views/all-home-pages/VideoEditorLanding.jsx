@@ -97,7 +97,7 @@ const VideoEditorLanding = () => {
       {/* 	=============================================
 				Theme Hero Banner
 			==============================================  */}
-      <div className="hero-banner-ten">
+      <div className="hero-banner-ten min-h-100vh">
         <div className="container">
           <div className="row">
             <div className="col-xl-9 col-lg-11 col-md-8 m-auto">
@@ -125,7 +125,7 @@ const VideoEditorLanding = () => {
         </div>
         {/* End .container */}
 
-        <div className="icon-box-one">
+        {/* <div className="icon-box-one">
           <img src="images/logo/logo-39.png" alt="icon" />
         </div>
         <div className="icon-box-two">
@@ -148,7 +148,7 @@ const VideoEditorLanding = () => {
         </div>
         <div className="icon-box-eight">
           <img src="images/logo/logo-46.png" alt="icon" />
-        </div>
+        </div> */}
       </div>
 
       {/* 		=============================================

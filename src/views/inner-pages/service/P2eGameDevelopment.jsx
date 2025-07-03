@@ -224,8 +224,8 @@ const P2eGameDevelopment = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-xl-11 col-lg-12 col-md-10 m-auto text-center">
-                        <h1 style={{ fontSize: "70px", fontStyle: "Raleway", color: "white" }} className="hero-heading" data-aos="fade-up">
-                            <span style={{ color: "#FF006B" }}> Gaming Innovation:</span>{" "}
+                        <h1 style={{ fontSize: "74px", fontStyle: "Raleway", color: "white" }} className="hero-heading" data-aos="fade-up">
+                            Gaming Innovation
                             <br />
                             where your passion pays
                         </h1>

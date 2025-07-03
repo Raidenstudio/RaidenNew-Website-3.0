@@ -51,7 +51,7 @@ const FeatureSixV2 = () => {
     <div className="row justify-content-center">
       {FeatureContent.map((val, i) => (
         <div
-          className="col-lg-4 col-md-6"
+          className="col-lg-4 col-md-6 "
           key={i}
           data-aos="fade-up"
           data-aos-duration="1200"

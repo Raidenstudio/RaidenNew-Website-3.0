@@ -490,9 +490,9 @@ box-shadow: rgba(0, 0, 0, 0.45) 25px 15px 50px 0px;
   background: var(--blue-dark);
   border-radius: 0;
 }
-
+//  linear-gradient(to left, #f15a24, #f1cc31)
 :root {
-  --text-color: #73737b;
+  --text-color: #000000;
   --text-light: #888888;
   --heading: #101621;
   --blue-dark: #6f55ff;
@@ -729,7 +729,7 @@ p{
 
 .title-style-two h2 {
   font-family: "Raleway", sans-serif !important;
-  font-size: 58px;
+  font-size: 40px;
   line-height: 1.15em;
   font-weight: 700;
 }
@@ -746,10 +746,10 @@ p{
 }
 
 .title-style-two .sub-text {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.5em;
-  color: #6d6d6d;
-  padding-top: 15px;
+  color: #000000;
+  padding-top: 35px;
 }
 
 .title-style-three p {
@@ -795,7 +795,7 @@ p{
 .title-style-four h2 {
   font-family: "Raleway", sans-serif !important;
   font-weight: bold;
-  font-size: 58px;
+  font-size: 40px;
   line-height: 1.15em;
   color: #2a2a2a;
 }
@@ -951,10 +951,11 @@ p{
 
 .title-style-nine h2 {
   font-family: "Raleway", sans-serif !important;
-  font-weight: bold;
-  font-size: 52px;
+  // font-weight: bold;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 1.34em;
+  line-height: 1.5em;
+  // margin-top: 5px;
 }
 
 .title-style-nine h2 span {
@@ -1065,8 +1066,8 @@ p{
   font-family: "Raleway", sans-serif !important;
   font-weight: bold;
   font-weight: 700;
-  font-size: 72px;
-  line-height: 1.25em;
+  font-size: 40px;
+  line-height: 1.5em;
   letter-spacing: -1px;
 }
 
@@ -4531,8 +4532,9 @@ background-position: center 210px;
 .block-style-five {
   background: #fff;
   transition: all 0.3s ease-in-out;
-  padding: 46px 30px 50px 48px;
-  margin-top: 30px;
+  padding:30px;
+  // margin-top: 30px;
+  text-align: center;
   border-radius: 5px;
   height: 90%;
 }
@@ -4552,7 +4554,7 @@ background-position: center 210px;
 
 .block-style-five .title {
   font-family: "Raleway", sans-serif !important;
-  font-size: 20px;
+  font-size: 22px;
   margin: 24px 0 29px;
   display: inline-block;
   position: relative;
@@ -4571,8 +4573,8 @@ background-position: center 210px;
 }
 
 .block-style-five p {
-  font-size: 24px;
-  line-height: 1.45em;
+  font-size: 18px;
+  line-height: 1.5em;
   color: #000;
   font-family: "gordita" !important;
 }
@@ -5243,14 +5245,16 @@ background-position: center 210px;
   padding: 82px 50px 89px;
   position: relative;
 }
-
-.fancy-short-banner-three .bg-wrapper:before {
-  content: url(../images/shape/43.svg);
-  position: absolute;
-  top: -124px;
-  right: -104px;
-  z-index: -1;
+.org-div{
+  margin:  0 auto;
 }
+// .fancy-short-banner-three .bg-wrapper:before {
+//   content: url(../images/shape/43.svg);
+//   position: absolute;
+//   top: -124px;
+//   right: -104px;
+//   z-index: -1;
+// }
 
 .fancy-short-banner-three .title-style-one h2 {
   font-size: 48px;
@@ -5287,14 +5291,14 @@ background-position: center 210px;
   color: #fff;
   font-weight: 500;
   font-size: 16px;
-  background: var(--red-light);
+    background: linear-gradient(to right ,#F1BA2F,#FF5B2A);
   transition: all 0.3s ease-in-out;
 }
 
-.fancy-short-banner-three .form-wrapper form button:hover {
-  background: #ffba12;
-  box-shadow: 0px 15px 30px rgba(255, 186, 18, 0.2);
-}
+// .fancy-short-banner-three .form-wrapper form button:hover {
+//   background: #ffba12;
+//   box-shadow: 0px 15px 30px rgba(255, 186, 18, 0.2);
+// }
 
 .fancy-short-banner-three .form-wrapper p {
   font-size: 16px;
@@ -5700,12 +5704,17 @@ background-position: center 210px;
   font-size: 16px;
   color: rgba(42, 42, 42, 0.54);
 }
-
+.main-head-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 /*---------------- Fancy Hero Three --------------*/
 .fancy-hero-three {
-  background: #fff7ef;
-  position: relative;
-  padding: 225px 0 180px;
+  // background: #fff7ef;
+  // position: relative;
+  padding: 100px 0 100px;
   z-index: 5;
   text-align: center;
 }
@@ -5781,14 +5790,14 @@ background-position: center 210px;
 
 .fancy-hero-three .heading {
   font-family: "Raleway", sans-serif !important;
-  font-weight: bold;
-  font-size: 80px;
-  line-height: 1.1em;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18em;
   padding: 0 0 38px;
 }
 
 .fancy-hero-three .sub-heading {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.41em;
   color: #2a2a2a;
 }
@@ -5803,8 +5812,8 @@ background-position: center 210px;
 }
 
 .fancy-text-block-eleven .text-wrapper p {
-  font-size: 22px;
-  line-height: 1.81em;
+  font-size: 18px;
+  line-height: 1.5em;
 }
 
 .fancy-text-block-eleven .img-gallery {
@@ -5862,14 +5871,14 @@ background-position: center 210px;
 
 /*--------------- Fancy Feature Six -------------*/
 .fancy-feature-six {
-  padding: 0 15px;
+  padding: 0 0px;
 }
 
 .fancy-feature-six .bg-wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 110px 0 210px;
-  background: url(../images/shape/bg4.svg) no-repeat top center;
+  padding: 100px 0 100px;
+  background: #E0F0FE;
   background-size: cover;
   position: relative;
   z-index: 5;
@@ -10289,19 +10298,19 @@ background-position: center 210px;
 }
 
 .hero-banner-five .hero-heading {
-  font-size: 82px;
-  line-height: 1.219em;
+  font-size: 72px;
+  line-height: 1.18em;
 }
 
 .hero-banner-five .hero-heading span {
   position: relative;
-  color: #ff2759;
+  color: #000;
   text-decoration: underline;
   text-decoration-thickness: 4px;
 }
 
 .hero-banner-five .hero-sub-heading {
-  font-size: 24px;
+  font-size: 18px;
   padding: 20px 0 62px;
   color: #000;
 }
@@ -11261,11 +11270,12 @@ background-position: center 210px;
 .hero-banner-six {
   position: relative;
   padding: 125px 0;
+  height: 100vh;
 }
 
 .hero-banner-six .hero-heading {
-  font-size: 100px;
-  line-height: 115%;
+  font-size: 74px;
+  line-height: 1.18em;
   color: #ffffff;
 }
 
@@ -11668,7 +11678,7 @@ background-position: center 210px;
 .custom-logo-design h5 {
   color: black;
   text-align: center;
-  opacity: 0.5;
+  // opacity: 0.5;
 }
 
 .fancy-feature-fourteen .logo-meta.lg {
@@ -12613,24 +12623,36 @@ background-position: center 210px;
 
 /*----------------- Fancy Feature Seventeen -------------------*/
 .fancy-feature-seventeen {
-  padding-left: 15px;
-  padding-right: 15px;
+  // padding-left: 15px;
+  // padding-right: 15px;
 }
 
 .fancy-feature-seventeen .bg-wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  background: #fcf7ea;
+  background: #000;
   border-radius: 25px;
-  padding: 90px 0 40px;
+  padding: 82px 50px 89px;
 }
 
 .fancy-feature-seventeen .block-meta {
-  margin-bottom: 70px;
+  // margin-bottom: 70px;
+  background-color: #f8f8f8;
   text-align: center;
-  padding: 0 30px;
+  padding: 20px 20px 25px 20px;
+  height: 300px;
+}
+.fancy-feature-seventeen .block-meta:hover{
+  background: linear-gradient(to right ,#F1BA2F,#FF5B2A);
+  transition-duration: 3s;
+ 
 }
 
+.fancy-feature-seventeen .block-meta:hover h4,
+.fancy-feature-seventeen .block-meta:hover p {
+  color: white;
+  transition: color 0.6s ease; 
+}
 .fancy-feature-seventeen .block-meta .icon {
   height: 35px;
 }
@@ -12640,7 +12662,7 @@ background-position: center 210px;
 }
 
 .fancy-feature-seventeen .block-meta h4 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
   padding: 28px 0 14px;
   font-family: "Raleway", sans-serif !important;
@@ -12648,7 +12670,7 @@ background-position: center 210px;
 }
 
 .fancy-feature-seventeen .block-meta p {
-  line-height: 32px;
+  line-height: 1.5em;
   color: #292929;
 }
 
@@ -14728,22 +14750,22 @@ background-position: center 210px;
 =========================================================================*/
 /*---------------------Theme Hero Banner/Ten ---------------*/
 .hero-banner-ten {
-  position: relative;
-  z-index: 1;
-  margin: 70px 0 0;
+  // position: relative;
+  // z-index: 1;
+  padding: 70px 0 0;
   text-align: center;
+  height: 100vh;
 }
 
 .hero-banner-ten .hero-heading {
-  font-size: 82px;
-  line-height: 1.21em;
-  font-weight: 500;
+  font-size: 72px;
+  line-height: 1.18em;
   font-family: "Raleway", sans-serif !important;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .hero-banner-ten .hero-sub-heading {
-  font-size: 24px;
+  font-size: 18px;
   padding: 45px 0 55px;
   color: #000;
 }
@@ -15495,8 +15517,8 @@ background-position: center 210px;
 
 .block-style-twentyEight h4 {
   font-weight: 500;
-  font-size: 24px;
-  margin: 33px 0 20px;
+  font-size: 22px;
+  margin: 25px 0 0px;
 }
 
 /*-------------------- Useable Tools Four --------------------*/
@@ -16310,9 +16332,14 @@ background-position: center 210px;
 /*---------------------Theme Hero Banner / Twelve ---------------*/
 .hero-banner-twelve {
   background: #1f1f1f;
-  position: relative;
+  // position: relative;
   z-index: 1;
-  padding: 205px 0 0;
+  padding: 0px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .hero-banner-twelve:before {
@@ -16327,17 +16354,16 @@ background-position: center 210px;
 }
 
 .hero-banner-twelve .hero-heading {
-  font-size: 100px;
+  font-size: 72px;
   font-weight: 700;
   color: #fff;
-  line-height: 1.1em;
+  line-height: 1.18em;
   letter-spacing: -1px;
   font-family: "Raleway", sans-serif !important;
-  font-weight: bold;
 }
 
 .hero-banner-twelve .hero-sub-heading {
-  font-size: 23px;
+  font-size: 18px;
   color: #fff;
   padding: 45px 0 55px;
 }
@@ -16452,7 +16478,7 @@ background-position: center 210px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  margin: 0 auto 15px;
+  // margin: 0 auto 15px;
 }
 
 /*-------------------- Fancy Feature Twenty Nine --------------------*/
@@ -16510,10 +16536,10 @@ background-position: center 210px;
 
 .block-style-thirty .feature-list-two li {
   line-height: 33px;
-  color: #474747;
+  color: #000;
   position: relative;
   padding-left: 30px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .block-style-thirty .feature-list-two li span {
@@ -16541,7 +16567,7 @@ background-position: center 210px;
 
 .block-style-thirty .text-block p {
   font-size: 22px;
-  line-height: 1.68em;
+  line-height: 1.5em;
   color: #000;
   margin-bottom: 35px;
 }
@@ -16614,14 +16640,14 @@ background-position: center 210px;
 
 .block-style-thirtyTwo .text h4 {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   font-family: "Raleway", sans-serif !important;
   font-weight: bold;
 }
 
 .block-style-thirtyTwo .text p {
-  font-size: 17px;
-  line-height: 1.6em;
+  font-size: 18px;
+  line-height: 1.5em;
   padding: 22px 0;
 }
 
@@ -16704,7 +16730,7 @@ background-position: center 210px;
 .block-style-thirtyThree .title {
   font-family: "Raleway", sans-serif !important;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 22px;
   margin: 25px 0;
   display: inline-block;
   position: relative;
@@ -16722,9 +16748,9 @@ background-position: center 210px;
 }
 
 .block-style-thirtyThree p {
-  font-size: 17px;
-  line-height: 30px;
-  color: #515151;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #000;
 }
 
 /*----------------- Video Box Two -------------------*/

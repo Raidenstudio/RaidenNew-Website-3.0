@@ -11,7 +11,7 @@ const FancyFeatureThirtyTwo = ({ featuresContent }) => {
           data-aos-delay={item.dealyAnimation}
           key={i}
         >
-          <div className="block-style-thirtyTwo d-flex bg-white " style={{ maxHeight: "230px" }}>
+          <div className="block-style-thirtyTwo d-flex bg-light " style={{ maxHeight: "230px" }}>
             <div
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: item.bgColor }}

@@ -35,16 +35,14 @@ const ServiceV1 = () => {
         <div className="bg-wrapper">
           <div className="container">
             <div className="row">
-              <div className="col-xl-9 col-lg-10 m-auto">
-                <h1 className="heading">
-                  <span style={{ fontSize: "0.8em" }}>
-                    Forging the Playable Realities on the Bedrock of
-                  </span>{" "}
-                  <span style={{ fontSize: "1.2em", color: "#000", fontWeight: "bold" }}>
+              <div className="col-xl-9 col-lg-10 m-auto main-head-div" style={{minHeight:'90vh',paddingBottom:0}}>
+                <h1 className="heading">              
+                    Forging the Playable Realities on the Bedrock of 
+                  {" "}                   
                     Blockchain
-                  </span>
+           
                 </h1>
-                <p className="sub-heading">
+                <p className="sub-heading " style={{marginTop:13}}>
                   Strap in - your adventurous game journey begins, where code extends life and blockchain locks it in.
                 </p>
               </div>
@@ -58,7 +56,7 @@ const ServiceV1 = () => {
       {/*   =============================================
         Fancy Text block Eleven
     ==============================================  */}
-      <div className="fancy-text-block-eleven mt-200 md-mt-100">
+      <div className="fancy-text-block-eleven  bg-light">
         <div className="container">
           <FancyVideoFive />
 
@@ -74,18 +72,18 @@ const ServiceV1 = () => {
       {/* =============================================
             Fancy Feature Six
         ============================================== */}
-      <div className="fancy-feature-six mt-140 md-mt-70">
+      <div className="fancy-feature-six bg-light">
         <div className="bg-wrapper">
-          <div className="shapes shape-one"></div>
+          {/* <div className="shapes shape-one"></div>
           <div className="shapes shape-two"></div>
           <div className="shapes shape-three"></div>
           <div className="shapes shape-four"></div>
-          <div className="shapes shape-five"></div>
-          <img
+          <div className="shapes shape-five"></div> */}
+          {/* <img
             src="images/shape/51.svg"
             alt="shape"
             className="shapes shape-six"
-          />
+          /> */}
           <div className="container">
             <div className="title-style-two text-center mb-85 md-mb-40">
               <h2>
@@ -107,7 +105,7 @@ const ServiceV1 = () => {
       {/* =====================================================
             Fancy Text block Twelve
         ===================================================== */}
-      <div className="fancy-feature-thirtyOne pt-120  md-pt-80 md-pb-100">
+      <div className="fancy-feature-thirtyOne pt-100 md-pb-100 ">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 m-auto">

@@ -6,13 +6,12 @@ const HeroBannerSix = () => {
   return (
     <>
       <div className="row">
-        <div className="col-xl-6 col-lg-6">
-          <h1
-            className="font-raleway hero-heading"
-            data-aos="fade-up"
-            data-aos-duration="1200"
+        <div className="">
+          <h1 
+            className="font-raleway hero-heading text-center "
+           
           >
-            Galaxies of Gameplay: An <span>Unreal</span> Engine Resource
+            Galaxies of Gameplay <br />  An Unreal Engine Resource
           </h1>
           {/* <p
             className="hero-sub-heading"

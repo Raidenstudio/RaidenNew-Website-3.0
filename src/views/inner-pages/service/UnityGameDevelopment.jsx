@@ -204,9 +204,9 @@ const UnityGameDevelopment = () => {
         <div className="container">
           <div className="row">
             <div className="col-xl-11 col-lg-12 col-md-10 m-auto text-center">
-              <h1 style={{ fontSize: "70px", fontStyle: "Raleway", color: "white" }} className="hero-heading" data-aos="fade-up">
+              <h1 style={{ fontSize: "74px", fontStyle: "Raleway", color: "white" }} className="hero-heading" data-aos="fade-up">
                 Embark on{" "}
-                <span style={{ color: "#FF006B" }}>Unity Game</span>{" "}
+                <span >Unity Game</span>{" "}
                 <br />
                 Adventures
               </h1>

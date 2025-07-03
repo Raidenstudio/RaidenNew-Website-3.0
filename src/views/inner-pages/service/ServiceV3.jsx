@@ -44,10 +44,10 @@ const ServiceV3 = () => {
             <div className="row">
               <div className="col-xl-9 col-lg-10 m-auto">
                 <h1 className="heading">
-                  <span style={{ fontSize: "0.8em", whiteSpace: "nowrap" }}>
+                  <span style={{ fontSize: "72px", whiteSpace: "nowrap" }}>
                     Interplaying Cognition with
                   </span>{" "}
-                  <span style={{ fontSize: "1em", color: "#000", fontWeight: "bold" }}>
+                  <span style={{ fontSize: "72px", color: "#000", fontWeight: "700" }}>
                     <br /> World Manifestation
                   </span>
                 </h1>

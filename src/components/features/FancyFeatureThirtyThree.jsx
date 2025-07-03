@@ -26,7 +26,7 @@ const featuresContent = [
 
 const FancyFeatureThirtyThree = () => {
   return (
-    <div className="row">
+    <div className="row text-center pb-100">
       {featuresContent.map((val, i) => (
         <div
           className="col-lg-4"
@@ -34,13 +34,13 @@ const FancyFeatureThirtyThree = () => {
           data-aos-delay={val.delayAnimation}
           key={i}
         >
-          <div className="block-style-thirtyThree pe-lg-5 mt-40">
+          <div className="block-style-thirtyThree pe-lg-5 mt-40 bg-white shadow-lg  p-4 rounded-2">
             {val.icon && (
               <div className="icon">
                 <img src={val.icon} alt="icon" />
               </div>
             )}
-            <h3 className="title">
+            <h3 className="title text-center">
               <span>{val.title}</span>
             </h3>
             <p>{val.desc}</p>

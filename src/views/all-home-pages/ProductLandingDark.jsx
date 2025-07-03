@@ -182,7 +182,7 @@ const ProductLandingDark = () => {
 			Theme Hero Banner
 		  ==============================================  */}
       <div className="hero-banner-six" id="home">
-        <div className="illustration-content">
+        {/* <div className="illustration-content">
           <img
             src="images/shape/144.svg"
             alt="shape"
@@ -230,7 +230,7 @@ const ProductLandingDark = () => {
             alt="shape"
             className="shapes shape-six"
           />
-        </div>
+        </div> */}
         {/* End .illustration-content */}
 
         <div className="container">

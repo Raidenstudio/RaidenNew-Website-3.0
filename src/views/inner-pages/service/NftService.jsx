@@ -204,7 +204,7 @@ const NftService = () => {
                         <div className="row">
                             <div className="col-xl-9 col-lg-10 m-auto">
                                 <h1 className="heading">
-                                    <span style={{ fontSize: "0.8em", whiteSpace: "nowrap" }}>
+                                    <span style={{ fontSize: "72px", whiteSpace: "nowrap" }}>
                                         Exploring{" "}
                                         <span style={{ fontSize: "1em", color: "#000", fontWeight: "bold" }}>
                                             NFTs{" "}

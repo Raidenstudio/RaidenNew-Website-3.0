@@ -224,10 +224,10 @@ const MMORPGGameDevelopment = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-xl-11 col-lg-12 col-md-10 m-auto text-center">
-                        <h1 style={{ fontSize: "70px", fontStyle: "Raleway", color: "white" }} className="hero-heading" data-aos="fade-up">
+                        <h1 style={{ fontSize: "74px", fontStyle: "Raleway", color: "white" }} className="hero-heading" data-aos="fade-up">
                             An
-                            <span style={{ color: "#FF006B" }}> MMORPG's</span>{" "} Crafting Journey
-                            <br />
+                             MMORPG's Crafting Journey
+                            
                             From Pixels to Kingdoms
                         </h1>
                         <p

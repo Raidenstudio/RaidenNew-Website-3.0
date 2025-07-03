@@ -137,7 +137,9 @@
 .theme-menu-three .navbar-nav .nav-item.active .nav-link,
 .theme-menu-three .navbar-nav .nav-item:hover > .nav-link,
 .theme-menu-three .navbar .dropdown-menu .dropdown-item:hover {
-  color: var(--blue-light);
+ background: linear-gradient(to left, #f15a24, #f1cc31);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 /*Menu Four*/
 .theme-menu-four .navbar-nav .nav-item.active .dropdown-toggle:after,
@@ -147,7 +149,9 @@
 .theme-menu-four .navbar-nav .nav-item.active .nav-link,
 .theme-menu-four .navbar-nav .nav-item:hover > .nav-link,
 .theme-menu-four .navbar .dropdown-menu .dropdown-item:hover {
-  color: var(--vin-red);
+  background: linear-gradient(to left, #f15a24, #f1cc31);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 #mega-menu-holder {

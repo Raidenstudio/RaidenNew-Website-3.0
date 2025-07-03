@@ -26,7 +26,7 @@ const FeatureContent = [
   {
     icon: Blockchain,
     meta: "NFT Development",
-    subTitle: `Smart contracts and decentralized value transmission turn digital assets into valuable properties.`,
+    subTitle: `NFT token development, which employs smart contracts and decentralized value, converts digital assets into valuable properties.`,
     dataDelay: "300",
   },
   {
